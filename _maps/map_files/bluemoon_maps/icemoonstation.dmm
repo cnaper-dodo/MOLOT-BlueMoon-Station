@@ -37890,6 +37890,9 @@
 /obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /turf/open/floor/plasteel,
 /area/engineering/break_room)
+"gIL" = (
+/turf/open/indestructible/hoteltile,
+/area/icemoon/surface/outdoors)
 "gIV" = (
 /obj/structure/girder,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
@@ -70847,6 +70850,12 @@
 	color = "#ff1616"
 	},
 /turf/open/floor/plating/snowed/smoothed/icemoon,
+/area/icemoon/surface/outdoors)
+"mBR" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/indestructible/hoteltile,
 /area/icemoon/surface/outdoors)
 "mBT" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
@@ -109522,7 +109531,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/floor/plating/snowed/smoothed/icemoon,
+/turf/open/indestructible/hoteltile,
 /area/maintenance/disposal/incinerator)
 "txz" = (
 /obj/structure/cable{
@@ -317003,7 +317012,7 @@ csg
 gAV
 tjB
 tjB
-tjB
+lab
 tjB
 jda
 dhr
@@ -317781,9 +317790,9 @@ qzZ
 vyK
 mRe
 cnT
-nyR
+mBR
 txy
-nyR
+mBR
 lab
 uya
 usj
@@ -318032,15 +318041,15 @@ hhV
 hhV
 tjB
 tjB
-tjB
+fYv
 fxg
 wHp
 roj
 wHp
 fxg
-xwe
-xwe
-xwe
+gIL
+gIL
+gIL
 lab
 uya
 qQD
@@ -318289,15 +318298,15 @@ hhV
 hhV
 tjB
 tjB
-tjB
+fYv
 fxg
 orR
 cFH
 tLg
 wmW
-xwe
-xwe
-xwe
+gIL
+gIL
+gIL
 lab
 uya
 tKu
@@ -318545,16 +318554,16 @@ gAV
 hhV
 hhV
 tjB
-tjB
-tjB
+fYv
+fYv
 fxg
 nvV
 tcs
 nvV
 fxg
-xwe
-xwe
-xwe
+gIL
+gIL
+gIL
 lab
 uya
 tKu
@@ -318802,7 +318811,7 @@ hhV
 hhV
 hhV
 tjB
-tjB
+fYv
 fYv
 fxg
 fxg
@@ -319058,8 +319067,8 @@ gAV
 hhV
 hhV
 hhV
-tjB
-tjB
+fYv
+fYv
 fYv
 fYv
 fxg
@@ -319315,7 +319324,7 @@ gAV
 gAV
 hhV
 hhV
-hhV
+fYv
 fYv
 fYv
 fYv
@@ -319572,13 +319581,13 @@ gAV
 gAV
 hhV
 hhV
-hhV
 fYv
 fYv
 fYv
-xwe
-xwe
-xwe
+fYv
+gIL
+gIL
+gIL
 fYv
 fYv
 fYv
@@ -319833,9 +319842,9 @@ hhV
 fYv
 fYv
 fYv
-fYv
-fYv
-fYv
+gIL
+gIL
+gIL
 fYv
 fYv
 lab
@@ -320090,9 +320099,9 @@ hhV
 hhV
 fYv
 fYv
-fYv
-fYv
-fYv
+gIL
+gIL
+gIL
 fYv
 fYv
 fYv
