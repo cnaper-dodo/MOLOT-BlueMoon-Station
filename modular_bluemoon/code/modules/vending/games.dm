@@ -47,6 +47,7 @@
 				/obj/item/tvcamera = 3,
 				/obj/item/toy/nyamagotchi = 10,
 				/obj/item/gun/ballistic/revolver/russian/lewd = 5,
+				/obj/item/storage/dice/d6 = 5,
 			),
 		),
 		list(
@@ -91,6 +92,7 @@
 		/obj/item/airlock_painter/decal/tile = 1,
 		/obj/item/melee/skateboard/pro = 3,
 		/obj/item/melee/skateboard/hoverboard = 1,
+		/obj/item/choice_beacon/box/plushie = 5,
 	)
 	refill_canister = /obj/item/vending_refill/games
 	default_price = PRICE_CHEAP

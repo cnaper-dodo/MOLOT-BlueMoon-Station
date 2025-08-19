@@ -1,4 +1,5 @@
 //Файл для выдачи предметов донатерам по сикею
+// Сикеи необходимо указывать, аналогично их файлу сохрания лодаута, пример "AA-BB-ab..." нужно записывать как "aabbab"
 
 /*
 /datum/gear/donator/bm
@@ -237,7 +238,7 @@
 	name = "Syndicate Admiral's Cloak"
 	slot = ITEM_SLOT_NECK
 	path = /obj/item/clothing/neck/cloak/syndieadm
-	ckeywhitelist = list("architect0r", "fanlexa")
+	ckeywhitelist = list("architect0r", "fanlexa", "herobrine998", "nyaaaa")
 	subcategory = LOADOUT_SUBCATEGORIES_DON02
 
 /datum/gear/donator/bm/sencloak
@@ -1169,7 +1170,7 @@
     name = "Technical Jacket"
     slot = ITEM_SLOT_BACKPACK
     path = /obj/item/clothing/suit/donator/bm/echoes_jacket
-    ckeywhitelist = list("xaeshkavd", "scramblescream", "illa_3000", "discord980", "heathkit1", "sosnovskii")
+    ckeywhitelist = list("xaeshkavd", "scramblescream", "illa_3000", "discord980", "heathkit1", "sosnovskii", "trora")
     subcategory = LOADOUT_SUBCATEGORIES_DON02
 
 /datum/gear/donator/bm/oftok
@@ -1711,4 +1712,67 @@
 	slot = ITEM_SLOT_BACKPACK
 	path = /obj/item/clothing/suit/pg
 	ckeywhitelist = list("heathkit1")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
+/datum/gear/donator/bm/cybercoat
+	name = "Cybercoat"
+	slot = ITEM_SLOT_OCLOTHING
+	path = /obj/item/clothing/suit/hooded/bm/cybercoat
+	ckeywhitelist = list("cnaperdodo")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
+/datum/gear/donator/bm/diamond_ring
+	name = "A diamond ring"
+	path = /obj/item/clothing/accessory/ring/diamond
+	slot = ITEM_SLOT_ACCESSORY
+	ckeywhitelist = list("herobrine998", "nyaaaa")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
+/datum/gear/donator/bm/cybersun_cloak
+	name = "Cybersun Cloak"
+	path = /obj/item/clothing/neck/cloak/cybersun/civil
+	slot = ITEM_SLOT_NECK
+	ckeywhitelist = list("herobrine998", "nyaaaa")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
+/datum/gear/donator/bm/toggles_combat_maid_civil
+	name = "Combat Maid Sleeves"
+	path = /obj/item/clothing/gloves/toggled/hug/combat_maid_civil
+	slot = ITEM_SLOT_GLOVES
+	ckeywhitelist = list("nyaaaa")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
+/datum/gear/donator/bm/toggles_poly_evening
+	name = "Polychromic evening gloves"
+	path = /obj/item/clothing/gloves/toggled/hug/poly_evening
+	slot = ITEM_SLOT_GLOVES
+	ckeywhitelist = list("herobrine998")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
+/datum/gear/donator/bm/moonflower
+	name = "Moonflower"
+	path = /obj/item/reagent_containers/food/snacks/grown/moonflower
+	slot = ITEM_SLOT_HEAD
+	ckeywhitelist = list("herobrine998")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
+/datum/gear/donator/bm/saareuni
+	name = "SAARE BDU G3"
+	slot = ITEM_SLOT_OCLOTHING
+	path = /obj/item/clothing/under/donator/bm/saareuni
+	ckeywhitelist = list("pingvas", "ordinarylife", "leony24", "kennedykiller", "theatlasplay", "ninjapikachushka", "devildeadspace", "trustmeimengineer", "izakfromrus")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
+/datum/gear/donator/bm/saareflag
+	name = "SAARE flag"
+	slot = ITEM_SLOT_BACKPACK
+	path = /obj/item/sign/flag/saaref
+	ckeywhitelist = list("pingvas", "ordinarylife", "leony24", "kennedykiller", "theatlasplay", "ninjapikachushka", "devildeadspace", "trustmeimengineer", "izakfromrus")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
+/datum/gear/donator/bm/saarepatch
+	name = "SFP Armpatch"
+	slot = ITEM_SLOT_BACKPACK
+	path = /obj/item/clothing/accessory/armband/sfparmband
+	ckeywhitelist = list("pingvas", "ordinarylife", "leony24", "kennedykiller", "theatlasplay", "ninjapikachushka", "devildeadspace", "trustmeimengineer", "izakfromrus")
 	subcategory = LOADOUT_SUBCATEGORIES_DON02

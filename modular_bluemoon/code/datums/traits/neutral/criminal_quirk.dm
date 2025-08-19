@@ -1,4 +1,4 @@
-GLOBAL_VAR_INIT(bluemoon_criminal_quirk_warden_name, "") // имя для вардена, чтобы во всех записях было одинаковым
+/* GLOBAL_VAR_INIT(bluemoon_criminal_quirk_warden_name, "") // имя для вардена, чтобы во всех записях было одинаковым
 GLOBAL_VAR_INIT(bluemoon_criminal_quirk_sergeants_names, "")
 GLOBAL_VAR_INIT(bluemoon_criminal_quirk_hos_name, "")
 GLOBAL_VAR_INIT(bluemoon_criminal_quirk_commander_name, "")
@@ -367,4 +367,4 @@ GLOBAL_VAR_INIT(bluemoon_criminal_quirk_commander_name, "")
 #undef ISSUER_TYPE_SECURITY_SERGEANT
 #undef ISSUER_TYPE_SECURITY_HEAD
 #undef ISSUER_TYPE_COMMANDER
-#undef ISSUER_TYPE_INTERN
+#undef ISSUER_TYPE_INTERN */
