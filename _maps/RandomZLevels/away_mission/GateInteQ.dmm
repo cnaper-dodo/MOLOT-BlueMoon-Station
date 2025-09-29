@@ -5454,6 +5454,7 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "gey" = (
+/obj/item/keycard/mesaend,
 /turf/open/floor/mineral/plastitanium/yellow{
 	icon_state = "plastitanium_dam2"
 	},
