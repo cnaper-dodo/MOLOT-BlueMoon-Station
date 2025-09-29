@@ -171,10 +171,9 @@
 /turf/open/floor/plasteel/dark/smooth/large,
 /area/awaymission/InteQ/lvl2)
 "aju" = (
-/obj/structure/closet/crate/large/urbanismcratelarge,
-/obj/item/slimecross/industrial/silver,
-/turf/open/floor/plasteel/bluespace,
-/area/awaymission/InteQ)
+/obj/machinery/mineral/bluespace_miner,
+/turf/open/floor/catwalk_floor,
+/area/awaymission/InteQ/lvl3)
 "akL" = (
 /obj/structure/filingcabinet,
 /obj/machinery/light/small{
@@ -418,11 +417,12 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ/lvl3)
 "azv" = (
-/obj/structure/rack,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_containers/hypospray/medipen/stimulants,
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/InteQ)
+/obj/effect/turf_decal/tile/brown/opposingcorners,
+/mob/living/simple_animal/bot/cleanbot{
+	faction = list("InteQ")
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "azM" = (
 /turf/open/floor/plasteel/dark/smooth/large,
 /area/awaymission/InteQ/lvl2)
@@ -486,9 +486,8 @@
 /turf/open/floor/engine,
 /area/awaymission/InteQ)
 "aDe" = (
-/obj/machinery/light,
-/obj/machinery/suit_storage_unit/inteq_spacesuit,
-/turf/open/floor/wood/wood_parquet,
+/obj/item/ammo_box/magazine/ak47/hp,
+/turf/open/floor/carpet/royalblack,
 /area/space)
 "aDL" = (
 /obj/machinery/vending/kink{
@@ -608,6 +607,7 @@
 "aJg" = (
 /obj/structure/table/wood,
 /obj/item/toy/mecha/hermes,
+/mob/living/simple_animal/hostile/alien/drone,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "aJh" = (
@@ -627,14 +627,8 @@
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ/ForChasmArea)
 "aKh" = (
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
-/mob/living/simple_animal/hostile/gigachad_inteq/shooter{
-	health = 900;
-	faction = list("InteQ")
-	},
+/obj/effect/turf_decal/tile/brown/opposingcorners,
+/mob/living/simple_animal/hostile/alien/sentinel,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "aKk" = (
@@ -681,14 +675,6 @@
 /obj/structure/rack{
 	dir = 8
 	},
-/obj/item/gun/ballistic/automatic/ak12/pindicate{
-	pixel_x = 5;
-	pixel_y = -5
-	},
-/obj/effect/turf_decal/stripes{
-	dir = 1;
-	icon_state = "delivery_red"
-	},
 /obj/structure/sign/flag/inteq{
 	pixel_x = 32;
 	pixel_y = 27
@@ -696,10 +682,6 @@
 /obj/item/gun/ballistic/automatic/ak12/pindicate{
 	pixel_x = 1;
 	pixel_y = 1
-	},
-/obj/item/gun/ballistic/automatic/ak12/pindicate{
-	pixel_x = -2;
-	pixel_y = 12
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/InteQ)
@@ -734,7 +716,8 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "aPz" = (
-/mob/living/simple_animal/hostile/syndicate/ranged/infiltrator,
+/obj/effect/turf_decal/tile/brown/opposingcorners,
+/obj/structure/alien/weeds/node,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "aQg" = (
@@ -826,6 +809,7 @@
 /obj/structure/closet/syndicate/inteq,
 /obj/item/clothing/suit/armor/inteq/honorable_vanguard,
 /obj/item/clothing/under/inteq/honorable_vanguard,
+/obj/item/stack/telecrystal/inteq/five,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "aTV" = (
@@ -996,9 +980,19 @@
 /turf/open/floor/engine,
 /area/awaymission/InteQ)
 "bdZ" = (
-/obj/effect/mob_spawn/human/inteqspace/captain/dyson_gate,
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/InteQ)
+/obj/structure/closet/crate/large,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "beV" = (
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
 /turf/open/floor/plasteel,
@@ -1053,8 +1047,13 @@
 /turf/open/floor/plating,
 /area/awaymission/InteQ/lvl2)
 "bha" = (
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/space)
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown,
+/mob/living/simple_animal/hostile/alien/drone,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "bhF" = (
 /obj/machinery/airalarm{
 	dir = 8;
@@ -1098,12 +1097,9 @@
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ/ForChasmArea)
 "bkz" = (
-/obj/item/keycard{
-	puzzle_id = "ключ карта от аварийной лестниы";
-	name = "ключ карта от аварийной лестниы"
-	},
-/turf/open/floor/wood/wood_parquet,
-/area/space)
+/obj/item/ammo_box/magazine/ak12,
+/turf/open/floor/carpet/royalblack,
+/area/awaymission/InteQ)
 "bkG" = (
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /obj/effect/turf_decal/siding/wood{
@@ -1316,9 +1312,6 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/carp/brown/beret{
-	name = "Admiral Brown"
-	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "bzX" = (
@@ -1368,9 +1361,12 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
 "bCI" = (
-/obj/item/electropack/shockcollar/bomb,
-/turf/open/floor/wood/wood_parquet,
-/area/space)
+/obj/effect/turf_decal/tile/brown/half/contrasted{
+	dir = 1
+	},
+/obj/structure/alien/resin/wall,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "bDi" = (
 /obj/machinery/door/window,
 /turf/open/floor/plasteel,
@@ -1489,8 +1485,8 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "bLn" = (
-/obj/structure/sign/barsign,
-/turf/closed/indestructible/syndicate,
+/obj/structure/sign/poster/contraband/inteq/random,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/awaymission/InteQ/lvl2)
 "bLZ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -1639,9 +1635,18 @@
 /turf/open/floor/plating,
 /area/awaymission/InteQ)
 "bYX" = (
-/obj/item/electropack/shockcollar/bomb,
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/InteQ)
+/obj/effect/turf_decal/stripes{
+	dir = 1;
+	icon_state = "delivery_red"
+	},
+/obj/structure/rack{
+	dir = 8
+	},
+/obj/item/storage/belt/military/inteq,
+/obj/item/storage/belt/military/inteq,
+/obj/item/storage/belt/military/inteq,
+/turf/open/floor/mineral/plastitanium,
+/area/space)
 "bZH" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
@@ -1969,6 +1974,10 @@
 /obj/effect/turf_decal/tile/brown,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
+"cqm" = (
+/mob/living/simple_animal/hostile/syndicate/civilian,
+/turf/open/floor/plating,
+/area/awaymission/InteQ/lvl2)
 "cqo" = (
 /obj/structure/railing{
 	dir = 6
@@ -2012,13 +2021,9 @@
 /turf/open/floor/grass/grass0,
 /area/awaymission/InteQ/lvl2)
 "cua" = (
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
-/mob/living/simple_animal/hostile/gigachad_inteq/space{
-	faction = list("InteQ")
-	},
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/machinery/light/floor,
+/mob/living/simple_animal/hostile/alien/drone,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "cue" = (
@@ -2298,7 +2303,6 @@
 /area/awaymission/InteQ)
 "cKd" = (
 /obj/structure/rack,
-/obj/item/stock_parts/cell/bluespacereactor,
 /obj/item/mmi/posibrain/inteq,
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ)
@@ -2355,16 +2359,10 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "cNf" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 4;
-	name = "Helm"
-	},
-/obj/item/crowbar/red{
-	pixel_x = -16;
-	pixel_y = -4
-	},
-/turf/open/floor/wood/wood_parquet,
-/area/space)
+/obj/effect/turf_decal/tile/brown/opposingcorners,
+/mob/living/simple_animal/hostile/alien/drone,
+/turf/open/floor/plasteel/white,
+/area/awaymission/InteQ/lvl2)
 "cNB" = (
 /obj/machinery/bloodbankgen,
 /turf/open/floor/plasteel/showroomfloor,
@@ -2747,10 +2745,23 @@
 "dgU" = (
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl3)
-"dif" = (
-/obj/item/assembly/signaler/receiver,
+"dhb" = (
+/obj/machinery/airalarm/all_access{
+	pixel_y = 25
+	},
+/obj/machinery/door/airlock/centcom{
+	name = "Bar";
+	req_access_txt = "152"
+	},
 /turf/open/floor/wood/wood_parquet,
-/area/space)
+/area/awaymission/InteQ/lvl2)
+"dif" = (
+/obj/effect/turf_decal/tile/brown/anticorner/contrasted{
+	dir = 1
+	},
+/obj/structure/alien/resin/wall,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "dij" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/table/wood,
@@ -2827,6 +2838,9 @@
 /area/awaymission/InteQ)
 "dmL" = (
 /obj/machinery/light/floor,
+/obj/item/grenade/frag/mega{
+	pixel_x = 12
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "dna" = (
@@ -3120,7 +3134,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/deathclaw/funclaw/femclaw/mommyclaw,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "dCz" = (
@@ -3286,9 +3299,9 @@
 /turf/open/floor/plating,
 /area/awaymission/InteQ)
 "dKR" = (
-/obj/structure/sign/poster/contraband/inteq/random,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/space)
+/obj/effect/spawner/lootdrop/salvage,
+/turf/open/floor/plating,
+/area/awaymission/InteQ/lvl3)
 "dLa" = (
 /obj/machinery/atmospherics/components/binary/pump/on{
 	dir = 2;
@@ -3442,8 +3455,8 @@
 /turf/open/floor/plasteel/white,
 /area/awaymission/InteQ/lvl2)
 "dSp" = (
-/obj/machinery/computer/camera_advanced/syndie,
 /obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/machinery/computer/rdconsole/core,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "dSs" = (
@@ -3570,10 +3583,10 @@
 /turf/open/chasm/gateInteQ,
 /area/awaymission/InteQ)
 "dZI" = (
-/mob/living/simple_animal/hostile/gigachad_inteq/shooter/sniper{
+/mob/living/simple_animal/bot/cleanbot{
 	faction = list("InteQ")
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ/lvl2)
 "eaS" = (
 /obj/machinery/power/terminal{
@@ -3630,6 +3643,7 @@
 	},
 /obj/item/toy/cards/deck,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/radio,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "ebD" = (
@@ -3772,6 +3786,7 @@
 	},
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /obj/effect/turf_decal/tile/brown/opposingcorners,
+/obj/item/reagent_containers/hypospray/medipen/stimulants,
 /turf/open/floor/plasteel/white,
 /area/awaymission/InteQ/lvl2)
 "ejs" = (
@@ -3782,6 +3797,7 @@
 "ejB" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/structure/alien/resin/wall,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "ekL" = (
@@ -4084,6 +4100,10 @@
 	light_color = "#e8eaff"
 	},
 /turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ)
+"eCb" = (
+/obj/item/ammo_box/magazine/ak12,
+/turf/open/floor/catwalk_floor/iron_dark,
 /area/awaymission/InteQ)
 "eCF" = (
 /obj/machinery/shower/directional/north{
@@ -4574,8 +4594,6 @@
 "fex" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/zipties,
-/obj/item/gun/energy/e_gun/rabbit,
-/obj/item/firing_pin,
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ)
 "feZ" = (
@@ -4660,9 +4678,10 @@
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ/ForChasmArea)
 "flv" = (
-/obj/machinery/shuttle_scrambler,
-/turf/open/floor/wood/wood_parquet,
-/area/space)
+/obj/effect/turf_decal/delivery,
+/mob/living/simple_animal/hostile/alien/drone,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "flw" = (
 /obj/structure/fence{
 	dir = 4
@@ -5011,12 +5030,13 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "fIU" = (
-/obj/effect/turf_decal/stripes/yellow/line,
-/mob/living/carbon/alien/humanoid/drone,
-/turf/open/floor/plasteel/dark/smooth/edge{
-	dir = 1
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/rack{
+	dir = 8
 	},
-/area/awaymission/InteQ/lvl2)
+/obj/item/gun/medbeam,
+/turf/open/floor/carpet/royalblack,
+/area/space)
 "fJc" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/maintenance,
@@ -5092,6 +5112,21 @@
 /obj/effect/mob_spawn/human/corpse/inteq_dead,
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ/lvl3)
+"fNT" = (
+/obj/structure/rack{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes{
+	dir = 1;
+	icon_state = "delivery_red"
+	},
+/obj/structure/sign/flag/inteq{
+	pixel_x = 32;
+	pixel_y = 27
+	},
+/obj/item/gun/ballistic/automatic/ak47,
+/turf/open/floor/mineral/plastitanium,
+/area/space)
 "fOc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/loading_area{
@@ -5157,9 +5192,7 @@
 /area/awaymission/InteQ/lvl2)
 "fSh" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/password/voice/sfc{
-	password = null
-	},
+/obj/machinery/door/poddoor/preopen,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/InteQ)
 "fTo" = (
@@ -5586,11 +5619,12 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "gnP" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 4
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
 	},
-/mob/living/carbon/alien/humanoid/drone,
-/turf/open/floor/plasteel/dark/smooth/small,
+/mob/living/simple_animal/hostile/syndicate/ranged/smg/pilot,
+/turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "gnS" = (
 /obj/machinery/pool/controller,
@@ -5654,7 +5688,6 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/effect/mob_spawn/human/inteqspace/dyson_gate,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "grv" = (
@@ -5714,8 +5747,8 @@
 /turf/open/floor/plating,
 /area/awaymission/InteQ/lvl2)
 "guI" = (
-/mob/living/carbon/alien/humanoid/drone,
-/turf/open/floor/plasteel/dark/smooth/large,
+/mob/living/carbon/alien/humanoid/hunter,
+/turf/open/floor/plating/airless,
 /area/awaymission/InteQ/lvl2)
 "gvE" = (
 /obj/structure/table,
@@ -5844,7 +5877,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/InteQ)
 "gCz" = (
-/obj/item/electropack/shockcollar/bomb,
 /obj/machinery/light{
 	dir = 4;
 	light_color = "#c1caff"
@@ -5907,11 +5939,11 @@
 /turf/open/floor/plasteel/white/textured/large,
 /area/awaymission/InteQ)
 "gGX" = (
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
+/obj/structure/rack/shelf,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/item/grenade/frag/mega{
+	pixel_x = 12
 	},
-/mob/living/simple_animal/hostile/syndicate/mecha_pilot/inteq,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "gHw" = (
@@ -5920,11 +5952,8 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "gIe" = (
-/obj/effect/turf_decal/bot,
-/mob/living/simple_animal/hostile/gigachad_inteq{
-	faction = list("InteQ")
-	},
-/turf/open/floor/plasteel/dark,
+/mob/living/carbon/alien/humanoid/drone,
+/turf/open/floor/plating/airless,
 /area/awaymission/InteQ/lvl2)
 "gIy" = (
 /obj/item/trash/cheesie,
@@ -6049,6 +6078,7 @@
 /area/awaymission/InteQ)
 "gNs" = (
 /obj/structure/closet/l3closet/scientist,
+/obj/item/stack/telecrystal/inteq/five,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -7019,6 +7049,7 @@
 "hJv" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/crate/engineering,
+/obj/item/storage/firstaid/tactical/slaver,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "hJA" = (
@@ -7531,6 +7562,9 @@
 	pixel_y = 32
 	},
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/machinery/vending/inteq_vendomat{
+	shut_up = 1
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "imm" = (
@@ -7654,9 +7688,18 @@
 /turf/open/floor/plasteel/dark/smooth/small,
 /area/awaymission/InteQ/lvl2)
 "isR" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/mob/living/simple_animal/hostile/syndicate/ranged/infiltrator,
-/turf/open/floor/plasteel/dark,
+/obj/structure/closet/crate/large,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/obj/item/stack/ore/bluespace_crystal,
+/turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ/lvl2)
 "itN" = (
 /obj/item/kirbyplants/hedge{
@@ -7778,6 +7821,14 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
+"iyr" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "XCCQMLoad2"
+	},
+/obj/effect/spawner/lootdrop/salvage,
+/turf/open/floor/plating,
+/area/awaymission/InteQ/lvl3)
 "iyt" = (
 /obj/structure/closet/crate/science,
 /turf/open/floor/plating,
@@ -7975,6 +8026,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/structure/alien/resin/wall,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "iJx" = (
@@ -8060,6 +8112,11 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ/lvl3)
+"iNX" = (
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/mob/living/simple_animal/hostile/alien/sentinel,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "iNZ" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
@@ -8206,7 +8263,9 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
 "iVi" = (
-/turf/closed/indestructible/fakeglass,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/ammo_box/magazine/ak47/rubber,
+/turf/open/floor/carpet/royalblack,
 /area/space)
 "iVn" = (
 /obj/structure/rack,
@@ -8214,6 +8273,7 @@
 	pixel_x = 8;
 	pixel_y = -6
 	},
+/obj/item/stack/telecrystal/inteq/five,
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ)
 "iWE" = (
@@ -8228,7 +8288,9 @@
 	req_access_txt = "150"
 	},
 /obj/structure/fans/tiny,
-/turf/closed/wall/ice,
+/turf/open/floor/mineral/plastitanium/yellow{
+	icon_state = "plastitanium_dam1"
+	},
 /area/awaymission/InteQ)
 "iXO" = (
 /obj/structure/chair/gloryhole,
@@ -8990,7 +9052,6 @@
 /obj/machinery/recharger{
 	pixel_y = 4
 	},
-/obj/item/reagent_containers/hypospray/medipen/stimulants,
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
 "jIP" = (
@@ -9326,6 +9387,7 @@
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/structure/table/reinforced,
 /obj/item/flashlight/lamp,
+/obj/item/storage/firstaid/tactical/slaver,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "kaQ" = (
@@ -9399,8 +9461,10 @@
 /turf/open/floor/engine,
 /area/awaymission/InteQ)
 "keW" = (
-/obj/effect/turf_decal/siding/wood/corner,
-/mob/living/simple_animal/hostile/syndicate/ranged/infiltrator,
+/obj/item/keycard{
+	puzzle_id = "ключ карта от аварийной лестниы";
+	name = "ключ карта от аварийной лестниы"
+	},
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ/lvl2)
 "kfA" = (
@@ -9507,6 +9571,9 @@
 /obj/item/hand_labeler,
 /obj/structure/table,
 /obj/effect/turf_decal/bot,
+/obj/item/grenade/frag/mega{
+	pixel_x = 12
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "kkS" = (
@@ -9570,6 +9637,7 @@
 	pixel_x = 32
 	},
 /obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/structure/alien/resin/wall,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "kmx" = (
@@ -9580,15 +9648,9 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "kmC" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/obj/machinery/door/airlock/centcom{
-	name = "Bar";
-	req_access_txt = "152"
-	},
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/InteQ/lvl2)
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/indestructible/syndicate,
+/area/space)
 "kmD" = (
 /obj/effect/decal/cleanable/blood/splatter{
 	color = "red"
@@ -9634,12 +9696,12 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "kos" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
+/obj/structure/filingcabinet/medical,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/machinery/light{
+	light_color = "#c9d3e8"
 	},
-/obj/structure/table/wood,
-/obj/item/reagent_containers/food/drinks/coffee,
-/turf/open/floor/wood/wood_parquet,
+/turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "koC" = (
 /obj/machinery/light{
@@ -9682,11 +9744,10 @@
 /turf/open/floor/grass/grass0,
 /area/awaymission/InteQ/lvl2)
 "kpA" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 5
+/obj/machinery/suit_storage_unit/inteq_spacesuit,
+/obj/machinery/light{
+	dir = 1
 	},
-/obj/structure/reagent_dispensers/keg/mead,
-/obj/structure/reagent_dispensers/beerkeg,
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ/lvl2)
 "kpV" = (
@@ -9769,9 +9830,8 @@
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ/lvl2)
 "kve" = (
-/mob/living/simple_animal/hostile/syndicate/ranged/smg,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ/lvl2)
+/turf/open/floor/carpet/royalblack,
+/area/space)
 "kvR" = (
 /turf/open/floor/plating,
 /area/awaymission/InteQ/lvl3)
@@ -9932,14 +9992,9 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "kDz" = (
-/obj/structure/table/reinforced,
-/obj/item/paper_bin,
-/obj/item/pen/fountain,
-/obj/item/gps{
-	pixel_x = 12
-	},
-/turf/open/floor/wood/wood_parquet,
-/area/space)
+/mob/living/carbon/alien/humanoid/sentinel,
+/turf/open/floor/plating/airless,
+/area/awaymission/InteQ/lvl2)
 "kEh" = (
 /obj/item/chair{
 	dir = 8;
@@ -10440,10 +10495,11 @@
 	},
 /area/awaymission/InteQ/lvl2)
 "lbV" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/mob_spawn/human/inteqspace/dyson_gate,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ)
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/carpet/royalblack,
+/area/space)
 "lcb" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 6
@@ -10817,7 +10873,6 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ/lvl3)
 "lzr" = (
-/obj/item/electropack/shockcollar/bomb,
 /obj/item/flashlight/seclite{
 	pixel_x = -12;
 	pixel_y = 6
@@ -11099,13 +11154,21 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "lOx" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/cardboard,
-/obj/item/grenade/frag/mega{
-	pixel_x = 12
+/obj/machinery/conveyor{
+	dir = 1;
+	id = "XCCQMLoad2"
 	},
+/obj/item/gun/ballistic/automatic/ak12/pindicate{
+	pixel_x = 5;
+	pixel_y = -5
+	},
+/obj/item/gun/ballistic/automatic/ak12/pindicate{
+	pixel_x = 5;
+	pixel_y = -5
+	},
+/obj/structure/closet/crate/large,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ)
+/area/awaymission/InteQ/lvl2)
 "lQc" = (
 /obj/structure/railing,
 /obj/effect/decal/cleanable/dirt,
@@ -11512,7 +11575,6 @@
 	pixel_y = -7;
 	dir = 8
 	},
-/obj/effect/mob_spawn/human/inteqspace/dyson_gate,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "mjy" = (
@@ -11544,6 +11606,7 @@
 	},
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green,
+/obj/item/gun/ballistic/revolver/syndicate,
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ/lvl2)
 "mkG" = (
@@ -11588,12 +11651,8 @@
 /area/awaymission/InteQ/lvl2)
 "mmM" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/office/dark{
-	dir = 1
-	},
-/mob/living/simple_animal/hostile/gigachad_inteq/space,
-/turf/open/floor/plasteel,
-/area/awaymission/InteQ)
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/InteQ/lvl2)
 "mmR" = (
 /obj/structure/bed/nest,
 /turf/open/floor/plasteel/dark/smooth/large,
@@ -11706,6 +11765,11 @@
 /obj/machinery/dna_scannernew,
 /turf/open/floor/plasteel/showroomfloor,
 /area/awaymission/InteQ)
+"mqV" = (
+/obj/effect/turf_decal/tile/brown/opposingcorners,
+/mob/living/simple_animal/hostile/alien/drone,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "mrh" = (
 /obj/machinery/light{
 	dir = 1
@@ -12009,6 +12073,7 @@
 /obj/item/bedsheet/inteq{
 	dir = 1
 	},
+/obj/effect/mob_spawn/human/inteqspace/dyson_gate,
 /turf/open/floor/wood,
 /area/awaymission/InteQ/lvl2)
 "mIL" = (
@@ -12050,9 +12115,9 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ/lvl3)
 "mMn" = (
-/mob/living/simple_animal/hostile/syndicate/mecha_pilot/inteq/light,
+/mob/living/simple_animal/hostile/gigachad_inteq/space,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ/lvl2)
+/area/awaymission/InteQ)
 "mMv" = (
 /turf/closed/mineral/random/labormineral/jungle,
 /area/awaymission/InteQ/lvl2)
@@ -12272,6 +12337,7 @@
 "mWF" = (
 /obj/structure/bed,
 /obj/item/bedsheet/inteq,
+/obj/effect/mob_spawn/human/inteqspace/dyson_gate,
 /turf/open/floor/wood,
 /area/awaymission/InteQ/lvl2)
 "mWZ" = (
@@ -12280,8 +12346,10 @@
 /turf/open/space/basic,
 /area/space)
 "mXK" = (
-/mob/living/carbon/alien/humanoid/drone,
-/turf/open/floor/plasteel/dark,
+/obj/item/grenade/frag/mega{
+	pixel_x = 12
+	},
+/turf/open/floor/plating,
 /area/awaymission/InteQ/lvl2)
 "mYc" = (
 /obj/structure/table/reinforced,
@@ -12392,10 +12460,9 @@
 /turf/open/floor/plasteel/white,
 /area/awaymission/InteQ/lvl2)
 "neX" = (
-/obj/structure/closet/crate/large,
-/obj/item/mmi/posibrain/inteq,
-/turf/open/floor/plasteel/bluespace,
-/area/awaymission/InteQ)
+/obj/machinery/mecha_part_fabricator,
+/turf/open/floor/catwalk_floor,
+/area/awaymission/InteQ/lvl3)
 "nfe" = (
 /obj/structure/shipping_container/conarex,
 /turf/open/floor/plating/ashplanet,
@@ -12821,9 +12888,6 @@
 	pixel_y = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/grenade/frag/mega{
-	pixel_x = 12
-	},
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
 "nzn" = (
@@ -12959,11 +13023,10 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "nEH" = (
-/obj/structure/railing{
-	dir = 10
-	},
-/turf/open/chasm/gateInteQ,
-/area/awaymission/InteQ)
+/obj/effect/turf_decal/tile/brown/opposingcorners,
+/obj/structure/alien/resin/wall,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "nFl" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 5
@@ -13449,6 +13512,7 @@
 /obj/item/stack/sheet/mineral/diamond,
 /obj/item/stack/sheet/mineral/diamond,
 /obj/item/stack/sheet/mineral/diamond,
+/obj/item/stack/telecrystal/inteq,
 /turf/open/floor/plating,
 /area/awaymission/InteQ)
 "oek" = (
@@ -13645,6 +13709,7 @@
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 4
 	},
+/obj/structure/alien/resin/wall,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "onS" = (
@@ -13866,14 +13931,7 @@
 /turf/open/floor/plasteel/dark/smooth/small,
 /area/awaymission/InteQ/lvl3)
 "ozn" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/obj/machinery/door/airlock/centcom{
-	name = "Bar";
-	req_access_txt = "152"
-	},
-/turf/open/floor/wood/wood_parquet,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/awaymission/InteQ/lvl2)
 "ozP" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -13885,35 +13943,6 @@
 /obj/effect/turf_decal/stripes{
 	dir = 1;
 	icon_state = "delivery_red"
-	},
-/obj/item/ammo_box/magazine/ak12/ap{
-	pixel_y = 12;
-	pixel_x = 10
-	},
-/obj/item/ammo_box/magazine/ak12/ap{
-	pixel_y = 12
-	},
-/obj/item/ammo_box/magazine/ak12/ap{
-	pixel_y = 10;
-	pixel_x = -7
-	},
-/obj/item/ammo_box/magazine/ak12/ap,
-/obj/item/ammo_box/magazine/ak12/ap{
-	pixel_x = -10
-	},
-/obj/item/ammo_box/magazine/ak12/ap{
-	pixel_x = 9
-	},
-/obj/item/ammo_box/magazine/ak12/ap{
-	pixel_y = -6;
-	pixel_x = 10
-	},
-/obj/item/ammo_box/magazine/ak12/ap{
-	pixel_y = -7
-	},
-/obj/item/ammo_box/magazine/ak12/ap{
-	pixel_y = -8;
-	pixel_x = -7
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/InteQ)
@@ -14575,9 +14604,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/InteQ)
 "poq" = (
-/mob/living/carbon/alien/humanoid/drone,
-/turf/open/floor/plating,
-/area/awaymission/InteQ/lvl2)
+/mob/living/simple_animal/hostile/syndicate/civilian,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ)
 "pow" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/donkpockets,
@@ -14841,12 +14870,14 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ/lvl3)
 "pzY" = (
-/obj/machinery/airalarm/all_access{
-	pixel_y = 25
+/obj/machinery/computer/monitor/secret,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#cee5d2"
 	},
-/obj/effect/mob_spawn/human/inteqspace/captain/dyson_gate,
-/turf/open/floor/wood/wood_parquet,
-/area/space)
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "pAo" = (
 /obj/structure/alien/egg/grown,
 /turf/open/floor/plasteel/dark,
@@ -14935,11 +14966,14 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
 "pFk" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
+/obj/item/icona_madonna{
+	icon = 'modular_bluemoon/krashly/icons/obj/structures.dmi';
+	pixel_x = 25;
+	layer = 5
 	},
-/obj/machinery/light{
-	dir = 4
+/obj/item/flashlight/seclite{
+	pixel_x = -12;
+	pixel_y = 6
 	},
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ/lvl2)
@@ -15006,10 +15040,10 @@
 /area/awaymission/InteQ/lvl3)
 "pIq" = (
 /obj/structure/table/reinforced,
-/obj/structure/showcase/machinery/tv,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 9
 	},
+/obj/machinery/rnd/production/circuit_imprinter,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl3)
 "pIw" = (
@@ -15039,6 +15073,7 @@
 "pKJ" = (
 /obj/effect/turf_decal/delivery,
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/structure/alien/resin/wall,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "pLI" = (
@@ -15104,6 +15139,7 @@
 /area/awaymission/InteQ)
 "pNJ" = (
 /obj/structure/rack,
+/obj/item/ammo_box/magazine/ak12,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/awaymission/InteQ)
 "pNL" = (
@@ -15727,11 +15763,12 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "qpF" = (
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 8
+/obj/item/ammo_box/magazine/ak47{
+	pixel_y = -9;
+	pixel_x = 14
 	},
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/InteQ/lvl2)
+/turf/open/floor/carpet/royalblack,
+/area/space)
 "qqo" = (
 /obj/structure/table/reinforced,
 /obj/machinery/light/small{
@@ -15936,11 +15973,9 @@
 /turf/open/floor/mineral/titanium,
 /area/awaymission/InteQ)
 "qyE" = (
-/obj/effect/turf_decal/siding/wood,
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 4
-	},
-/turf/open/floor/wood/wood_parquet,
+/obj/structure/closet/crate/large,
+/obj/item/grenade/clusterbuster,
+/turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "qyN" = (
 /turf/open/floor/mineral/plastitanium,
@@ -16348,11 +16383,16 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "qRL" = (
-/obj/effect/turf_decal/siding/wood{
+/obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/table/wood,
-/obj/item/gun/ballistic/shotgun/toy,
+/obj/structure/table/reinforced,
+/obj/item/storage/fancy/cigarettes/cigars/havana,
+/obj/item/lighter{
+	pixel_y = 5
+	},
+/obj/item/inteq_sledgehammer,
+/obj/item/gun/energy/laser/canceller,
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ/lvl2)
 "qRO" = (
@@ -16395,6 +16435,19 @@
 /obj/machinery/suit_storage_unit/syndicate/inteq,
 /turf/open/floor/plasteel/dark/smooth/small,
 /area/awaymission/InteQ/lvl2)
+"qTY" = (
+/obj/structure/closet/crate/large,
+/obj/item/gun/ballistic/automatic/ak12/pindicate{
+	pixel_x = 5;
+	pixel_y = -5
+	},
+/obj/item/gun/ballistic/automatic/ak12/pindicate{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/obj/item/gun/ballistic/automatic/ak12/pindicate,
+/turf/open/floor/glass/reinforced,
+/area/awaymission/InteQ/lvl2)
 "qUe" = (
 /obj/structure/railing{
 	dir = 6
@@ -16429,16 +16482,13 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
 "qVO" = (
-/obj/machinery/button/door{
-	dir = 1;
-	id = "colossus_windows";
-	name = "Window Lockdown";
-	pixel_x = -6;
-	pixel_y = -25
+/obj/machinery/rnd/production/protolathe,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
 	},
-/obj/item/electropack/shockcollar/bomb,
-/turf/open/floor/wood/wood_parquet,
-/area/space)
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "qVT" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 5
@@ -16482,6 +16532,13 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ)
+"qXZ" = (
+/obj/machinery/conveyor{
+	dir = 4
+	},
+/obj/effect/spawner/lootdrop/salvage,
+/turf/open/floor/plating,
+/area/awaymission/InteQ/lvl3)
 "qYh" = (
 /obj/structure/rack,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -16497,7 +16554,6 @@
 /area/awaymission/InteQ)
 "qYo" = (
 /obj/structure/table/reinforced,
-/obj/structure/showcase/machinery/tv,
 /obj/structure/noticeboard{
 	pixel_y = 32
 	},
@@ -16530,8 +16586,9 @@
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ/lvl2)
 "qZC" = (
-/turf/open/floor/wood/wood_parquet,
-/area/space)
+/mob/living/simple_animal/hostile/alien/drone,
+/turf/open/floor/glass/reinforced,
+/area/awaymission/InteQ/lvl2)
 "qZL" = (
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/mineral/plastitanium,
@@ -16637,10 +16694,11 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "rfv" = (
-/obj/machinery/door/airlock/external{
+/obj/effect/turf_decal/tile/brown/opposingcorners,
+/obj/machinery/door/airlock/centcom{
+	name = "Restroom";
 	req_access_txt = "152"
 	},
-/obj/effect/turf_decal/tile/brown/opposingcorners,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "rfx" = (
@@ -16662,6 +16720,11 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
+"rgD" = (
+/obj/structure/closet/crate/large/urbanismcratelarge,
+/obj/item/slimecross/industrial/silver,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "rgJ" = (
 /mob/living/simple_animal/hostile/malf_drone/experimental,
 /turf/open/floor/wood/wood_parquet,
@@ -16725,6 +16788,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
+/obj/structure/alien/resin/wall,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "rki" = (
@@ -17051,6 +17115,7 @@
 /area/awaymission/InteQ/lvl2)
 "rCI" = (
 /obj/machinery/light/small,
+/obj/item/ammo_box/magazine/ak12,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/awaymission/InteQ)
 "rCV" = (
@@ -17239,18 +17304,10 @@
 /turf/closed/indestructible/syndicate,
 /area/awaymission/InteQ/lvl2)
 "rKL" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/table/reinforced,
-/obj/item/storage/fancy/cigarettes/cigars/havana,
-/obj/item/lighter{
-	pixel_y = 5
-	},
-/obj/item/inteq_sledgehammer,
-/obj/item/gun/energy/laser/canceller,
-/turf/open/floor/wood/wood_parquet,
-/area/space)
+/obj/structure/closet/crate/large,
+/obj/item/mmi/posibrain/inteq,
+/turf/open/floor/plasteel/bluespace,
+/area/awaymission/InteQ/lvl2)
 "rKN" = (
 /obj/structure/bookcase/random/fiction,
 /obj/effect/turf_decal/tile/brown,
@@ -17453,6 +17510,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
+"rVZ" = (
+/obj/item/crowbar/red{
+	pixel_x = -16;
+	pixel_y = -4
+	},
+/turf/open/floor/wood/wood_parquet,
+/area/awaymission/InteQ/lvl2)
 "rWv" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -17819,7 +17883,16 @@
 /area/awaymission/InteQ/lvl2)
 "soz" = (
 /obj/effect/turf_decal/delivery,
-/obj/structure/closet/crate/secure,
+/obj/structure/closet/crate/goldcrate,
+/obj/item/ammo_box/magazine/ak12,
+/obj/item/ammo_box/magazine/ak12,
+/obj/item/ammo_box/magazine/ak12,
+/obj/item/ammo_box/magazine/ak12,
+/obj/item/ammo_box/magazine/ak12,
+/obj/item/ammo_box/magazine/ak12,
+/obj/item/ammo_box/magazine/ak12,
+/obj/item/ammo_box/magazine/ak12,
+/obj/item/ammo_box/magazine/ak12,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "spg" = (
@@ -17928,7 +18001,6 @@
 	},
 /area/awaymission/InteQ/lvl2)
 "svd" = (
-/obj/item/assembly/signaler/receiver,
 /obj/machinery/light{
 	dir = 8;
 	light_color = "#e8eaff"
@@ -18515,10 +18587,14 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "taR" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
+/obj/structure/table/reinforced,
+/obj/item/paper_bin,
+/obj/item/pen/fountain,
+/obj/item/gps{
+	pixel_x = 12
 	},
-/obj/structure/reagent_dispensers/beerkeg,
+/obj/item/gun/energy/e_gun/rabbit,
+/obj/item/firing_pin,
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ/lvl2)
 "tbg" = (
@@ -18556,8 +18632,6 @@
 /obj/item/lighter{
 	pixel_y = 5
 	},
-/obj/item/inteq_sledgehammer,
-/obj/item/gun/energy/laser/canceller,
 /obj/item/radio,
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ)
@@ -18725,6 +18799,7 @@
 /area/awaymission/InteQ/lvl3)
 "tlC" = (
 /obj/effect/turf_decal/tile/yellow/half/contrasted,
+/obj/structure/alien/resin/wall,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "tlK" = (
@@ -18924,6 +18999,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
+"tsV" = (
+/obj/item/radio,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/awaymission/InteQ/lvl2)
 "tsW" = (
 /obj/structure/railing{
 	dir = 8
@@ -18994,9 +19073,38 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "tzl" = (
-/obj/structure/closet/crate/large,
-/turf/open/floor/plasteel/bluespace,
-/area/awaymission/InteQ)
+/obj/structure/closet/crate/secure/gear{
+	req_one_access_txt = "152"
+	},
+/obj/item/stack/sheet/mineral/silver{
+	amount = 30
+	},
+/obj/item/stack/sheet/mineral/gold{
+	amount = 30
+	},
+/obj/item/stack/sheet/mineral/titanium{
+	amount = 40
+	},
+/obj/item/stack/sheet/mineral/uranium{
+	amount = 15
+	},
+/obj/item/stack/rods/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/mineral/plastitanium{
+	amount = 50
+	},
+/obj/item/stack/sheet/plasteel/twenty,
+/obj/item/stack/sheet/plasteel/fifty,
+/obj/effect/turf_decal/stripes{
+	dir = 1;
+	icon_state = "delivery_red"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "tzB" = (
 /obj/structure/closet/emcloset/anchored,
 /turf/open/floor/plating,
@@ -19056,15 +19164,11 @@
 /obj/structure/rack,
 /obj/item/ammo_box/magazine/ak12,
 /obj/item/ammo_box/magazine/ak12,
-/obj/item/ammo_box/magazine/ak12,
-/obj/item/ammo_box/magazine/ak12,
-/obj/item/ammo_box/magazine/ak12,
-/obj/item/ammo_box/magazine/ak12,
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ)
 "tCa" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/mob/living/carbon/alien/humanoid/drone,
+/obj/structure/closet/crate/large,
+/obj/item/circuitboard/machine/cryptominer,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "tCJ" = (
@@ -19233,6 +19337,7 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
+/obj/item/stack/telecrystal/inteq,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "tJT" = (
@@ -20572,7 +20677,6 @@
 "uUw" = (
 /obj/structure/railing/corner,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/mob_spawn/human/inteqspace/dyson_gate,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
@@ -20650,18 +20754,13 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/awaymission/InteQ)
 "uYQ" = (
-/obj/machinery/light_switch{
-	dir = 4;
-	pixel_x = -25;
-	pixel_y = -10
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
 	},
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = -28
-	},
-/obj/item/radio,
-/turf/open/floor/wood/wood_parquet,
-/area/space)
+/mob/living/simple_animal/hostile/alien/drone,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "uYT" = (
 /obj/machinery/door/airlock/bathroom{
 	name = "Restroom"
@@ -20914,6 +21013,7 @@
 /obj/item/grenade/frag/mega{
 	pixel_x = 12
 	},
+/obj/item/stack/telecrystal/inteq,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "vkq" = (
@@ -21105,12 +21205,8 @@
 /turf/open/floor/plasteel/dark/smooth/small,
 /area/awaymission/InteQ/lvl2)
 "vtA" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 9
-	},
-/obj/structure/table/wood,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/turf/open/floor/wood/wood_parquet,
+/obj/structure/urbanismbigcrate,
+/turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "vtY" = (
 /obj/effect/turf_decal/stripes/yellow/line{
@@ -21259,17 +21355,12 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "vFC" = (
-/obj/machinery/turretid{
-	icon_state = "control_kill";
-	lethal = 1;
-	locked = 0;
-	pixel_y = null;
-	req_access_txt = "152";
-	pixel_x = -26
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
 	},
-/obj/item/electropack/shockcollar/bomb,
+/obj/effect/mob_spawn/human/inteqspace/captain/dyson_gate,
 /turf/open/floor/wood/wood_parquet,
-/area/space)
+/area/awaymission/InteQ/lvl2)
 "vFD" = (
 /obj/structure/railing{
 	dir = 1
@@ -21389,11 +21480,30 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "vMq" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/box/zipties,
-/obj/item/gun/energy/e_gun/rabbit,
-/obj/item/firing_pin,
-/turf/open/floor/wood/wood_parquet,
+/obj/structure/rack{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes{
+	dir = 1;
+	icon_state = "delivery_red"
+	},
+/obj/item/ammo_box/magazine/ak47,
+/obj/item/ammo_box/magazine/ak47{
+	pixel_y = -9;
+	pixel_x = 14
+	},
+/obj/item/ammo_box/magazine/ak47{
+	pixel_y = 12
+	},
+/obj/item/ammo_box/magazine/ak47{
+	pixel_y = -9;
+	pixel_x = 14
+	},
+/obj/item/ammo_box/magazine/ak47{
+	pixel_y = -9;
+	pixel_x = 14
+	},
+/turf/open/floor/mineral/plastitanium,
 /area/space)
 "vMX" = (
 /obj/item/kirbyplants/hedge{
@@ -21621,6 +21731,14 @@
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
+"vWQ" = (
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/bot/cleanbot{
+	faction = list("InteQ")
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "vXb" = (
 /obj/structure/rack,
 /obj/machinery/light/small{
@@ -21834,11 +21952,13 @@
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/InteQ)
 "wgr" = (
-/obj/structure/railing{
-	dir = 6
+/obj/machinery/light/floor,
+/obj/effect/turf_decal/tile/brown/half/contrasted{
+	dir = 1
 	},
-/turf/open/chasm/gateInteQ,
-/area/awaymission/InteQ)
+/obj/structure/alien/resin/wall,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "wgz" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
@@ -21861,21 +21981,11 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ/lvl3)
 "wgI" = (
-/obj/item/icona_madonna{
-	icon = 'modular_bluemoon/krashly/icons/obj/structures.dmi';
-	pixel_x = 25;
-	layer = 5
-	},
-/obj/item/flashlight/seclite{
-	pixel_x = -12;
-	pixel_y = 6
-	},
-/turf/open/floor/wood/wood_parquet,
-/area/space)
+/obj/machinery/rnd/destructive_analyzer,
+/turf/open/floor/plating,
+/area/awaymission/InteQ/lvl3)
 "wht" = (
 /obj/structure/table/reinforced,
-/obj/effect/landmark/start/nuclear_equipment,
-/obj/effect/landmark/start/nuclear_equipment,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "wiz" = (
@@ -22277,6 +22387,7 @@
 /obj/structure/closet/crate/freezer/surplus_limbs,
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /obj/effect/turf_decal/tile/brown/opposingcorners,
+/obj/item/storage/firstaid/tactical/slaver,
 /turf/open/floor/plasteel/white,
 /area/awaymission/InteQ/lvl2)
 "wCe" = (
@@ -22759,6 +22870,7 @@
 	pixel_x = -32;
 	pixel_y = -32
 	},
+/obj/item/stack/telecrystal/inteq,
 /turf/open/floor/engine/vacuum,
 /area/awaymission/InteQ)
 "xdk" = (
@@ -23217,11 +23329,13 @@
 /turf/open/floor/mineral/titanium,
 /area/awaymission/InteQ/lvl2)
 "xwM" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 10
+/obj/item/assembly/signaler/receiver,
+/obj/item/electropack/shockcollar/bomb,
+/obj/item/electropack/shockcollar/bomb{
+	pixel_y = 5
 	},
-/obj/machinery/vending/boozeomat/all_access{
-	shut_up = 1
+/obj/item/electropack/shockcollar/bomb{
+	pixel_y = 10
 	},
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ/lvl2)
@@ -23271,18 +23385,15 @@
 /turf/open/floor/grass/grass1,
 /area/awaymission/InteQ/lvl2)
 "xzB" = (
-/obj/structure/closet/crate,
-/obj/item/grenade/frag/mega{
-	pixel_x = 12
-	},
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/brown,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/item/ai_module/core/full/inteq,
+/obj/item/borg/upgrade/transform/syndicatejack,
+/obj/item/robot_module/syndicate_medical/inteq,
+/obj/item/robot_module/syndicate/inteq,
+/obj/item/robot_module/saboteur/inteq,
+/obj/item/disk/tech_disk/illegal,
+/obj/structure/closet/crate/large,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ)
+/area/awaymission/InteQ/lvl2)
 "xzG" = (
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 1
@@ -23579,6 +23690,7 @@
 "xXB" = (
 /obj/effect/turf_decal/loading_area,
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/structure/alien/resin/wall,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "xYe" = (
@@ -23697,9 +23809,13 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ/lvl3)
 "yev" = (
-/obj/structure/railing,
-/turf/open/chasm/gateInteQ,
-/area/awaymission/InteQ)
+/obj/effect/turf_decal/tile/brown/opposingcorners,
+/obj/effect/turf_decal/tile/brown/opposingcorners,
+/mob/living/simple_animal/hostile/carp/brown/beret{
+	name = "Admiral Brown"
+	},
+/turf/open/floor/plasteel/white,
+/area/awaymission/InteQ/lvl2)
 "yey" = (
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
@@ -23778,6 +23894,7 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 8
 	},
+/mob/living/simple_animal/hostile/syndicate/civilian,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "yid" = (
@@ -25691,7 +25808,7 @@ pyf
 eLN
 fbM
 rHd
-neX
+spk
 spk
 wkc
 aQN
@@ -25864,7 +25981,7 @@ emT
 jNE
 vei
 tdP
-kvR
+dKR
 lmc
 pnG
 pnG
@@ -25903,7 +26020,7 @@ eLN
 eLN
 fbM
 wkc
-aju
+spk
 spk
 lCN
 spk
@@ -26115,7 +26232,7 @@ eLN
 eLN
 fbM
 wkc
-tzl
+spk
 spk
 wkc
 spk
@@ -26170,7 +26287,7 @@ pcm
 bhZ
 fbM
 fbM
-uFO
+fbM
 uad
 uad
 nba
@@ -26292,7 +26409,7 @@ fkw
 pnG
 kvR
 aZM
-kvR
+dKR
 kvR
 kvR
 hnK
@@ -26594,7 +26711,7 @@ pcm
 bhZ
 fbM
 fbM
-uFO
+fbM
 uad
 uad
 nba
@@ -26719,7 +26836,7 @@ aZM
 kvR
 kvR
 kvR
-hnK
+qXZ
 hnK
 kvR
 aZM
@@ -27356,7 +27473,7 @@ rbK
 rbK
 dpH
 iuO
-iuO
+iyr
 kvR
 aZM
 kvR
@@ -27399,7 +27516,7 @@ iPm
 akL
 jCe
 fbM
-bYX
+pQl
 svd
 teM
 ozP
@@ -27583,10 +27700,10 @@ nba
 nba
 nba
 nba
-pzY
-bha
-dKR
-bha
+nba
+nba
+nba
+nba
 pyf
 pyf
 eLN
@@ -27612,7 +27729,7 @@ agv
 uqH
 fbM
 lzr
-bYX
+pQl
 fjg
 ozP
 eLN
@@ -27639,7 +27756,7 @@ kHC
 sSd
 nwF
 hNH
-jCe
+poq
 jCe
 fbM
 jaX
@@ -27795,10 +27912,10 @@ nba
 nba
 nba
 nba
-bCI
-vFC
-dif
-uYQ
+nba
+nba
+nba
+nba
 pyf
 eLN
 eLN
@@ -27995,8 +28112,8 @@ fkw
 fkw
 kvR
 aZM
-kvR
-kvR
+dKR
+dKR
 tdP
 eFN
 eFN
@@ -28007,10 +28124,10 @@ nba
 nba
 nba
 nba
-rKL
-qZC
-bCI
-aDe
+nba
+nba
+nba
+nba
 pyf
 eLN
 eLN
@@ -28037,7 +28154,7 @@ uqH
 fbM
 tRJ
 gCz
-bdZ
+pQl
 ozP
 ibQ
 ibQ
@@ -28219,10 +28336,10 @@ nba
 nba
 nba
 nba
-kDz
-cNf
-bkz
-vMq
+nba
+nba
+nba
+nba
 pyf
 eLN
 eLN
@@ -28419,7 +28536,7 @@ iuO
 iuO
 kvR
 aZM
-kvR
+dKR
 kvR
 tdP
 eFN
@@ -28431,10 +28548,10 @@ nba
 nba
 nba
 nba
-flv
-wgI
-qVO
-bha
+nba
+nba
+nba
+nba
 pyf
 pyf
 eLN
@@ -28920,7 +29037,7 @@ jCe
 jCe
 bbO
 jCe
-jCe
+poq
 jCe
 jCe
 jCe
@@ -29058,7 +29175,7 @@ cRs
 tkN
 tkN
 tkN
-iGR
+wgI
 tdP
 nba
 nba
@@ -29085,7 +29202,7 @@ fbM
 jCe
 jCe
 uXy
-lbV
+uqH
 gqk
 uUw
 fbM
@@ -29984,7 +30101,7 @@ gWZ
 jCe
 jCe
 qWd
-jCe
+mMn
 fbM
 pyf
 uFO
@@ -30964,7 +31081,7 @@ iuO
 kvR
 aZM
 pnG
-kvR
+dKR
 tdP
 eFN
 eFN
@@ -31588,7 +31705,7 @@ dLd
 rUi
 cyy
 tdP
-kvR
+dKR
 pnG
 kvR
 aZM
@@ -31802,7 +31919,7 @@ fef
 tdP
 tmU
 pnG
-kvR
+dKR
 aZM
 kvR
 kvR
@@ -31993,7 +32110,7 @@ nba
 nba
 nba
 fbM
-pnG
+aju
 jNE
 xGg
 rqJ
@@ -32024,7 +32141,7 @@ rbK
 rbK
 lYK
 pnG
-kvR
+dKR
 tdP
 eFN
 eFN
@@ -32423,7 +32540,7 @@ pnG
 xgf
 xGg
 pnG
-pnG
+neX
 hcj
 pnG
 xGg
@@ -32841,7 +32958,7 @@ nba
 nba
 nba
 fbM
-pnG
+aju
 kvR
 jNE
 jNE
@@ -34826,7 +34943,7 @@ fbM
 eLN
 fFh
 ioN
-ioN
+eCb
 cTI
 eLN
 ibQ
@@ -36553,7 +36670,7 @@ ibQ
 ibQ
 hll
 tmN
-mmM
+hEX
 rkD
 fbM
 eLN
@@ -39298,7 +39415,7 @@ mfV
 dXl
 eTB
 pbU
-lOx
+uqH
 fbM
 kOh
 snp
@@ -39475,7 +39592,7 @@ fbM
 qqo
 iKt
 qyN
-azv
+hSy
 aLs
 ioR
 qyN
@@ -40119,7 +40236,7 @@ fbM
 hGv
 qui
 qRW
-okm
+bkz
 mIL
 fSh
 hPT
@@ -40157,7 +40274,7 @@ uuZ
 uuZ
 tvH
 uuZ
-xzB
+uuZ
 uzG
 aWR
 bgN
@@ -47000,7 +47117,7 @@ qaS
 qaS
 qaS
 qaS
-qaS
+kDz
 qaS
 bfQ
 bfQ
@@ -47211,7 +47328,7 @@ qaS
 qaS
 fRL
 qaS
-qaS
+guI
 qaS
 qaS
 qaS
@@ -47425,7 +47542,7 @@ qaS
 qaS
 qaS
 qaS
-qaS
+kDz
 qaS
 qaS
 qaS
@@ -47901,9 +48018,9 @@ eNs
 eNs
 eNs
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 eNs
 bXr
@@ -48056,8 +48173,8 @@ nba
 ggI
 bfQ
 bfQ
-qaS
-qaS
+guI
+guI
 qaS
 qaS
 qaS
@@ -48109,13 +48226,13 @@ evm
 qLW
 qLW
 qLW
-qLW
+cqm
 qLW
 fRa
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 eNs
 oJy
@@ -48325,9 +48442,9 @@ eNs
 eNs
 qLW
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 eNs
 bXr
@@ -48532,14 +48649,14 @@ eNs
 qLW
 eNs
 sLZ
-qLW
+mXK
 sLZ
 eNs
 qLW
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 eNs
 eNs
@@ -48694,10 +48811,10 @@ bfQ
 qaS
 qaS
 qaS
+gIe
 qaS
 qaS
-qaS
-qaS
+guI
 qaS
 hvi
 qaS
@@ -48749,9 +48866,9 @@ eNs
 eNs
 qLW
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 nba
 eNs
@@ -48961,9 +49078,9 @@ qLW
 qLW
 qLW
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 nba
 eNs
@@ -49173,9 +49290,9 @@ eNs
 eNs
 lll
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 nba
 eNs
@@ -49375,19 +49492,19 @@ bIF
 dMK
 ubJ
 ofK
-xMU
+ofK
 qGD
 cnA
 vPu
-dqG
+qTY
 oiZ
 hMp
 cPD
 ecO
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 nba
 eNs
@@ -49541,8 +49658,8 @@ ggI
 bfQ
 bfQ
 qaS
-qaS
-qaS
+guI
+kDz
 bfQ
 bfQ
 bfQ
@@ -49571,9 +49688,9 @@ nba
 nba
 nba
 eNs
+tzl
 mKr
-mKr
-mSC
+lOx
 mRy
 cFw
 cOj
@@ -49597,9 +49714,9 @@ dRb
 pNL
 wLC
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 eNs
 eNs
@@ -49754,7 +49871,7 @@ bfQ
 bfQ
 qaS
 qaS
-qaS
+kDz
 bfQ
 bfQ
 bfQ
@@ -49809,9 +49926,9 @@ dqG
 pNL
 eNs
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 eNs
 bXr
@@ -49965,7 +50082,7 @@ ggI
 bfQ
 bfQ
 qaS
-qaS
+gIe
 qaS
 bfQ
 bfQ
@@ -50021,9 +50138,9 @@ vPu
 pNL
 rYe
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 eNs
 oJy
@@ -50212,9 +50329,9 @@ ofK
 xMU
 ofK
 ofK
+euH
 ofK
 ofK
-xMU
 ofK
 ofK
 ofK
@@ -50233,9 +50350,9 @@ hMp
 pNL
 nCz
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 eNs
 bXr
@@ -50426,10 +50543,10 @@ mKr
 ofK
 sKu
 ofK
-mKr
+flv
 ofK
 soz
-xMU
+ofK
 ofK
 qGD
 aht
@@ -50439,15 +50556,15 @@ ofK
 vPj
 cnA
 vPu
-hMp
+qZC
 hMp
 hMp
 pNL
 dWt
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 eNs
 eNs
@@ -50634,10 +50751,10 @@ eNs
 cUv
 ofK
 ofK
-cbc
+bdZ
 ofK
 cbc
-mMn
+ofK
 cbc
 ofK
 cbc
@@ -50647,7 +50764,7 @@ qGD
 eNs
 pRa
 ofK
-xMU
+ofK
 afc
 cnA
 vPu
@@ -50657,9 +50774,9 @@ aRc
 pNL
 rYe
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 nba
 eNs
@@ -50845,16 +50962,16 @@ nba
 eNs
 cUv
 ofK
+aGg
+tCa
 ofK
 cbc
 ofK
-cbc
+vtA
 ofK
 cbc
 ofK
-gIe
-ofK
-ofK
+isR
 qGD
 pyr
 tJH
@@ -50869,9 +50986,9 @@ vPu
 kJz
 fum
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 nba
 eNs
@@ -51063,15 +51180,15 @@ ofK
 vSb
 ofK
 hJv
-ofK
-vSb
+rgD
+cbc
 ofK
 ofK
 mdm
 eNs
 dev
 ofK
-ofK
+euH
 qGD
 nJr
 vPu
@@ -51081,9 +51198,9 @@ cbc
 kHD
 eNs
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 nba
 eNs
@@ -51268,6 +51385,7 @@ nba
 nba
 gRq
 cUv
+qyE
 ofK
 ofK
 ofK
@@ -51277,8 +51395,7 @@ ofK
 ofK
 ofK
 ofK
-xMU
-ofK
+xzB
 qGD
 aht
 bZH
@@ -51293,9 +51410,9 @@ cbc
 kHD
 vPu
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 nba
 eNs
@@ -51505,9 +51622,9 @@ ibt
 kHD
 vPu
 eNs
-uad
-uad
-uad
+nba
+nba
+nba
 nba
 nba
 eNs
@@ -51926,7 +52043,7 @@ kHD
 vPu
 yhz
 vPu
-kHD
+mqV
 vPu
 eNs
 eNs
@@ -52301,7 +52418,7 @@ qaS
 qaS
 qaS
 bfQ
-qaS
+gIe
 qaS
 qaS
 qaS
@@ -52325,7 +52442,7 @@ bfQ
 eNs
 eNs
 eNs
-eNs
+rKL
 eNs
 eNs
 eNs
@@ -52376,8 +52493,8 @@ ibt
 hoA
 hoA
 ssQ
-tCa
-tCa
+vPu
+vPu
 ibt
 aGg
 ofK
@@ -52709,7 +52826,7 @@ uad
 fbM
 uof
 tsW
-nEH
+xBB
 ibQ
 ibQ
 ibQ
@@ -52757,7 +52874,7 @@ vPu
 jou
 blU
 cnA
-cPD
+dif
 noU
 noU
 oFE
@@ -52774,12 +52891,12 @@ kHD
 vPu
 vPu
 vPu
-kHD
+aKh
 vPu
 qLW
 iuJ
 teu
-ofK
+aGg
 nak
 aGg
 ofK
@@ -52921,7 +53038,7 @@ uad
 fbM
 hYO
 pfF
-yev
+dlE
 ibQ
 ibQ
 ibQ
@@ -52960,23 +53077,23 @@ qaS
 qaS
 jFG
 bWq
+aGg
 ofK
+aGg
 ofK
-ofK
-xMU
 ofK
 ofK
 ofK
 vPu
 cnA
-pNL
+bCI
+ofK
+nak
 ofK
 ofK
+aGg
+nak
 ofK
-ofK
-ofK
-ofK
-aPz
 ofK
 ofK
 ofK
@@ -52995,19 +53112,19 @@ ofK
 ofK
 ofK
 hlR
-mXK
+ofK
 xcK
 ofK
 tgO
 usj
 qTC
-gnP
+oGN
 oGN
 isB
 tgO
 ofK
 aGg
-mXK
+ofK
 ofK
 iab
 ofK
@@ -53133,7 +53250,7 @@ uad
 fbM
 jqK
 pfF
-yev
+dlE
 ibQ
 ibQ
 ibQ
@@ -53146,7 +53263,7 @@ bfQ
 qaS
 qaS
 qaS
-qaS
+kDz
 qaS
 bfQ
 qaS
@@ -53181,7 +53298,7 @@ rXm
 ofK
 ibt
 cnA
-pNL
+bCI
 ofK
 ofK
 kpt
@@ -53197,7 +53314,7 @@ eNs
 kHD
 vPu
 yhz
-ibt
+cua
 kHD
 qLW
 cFe
@@ -53345,7 +53462,7 @@ uad
 fbM
 ugP
 pfF
-yev
+dlE
 ibQ
 ibQ
 ibQ
@@ -53386,14 +53503,14 @@ uxF
 bWq
 ofK
 ofK
-ofK
+nak
 ofK
 ofK
 ofK
 ofK
 kHD
 eNs
-kMs
+wgr
 ofK
 ofK
 ltB
@@ -53409,7 +53526,7 @@ eNs
 yff
 vPu
 vPu
-vPu
+utv
 kHD
 qLW
 fsz
@@ -53439,7 +53556,7 @@ tgO
 tgO
 tgO
 ejs
-poq
+qLW
 qLW
 eNs
 uOi
@@ -53557,7 +53674,7 @@ uad
 fbM
 cTl
 pfF
-yev
+dlE
 ibQ
 ibQ
 ibQ
@@ -53595,9 +53712,9 @@ bfQ
 bfQ
 qaS
 rxQ
-bWq
+vPu
 ofK
-ofK
+aGg
 ofK
 ofK
 ofK
@@ -53607,7 +53724,7 @@ kHD
 oGf
 vPu
 ofK
-dZI
+ofK
 gRE
 tqh
 vhG
@@ -53769,7 +53886,7 @@ uad
 fbM
 gBc
 rZZ
-wgr
+qUe
 ibQ
 ibQ
 ibQ
@@ -53781,7 +53898,7 @@ ggI
 bfQ
 bfQ
 qaS
-qaS
+kDz
 hvi
 qaS
 qaS
@@ -53805,16 +53922,16 @@ bfQ
 qaS
 qaS
 qaS
-qaS
+hvi
 rxQ
-bWq
+vPu
 gWf
 ofK
 dmL
-mMn
+euH
 ofK
-aPz
 ofK
+nak
 kHD
 oRO
 kHD
@@ -53827,11 +53944,11 @@ tld
 pYy
 swO
 ofK
-kve
+nak
 teu
 oGf
 kHD
-kHD
+aPz
 kHD
 smS
 kHD
@@ -54019,9 +54136,9 @@ qaS
 qaS
 qaS
 rxQ
-bWq
+vPu
 ofK
-aPz
+nak
 ofK
 ofK
 ofK
@@ -54232,7 +54349,7 @@ qaS
 qaS
 rxQ
 bWq
-ofK
+aGg
 ofK
 ofK
 ofK
@@ -54244,8 +54361,8 @@ eNs
 kMs
 ofK
 ofK
+nak
 ofK
-aPz
 ofK
 ofK
 ofK
@@ -54453,11 +54570,11 @@ aJg
 ofK
 ibt
 cnA
-pNL
+bCI
 ofK
 ofK
 phl
-ofK
+aGg
 odl
 onP
 onP
@@ -54468,7 +54585,7 @@ ylF
 eNs
 kHD
 vPu
-ofK
+iuJ
 ibt
 kHD
 qLW
@@ -54492,7 +54609,7 @@ fKG
 jCD
 jtt
 vma
-fIU
+ocA
 jCD
 vUE
 hmH
@@ -54658,7 +54775,7 @@ jFG
 bWq
 ofK
 ofK
-ofK
+aGg
 ofK
 ofK
 ofK
@@ -54667,7 +54784,7 @@ vPu
 cnA
 puM
 ofK
-aPz
+euH
 ofK
 ofK
 lov
@@ -54680,8 +54797,8 @@ eNs
 eNs
 kHD
 vPu
-ofK
-vPu
+iuJ
+hoA
 kHD
 qLW
 tZS
@@ -54892,7 +55009,7 @@ eNs
 wUa
 kHD
 vPu
-ofK
+euH
 vPu
 kHD
 qLW
@@ -55122,7 +55239,7 @@ tgO
 aHE
 azM
 azM
-guI
+azM
 azM
 tgO
 gbi
@@ -55314,7 +55431,7 @@ wRG
 mmt
 eNs
 jiZ
-kHD
+nEH
 hrY
 ofK
 qsR
@@ -55328,7 +55445,7 @@ nak
 aGg
 ofK
 ofK
-mXK
+ofK
 ofK
 tgO
 aHE
@@ -55346,7 +55463,7 @@ ofK
 ePW
 hmH
 mJy
-tCa
+vPu
 qLW
 cFe
 eNs
@@ -55359,11 +55476,11 @@ rxi
 rxi
 rxi
 eNs
-cPq
+pzY
 rxi
 pUx
 rxi
-hmM
+kos
 eNs
 jnL
 jnL
@@ -55527,7 +55644,7 @@ eNs
 eNs
 eNs
 yff
-vPu
+hoA
 ofK
 vPu
 kHD
@@ -55535,7 +55652,7 @@ qLW
 nfj
 qLW
 iuJ
-ofK
+iuJ
 nak
 ofK
 ofK
@@ -55552,7 +55669,7 @@ tgO
 wym
 pAo
 ofK
-mXK
+ofK
 cop
 ofK
 tAz
@@ -55571,7 +55688,7 @@ rxi
 rxi
 ubP
 eNs
-mmt
+gGX
 rxi
 rxi
 rxi
@@ -55731,8 +55848,8 @@ vPu
 kHD
 vPu
 uiJ
-vPu
-vPu
+hoA
+hoA
 vPu
 vPu
 duS
@@ -55748,7 +55865,7 @@ qLW
 ofK
 iuJ
 ofK
-ofK
+aGg
 ofK
 hue
 ofK
@@ -55785,7 +55902,7 @@ eNs
 eNs
 eNs
 mmt
-rhB
+vPu
 mmt
 eNs
 eNs
@@ -55951,11 +56068,11 @@ duS
 nIy
 kHD
 kHD
-vPu
+hoA
 ofK
-vPu
+iNX
 kHD
-vPu
+ssQ
 qLW
 nak
 ofK
@@ -55997,7 +56114,7 @@ vVu
 vVt
 eNs
 eNs
-eNs
+kaY
 eNs
 eNs
 eNs
@@ -56153,13 +56270,13 @@ pKJ
 xXB
 vPu
 fQU
+hoA
 vPu
+ofK
+ofK
+ofK
+ofK
 vPu
-ofK
-ofK
-ofK
-aPz
-duS
 nIy
 kHD
 kHD
@@ -56175,7 +56292,7 @@ iuJ
 kbo
 iuJ
 ofK
-mXK
+ofK
 ofK
 ofK
 aGg
@@ -56187,7 +56304,7 @@ kpo
 duS
 vPu
 vPu
-tCa
+vPu
 oIb
 ilq
 vPu
@@ -56208,7 +56325,7 @@ vPu
 vPu
 vPu
 vPu
-vPu
+uiJ
 vPu
 uiJ
 vPu
@@ -56416,7 +56533,7 @@ qLW
 qLW
 eNs
 hkt
-jnL
+qVO
 jnL
 jnL
 jnL
@@ -56787,9 +56904,9 @@ eNs
 hbO
 xei
 kTb
-vPu
-jnL
-vPu
+duS
+vaV
+duS
 eNs
 eNs
 eNs
@@ -57223,7 +57340,7 @@ sLY
 eNs
 rBU
 vPu
-isR
+phl
 vPu
 mdW
 eNs
@@ -57424,7 +57541,7 @@ wYV
 erv
 mwj
 vPu
-aKh
+jnL
 vPu
 mwj
 ner
@@ -57452,16 +57569,16 @@ fMt
 alM
 xQV
 rxi
+bha
 rxi
 rxi
-rxi
-rxi
+bha
 fxB
 liJ
 toJ
 ulH
 jnL
-jnL
+uYQ
 toJ
 qLO
 dFI
@@ -57626,7 +57743,7 @@ qGN
 nfC
 ofK
 ofK
-ofK
+phl
 tDJ
 wLP
 mMv
@@ -58272,7 +58389,7 @@ mRY
 ovA
 mwj
 vPu
-gGX
+jnL
 jnL
 pmC
 jnL
@@ -58283,12 +58400,12 @@ jnL
 jnL
 jnL
 jnL
+gnP
 jnL
 jnL
 jnL
+gnP
 jnL
-jnL
-cua
 jnL
 jnL
 cnA
@@ -58521,7 +58638,7 @@ vII
 idn
 taz
 jnL
-jnL
+uYQ
 vPu
 oms
 qfN
@@ -58702,10 +58819,10 @@ cnA
 cnA
 eNs
 eNs
-eNs
-eNs
-eNs
-eNs
+dhb
+ozn
+bLn
+ozn
 eNs
 eNs
 eNs
@@ -58914,10 +59031,10 @@ rmu
 rmu
 qaB
 eNs
-vtA
-kos
+sLY
+sLY
 xwM
-eNs
+tsV
 ktl
 etp
 etp
@@ -59128,8 +59245,8 @@ gjp
 eNs
 qRL
 sLY
-qpF
-kmC
+sLY
+ozn
 fMt
 sLY
 sLY
@@ -59339,8 +59456,8 @@ rmu
 uCD
 eNs
 taR
-sLY
-nSm
+rVZ
+keW
 ozn
 pgz
 sLY
@@ -59552,8 +59669,8 @@ uSo
 eNs
 kpA
 pFk
-qyE
-bLn
+sLY
+ozn
 sTW
 sLY
 sLY
@@ -59767,8 +59884,8 @@ eNs
 hbF
 eNs
 jcj
-sLY
-keW
+dZI
+nSm
 qJF
 liJ
 rxi
@@ -59972,10 +60089,10 @@ vPu
 eNs
 pEy
 rmu
-rmu
+yev
 eNs
 ihm
-etp
+vFC
 spT
 eNs
 iUz
@@ -60179,7 +60296,7 @@ sBW
 sNL
 cnA
 aKW
-kHD
+azv
 hee
 eNs
 wmr
@@ -60595,7 +60712,7 @@ ebz
 kHD
 dnY
 kHD
-gnT
+vWQ
 gnT
 vIS
 vPu
@@ -60852,7 +60969,7 @@ ofK
 nEx
 eNs
 eNs
-ofK
+aGg
 ofK
 eNs
 eNs
@@ -61030,7 +61147,7 @@ aKW
 kHD
 kHD
 bfz
-kHD
+azv
 kHD
 kHD
 gMF
@@ -61870,10 +61987,10 @@ xJL
 xJL
 ieB
 eNs
-uad
-hfm
-xCz
-vmY
+kmC
+fuC
+fuC
+fuC
 eNs
 rfv
 eNs
@@ -62082,12 +62199,12 @@ yac
 hQf
 kAB
 hQf
-hQf
-hfm
-xCz
-iVi
+fuC
+fNT
+qpF
+bYX
 eNs
-rfv
+kHD
 eNs
 cuG
 mwj
@@ -62294,11 +62411,11 @@ jMm
 hfm
 hfm
 hfm
-uad
-hfm
-xCz
+kmC
+lbV
+kve
 iVi
-eNs
+mmM
 kHD
 eNs
 ukg
@@ -62506,10 +62623,10 @@ uad
 uad
 uad
 uad
-uad
-hfm
-xCz
 fuC
+vMq
+aDe
+fIU
 eNs
 fMg
 eNs
@@ -62551,7 +62668,7 @@ eNs
 bTR
 lxx
 nsw
-nsw
+cNf
 nsw
 nsw
 cxz
@@ -62718,11 +62835,11 @@ uad
 uad
 uad
 uad
-uad
-uad
-uad
-uad
-uad
+fuC
+fuC
+fuC
+fuC
+fuC
 uad
 eNs
 eNs
