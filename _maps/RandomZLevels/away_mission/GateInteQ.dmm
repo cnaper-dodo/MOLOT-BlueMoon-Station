@@ -488,7 +488,7 @@
 "aDe" = (
 /obj/item/ammo_box/magazine/ak47/hp,
 /turf/open/floor/carpet/royalblack,
-/area/space)
+/area/awaymission/InteQ/lvl2)
 "aDL" = (
 /obj/machinery/vending/kink{
 	extended_inventory = 1;
@@ -539,7 +539,11 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ/lvl3)
 "aGg" = (
-/mob/living/simple_animal/hostile/alien/drone,
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "aGy" = (
@@ -607,7 +611,6 @@
 "aJg" = (
 /obj/structure/table/wood,
 /obj/item/toy/mecha/hermes,
-/mob/living/simple_animal/hostile/alien/drone,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "aJh" = (
@@ -627,8 +630,11 @@
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ/ForChasmArea)
 "aKh" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/mob/living/simple_animal/hostile/alien/sentinel,
+/mob/living/simple_animal/hostile/alien/sentinel{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "aKk" = (
@@ -944,7 +950,12 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "bcP" = (
-/mob/living/simple_animal/hostile/alien,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/mob/living/simple_animal/hostile/alien/sentinel{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "bcU" = (
@@ -1051,7 +1062,11 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/brown,
-/mob/living/simple_animal/hostile/alien/drone,
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "bhF" = (
@@ -1187,6 +1202,11 @@
 "bqR" = (
 /obj/structure/sign/poster/contraband/inteq/inteq_recruitment{
 	pixel_x = -33
+	},
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
 	},
 /turf/open/floor/plasteel/dark/smooth/half{
 	dir = 1
@@ -1501,6 +1521,7 @@
 /area/awaymission/InteQ)
 "bMK" = (
 /obj/structure/closet/crate/large/urbanismcratelarge,
+/obj/item/gun/ballistic/automatic/pistol/modular,
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ)
 "bMW" = (
@@ -1646,7 +1667,7 @@
 /obj/item/storage/belt/military/inteq,
 /obj/item/storage/belt/military/inteq,
 /turf/open/floor/mineral/plastitanium,
-/area/space)
+/area/awaymission/InteQ/lvl2)
 "bZH" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
@@ -1939,6 +1960,11 @@
 	name = "Technological Storage";
 	req_access_txt = "152"
 	},
+/mob/living/simple_animal/hostile/alien/sentinel{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "cos" = (
@@ -2023,7 +2049,11 @@
 "cua" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/machinery/light/floor,
-/mob/living/simple_animal/hostile/alien/drone,
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "cue" = (
@@ -2359,9 +2389,13 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "cNf" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/mob/living/simple_animal/hostile/alien/drone,
-/turf/open/floor/plasteel/white,
+/obj/structure/alien/weeds/node,
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/plating/airless,
 /area/awaymission/InteQ/lvl2)
 "cNB" = (
 /obj/machinery/bloodbankgen,
@@ -2901,12 +2935,6 @@
 /area/awaymission/InteQ)
 "dpn" = (
 /obj/structure/closet/crate/large,
-/obj/item/ammo_box/magazine/fal/r10,
-/obj/item/ammo_box/magazine/fal/r10,
-/obj/item/ammo_box/magazine/fal/r10,
-/obj/item/ammo_box/magazine/fal/r10,
-/obj/item/ammo_box/magazine/fal/r10,
-/obj/item/ammo_box/magazine/fal/r10,
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ)
 "dpu" = (
@@ -3999,8 +4027,10 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/InteQ)
 "euH" = (
-/mob/living/simple_animal/hostile/alien/sentinel,
-/turf/open/floor/plasteel/dark,
+/mob/living/simple_animal/hostile/alien{
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/plasteel/dark/smooth/large,
 /area/awaymission/InteQ/lvl2)
 "euZ" = (
 /obj/effect/turf_decal/tile/brown{
@@ -4242,8 +4272,10 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "ePk" = (
-/mob/living/simple_animal/hostile/alien,
-/turf/open/floor/plating/airless,
+/mob/living/simple_animal/hostile/alien{
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "ePm" = (
 /obj/structure/rack,
@@ -4443,8 +4475,12 @@
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/InteQ)
 "eXj" = (
-/obj/structure/alien/resin/wall,
-/mob/living/simple_animal/hostile/alien,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "eXw" = (
@@ -4678,8 +4714,10 @@
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ/ForChasmArea)
 "flv" = (
-/obj/effect/turf_decal/delivery,
-/mob/living/simple_animal/hostile/alien/drone,
+/obj/effect/turf_decal/tile/brown/opposingcorners,
+/mob/living/simple_animal/hostile/alien{
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "flw" = (
@@ -5036,7 +5074,7 @@
 	},
 /obj/item/gun/medbeam,
 /turf/open/floor/carpet/royalblack,
-/area/space)
+/area/awaymission/InteQ/lvl2)
 "fJc" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/maintenance,
@@ -5126,7 +5164,7 @@
 	},
 /obj/item/gun/ballistic/automatic/ak47,
 /turf/open/floor/mineral/plastitanium,
-/area/space)
+/area/awaymission/InteQ/lvl2)
 "fOc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/loading_area{
@@ -5187,7 +5225,9 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "fRL" = (
-/mob/living/simple_animal/hostile/alien/drone,
+/mob/living/simple_animal/hostile/alien{
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plating/airless,
 /area/awaymission/InteQ/lvl2)
 "fSh" = (
@@ -5491,8 +5531,13 @@
 /turf/closed/indestructible/riveted/lfwb/leviathan,
 /area/awaymission/InteQ/lvl2)
 "ggM" = (
-/mob/living/simple_animal/hostile/alien/drone,
-/turf/open/floor/plasteel/dark/smooth/large,
+/obj/effect/turf_decal/tile/brown/opposingcorners,
+/mob/living/simple_animal/hostile/alien/sentinel{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "ggV" = (
 /obj/structure/fans/tiny,
@@ -5732,6 +5777,18 @@
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /turf/open/space/basic,
 /area/awaymission/InteQ/lvl2)
+"gsO" = (
+/obj/effect/turf_decal/stripes/yellow/line{
+	dir = 1
+	},
+/obj/structure/alien/egg/grown,
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/plasteel/dark/smooth/large,
+/area/awaymission/InteQ/lvl2)
 "gua" = (
 /obj/structure/table/reinforced,
 /obj/item/folder/blue,
@@ -5748,8 +5805,12 @@
 /turf/open/floor/plating,
 /area/awaymission/InteQ/lvl2)
 "guI" = (
-/mob/living/carbon/alien/humanoid/hunter,
-/turf/open/floor/plating/airless,
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/plating,
 /area/awaymission/InteQ/lvl2)
 "gvE" = (
 /obj/structure/table,
@@ -6224,8 +6285,17 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
 "gUu" = (
-/mob/living/simple_animal/hostile/alien/sentinel,
-/turf/open/floor/plasteel/dark/smooth/large,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/structure/alien/weeds/node,
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "gVb" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
@@ -6579,8 +6649,15 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
 "hlR" = (
-/obj/structure/alien/weeds/node,
-/mob/living/simple_animal/hostile/alien/drone,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/alien{
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "hmH" = (
@@ -6655,9 +6732,14 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "hnN" = (
-/obj/structure/alien/resin/wall,
-/mob/living/simple_animal/hostile/alien,
-/turf/open/floor/plating/airless,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/alien{
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "hoa" = (
 /obj/machinery/light/small,
@@ -6736,10 +6818,23 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
 "hue" = (
-/mob/living/simple_animal/hostile/alien/sentinel,
-/mob/living/simple_animal/hostile/alien,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ/lvl2)
+/obj/item/grenade/smokebomb{
+	pixel_x = 5
+	},
+/obj/item/grenade/smokebomb{
+	pixel_x = 5
+	},
+/obj/item/suppressor,
+/obj/item/gun/energy/e_gun/mini,
+/obj/structure/closet/crate/secure/weapon{
+	req_access = list("syndicate")
+	},
+/obj/effect/turf_decal{
+	icon_state = "warningline_white";
+	dir = 1
+	},
+/turf/open/floor/plasteel/bluespace,
+/area/awaymission/InteQ)
 "huh" = (
 /obj/structure/railing{
 	dir = 10
@@ -6797,9 +6892,13 @@
 /turf/open/floor/plating,
 /area/awaymission/InteQ/lvl2)
 "hxi" = (
-/mob/living/simple_animal/hostile/alien/drone,
-/mob/living/simple_animal/hostile/alien,
-/turf/open/floor/plating/airless,
+/obj/effect/turf_decal/bot,
+/mob/living/simple_animal/hostile/alien/sentinel{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "hxr" = (
 /obj/machinery/power/floodlight/lamppost/four,
@@ -7533,9 +7632,15 @@
 /turf/open/floor/plating,
 /area/awaymission/InteQ)
 "iky" = (
-/obj/structure/alien/weeds/node,
-/mob/living/simple_animal/hostile/alien/sentinel,
-/turf/open/floor/plating/airless,
+/obj/effect/turf_decal/stripes/yellow/line{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/alien/sentinel{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/plasteel/dark/smooth/small,
 /area/awaymission/InteQ/lvl2)
 "ikK" = (
 /obj/structure/rack,
@@ -7553,10 +7658,12 @@
 /turf/open/floor/plasteel/white,
 /area/awaymission/InteQ/lvl2)
 "ilq" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/structure/alien/weeds/node,
-/mob/living/simple_animal/hostile/alien/drone,
-/turf/open/floor/plasteel/dark,
+/mob/living/simple_animal/hostile/alien/sentinel{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/plasteel/dark/smooth/large,
 /area/awaymission/InteQ/lvl2)
 "ilU" = (
 /obj/structure/sign/poster/contraband/inteq/random{
@@ -7936,7 +8043,6 @@
 /area/awaymission/InteQ/lvl2)
 "iEp" = (
 /mob/living/simple_animal/hostile/alien/queen,
-/mob/living/simple_animal/hostile/alien/sentinel,
 /turf/open/floor/plasteel/dark/smooth/large,
 /area/awaymission/InteQ/lvl2)
 "iEO" = (
@@ -8114,9 +8220,13 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ/lvl3)
 "iNX" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/mob/living/simple_animal/hostile/alien/sentinel,
-/turf/open/floor/plasteel/dark,
+/obj/structure/alien/weeds/node,
+/mob/living/simple_animal/hostile/alien/sentinel{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/plating/airless,
 /area/awaymission/InteQ/lvl2)
 "iNZ" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -8279,14 +8389,13 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/ammo_box/magazine/ak47/rubber,
 /turf/open/floor/carpet/royalblack,
-/area/space)
+/area/awaymission/InteQ/lvl2)
 "iVn" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/space/hardsuit/iron_tombstone{
 	pixel_x = 8;
 	pixel_y = -6
 	},
-/obj/item/stack/telecrystal/inteq/five,
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ)
 "iWE" = (
@@ -8570,9 +8679,16 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "jhQ" = (
-/obj/structure/alien/weeds/node,
-/mob/living/simple_animal/hostile/alien,
-/turf/open/floor/plasteel/dark/smooth/large,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown,
+/mob/living/simple_animal/hostile/alien/sentinel{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "jiZ" = (
 /obj/structure/closet/emcloset/anchored,
@@ -8613,6 +8729,11 @@
 	shut_up = 1
 	},
 /obj/effect/turf_decal/tile/brown/fourcorners,
+/mob/living/simple_animal/hostile/alien/sentinel{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "jkP" = (
@@ -8754,7 +8875,6 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/alien,
 /turf/open/floor/plasteel/dark/smooth/half{
 	dir = 1
 	},
@@ -8905,13 +9025,13 @@
 /turf/open/floor/catwalk_floor,
 /area/awaymission/InteQ)
 "jAd" = (
-/obj/machinery/door/poddoor/preopen,
-/obj/machinery/door/airlock/glass{
-	name = "Medical Wing";
-	locked = 1
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
 	},
-/turf/open/floor/plasteel/showroomfloor,
-/area/awaymission/InteQ)
+/turf/open/floor/plasteel/dark/smooth/large,
+/area/awaymission/InteQ/lvl2)
 "jAe" = (
 /obj/structure/flora/ausbushes/stalkybush,
 /turf/open/floor/grass/grass0,
@@ -9575,6 +9695,17 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/InteQ)
+"kkc" = (
+/obj/effect/turf_decal/stripes/yellow/line,
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/plasteel/dark/smooth/edge{
+	dir = 1
+	},
+/area/awaymission/InteQ/lvl2)
 "kkl" = (
 /obj/structure/dresser,
 /turf/open/floor/carpet/royalblack,
@@ -9663,7 +9794,7 @@
 "kmC" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/indestructible/syndicate,
-/area/space)
+/area/awaymission/InteQ/lvl2)
 "kmD" = (
 /obj/effect/decal/cleanable/blood/splatter{
 	color = "red"
@@ -9844,7 +9975,7 @@
 /area/awaymission/InteQ/lvl2)
 "kve" = (
 /turf/open/floor/carpet/royalblack,
-/area/space)
+/area/awaymission/InteQ/lvl2)
 "kvR" = (
 /turf/open/floor/plating,
 /area/awaymission/InteQ/lvl3)
@@ -10005,7 +10136,11 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "kDz" = (
-/mob/living/carbon/alien/humanoid/sentinel,
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plating/airless,
 /area/awaymission/InteQ/lvl2)
 "kEh" = (
@@ -10189,8 +10324,10 @@
 /turf/open/floor/plasteel/dark/smooth/small,
 /area/awaymission/InteQ/lvl3)
 "kLF" = (
-/obj/structure/alien/resin/wall,
-/mob/living/simple_animal/hostile/alien/sentinel,
+/obj/structure/alien/weeds/node,
+/mob/living/simple_animal/hostile/alien{
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plating/airless,
 /area/awaymission/InteQ/lvl2)
 "kMs" = (
@@ -10409,10 +10546,12 @@
 /turf/open/floor/plating,
 /area/awaymission/InteQ/lvl3)
 "kXC" = (
-/obj/effect/mine/gas/plasma,
-/obj/effect/mapping_helpers/airlock/access/all/supply/mineral_storage,
-/turf/open/floor/catwalk_floor,
-/area/awaymission/InteQ)
+/obj/effect/turf_decal/stripes/yellow/line,
+/mob/living/simple_animal/hostile/alien{
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/plasteel/dark/smooth/large,
+/area/awaymission/InteQ/lvl2)
 "kXF" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
@@ -10456,7 +10595,11 @@
 	dir = 6
 	},
 /obj/structure/alien/weeds/node,
-/mob/living/simple_animal/hostile/alien/drone,
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark/smooth/large,
 /area/awaymission/InteQ/lvl2)
 "laU" = (
@@ -10512,7 +10655,7 @@
 	dir = 1
 	},
 /turf/open/floor/carpet/royalblack,
-/area/space)
+/area/awaymission/InteQ/lvl2)
 "lcb" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 6
@@ -11779,10 +11922,13 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/awaymission/InteQ)
 "mqV" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/mob/living/simple_animal/hostile/alien/drone,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ/lvl2)
+/mob/living/simple_animal/hostile/alien/sentinel{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/space/basic,
+/area/space)
 "mrh" = (
 /obj/machinery/light{
 	dir = 1
@@ -12638,8 +12784,13 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
 "nmQ" = (
-/mob/living/simple_animal/hostile/alien/sentinel,
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown,
+/mob/living/simple_animal/hostile/alien{
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "nmY" = (
@@ -13241,7 +13392,6 @@
 /obj/effect/turf_decal/stripes/yellow/line{
 	dir = 5
 	},
-/mob/living/simple_animal/hostile/alien/drone,
 /turf/open/floor/plasteel/dark/smooth/large,
 /area/awaymission/InteQ/lvl2)
 "nNf" = (
@@ -13875,7 +14025,6 @@
 /obj/structure/mirror{
 	pixel_x = 30
 	},
-/mob/living/simple_animal/hostile/alien,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "ows" = (
@@ -14403,9 +14552,11 @@
 /turf/open/floor/engine,
 /area/awaymission/InteQ/lvl2)
 "paw" = (
-/obj/effect/spawner/lootdrop/salvage,
-/mob/living/simple_animal/hostile/alien/drone,
-/turf/open/floor/plating,
+/obj/structure/alien/weeds/node,
+/mob/living/simple_animal/hostile/alien{
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/plasteel/dark/smooth/large,
 /area/awaymission/InteQ/lvl2)
 "paG" = (
 /obj/machinery/door/airlock/research,
@@ -15792,7 +15943,7 @@
 	pixel_x = 14
 	},
 /turf/open/floor/carpet/royalblack,
-/area/space)
+/area/awaymission/InteQ/lvl2)
 "qqo" = (
 /obj/structure/table/reinforced,
 /obj/machinery/light/small{
@@ -16610,7 +16761,11 @@
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ/lvl2)
 "qZC" = (
-/mob/living/simple_animal/hostile/alien/drone,
+/mob/living/simple_animal/hostile/alien/sentinel{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/glass/reinforced,
 /area/awaymission/InteQ/lvl2)
 "qZL" = (
@@ -16794,9 +16949,15 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
 "rid" = (
-/mob/living/simple_animal/hostile/alien/sentinel,
-/mob/living/simple_animal/hostile/alien,
-/turf/open/floor/plating/airless,
+/obj/effect/turf_decal/stripes/yellow/line{
+	dir = 8
+	},
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/plasteel/dark/smooth/small,
 /area/awaymission/InteQ/lvl2)
 "rin" = (
 /obj/structure/chair/office/dark{
@@ -17205,13 +17366,8 @@
 /turf/open/floor/catwalk_floor,
 /area/awaymission/InteQ/ForChasmArea)
 "rHd" = (
-/obj/item/ai_module/core/full/inteq,
-/obj/item/borg/upgrade/transform/syndicatejack,
-/obj/item/robot_module/syndicate_medical/inteq,
-/obj/item/robot_module/syndicate/inteq,
-/obj/item/robot_module/saboteur/inteq,
-/obj/item/disk/tech_disk/illegal,
 /obj/structure/closet/crate/large,
+/obj/item/storage/backpack/duffelbag/syndie/inteq/surgery,
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ)
 "rHh" = (
@@ -17983,7 +18139,9 @@
 /area/awaymission/InteQ)
 "ssQ" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
-/mob/living/simple_animal/hostile/alien/drone,
+/mob/living/simple_animal/hostile/alien{
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "ssX" = (
@@ -18019,10 +18177,15 @@
 /turf/open/floor/plating,
 /area/awaymission/InteQ)
 "suS" = (
-/mob/living/simple_animal/hostile/alien/sentinel,
-/turf/open/floor/plasteel/dark/smooth/half{
-	dir = 1
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/machinery/light/floor,
+/obj/structure/alien/weeds/node,
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
 	},
+/turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "svd" = (
 /obj/machinery/light{
@@ -18087,7 +18250,9 @@
 /obj/effect/turf_decal/stripes/yellow/line{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/alien/drone,
+/mob/living/simple_animal/hostile/alien{
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark/smooth/edge,
 /area/awaymission/InteQ/lvl2)
 "syC" = (
@@ -18226,7 +18391,6 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/item/storage/firstaid/tactical/slaver,
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
 "sEB" = (
@@ -18736,10 +18900,9 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "tjf" = (
-/mob/living/simple_animal/hostile/alien/sentinel,
-/mob/living/simple_animal/hostile/alien/drone,
-/turf/open/floor/plating/airless,
-/area/awaymission/InteQ/lvl2)
+/obj/machinery/nuclearbomb/syndicate,
+/turf/open/floor/wood/wood_parquet,
+/area/awaymission/InteQ)
 "tjs" = (
 /obj/structure/lattice,
 /obj/structure/grille,
@@ -19439,9 +19602,9 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl3)
 "tLt" = (
-/mob/living/simple_animal/hostile/alien/sentinel,
-/turf/open/floor/plating,
-/area/awaymission/InteQ/lvl2)
+/obj/machinery/vending/donksofttoyvendor,
+/turf/open/floor/plasteel/bluespace,
+/area/awaymission/InteQ)
 "tMp" = (
 /obj/effect/turf_decal/stripes/yellow/line{
 	dir = 1
@@ -20086,7 +20249,6 @@
 /obj/effect/turf_decal/stripes/yellow/line{
 	dir = 10
 	},
-/mob/living/simple_animal/hostile/alien/drone,
 /turf/open/floor/plasteel/dark/smooth/large,
 /area/awaymission/InteQ/lvl2)
 "urh" = (
@@ -20547,11 +20709,11 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "uML" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
+/obj/effect/turf_decal/bot,
+/mob/living/simple_animal/hostile/alien{
+	faction = list("syndicate","xenomorph")
 	},
-/mob/living/simple_animal/hostile/alien/sentinel,
-/turf/open/floor/plasteel/dark/smooth/large,
+/turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "uNb" = (
 /turf/open/floor/plasteel{
@@ -20696,6 +20858,9 @@
 /area/awaymission/InteQ)
 "uUr" = (
 /obj/machinery/door/poddoor/preopen,
+/obj/machinery/door/keycard/mesa{
+	puzzle_id = "Intek"
+	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/awaymission/InteQ)
 "uUw" = (
@@ -20782,7 +20947,11 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/alien/drone,
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "uYT" = (
@@ -21222,11 +21391,12 @@
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/InteQ)
 "vta" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 8
+/mob/living/simple_animal/hostile/alien{
+	faction = list("syndicate","xenomorph")
 	},
-/mob/living/simple_animal/hostile/alien/sentinel,
-/turf/open/floor/plasteel/dark/smooth/small,
+/turf/open/floor/plasteel/dark/smooth/half{
+	dir = 1
+	},
 /area/awaymission/InteQ/lvl2)
 "vtA" = (
 /obj/structure/urbanismbigcrate,
@@ -21344,10 +21514,7 @@
 /area/awaymission/InteQ)
 "vER" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/ballistic/automatic/ak12/pindicate{
-	pixel_x = 1;
-	pixel_y = 1
-	},
+/obj/item/gun/ballistic/automatic/ak12,
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ)
 "vES" = (
@@ -21528,7 +21695,7 @@
 	pixel_x = 14
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/space)
+/area/awaymission/InteQ/lvl2)
 "vMX" = (
 /obj/item/kirbyplants/hedge{
 	anchored = 1
@@ -22151,10 +22318,13 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "wpx" = (
-/obj/structure/closet/crate/large,
-/obj/item/storage/firstaid/tactical/nukeop,
-/turf/open/floor/plasteel/bluespace,
-/area/awaymission/InteQ)
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
+/turf/open/floor/glass/reinforced,
+/area/awaymission/InteQ/lvl2)
 "wpY" = (
 /obj/structure/sink/kitchen/directional/west{
 	pixel_x = 13
@@ -22474,6 +22644,11 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/dark_blue,
+/mob/living/simple_animal/hostile/alien/sentinel{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "wDQ" = (
@@ -22881,8 +23056,13 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
 "xcK" = (
-/mob/living/simple_animal/hostile/alien/drone,
-/mob/living/simple_animal/hostile/alien,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/structure/alien/weeds/node,
+/mob/living/simple_animal/hostile/alien/sentinel{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "xcW" = (
@@ -22994,6 +23174,10 @@
 /obj/structure/railing/corner,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/engine,
+/area/awaymission/InteQ)
+"xgQ" = (
+/obj/machinery/vending/inteq_vendomat,
+/turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ)
 "xgV" = (
 /obj/machinery/vending/inteq_vendomat{
@@ -23584,7 +23768,11 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "xPX" = (
-/mob/living/simple_animal/hostile/alien/sentinel,
+/mob/living/simple_animal/hostile/alien/sentinel{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plating/airless,
 /area/awaymission/InteQ/lvl2)
 "xQG" = (
@@ -23694,7 +23882,11 @@
 /obj/effect/turf_decal/stripes/yellow/line{
 	dir = 9
 	},
-/mob/living/simple_animal/hostile/alien/drone,
+/mob/living/simple_animal/hostile/alien/drone{
+	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
+	faction = list("syndicate","xenomorph")
+	},
 /turf/open/floor/plasteel/dark/smooth/large,
 /area/awaymission/InteQ/lvl2)
 "xVF" = (
@@ -26049,7 +26241,7 @@ eLN
 eLN
 fbM
 wkc
-spk
+xgQ
 spk
 lCN
 spk
@@ -26260,12 +26452,12 @@ pyf
 eLN
 eLN
 fbM
-wkc
 spk
 spk
-wkc
 spk
-wkc
+spk
+spk
+hue
 fbM
 fbM
 ozP
@@ -26473,7 +26665,7 @@ eLN
 eLN
 fbM
 bMK
-wpx
+spk
 pMs
 spk
 spk
@@ -26689,7 +26881,7 @@ wkc
 spk
 vGL
 dpn
-spk
+tLt
 fbM
 eLN
 eLN
@@ -28183,7 +28375,7 @@ uqH
 fbM
 tRJ
 gCz
-pQl
+tjf
 ozP
 ibQ
 ibQ
@@ -29012,9 +29204,9 @@ fbM
 fbM
 fbM
 fbM
-jAd
 uUr
-jAd
+uUr
+uUr
 fbM
 fbM
 fbM
@@ -34422,14 +34614,14 @@ nba
 ggI
 bfQ
 qaS
+fRL
 qaS
 qaS
-ePk
+xPX
 qaS
 qaS
 qaS
-qaS
-qaS
+fRL
 qaS
 qaS
 hvi
@@ -34636,13 +34828,13 @@ bfQ
 qaS
 qaS
 qaS
-ePk
 qaS
 qaS
 qaS
+gIe
 qaS
 qaS
-qaS
+kDz
 qaS
 qaS
 qaS
@@ -34854,7 +35046,7 @@ bfQ
 bfQ
 qaS
 qaS
-qaS
+xPX
 qaS
 qaS
 qaS
@@ -35058,8 +35250,8 @@ nba
 ggI
 bfQ
 qaS
-xPX
 qaS
+kDz
 qaS
 bfQ
 bfQ
@@ -35484,15 +35676,15 @@ bfQ
 qaS
 qaS
 qaS
-qaS
-bfQ
-bfQ
-qaS
-qaS
-qaS
-qaS
 xPX
-ePk
+bfQ
+bfQ
+qaS
+qaS
+qaS
+qaS
+qaS
+qaS
 qaS
 bfQ
 ggI
@@ -35915,7 +36107,7 @@ qaS
 qaS
 bfQ
 bfQ
-qaS
+xPX
 qaS
 bfQ
 bfQ
@@ -36118,7 +36310,7 @@ nba
 ggI
 bfQ
 qaS
-hnN
+bfQ
 qaS
 qaS
 qaS
@@ -36127,7 +36319,7 @@ qaS
 qaS
 qaS
 qaS
-qaS
+fRL
 qaS
 bfQ
 bfQ
@@ -36332,13 +36524,13 @@ bfQ
 qaS
 bfQ
 hvi
-hvi
+kLF
 qaS
 qaS
+xPX
 qaS
 qaS
-qaS
-qaS
+kDz
 qaS
 qaS
 bfQ
@@ -36542,12 +36734,12 @@ nba
 ggI
 bfQ
 qaS
+kDz
 qaS
 qaS
 qaS
 qaS
 qaS
-xPX
 qaS
 hvi
 qaS
@@ -36967,11 +37159,11 @@ ggI
 bfQ
 qaS
 qaS
-xPX
 qaS
 qaS
 qaS
-hnN
+qaS
+bfQ
 bfQ
 bfQ
 qaS
@@ -37183,13 +37375,13 @@ bfQ
 qaS
 qaS
 qaS
-qaS
+fRL
 qaS
 qaS
 qaS
 bfQ
 qaS
-xPX
+qaS
 bfQ
 ggI
 ggI
@@ -37817,10 +38009,10 @@ qaS
 qaS
 qaS
 qaS
-qaS
-qaS
-qaS
 xPX
+xPX
+qaS
+qaS
 hvi
 qaS
 qaS
@@ -38032,8 +38224,8 @@ qaS
 qaS
 qaS
 qaS
+kDz
 qaS
-ePk
 qaS
 qaS
 qaS
@@ -38240,14 +38432,14 @@ bfQ
 bfQ
 qaS
 qaS
-fRL
+qaS
 qaS
 bfQ
 qaS
 qaS
 qaS
 qaS
-qaS
+xPX
 hvi
 bfQ
 bfQ
@@ -38459,7 +38651,7 @@ qaS
 bfQ
 qaS
 qaS
-xPX
+qaS
 qaS
 bfQ
 bfQ
@@ -38664,7 +38856,7 @@ bfQ
 bfQ
 bfQ
 qaS
-qaS
+fRL
 qaS
 qaS
 qaS
@@ -38877,7 +39069,7 @@ qaS
 bfQ
 qaS
 qaS
-hvi
+iNX
 qaS
 qaS
 bfQ
@@ -39090,10 +39282,10 @@ qaS
 qaS
 qaS
 hvi
+qaS
+qaS
+qaS
 fRL
-qaS
-qaS
-qaS
 qaS
 qaS
 qaS
@@ -39299,15 +39491,15 @@ ggI
 bfQ
 qaS
 qaS
-qaS
-fRL
-qaS
-qaS
+kDz
 qaS
 qaS
 qaS
 qaS
 xPX
+qaS
+qaS
+qaS
 qaS
 qaS
 bfQ
@@ -39519,7 +39711,7 @@ bfQ
 qaS
 qaS
 qaS
-qaS
+kDz
 qaS
 qaS
 bfQ
@@ -39723,7 +39915,7 @@ ggI
 bfQ
 qaS
 qaS
-xPX
+fRL
 qaS
 qaS
 qaS
@@ -39943,7 +40135,7 @@ qaS
 qaS
 hvi
 qaS
-ePk
+qaS
 qaS
 qaS
 bfQ
@@ -40358,7 +40550,7 @@ nba
 ggI
 bfQ
 qaS
-ePk
+qaS
 hvi
 qaS
 qaS
@@ -40570,12 +40762,12 @@ nba
 ggI
 bfQ
 bfQ
-ePk
 qaS
-qaS
+kDz
 qaS
 qaS
 xPX
+qaS
 qaS
 qaS
 bfQ
@@ -40998,10 +41190,10 @@ qaS
 bfQ
 bfQ
 qaS
+fRL
 qaS
 qaS
 qaS
-hxi
 qaS
 qaS
 qaS
@@ -41215,7 +41407,7 @@ qaS
 qaS
 qaS
 qaS
-qaS
+xPX
 qaS
 qaS
 bfQ
@@ -41428,7 +41620,7 @@ qaS
 qaS
 hvi
 qaS
-xPX
+kDz
 qaS
 bfQ
 ggI
@@ -41844,7 +42036,7 @@ bfQ
 bfQ
 qaS
 qaS
-xPX
+kDz
 hvi
 qaS
 qaS
@@ -42056,7 +42248,7 @@ bfQ
 qaS
 qaS
 qaS
-qaS
+fRL
 qaS
 qaS
 qaS
@@ -42270,7 +42462,7 @@ qaS
 qaS
 qaS
 qaS
-fRL
+qaS
 qaS
 bfQ
 qaS
@@ -42480,13 +42672,13 @@ bfQ
 bfQ
 qaS
 qaS
-qaS
+xPX
 qaS
 qaS
 bfQ
 bfQ
 qaS
-qaS
+xPX
 qaS
 qaS
 hvi
@@ -42697,7 +42889,7 @@ qaS
 qaS
 bfQ
 qaS
-qaS
+fRL
 qaS
 qaS
 qaS
@@ -42910,7 +43102,7 @@ qaS
 qaS
 qaS
 qaS
-ePk
+qaS
 qaS
 qaS
 qaS
@@ -43122,7 +43314,7 @@ qaS
 qaS
 qaS
 qaS
-iky
+hvi
 qaS
 qaS
 qaS
@@ -43326,7 +43518,7 @@ nba
 ggI
 bfQ
 qaS
-ePk
+qaS
 qaS
 qaS
 bfQ
@@ -43335,7 +43527,7 @@ hvi
 qaS
 qaS
 qaS
-qaS
+kDz
 qaS
 qaS
 bfQ
@@ -43547,7 +43739,7 @@ qaS
 qaS
 qaS
 qaS
-fRL
+qaS
 qaS
 bfQ
 bfQ
@@ -43752,7 +43944,7 @@ bfQ
 qaS
 qaS
 qaS
-qaS
+fRL
 qaS
 qaS
 qaS
@@ -43962,7 +44154,7 @@ nba
 ggI
 bfQ
 qaS
-qaS
+kDz
 qaS
 qaS
 qaS
@@ -43970,7 +44162,7 @@ qaS
 qaS
 bfQ
 bfQ
-qaS
+xPX
 qaS
 qaS
 qaS
@@ -44175,9 +44367,9 @@ ggI
 bfQ
 bfQ
 qaS
-xPX
-hvi
 qaS
+iNX
+xPX
 qaS
 qaS
 qaS
@@ -44394,7 +44586,7 @@ qaS
 qaS
 hvi
 qaS
-xPX
+qaS
 qaS
 qaS
 bfQ
@@ -44601,8 +44793,8 @@ bfQ
 qaS
 qaS
 qaS
-fRL
 qaS
+kDz
 qaS
 qaS
 qaS
@@ -44821,7 +45013,7 @@ qaS
 qaS
 qaS
 hvi
-qaS
+fRL
 bfQ
 ggI
 ggI
@@ -45030,7 +45222,7 @@ bfQ
 qaS
 qaS
 qaS
-ePk
+qaS
 qaS
 qaS
 qaS
@@ -45241,7 +45433,7 @@ bfQ
 bfQ
 qaS
 qaS
-fRL
+qaS
 qaS
 qaS
 qaS
@@ -45453,7 +45645,7 @@ bfQ
 bfQ
 qaS
 qaS
-fRL
+qaS
 hvi
 qaS
 qaS
@@ -45879,7 +46071,7 @@ qaS
 qaS
 hvi
 qaS
-tjf
+kDz
 qaS
 qaS
 bfQ
@@ -46090,7 +46282,7 @@ bfQ
 qaS
 qaS
 qaS
-qaS
+xPX
 qaS
 qaS
 qaS
@@ -46508,7 +46700,7 @@ bfQ
 bfQ
 qaS
 hvi
-hvi
+kLF
 qaS
 bfQ
 uTS
@@ -46719,7 +46911,7 @@ ggI
 bfQ
 bfQ
 qaS
-rid
+qaS
 qaS
 qaS
 qaS
@@ -47143,10 +47335,10 @@ ggI
 bfQ
 qaS
 qaS
-qaS
-qaS
-qaS
 kDz
+qaS
+qaS
+qaS
 qaS
 bfQ
 bfQ
@@ -47355,15 +47547,15 @@ ggI
 bfQ
 qaS
 qaS
-fRL
-qaS
-guI
 qaS
 qaS
 qaS
 qaS
 qaS
-xPX
+qaS
+qaS
+qaS
+qaS
 qaS
 bfQ
 bfQ
@@ -47571,10 +47763,10 @@ qaS
 qaS
 qaS
 qaS
+qaS
+qaS
+qaS
 kDz
-qaS
-qaS
-qaS
 hvi
 qaS
 uTS
@@ -47782,10 +47974,10 @@ qaS
 xPX
 hvi
 qaS
-fRL
+qaS
 qaS
 hvi
-ePk
+qaS
 qaS
 qaS
 qaS
@@ -47995,11 +48187,11 @@ qaS
 qaS
 qaS
 qaS
-qaS
+fRL
 hvi
 qaS
 qaS
-qaS
+xPX
 bfQ
 jut
 jut
@@ -48202,8 +48394,8 @@ nba
 ggI
 bfQ
 bfQ
-guI
-guI
+qaS
+qaS
 qaS
 qaS
 qaS
@@ -48419,8 +48611,8 @@ qaS
 qaS
 qaS
 qaS
-hvi
-qaS
+iNX
+xPX
 qaS
 qaS
 qaS
@@ -48628,12 +48820,12 @@ bfQ
 qaS
 qaS
 qaS
-hvi
+kLF
 qaS
 qaS
 qaS
 qaS
-xPX
+qaS
 qaS
 qaS
 bfQ
@@ -48840,10 +49032,10 @@ bfQ
 qaS
 qaS
 qaS
-gIe
 qaS
 qaS
-guI
+xPX
+qaS
 qaS
 hvi
 qaS
@@ -49050,7 +49242,7 @@ nba
 ggI
 bfQ
 qaS
-xPX
+qaS
 qaS
 qaS
 qaS
@@ -49262,14 +49454,14 @@ nba
 ggI
 bfQ
 qaS
+kDz
 qaS
-ePk
 qaS
 bfQ
 bfQ
 bfQ
 qaS
-qaS
+fRL
 qaS
 qaS
 qaS
@@ -49475,7 +49667,7 @@ ggI
 bfQ
 bfQ
 qaS
-hvi
+iNX
 qaS
 uTS
 bfQ
@@ -49484,7 +49676,7 @@ qaS
 qaS
 qaS
 hvi
-fRL
+qaS
 qaS
 bfQ
 ggI
@@ -49520,7 +49712,7 @@ npP
 bIF
 dMK
 ubJ
-ofK
+aGg
 ofK
 qGD
 cnA
@@ -49687,16 +49879,16 @@ ggI
 bfQ
 bfQ
 qaS
-guI
+qaS
+qaS
+bfQ
+bfQ
+bfQ
+qaS
+qaS
+qaS
+qaS
 kDz
-bfQ
-bfQ
-bfQ
-qaS
-qaS
-qaS
-qaS
-fRL
 qaS
 bfQ
 ggI
@@ -49900,14 +50092,14 @@ bfQ
 bfQ
 qaS
 qaS
-kDz
+qaS
 bfQ
 bfQ
 bfQ
 qaS
 qaS
 qaS
-ePk
+qaS
 qaS
 qaS
 bfQ
@@ -50111,7 +50303,7 @@ ggI
 bfQ
 bfQ
 qaS
-gIe
+qaS
 qaS
 bfQ
 bfQ
@@ -50161,7 +50353,7 @@ cnA
 eNs
 eNs
 vPu
-vPu
+ssQ
 vPu
 vPu
 pNL
@@ -50357,11 +50549,11 @@ kPa
 ofK
 xMU
 ofK
-ofK
-euH
-ofK
+aGg
 ofK
 ofK
+ofK
+aGg
 ofK
 ofK
 ofK
@@ -50543,7 +50735,7 @@ qaS
 qaS
 qaS
 qaS
-qaS
+xPX
 qaS
 bfQ
 bfQ
@@ -50565,18 +50757,18 @@ nba
 nba
 nba
 eNs
-cUv
+hlR
 ofK
 ofK
 mKr
 ofK
 sKu
 ofK
-flv
+mKr
 ofK
 soz
 ofK
-ofK
+ePk
 qGD
 aht
 bZH
@@ -50587,7 +50779,7 @@ cnA
 vPu
 qZC
 hMp
-hMp
+wpx
 pNL
 dWt
 eNs
@@ -50746,7 +50938,7 @@ nba
 ggI
 bfQ
 qaS
-qaS
+fRL
 bfQ
 qaS
 qaS
@@ -50782,7 +50974,7 @@ ofK
 ofK
 bdZ
 ofK
-cbc
+hxi
 ofK
 cbc
 ofK
@@ -50792,7 +50984,7 @@ xMU
 qGD
 eNs
 pRa
-ofK
+aGg
 ofK
 afc
 cnA
@@ -50958,9 +51150,9 @@ nba
 ggI
 bfQ
 qaS
-xPX
 qaS
-iky
+qaS
+hvi
 qaS
 bfQ
 qaS
@@ -50991,10 +51183,10 @@ nba
 eNs
 cUv
 ofK
-aGg
+ofK
 tCa
 ofK
-cbc
+uML
 ofK
 vtA
 ofK
@@ -51010,7 +51202,7 @@ mQy
 cnA
 vPu
 vPu
-vPu
+ssQ
 vPu
 kJz
 fum
@@ -51172,7 +51364,7 @@ bfQ
 qaS
 qaS
 qaS
-qaS
+xPX
 qaS
 bfQ
 bfQ
@@ -51180,7 +51372,7 @@ qaS
 qaS
 qaS
 qaS
-qaS
+xPX
 bfQ
 bfQ
 ggI
@@ -51202,7 +51394,7 @@ nba
 nba
 eNs
 cUv
-ofK
+aGg
 ofK
 cbc
 ofK
@@ -51211,13 +51403,13 @@ ofK
 hJv
 rgD
 cbc
-ofK
+aGg
 ofK
 mdm
 eNs
 dev
 ofK
-euH
+ofK
 qGD
 nJr
 vPu
@@ -51383,16 +51575,16 @@ ggI
 bfQ
 qaS
 hvi
-qaS
-bfQ
-bfQ
-qaS
-qaS
-qaS
-qaS
-hvi
-qaS
 fRL
+bfQ
+bfQ
+qaS
+qaS
+qaS
+qaS
+cNf
+qaS
+qaS
 qaS
 bfQ
 ggI
@@ -51435,7 +51627,7 @@ eNs
 xpK
 mKr
 cbc
-cbc
+hxi
 kHD
 vPu
 eNs
@@ -51594,12 +51786,12 @@ nba
 ggI
 bfQ
 qaS
+kDz
+fRL
 qaS
 qaS
 qaS
-qaS
-qaS
-qaS
+xPX
 qaS
 fRL
 qaS
@@ -52027,7 +52219,7 @@ bfQ
 qaS
 qaS
 qaS
-ePk
+qaS
 qaS
 qaS
 bfQ
@@ -52072,7 +52264,7 @@ kHD
 vPu
 yhz
 vPu
-mqV
+kHD
 vPu
 eNs
 eNs
@@ -52237,7 +52429,7 @@ qaS
 qaS
 qaS
 qaS
-xPX
+qaS
 qaS
 qaS
 bfQ
@@ -52306,7 +52498,7 @@ ofK
 iuJ
 nak
 ofK
-euH
+ofK
 ofK
 ofK
 ofK
@@ -52447,11 +52639,11 @@ qaS
 qaS
 qaS
 bfQ
-gIe
 qaS
 qaS
 qaS
-qaS
+kDz
+xPX
 qaS
 qaS
 uTS
@@ -52496,7 +52688,7 @@ kHD
 vPu
 vPu
 vPu
-kHD
+flv
 vPu
 qLW
 ofK
@@ -52516,16 +52708,16 @@ iuJ
 ibt
 vPu
 vPu
-ssQ
+vPu
 ejs
 ibt
 hoA
 hoA
-ssQ
+vPu
 vPu
 vPu
 ibt
-aGg
+ofK
 ofK
 cKE
 adY
@@ -52655,14 +52847,14 @@ ggI
 bfQ
 qaS
 qaS
-ePk
-qaS
-hvi
-bfQ
-qaS
 qaS
 qaS
 hvi
+bfQ
+qaS
+qaS
+qaS
+hvi
 qaS
 qaS
 qaS
@@ -52673,7 +52865,7 @@ qaS
 bfQ
 qaS
 qaS
-qaS
+xPX
 qaS
 qaS
 qaS
@@ -52721,7 +52913,7 @@ ofK
 iuJ
 iuJ
 ofK
-aGg
+ofK
 nak
 ofK
 ofK
@@ -52737,7 +52929,7 @@ tgO
 tgO
 tgO
 vPu
-aGg
+ofK
 ofK
 idn
 adY
@@ -52866,8 +53058,8 @@ nba
 ggI
 bfQ
 qaS
-hvi
-xPX
+kLF
+qaS
 qaS
 qaS
 bfQ
@@ -52880,7 +53072,7 @@ qaS
 qaS
 qaS
 qaS
-xPX
+qaS
 qaS
 bfQ
 qaS
@@ -52896,7 +53088,7 @@ jFG
 bWq
 gWf
 ofK
-ofK
+aKh
 ofK
 ofK
 vPu
@@ -52920,14 +53112,14 @@ kHD
 vPu
 vPu
 vPu
-aKh
+kHD
 vPu
 qLW
 iuJ
 teu
-aGg
+ofK
 nak
-aGg
+ofK
 ofK
 ofK
 ofK
@@ -52935,8 +53127,8 @@ ofK
 tgO
 tgO
 azM
+euH
 azM
-gUu
 tgO
 tgO
 wYY
@@ -52949,7 +53141,7 @@ arS
 qTw
 qTw
 vPu
-ofK
+ePk
 ofK
 cKE
 adY
@@ -53078,37 +53270,37 @@ nba
 ggI
 bfQ
 qaS
-qaS
-qaS
-qaS
-qaS
-bfQ
-bfQ
-qaS
-qaS
-bfQ
-qaS
-bfQ
-bfQ
-bfQ
-bfQ
-qaS
-qaS
-qaS
+kDz
 qaS
 qaS
 qaS
 bfQ
 bfQ
 qaS
-hvi
+qaS
+bfQ
+qaS
+bfQ
+bfQ
+bfQ
+bfQ
+qaS
+qaS
+qaS
+kDz
+qaS
+qaS
+bfQ
+bfQ
+qaS
+cNf
 qaS
 qaS
 jFG
 bWq
-aGg
 ofK
-aGg
+ofK
+ofK
 ofK
 ofK
 ofK
@@ -53120,7 +53312,7 @@ ofK
 nak
 ofK
 ofK
-aGg
+ofK
 nak
 ofK
 ofK
@@ -53139,24 +53331,24 @@ qLW
 teu
 ofK
 ofK
+ePk
+nak
+aGg
 ofK
-hlR
-ofK
-xcK
 ofK
 tgO
 usj
 qTC
-oGN
+iky
 oGN
 isB
 tgO
 ofK
-aGg
 ofK
 ofK
+ePk
 iab
-ofK
+aKh
 faq
 iQU
 qTw
@@ -53292,7 +53484,7 @@ bfQ
 qaS
 qaS
 qaS
-kDz
+qaS
 qaS
 bfQ
 qaS
@@ -53336,7 +53528,7 @@ eXa
 eXa
 eXa
 tTi
-ofK
+ePk
 ofK
 jKg
 eNs
@@ -53351,20 +53543,20 @@ qLW
 ibt
 ofK
 ofK
-aGg
+ofK
 ofK
 ofK
 ofK
 nak
 tgO
 azM
-jhQ
-azM
+aTM
+jAd
 ajg
 azM
 acM
 ckU
-aGg
+ofK
 xVE
 uqI
 dlB
@@ -53373,7 +53565,7 @@ lrx
 bpT
 qTw
 vPu
-paw
+sLZ
 qLW
 eNs
 adY
@@ -53504,10 +53696,10 @@ bfQ
 qaS
 bfQ
 bfQ
-fRL
 qaS
 qaS
-ePk
+qaS
+qaS
 qaS
 bfQ
 bfQ
@@ -53572,12 +53764,12 @@ tgO
 azM
 azM
 azM
-gUu
+azM
 azM
 tgO
 qjJ
 nak
-ybh
+gsO
 uzp
 mgr
 inj
@@ -53585,7 +53777,7 @@ tgO
 tgO
 tgO
 ejs
-qLW
+guI
 qLW
 eNs
 uOi
@@ -53716,7 +53908,7 @@ bfQ
 bfQ
 qaS
 qaS
-hvi
+iNX
 qaS
 hvi
 qaS
@@ -53742,17 +53934,17 @@ bfQ
 qaS
 rxQ
 vPu
+aKh
 ofK
-aGg
+aKh
 ofK
-ofK
-ofK
+ePk
 ofK
 ofK
 kHD
 oGf
 vPu
-ofK
+aGg
 ofK
 gRE
 tqh
@@ -53795,9 +53987,9 @@ dBe
 tgO
 nak
 ofK
-aGg
+ofK
 vPu
-tLt
+qLW
 qLW
 eNs
 eNs
@@ -53931,13 +54123,13 @@ kDz
 hvi
 qaS
 qaS
-qaS
+kDz
 qaS
 bfQ
 qaS
 qaS
+kDz
 qaS
-fRL
 qaS
 qaS
 bfQ
@@ -53957,8 +54149,8 @@ vPu
 gWf
 ofK
 dmL
-euH
 ofK
+aGg
 ofK
 nak
 kHD
@@ -54141,15 +54333,15 @@ qaS
 bfQ
 qaS
 qaS
+fRL
 qaS
 qaS
 qaS
 qaS
+fRL
 qaS
 qaS
-qaS
-qaS
-qaS
+xPX
 qaS
 qaS
 qaS
@@ -54185,7 +54377,7 @@ qNH
 qNH
 vNJ
 ofK
-ofK
+aKh
 rdh
 mfd
 kHD
@@ -54353,7 +54545,7 @@ qaS
 bfQ
 qaS
 qaS
-xPX
+qaS
 qaS
 qaS
 bfQ
@@ -54373,13 +54565,13 @@ qaS
 qaS
 qaS
 qaS
-qaS
+kDz
 qaS
 qaS
 rxQ
 bWq
-aGg
 ofK
+aKh
 ofK
 ofK
 ofK
@@ -54404,11 +54596,11 @@ yff
 vPu
 vRA
 duS
-kHD
-vPu
+ggM
+bcP
 nMO
 qLW
-utv
+xcK
 vlE
 ntm
 jvg
@@ -54416,17 +54608,17 @@ iEp
 jxI
 azM
 azM
-aTM
-azM
-azM
+paw
+ilq
+jAd
 urQ
 azM
 mmR
 aTM
-ggM
+azM
 aTM
 syA
-ocA
+kkc
 cHg
 oLU
 hmH
@@ -54565,25 +54757,25 @@ qaS
 hvi
 qaS
 qaS
-kLF
+bfQ
 qaS
 qaS
-xPX
+qaS
 qaS
 hvi
 hvi
-ePk
-hvi
-qaS
-qaS
-qaS
-qaS
 qaS
 hvi
 qaS
 qaS
 qaS
 qaS
+qaS
+iNX
+qaS
+kDz
+qaS
+fRL
 qaS
 qaS
 hvi
@@ -54603,7 +54795,7 @@ bCI
 ofK
 ofK
 phl
-aGg
+aKh
 odl
 onP
 onP
@@ -54624,7 +54816,7 @@ oIb
 vlE
 fwz
 ajg
-suS
+jCD
 eNs
 xYe
 dTM
@@ -54632,12 +54824,12 @@ tKY
 dTM
 dTM
 iKC
-azM
+euH
 jCD
 fKG
 jCD
 jtt
-vma
+syA
 ocA
 jCD
 vUE
@@ -54776,22 +54968,22 @@ bfQ
 bfQ
 qaS
 qaS
-qaS
+xPX
 qaS
 qaS
 hvi
+kDz
 qaS
 qaS
 qaS
 qaS
 qaS
-qaS
-qaS
-qaS
-qaS
-qaS
-qaS
+kDz
 fRL
+qaS
+qaS
+qaS
+qaS
 bfQ
 qaS
 qaS
@@ -54804,17 +54996,17 @@ jFG
 bWq
 ofK
 ofK
-aGg
 ofK
 ofK
 ofK
+aKh
 ofK
 vPu
 cnA
 puM
 ofK
-euH
 ofK
+ePk
 ofK
 lov
 eNs
@@ -54836,7 +55028,7 @@ vPu
 vlE
 ntm
 vcU
-jCD
+vta
 eNs
 tgO
 tgO
@@ -54994,10 +55186,10 @@ qaS
 hvi
 qaS
 qaS
-fRL
+qaS
 bfQ
 qaS
-xPX
+qaS
 qaS
 qaS
 qaS
@@ -55038,7 +55230,7 @@ eNs
 wUa
 kHD
 vPu
-nmQ
+vPu
 vPu
 kHD
 vPu
@@ -55069,7 +55261,7 @@ iuJ
 ofK
 ofK
 vPu
-qLW
+guI
 aAS
 eNs
 eNs
@@ -55268,20 +55460,20 @@ tgO
 aHE
 azM
 azM
-azM
+ilq
 azM
 tgO
 gbi
 ofK
-uML
-uzp
+vyB
+kXC
 jFS
 inj
 tgO
 tgO
 tgO
 vPu
-tLt
+qLW
 xTh
 eNs
 vxz
@@ -55465,13 +55657,13 @@ hrY
 vPu
 qsR
 kHD
-vPu
+eXj
 tpj
 qLW
 ibt
 ofK
 nak
-aGg
+ofK
 ofK
 ofK
 ofK
@@ -55479,9 +55671,9 @@ ofK
 tgO
 aHE
 azM
-aTM
+paw
 azM
-ggM
+azM
 eiL
 nbf
 ofK
@@ -55684,15 +55876,15 @@ iuJ
 iuJ
 nak
 ofK
+aKh
 ofK
-aGg
 aGg
 nak
 tgO
 tfJ
 qmA
-vta
 qmA
+rid
 jay
 tgO
 wym
@@ -55704,7 +55896,7 @@ ofK
 tAz
 hmH
 mJy
-vPu
+bcP
 qLW
 cFe
 eNs
@@ -55894,9 +56086,9 @@ qLW
 ofK
 iuJ
 ofK
-aGg
 ofK
-hue
+ofK
+ofK
 ofK
 ofK
 ofK
@@ -55917,7 +56109,7 @@ ePW
 hmH
 wYL
 vPu
-bcP
+ofK
 ofK
 eNs
 xTA
@@ -56091,7 +56283,7 @@ vPu
 vPu
 ofK
 ofK
-ofK
+aGg
 ofK
 duS
 nIy
@@ -56099,7 +56291,7 @@ kHD
 kHD
 hoA
 vPu
-iNX
+vPu
 kHD
 ssQ
 qLW
@@ -56111,7 +56303,7 @@ ofK
 ofK
 ofK
 nak
-aGg
+ePk
 ofK
 ofK
 ofK
@@ -56303,7 +56495,7 @@ hoA
 vPu
 ofK
 ofK
-ofK
+ePk
 ofK
 vPu
 nIy
@@ -56320,11 +56512,11 @@ ofK
 iuJ
 kbo
 iuJ
+aKh
 ofK
 ofK
 ofK
 ofK
-aGg
 duS
 cnA
 rxi
@@ -56333,9 +56525,9 @@ kpo
 duS
 vPu
 vPu
-vPu
-oIb
-ilq
+eXj
+suS
+utv
 vPu
 vPu
 utv
@@ -56549,8 +56741,8 @@ ofK
 ofK
 iuJ
 ofK
-ofK
-eXj
+ePk
+iuJ
 ofK
 ofK
 ofK
@@ -56871,7 +57063,7 @@ uad
 (156,1,1) = {"
 fbM
 vnt
-kXC
+pfF
 dlE
 ibQ
 ibQ
@@ -57388,19 +57580,19 @@ xQV
 rxi
 tqg
 rxi
-rxi
+nmQ
 rah
 rxi
 rxi
 tXQ
 rxi
-rah
+gUu
 tXQ
 tXQ
 jnL
 aHh
 jnL
-jnL
+hnN
 tKP
 vES
 eNs
@@ -57601,13 +57793,13 @@ rxi
 bha
 rxi
 rxi
-bha
+rxi
 fxB
 liJ
 toJ
 ulH
 jnL
-uYQ
+jnL
 toJ
 qLO
 dFI
@@ -57974,7 +58166,7 @@ uad
 uad
 uad
 uad
-uad
+mqV
 uad
 uad
 faz
@@ -58454,7 +58646,7 @@ ofK
 rok
 idn
 tDy
-jnL
+hnN
 tKP
 vPu
 oms
@@ -58787,7 +58979,7 @@ eLN
 eLN
 uad
 uad
-uFO
+uad
 eLN
 eLN
 eLN
@@ -58999,7 +59191,7 @@ ibQ
 eLN
 uad
 uad
-uFO
+uad
 eLN
 ibQ
 ibQ
@@ -59211,7 +59403,7 @@ ibQ
 eLN
 uad
 uad
-uFO
+uad
 eLN
 ibQ
 ibQ
@@ -59423,7 +59615,7 @@ ibQ
 eLN
 uad
 uad
-uFO
+uad
 fbM
 uof
 tsW
@@ -59635,7 +59827,7 @@ ibQ
 eLN
 uad
 uad
-uFO
+uad
 fbM
 gqb
 pfF
@@ -59727,7 +59919,7 @@ ofK
 tXQ
 rxi
 rah
-rxi
+jhQ
 rxi
 wLg
 cCp
@@ -59847,7 +60039,7 @@ ibQ
 eLN
 uad
 uad
-uFO
+uad
 fbM
 jqK
 pfF
@@ -60059,7 +60251,7 @@ ibQ
 eLN
 uad
 uad
-uFO
+uad
 fbM
 qfj
 pfF
@@ -60271,7 +60463,7 @@ ibQ
 eLN
 uad
 uad
-uFO
+uad
 fbM
 cbM
 pfF
@@ -60483,7 +60675,7 @@ ibQ
 eLN
 uad
 uad
-uFO
+uad
 fbM
 gBc
 rZZ
@@ -60695,7 +60887,7 @@ ibQ
 eLN
 uad
 uad
-uFO
+uad
 eLN
 ibQ
 ibQ
@@ -60787,7 +60979,7 @@ wyU
 eNs
 caL
 kHD
-kHD
+flv
 eNs
 eNs
 iEU
@@ -60907,7 +61099,7 @@ ibQ
 eLN
 uad
 uad
-uFO
+uad
 eLN
 ibQ
 ibQ
@@ -60998,7 +61190,7 @@ ofK
 nEx
 eNs
 eNs
-aGg
+ofK
 ofK
 eNs
 eNs
@@ -61119,7 +61311,7 @@ eLN
 eLN
 uad
 uad
-uFO
+uad
 eLN
 eLN
 eLN
@@ -62017,9 +62209,9 @@ xJL
 ieB
 eNs
 kmC
-fuC
-fuC
-fuC
+eNs
+eNs
+eNs
 eNs
 rfv
 eNs
@@ -62228,7 +62420,7 @@ yac
 hQf
 kAB
 hQf
-fuC
+eNs
 fNT
 qpF
 bYX
@@ -62652,7 +62844,7 @@ uad
 uad
 uad
 uad
-fuC
+eNs
 vMq
 aDe
 fIU
@@ -62697,7 +62889,7 @@ eNs
 bTR
 lxx
 nsw
-cNf
+nsw
 nsw
 nsw
 cxz
@@ -62864,11 +63056,11 @@ uad
 uad
 uad
 uad
-fuC
-fuC
-fuC
-fuC
-fuC
+eNs
+eNs
+eNs
+eNs
+eNs
 uad
 eNs
 eNs
