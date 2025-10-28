@@ -86,16 +86,15 @@
 
 ////////////////////////
 
-/obj/item/clothing/neck/hateredsoul_dogtag
+/obj/item/clothing/accessory/hateredsoul_dogtag
 	name = "Combat Dogtag"
 	desc = "Связка боевых жетонов с резиновым ободком по их краям. Выполнены из прочного и износостойкого сплава, с маленьким весом, от чего стали практически незаметными для самого носителя. На правом жетоне выбиты основные данные его владельца, в виде полного имени, группы крови и принадлежности к подразделению. На левом жетоне выбита дополнительная информация и очертания владельца."
 	icon = 'modular_bluemoon/fluffs/icons/obj/clothing/accessories.dmi'
 	mob_overlay_icon = 'modular_bluemoon/fluffs/icons/mob/clothing/accessories.dmi'
 	icon_state = "hateredsoul_dogtag_1"
 	item_state = "hateredsoul_dogtag_1"
+	slot_flags = ITEM_SLOT_NECK
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small/collar
-	var/poly_states = 1
-	var/poly_colors = list("#00BBBB")
 	var/tagname = null
 	unique_reskin = list(
 		"Combat dogtag" = list(
@@ -108,17 +107,11 @@
 		)
 	)
 
-/obj/item/clothing/neck/hateredsoul_dogtag/ComponentInitialize()
-	. = ..()
-	if(!poly_states)
-		return
-	AddElement(/datum/element/polychromic, poly_states)
-
-/obj/item/clothing/neck/hateredsoul_dogtag/attack_self(mob/user)
+/obj/item/clothing/accessory/hateredsoul_dogtag/attack_self(mob/user)
 	tagname = stripped_input(user, "Would you like to change the name on the tag?", "Name your new tag", tagname, MAX_NAME_LEN)
 	name = tagname ? "[initial(name)] - [tagname]" : initial(name)
 
-/obj/item/clothing/neck/hateredsoul_dogtag/nt
+/obj/item/clothing/accessory/hateredsoul_dogtag/nt
 	name = "NT Combat Dogtag"
 	desc = "Связка боевых жетонов с резиновым ободком по их краям. Выполнены из прочного и износостойкого сплава, с маленьким весом, от чего стали практически незаметными для самого носителя. На правом жетоне выбиты основные данные его владельца, в виде полного имени, группы крови и принадлежности к подразделению. На левом жетоне изображён логотип корпорации NanoTrasen."
 	icon = 'modular_bluemoon/fluffs/icons/obj/clothing/accessories.dmi'
@@ -140,7 +133,7 @@
 		)
 	)
 
-/obj/item/clothing/neck/hateredsoul_dogtag/syndie
+/obj/item/clothing/accessory/hateredsoul_dogtag/syndie
 	name = "Syndie Combat Dogtag"
 	desc = "Связка боевых жетонов с резиновым ободком по их краям. Выполнены из прочного и износостойкого сплава, с маленьким весом, от чего стали практически незаметными для самого носителя. На правом жетоне выбиты основные данные его владельца, в виде полного имени, группы крови и принадлежности к подразделению. На левом жетоне изображена трёхглавая змея Синдиката."
 	icon = 'modular_bluemoon/fluffs/icons/obj/clothing/accessories.dmi'
@@ -318,6 +311,16 @@
 
 ////////////////////////
 
+/obj/item/clothing/neck/tie/h_soul_coat
+	name = "Black coat"
+	desc = "Обычное чёрное пальто, выполненное из высококачественного материла, хоть и выглядящим старым, но всё ещё приятное на вид и даже на ощупь, однако всё ещё слишком длинное, чтобы его носить как обычно, но что мешает его продолжать носить иным способом, верно? Во внутреннем кармане пальто заметен логотив в виде чёрной розы и надпись Black Rose atelier."
+	icon = 'modular_bluemoon/fluffs/icons/obj/clothing/accessories.dmi'
+	mob_overlay_icon = 'modular_bluemoon/fluffs/icons/mob/clothing/accessories.dmi'
+	icon_state = "h_soul_coat"
+	item_state = "h_soul_coat"
+
+////////////////////////
+
 /obj/item/clothing/neck/tie/hahun_cape
 	name = "Praxil Mk.6"
 	desc = "A cape that awarded to trusted agents of Syndicate, pleasant to the touch and look very stylish, doesn't even restrict movement"
@@ -396,3 +399,15 @@
 	desc = "Banner of kingdom Norn"
 
 //////////////////////// БАНЕРЫ
+
+
+/obj/item/storage/box/fall_out_kit
+	name = "Ranger kit"
+	desc = "Military box that contains a full kit of Ranger uniform."
+	icon_state = "ammobox"
+
+/obj/item/storage/box/fall_out_kit/PopulateContents()
+	new /obj/item/clothing/suit/donator/bm/ranger_coat(src)
+	new /obj/item/clothing/head/ranger_helmet(src)
+	new /obj/item/clothing/under/donator/bm/ranger_uniform(src)
+	new /obj/item/clothing/mask/gas/syndicate/ranger_gasmask(src)

@@ -616,5 +616,33 @@
 	name = "Uchi plushie"
 	desc = "Эта игрушка в форме авали достаточно мягка на ощупь и притягивает своим ярковатым видом, от нее пахнет очистителем и мылом. Безмятежная улыбка на ней внушает спокойствие и легкую радость, а держа долго ее в руках, появляется смутное желание оттирать каждое пятнышко на своем рабочем месте.  Искусственные перья на лапах игрушки чуть-чуть щекочут руки держащего."
 	icon_state = "yuchi"
-	attack_verb = list("squish", "glorp", "blorp")
 	squeak_override = list('modular_splurt/sound/voice/chirp.ogg' = 2, 'modular_splurt/sound/voice/teshtrill.ogg' = 1,)
+
+/obj/item/toy/plush/bm/catshark
+	name = "Catshark"
+	desc = "Плюшевая игрушка странной.. акулы? Кошки? Не разобрать, но от неё очень сильно тянет клубничными сырками. Кажется внутри есть механизм что приводит игрушку в движение... и он заклинил."
+	icon_state = "catshark"
+	attack_verb = list("Rawr", "Meow", "Meowr")
+	squeak_override = list(
+		'modular_bluemoon/sound/plush/catshark1.ogg' = 1,
+		'modular_bluemoon/sound/plush/catshark2.ogg' = 1
+	)
+
+/obj/item/toy/plush/bm/chellicoll
+	name = "Sosona"
+	desc = "Акула с глупой мордой"
+	icon_state = "chellicoll"
+	attack_verb = list("Rawrs")
+	squeak_override = list('modular_bluemoon/sound/voice/rawr.ogg' = 1)
+
+/obj/item/toy/plush/bm/fred
+	name = "Fred"
+	desc = "Это камень. Его зовут Фред."
+	icon_state = "fred"
+	attack_verb = list("Smash")
+
+/obj/item/toy/plush/bm/roxie
+	name = "Roxie"
+	desc = "Это камень. Ее зовут Рокси. Выглядит миленько с бантиком."
+	icon_state = "roxie"
+	attack_verb = list("Smash")
