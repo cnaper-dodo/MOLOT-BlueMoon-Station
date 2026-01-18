@@ -709,10 +709,7 @@
 	pixel_x = 32;
 	pixel_y = 27
 	},
-/obj/item/gun/ballistic/automatic/ak12/pindicate{
-	pixel_x = 1;
-	pixel_y = 1
-	},
+/obj/item/gun/energy/plasma/light,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/InteQ)
 "aMA" = (
@@ -801,6 +798,14 @@
 	icon_state = "plastitanium"
 	},
 /area/awaymission/InteQ)
+"aRI" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/structure/fans/tiny/invisible,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "aSm" = (
 /obj/machinery/light/small,
 /obj/effect/decal/cleanable/dirt,
@@ -1158,9 +1163,10 @@
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ/ForChasmArea)
 "bkz" = (
-/obj/item/ammo_box/magazine/ak12,
-/turf/open/floor/carpet/royalblack,
-/area/awaymission/InteQ)
+/obj/effect/spawner/structure/window/plastitanium,
+/obj/structure/fans/tiny/invisible,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "bkG" = (
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /obj/effect/turf_decal/siding/wood{
@@ -1281,6 +1287,16 @@
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/awaymission/InteQ)
+"brk" = (
+/obj/machinery/door/airlock/centcom{
+	name = "Engineering";
+	req_one_access_txt = "152"
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
+/obj/structure/fans/tiny/invisible,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "brA" = (
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ/lvl2)
@@ -2250,6 +2266,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
+"cxu" = (
+/obj/item/ammo_box/magazine/toy/enforcer,
+/turf/open/floor/mineral/plastitanium/yellow{
+	icon_state = "plastitanium_dam1"
+	},
+/area/awaymission/InteQ)
 "cxz" = (
 /obj/machinery/light,
 /obj/effect/turf_decal/tile/brown/opposingcorners,
@@ -2294,6 +2316,10 @@
 "cAs" = (
 /turf/closed/indestructible/syndicate,
 /area/awaymission/InteQ/ForChasmArea)
+"cAB" = (
+/obj/item/ammo_box/magazine/ak47,
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/awaymission/InteQ)
 "cBn" = (
 /obj/structure/chair{
 	dir = 4
@@ -3253,7 +3279,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/InteQ)
 "dyY" = (
-/obj/item/gun/ballistic/shotgun/spas,
 /obj/structure/urbanismmounted{
 	icon_state = "wallmount";
 	pixel_x = -25;
@@ -3517,6 +3542,10 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
+/area/awaymission/InteQ/lvl2)
+"dMq" = (
+/obj/item/clothing/accessory/medal/delta,
+/turf/open/floor/catwalk_floor,
 /area/awaymission/InteQ/lvl2)
 "dMK" = (
 /obj/structure/closet/wardrobe/miner,
@@ -4286,7 +4315,7 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "eCb" = (
-/obj/item/ammo_box/magazine/ak12,
+/obj/item/gun/ballistic/automatic/ak47,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/awaymission/InteQ)
 "eCF" = (
@@ -7491,6 +7520,7 @@
 /obj/effect/turf_decal/tile/brown/half/contrasted{
 	dir = 8
 	},
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "hOi" = (
@@ -8411,6 +8441,12 @@
 /obj/machinery/iv_drip,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/InteQ)
+"iIl" = (
+/mob/living/simple_animal/hostile/alien/queen/king{
+	health = 1600
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/InteQ/lvl2)
 "iIs" = (
 /obj/structure/lattice,
 /turf/open/space/basic,
@@ -9267,6 +9303,18 @@
 	icon_state = "platingdmg1"
 	},
 /area/awaymission/InteQ)
+"jxB" = (
+/obj/machinery/door/poddoor/preopen,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/machinery/door/airlock/centcom{
+	name = "Engineering";
+	req_one_access_txt = "152"
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
+/obj/structure/fans/tiny/invisible,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "jxI" = (
 /obj/machinery/door/keycard/mesa,
 /turf/open/floor/plasteel/dark/smooth/large,
@@ -12057,6 +12105,7 @@
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 4
 	},
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "mfl" = (
@@ -12804,6 +12853,15 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl3)
+"mOq" = (
+/obj/machinery/door/airlock/centcom{
+	name = "Intersection";
+	req_access_txt = "152"
+	},
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/structure/fans/tiny/invisible,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "mOt" = (
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/plasteel/dark/smooth/small,
@@ -13046,6 +13104,12 @@
 	},
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ)
+"naH" = (
+/obj/item/ammo_box/magazine/e45/e45_drum/empty,
+/turf/open/floor/mineral/plastitanium/yellow{
+	icon_state = "plastitanium"
+	},
 /area/awaymission/InteQ)
 "nba" = (
 /turf/closed/indestructible/riveted/lfwb/leviathan,
@@ -13675,7 +13739,6 @@
 /area/awaymission/InteQ/lvl2)
 "nDb" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimulants,
 /turf/open/floor/plasteel/showroomfloor,
 /area/awaymission/InteQ)
 "nDO" = (
@@ -13809,6 +13872,7 @@
 	},
 /obj/item/paper_bin,
 /obj/item/pen,
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "nKs" = (
@@ -15680,6 +15744,18 @@
 	},
 /turf/open/floor/engine,
 /area/awaymission/InteQ)
+"pDL" = (
+/obj/structure/closet/crate/large/urbanismcratelarge,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/turf/open/floor/mineral/plastitanium/yellow{
+	icon_state = "plastitanium_dam1"
+	},
+/area/awaymission/InteQ)
 "pEa" = (
 /obj/machinery/computer/shuttle/syndicate/drop_pod{
 	name = "NT assault pod control"
@@ -15880,7 +15956,6 @@
 /area/awaymission/InteQ)
 "pNJ" = (
 /obj/structure/rack,
-/obj/item/ammo_box/magazine/ak12,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/awaymission/InteQ)
 "pNL" = (
@@ -16065,12 +16140,13 @@
 /turf/open/floor/engine,
 /area/awaymission/InteQ)
 "pVj" = (
-/obj/item/gun/ballistic/automatic/mp5,
-/obj/effect/turf_decal/trimline/purple/line,
-/obj/effect/turf_decal/siding/wideplating_new/dark,
-/obj/effect/turf_decal/trimline/dark/filled/line,
-/turf/open/floor/plasteel,
-/area/awaymission/InteQ/lvl3)
+/obj/item/paper{
+	layer = 1;
+	default_raw_text = "Оу,вы прошли всю тестовую версию созданную dodo.Когда у создателя будет время,он добавит дополнительный контент.А пока-Держите медальку!";
+	name = "Silly paper"
+	},
+/turf/open/floor/catwalk_floor,
+/area/awaymission/InteQ/lvl2)
 "pVw" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
@@ -16894,8 +16970,11 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "qFx" = (
-/mob/living/simple_animal/hostile/alien/queen/king,
-/turf/open/floor/plating/airless,
+/obj/machinery/door/airlock/maintenance{
+	req_access_txt = "152"
+	},
+/obj/structure/fans/tiny/invisible,
+/turf/open/floor/plating,
 /area/awaymission/InteQ/lvl2)
 "qFY" = (
 /obj/effect/turf_decal/tile/brown/opposingcorners,
@@ -17798,6 +17877,7 @@
 /area/awaymission/InteQ/lvl2)
 "ruJ" = (
 /mob/living/simple_animal/hostile/brute/leaper,
+/obj/item/ammo_box/magazine/ak47,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/awaymission/InteQ)
 "ruX" = (
@@ -17933,7 +18013,6 @@
 /area/awaymission/InteQ/lvl2)
 "rCI" = (
 /obj/machinery/light/small,
-/obj/item/ammo_box/magazine/ak12,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/awaymission/InteQ)
 "rCV" = (
@@ -18434,6 +18513,14 @@
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
+"sad" = (
+/obj/machinery/door/airlock/centcom{
+	name = "Engineering";
+	req_one_access_txt = "152"
+	},
+/obj/structure/fans/tiny/invisible,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "sax" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/effect/turf_decal/siding/thinplating/dark,
@@ -18561,12 +18648,13 @@
 /area/awaymission/InteQ)
 "sgB" = (
 /obj/structure/rack/shelf,
-/obj/item/gun/ballistic/automatic/fal,
-/obj/item/gun/ballistic/automatic/fal{
-	pixel_y = -11
+/obj/item/gun/ballistic/automatic/mk60,
+/obj/item/gun/ballistic/automatic/mk60{
+	pixel_y = 8;
+	pixel_x = -6
 	},
-/obj/item/gun/ballistic/automatic/fal{
-	pixel_y = 9
+/obj/item/gun/ballistic/automatic/mk60{
+	pixel_y = -9
 	},
 /turf/open/floor/catwalk_floor,
 /area/awaymission/InteQ)
@@ -19024,16 +19112,12 @@
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ/lvl2)
 "sCv" = (
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
-/obj/item/ammo_box/magazine/fal,
 /obj/structure/closet/crate/large/urbanismcratelarge,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
 /turf/open/floor/mineral/plastitanium/yellow{
 	icon_state = "plastitanium_dam1"
 	},
@@ -19466,6 +19550,12 @@
 	},
 /turf/open/floor/catwalk_floor,
 /area/awaymission/InteQ/lvl2)
+"tbh" = (
+/obj/machinery/door/poddoor/preopen,
+/obj/effect/spawner/structure/window/plastitanium,
+/obj/structure/fans/tiny/invisible,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "tdd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack{
@@ -19700,6 +19790,16 @@
 	},
 /turf/open/floor/padded,
 /area/awaymission/InteQ)
+"tmH" = (
+/obj/machinery/door/poddoor/preopen,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/machinery/door/airlock/centcom{
+	name = "Engineering";
+	req_one_access_txt = "152"
+	},
+/obj/structure/fans/tiny/invisible,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "tmN" = (
 /obj/structure/table/reinforced,
 /obj/item/radio{
@@ -22280,6 +22380,7 @@
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ)
 "vDJ" = (
+/obj/item/ammo_box/magazine/e45/e45_drum,
 /turf/open/floor/mineral/plastitanium/yellow{
 	icon_state = "plastitanium_dam1"
 	},
@@ -23355,7 +23456,6 @@
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 4
 	},
-/obj/item/energy_naginata,
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ/lvl3)
 "wzY" = (
@@ -23855,6 +23955,7 @@
 	req_access_txt = "152"
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "xcW" = (
@@ -24029,6 +24130,17 @@
 /obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel/white/textured/large,
 /area/awaymission/InteQ)
+"xjq" = (
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/machinery/door/airlock/centcom{
+	name = "Intersection";
+	req_access_txt = "152"
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
+/obj/structure/fans/tiny/invisible,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "xjW" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Equipment Room";
@@ -24058,6 +24170,12 @@
 /obj/machinery/door/airlock/centcom,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
+"xmt" = (
+/obj/item/ammo_box/magazine/e45/e45_drum/lethal,
+/turf/open/floor/mineral/plastitanium/yellow{
+	icon_state = "plastitanium"
+	},
+/area/awaymission/InteQ)
 "xmG" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 10
@@ -26896,10 +27014,10 @@ fbM
 fbM
 ckw
 rHh
-olk
+naH
 aRr
-vDJ
-sCv
+cxu
+pDL
 ckw
 oat
 aqi
@@ -27038,7 +27156,7 @@ eFN
 tdP
 wCg
 jNE
-pVj
+cPO
 tdP
 qeC
 xGg
@@ -27322,7 +27440,7 @@ ckw
 aRr
 pbw
 rHh
-olk
+xmt
 aRr
 ckw
 bTL
@@ -27834,7 +27952,7 @@ bRO
 uOi
 uOi
 uOi
-uOi
+pVj
 uOi
 uOi
 uOi
@@ -28046,7 +28164,7 @@ bRO
 uOi
 uOi
 uOi
-uOi
+dMq
 uOi
 uOi
 uOi
@@ -30378,7 +30496,7 @@ qaS
 qaS
 qaS
 qaS
-qFx
+qaS
 qaS
 qaS
 qaS
@@ -30590,7 +30708,7 @@ qaS
 qaS
 qaS
 qaS
-qaS
+iIl
 qaS
 qaS
 bfQ
@@ -32542,7 +32660,7 @@ nba
 nba
 nba
 nba
-fbM
+tdP
 tdP
 tdP
 tdP
@@ -32754,7 +32872,7 @@ nba
 nba
 nba
 nba
-fbM
+tdP
 dnn
 dnn
 pnG
@@ -32966,7 +33084,7 @@ nba
 nba
 nba
 nba
-fbM
+tdP
 dnn
 jNE
 jNE
@@ -33178,7 +33296,7 @@ nba
 nba
 nba
 nba
-fbM
+tdP
 aju
 jNE
 xGg
@@ -33390,7 +33508,7 @@ nba
 nba
 nba
 nba
-fbM
+tdP
 pnG
 pnG
 pnG
@@ -33602,7 +33720,7 @@ nba
 nba
 nba
 nba
-fbM
+tdP
 scx
 pnG
 pnG
@@ -33814,7 +33932,7 @@ nba
 nba
 nba
 nba
-fbM
+tdP
 pnG
 pnG
 pnG
@@ -34026,7 +34144,7 @@ nba
 nba
 nba
 nba
-fbM
+tdP
 aju
 kvR
 jNE
@@ -34238,7 +34356,7 @@ nba
 nba
 nba
 nba
-fbM
+tdP
 dnn
 uNb
 xGg
@@ -34450,7 +34568,7 @@ nba
 nba
 nba
 nba
-fbM
+tdP
 dnn
 dnn
 pnG
@@ -34662,7 +34780,7 @@ nba
 nba
 nba
 nba
-fbM
+tdP
 tdP
 tdP
 tdP
@@ -35586,7 +35704,7 @@ fpr
 lNP
 fbM
 ioN
-ioN
+cAB
 eLN
 eLN
 eLN
@@ -36011,8 +36129,8 @@ hoa
 fbM
 eLN
 fFh
-ioN
 eCb
+ioN
 cTI
 eLN
 ibQ
@@ -36435,7 +36553,7 @@ jam
 kOh
 eLN
 eLN
-ioN
+cAB
 gTl
 eLN
 eLN
@@ -41305,7 +41423,7 @@ fbM
 hGv
 qui
 qRW
-bkz
+okm
 mIL
 fSh
 hPT
@@ -50357,7 +50475,7 @@ eNs
 eNs
 eNs
 eNs
-lll
+qFx
 eNs
 nba
 nba
@@ -51411,7 +51529,7 @@ sQf
 fOh
 fOh
 lzs
-mQr
+xjq
 rMQ
 hMp
 hMp
@@ -53107,7 +53225,7 @@ eNs
 qLW
 qLW
 qLW
-lll
+qFx
 kQb
 koD
 yhz
@@ -53531,7 +53649,7 @@ eNs
 eNs
 eNs
 evm
-lll
+qFx
 kQb
 vPu
 vPu
@@ -55263,7 +55381,7 @@ ofK
 eNs
 lpG
 ijI
-hqs
+jxB
 rMQ
 rMQ
 uzj
@@ -55475,7 +55593,7 @@ ofK
 eNs
 hnM
 ijI
-idn
+tbh
 vPu
 vPu
 vPu
@@ -55687,7 +55805,7 @@ ofK
 eNs
 rxi
 ijI
-qxV
+tmH
 vPu
 ejs
 vPu
@@ -57134,7 +57252,7 @@ ofK
 tLt
 ofK
 duS
-nIy
+mOq
 kHD
 kQb
 hoA
@@ -57346,7 +57464,7 @@ ofK
 aGg
 ofK
 vPu
-nIy
+mOq
 kHD
 kQb
 sIH
@@ -57771,8 +57889,8 @@ jIQ
 jIQ
 eqh
 eNs
-lnC
-lnV
+sad
+brk
 uAz
 eNs
 eNs
@@ -57790,9 +57908,9 @@ eNs
 eNs
 eNs
 eNs
-cnA
-rxi
-cnA
+bkz
+aRI
+bkz
 eNs
 eNs
 eNs
