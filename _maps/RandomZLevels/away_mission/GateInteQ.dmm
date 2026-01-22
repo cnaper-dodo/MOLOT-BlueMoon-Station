@@ -3415,7 +3415,10 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ/lvl2)
 "dMq" = (
-/obj/item/clothing/accessory/medal/delta,
+/obj/item/clothing/accessory/medal/delta{
+	name = "Медаль Инжестановца";
+	desc = "За героический буродроч против превосходящих сил ксеносов выдана инженеру отряда БУРОДРОЧ #####."
+	},
 /turf/open/floor/catwalk_floor,
 /area/awaymission/InteQ/lvl2)
 "dMK" = (
@@ -4766,10 +4769,9 @@
 /turf/open/floor/plasteel/dark/smooth/small,
 /area/awaymission/InteQ/lvl3)
 "fnk" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/gigachad_inteq/space,
-/turf/open/floor/plasteel/bluespace,
-/area/awaymission/InteQ)
+/obj/effect/mob_spawn/human/corpse/inteq_dead,
+/turf/open/floor/plating/airless,
+/area/awaymission/InteQ/lvl2)
 "fnA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -5181,10 +5183,11 @@
 /turf/open/floor/plating,
 /area/awaymission/InteQ)
 "fMg" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/turf/closed/indestructible/fakedoor{
-	name = "Intersection"
+/obj/item/keycard{
+	puzzle_id = "ключ карта от аварийной лестниы";
+	name = "ключ карта от аварийной лестниы"
 	},
+/turf/open/floor/plating/airless,
 /area/awaymission/InteQ/lvl2)
 "fMt" = (
 /obj/effect/turf_decal/siding/wood/corner{
@@ -6320,7 +6323,10 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/syndicate/ranged/smg/space,
+/obj/machinery/button/door{
+	id = "securevaultdoor";
+	pixel_x = 23
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl3)
 "gTr" = (
@@ -6336,13 +6342,15 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
 "gUu" = (
-/mob/living/simple_animal/hostile/alien/sentinel{
-	del_on_death = 1;
-	loot = list(/obj/effect/gibspawner/xeno);
-	faction = list("syndicate","xenomorph")
+/obj/effect/turf_decal/trimline/yellow/filled/line{
+	dir = 4
 	},
-/turf/open/space/basic,
-/area/space)
+/obj/machinery/button/door{
+	id = "securevaultdoor";
+	pixel_x = 25
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl3)
 "gVb" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/machinery/door/window/survival_pod,
@@ -8154,7 +8162,8 @@
 /area/awaymission/InteQ)
 "iIl" = (
 /mob/living/simple_animal/hostile/alien/queen/king{
-	health = 1600
+	health = 1600;
+	movespeed_modification = 1.25
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/InteQ/lvl2)
@@ -9629,12 +9638,15 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "keW" = (
-/obj/item/keycard{
-	puzzle_id = "ключ карта от аварийной лестниы";
-	name = "ключ карта от аварийной лестниы"
+/obj/effect/turf_decal/trimline/yellow/filled/line{
+	dir = 8
 	},
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/InteQ/lvl2)
+/obj/machinery/button/door{
+	id = "securevaultdoor";
+	pixel_x = -22
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl3)
 "kfA" = (
 /obj/effect/turf_decal/tile/dark_green,
 /turf/open/floor/plasteel/dark,
@@ -10376,9 +10388,6 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "kNM" = (
-/obj/effect/mob_spawn/human/inteqspace/hostage{
-	dir = 8
-	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
@@ -14283,12 +14292,16 @@
 /turf/open/floor/plating/airless,
 /area/space)
 "oFR" = (
-/obj/effect/mob_spawn/human/inteqspace{
-	dir = 4;
-	name = "InteQ Securiti Control"
+/obj/effect/turf_decal/trimline/yellow/filled/line{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/door{
+	id = "securevaultdoor";
+	pixel_x = -26
 	},
 /turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ)
+/area/awaymission/InteQ/lvl3)
 "oGf" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Fore Primary Hallway";
@@ -27606,7 +27619,7 @@ fbM
 bRS
 xRy
 jCe
-oFR
+jCe
 fbM
 fbM
 oKy
@@ -28004,7 +28017,7 @@ fbM
 lzr
 pQl
 fjg
-ozP
+fbM
 eLN
 eLN
 eLN
@@ -29429,7 +29442,7 @@ jtL
 pCH
 gwc
 awo
-isk
+keW
 gJX
 isk
 eFt
@@ -29442,7 +29455,7 @@ dgU
 feZ
 isk
 vdC
-dpz
+oFR
 pCH
 gwc
 awo
@@ -29654,7 +29667,7 @@ dgU
 feZ
 tkN
 msZ
-tkN
+gUu
 pCH
 gwc
 awo
@@ -33947,7 +33960,7 @@ fbM
 vCy
 spk
 iVn
-fnk
+aMJ
 bVN
 spk
 vER
@@ -54381,7 +54394,7 @@ nba
 nba
 bRO
 bfQ
-qaS
+fnk
 bfQ
 qaS
 qaS
@@ -54593,7 +54606,7 @@ nba
 nba
 bRO
 bfQ
-qaS
+fMg
 bfQ
 qaS
 qaS
@@ -58218,7 +58231,7 @@ uad
 uad
 uad
 uad
-gUu
+uad
 uad
 uad
 faz
@@ -59730,7 +59743,7 @@ uCD
 eNs
 taR
 rVZ
-keW
+sLY
 ozn
 pgz
 sLY
@@ -62901,7 +62914,7 @@ vMq
 aDe
 fIU
 eNs
-fMg
+gRq
 eNs
 eNs
 xFD
