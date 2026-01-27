@@ -17203,6 +17203,9 @@
 	},
 /turf/open/floor/plasteel/dark/smooth/small,
 /area/awaymission/InteQ)
+"rqr" = (
+/turf/open/space/basic,
+/area/space/nearstation)
 "rqG" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 8
@@ -24854,7 +24857,7 @@ uad
 uad
 uad
 uad
-uad
+rqr
 "}
 (4,1,1) = {"
 uad
