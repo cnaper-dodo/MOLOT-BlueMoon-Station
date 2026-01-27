@@ -548,14 +548,6 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
 /area/space)
-"aHg" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/obj/structure/alien/weeds/node,
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/open/floor/plasteel/white,
-/area/awaymission/InteQ/lvl2)
 "aHh" = (
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
@@ -2154,8 +2146,9 @@
 	},
 /area/awaymission/InteQ)
 "cxz" = (
-/turf/open/space/basic,
-/area/solars)
+/obj/effect/decal/cleanable/blood/drip,
+/turf/closed/indestructible/syndicate,
+/area/awaymission/InteQ/lvl2)
 "cxX" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -7579,13 +7572,6 @@
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
-"iff" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/open/floor/plasteel/white,
-/area/awaymission/InteQ/lvl2)
 "ifi" = (
 /mob/living/simple_animal/hostile/deathclaw/funclaw/femclaw/rouny,
 /turf/open/floor/padded,
@@ -8909,6 +8895,11 @@
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
+"juo" = (
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/decal/cleanable/blood/drip,
+/turf/closed/indestructible/syndicate,
+/area/awaymission/InteQ/lvl2)
 "jut" = (
 /obj/structure/alien/resin/wall,
 /obj/structure/alien/resin/wall,
@@ -9511,9 +9502,8 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
 "jXR" = (
-/obj/structure/alien/weeds/node,
-/turf/closed/indestructible/syndicate,
-/area/awaymission/InteQ/lvl2)
+/turf/open/space/basic,
+/area/solars)
 "jYy" = (
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
@@ -10733,10 +10723,8 @@
 /turf/open/floor/carpet/blue,
 /area/awaymission/InteQ)
 "lgo" = (
-/obj/effect/decal/cleanable/blood/drip,
-/obj/effect/decal/cleanable/blood/drip,
-/turf/closed/indestructible/syndicate,
-/area/awaymission/InteQ/lvl2)
+/turf/open/floor/fakespace,
+/area/space)
 "lhm" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -16527,6 +16515,14 @@
 /obj/structure/bed/nest,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
+"qLP" = (
+/obj/effect/turf_decal/tile/brown/opposingcorners,
+/obj/structure/alien/weeds/node,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/awaymission/InteQ/lvl2)
 "qLW" = (
 /turf/open/floor/plating,
 /area/awaymission/InteQ/lvl2)
@@ -16576,8 +16572,11 @@
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ/lvl2)
 "qNi" = (
-/obj/effect/decal/cleanable/blood/drip,
-/turf/closed/indestructible/syndicate,
+/obj/effect/turf_decal/tile/brown/opposingcorners,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
 /area/awaymission/InteQ/lvl2)
 "qNA" = (
 /obj/machinery/light/small,
@@ -23006,8 +23005,9 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "wZz" = (
-/turf/open/floor/fakespace,
-/area/space)
+/obj/structure/alien/weeds/node,
+/turf/closed/indestructible/syndicate,
+/area/awaymission/InteQ/lvl2)
 "wZA" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
@@ -24771,7 +24771,7 @@ uad
 uad
 uad
 uad
-cxz
+jXR
 "}
 (4,1,1) = {"
 uad
@@ -28128,7 +28128,7 @@ uFO
 uFO
 ezW
 ezW
-wZz
+lgo
 uad
 uad
 uad
@@ -31675,7 +31675,7 @@ ibQ
 eLN
 eLN
 pyf
-wZz
+lgo
 uad
 uad
 uad
@@ -31862,7 +31862,7 @@ ibQ
 eLN
 pyf
 pyf
-wZz
+lgo
 uad
 uad
 uad
@@ -32049,7 +32049,7 @@ eLN
 eLN
 pyf
 ezW
-wZz
+lgo
 uad
 uad
 uad
@@ -32236,7 +32236,7 @@ ibQ
 eLN
 pyf
 ezW
-wZz
+lgo
 uad
 uad
 uad
@@ -32423,7 +32423,7 @@ eLN
 eLN
 pyf
 ezW
-wZz
+lgo
 uad
 uad
 uad
@@ -32610,7 +32610,7 @@ eLN
 pyf
 pyf
 ezW
-wZz
+lgo
 uad
 uad
 uad
@@ -32797,7 +32797,7 @@ eLN
 pyf
 pyf
 ezW
-wZz
+lgo
 uad
 uad
 uad
@@ -32984,7 +32984,7 @@ eLN
 eLN
 pyf
 pyf
-wZz
+lgo
 uad
 uad
 uad
@@ -58332,11 +58332,11 @@ wqy
 eNs
 eNs
 nsw
-aHg
+qLP
 nsw
 nsw
 nsw
-iff
+qNi
 nsw
 eNs
 uad
@@ -58518,11 +58518,11 @@ rIb
 ofK
 eNs
 eNs
-qNi
-qNi
-lgo
+cxz
+cxz
+juo
 eNs
-jXR
+wZz
 eNs
 eNs
 eNs
