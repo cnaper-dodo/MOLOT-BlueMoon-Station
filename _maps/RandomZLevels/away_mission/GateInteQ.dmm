@@ -549,8 +549,12 @@
 /turf/open/space/basic,
 /area/space)
 "aHg" = (
+/obj/effect/turf_decal/tile/brown/opposingcorners,
 /obj/structure/alien/weeds/node,
-/turf/closed/indestructible/syndicate,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
 /area/awaymission/InteQ/lvl2)
 "aHh" = (
 /obj/effect/turf_decal/tile/brown,
@@ -2149,6 +2153,9 @@
 	icon_state = "plastitanium_dam1"
 	},
 /area/awaymission/InteQ)
+"cxz" = (
+/turf/open/space/basic,
+/area/solars)
 "cxX" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -7684,14 +7691,6 @@
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
-"iln" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/obj/structure/alien/weeds/node,
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/open/floor/plasteel/white,
-/area/awaymission/InteQ/lvl2)
 "ilq" = (
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /mob/living/simple_animal/hostile/alien/sentinel{
@@ -8910,9 +8909,6 @@
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
-"juo" = (
-/turf/open/floor/fakespace,
-/area/space)
 "jut" = (
 /obj/structure/alien/resin/wall,
 /obj/structure/alien/resin/wall,
@@ -9514,6 +9510,10 @@
 /obj/item/grenade/flashbang,
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
+"jXR" = (
+/obj/structure/alien/weeds/node,
+/turf/closed/indestructible/syndicate,
+/area/awaymission/InteQ/lvl2)
 "jYy" = (
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
@@ -10733,6 +10733,7 @@
 /turf/open/floor/carpet/blue,
 /area/awaymission/InteQ)
 "lgo" = (
+/obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/blood/drip,
 /turf/closed/indestructible/syndicate,
 /area/awaymission/InteQ/lvl2)
@@ -16575,7 +16576,6 @@
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ/lvl2)
 "qNi" = (
-/obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/blood/drip,
 /turf/closed/indestructible/syndicate,
 /area/awaymission/InteQ/lvl2)
@@ -23005,6 +23005,9 @@
 /obj/effect/turf_decal/bot/white,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
+"wZz" = (
+/turf/open/floor/fakespace,
+/area/space)
 "wZA" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
@@ -24768,7 +24771,7 @@ uad
 uad
 uad
 uad
-uad
+cxz
 "}
 (4,1,1) = {"
 uad
@@ -28125,7 +28128,7 @@ uFO
 uFO
 ezW
 ezW
-juo
+wZz
 uad
 uad
 uad
@@ -31672,7 +31675,7 @@ ibQ
 eLN
 eLN
 pyf
-juo
+wZz
 uad
 uad
 uad
@@ -31859,7 +31862,7 @@ ibQ
 eLN
 pyf
 pyf
-juo
+wZz
 uad
 uad
 uad
@@ -32046,7 +32049,7 @@ eLN
 eLN
 pyf
 ezW
-juo
+wZz
 uad
 uad
 uad
@@ -32233,7 +32236,7 @@ ibQ
 eLN
 pyf
 ezW
-juo
+wZz
 uad
 uad
 uad
@@ -32420,7 +32423,7 @@ eLN
 eLN
 pyf
 ezW
-juo
+wZz
 uad
 uad
 uad
@@ -32607,7 +32610,7 @@ eLN
 pyf
 pyf
 ezW
-juo
+wZz
 uad
 uad
 uad
@@ -32794,7 +32797,7 @@ eLN
 pyf
 pyf
 ezW
-juo
+wZz
 uad
 uad
 uad
@@ -32981,7 +32984,7 @@ eLN
 eLN
 pyf
 pyf
-juo
+wZz
 uad
 uad
 uad
@@ -58329,7 +58332,7 @@ wqy
 eNs
 eNs
 nsw
-iln
+aHg
 nsw
 nsw
 nsw
@@ -58515,11 +58518,11 @@ rIb
 ofK
 eNs
 eNs
-lgo
-lgo
 qNi
+qNi
+lgo
 eNs
-aHg
+jXR
 eNs
 eNs
 eNs
