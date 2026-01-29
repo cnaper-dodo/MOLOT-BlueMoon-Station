@@ -4267,8 +4267,6 @@
 /obj/machinery/light{
 	dir = 8;
 	light_color = "#e8eaff"
-<<<<<<< HEAD
-=======
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
