@@ -6539,6 +6539,7 @@
 =======
 /mob/living/simple_animal/hostile/alien/sentinel{
 	del_on_death = 1;
+	loot = list(/obj/effect/gibspawner/xeno);
 	faction = list("syndicate","xenomorph")
 	},
 /turf/open/space/basic,
