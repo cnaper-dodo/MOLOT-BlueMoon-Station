@@ -1830,9 +1830,7 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "cgA" = (
-/obj/item/clothing/suit/space/hardsuit/shielded/goldenpa{
-	slowdown = 0.95
-	},
+/obj/item/clothing/suit/space/hardsuit/shielded/syndi/inteq,
 /turf/open/floor/catwalk_floor,
 /area/awaymission/InteQ/lvl3)
 "chA" = (
@@ -18438,12 +18436,25 @@
 /obj/item/ammo_box/magazine/e45/lethal,
 /obj/item/ammo_box/magazine/e45/lethal,
 /obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
 /turf/open/floor/mineral/plastitanium/yellow{
 	icon_state = "plastitanium_dam1"
 	},
 /area/awaymission/InteQ)
 "sCC" = (
 /obj/structure/closet/crate/large/urbanismcratelarge,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
 /obj/item/ammo_box/magazine/e45/lethal,
 /obj/item/ammo_box/magazine/e45/lethal,
 /obj/item/ammo_box/magazine/e45/lethal,
