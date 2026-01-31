@@ -1871,10 +1871,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
-"ckt" = (
-/obj/item/storage/firstaid/tactical/slaver,
-/turf/open/floor/catwalk_floor,
-/area/awaymission/InteQ/lvl2)
 "ckw" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/awaymission/InteQ)
@@ -7363,6 +7359,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
+"hTs" = (
+/mob/living/simple_animal/hostile/alien{
+	faction = list("syndicate","xenomorph");
+	loot = list(/obj/effect/gibspawner/xeno)
+	},
+/turf/open/space/basic,
+/area/space)
 "hTE" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -10994,12 +10997,11 @@
 /turf/open/floor/grass/grass0,
 /area/awaymission/InteQ/lvl2)
 "luB" = (
-/mob/living/simple_animal/hostile/alien{
-	faction = list("syndicate","xenomorph");
-	loot = list(/obj/effect/gibspawner/xeno)
+/turf/open/floor/plating/asteroid{
+	heat_capacity = 1e+006;
+	initial_gas_mix = "co2=48.7;n2=13.2;o2=32.4;TEMP=251"
 	},
-/turf/open/space/basic,
-/area/space)
+/area/awaymission/InteQ/lvl2)
 "luX" = (
 /obj/structure/railing{
 	dir = 1
@@ -15582,10 +15584,11 @@
 /turf/open/floor/light,
 /area/awaymission/InteQ)
 "pWl" = (
-/obj/structure/table/reinforced,
-/obj/item/reagent_containers/hypospray/medipen/stimulants,
-/turf/open/floor/plasteel,
-/area/awaymission/InteQ)
+/turf/open/floor/plating/asteroid{
+	heat_capacity = 1e+006;
+	initial_gas_mix = "co2=48.7;n2=13.2;o2=32.4;TEMP=251"
+	},
+/area/space)
 "pXd" = (
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /obj/structure/chair/comfy/black,
@@ -16446,11 +16449,9 @@
 	},
 /area/awaymission/InteQ/lvl3)
 "qIu" = (
-/turf/open/floor/plating/asteroid{
-	heat_capacity = 1e+006;
-	initial_gas_mix = "co2=48.7;n2=13.2;o2=32.4;TEMP=251"
-	},
-/area/space)
+/obj/item/storage/firstaid/tactical/slaver,
+/turf/open/floor/catwalk_floor,
+/area/awaymission/InteQ/lvl2)
 "qIx" = (
 /obj/item/clothing/head/HoS/inteq_honorable_vanguard,
 /obj/item/clothing/suit/armor/inteq/honorable_vanguard,
@@ -19546,12 +19547,6 @@
 /obj/item/trash/syndi_cakes,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/InteQ)
-"tGV" = (
-/turf/open/floor/plating/asteroid{
-	heat_capacity = 1e+006;
-	initial_gas_mix = "co2=48.7;n2=13.2;o2=32.4;TEMP=251"
-	},
-/area/awaymission/InteQ/lvl2)
 "tHt" = (
 /obj/effect/decal/cleanable/glass/titanium,
 /turf/open/floor/plasteel/dark,
@@ -27291,7 +27286,7 @@ bRO
 bRO
 uOi
 uOi
-ckt
+qIu
 xhf
 uOi
 uOi
@@ -36860,7 +36855,7 @@ uad
 uad
 uad
 fbM
-qfj
+aFq
 pfF
 dlE
 ibQ
@@ -39734,7 +39729,7 @@ uqH
 fbM
 kOh
 snp
-pWl
+gBv
 nyk
 kOh
 fbM
@@ -57413,7 +57408,7 @@ uad
 uad
 uad
 uad
-luB
+hTs
 uad
 faz
 vbF
@@ -57709,7 +57704,7 @@ eNs
 eNs
 fuC
 fuC
-qIu
+pWl
 aSX
 uad
 uad
@@ -57917,11 +57912,11 @@ igs
 igs
 igs
 eNs
-tGV
+luB
 eNs
-qIu
-qIu
-qIu
+pWl
+pWl
+pWl
 lVu
 uad
 uad
@@ -58129,11 +58124,11 @@ oCp
 oCp
 oCp
 eNs
-tGV
+luB
 eNs
-qIu
-qIu
-qIu
+pWl
+pWl
+pWl
 fuC
 uad
 uad
@@ -58341,11 +58336,11 @@ igs
 igs
 igs
 eNs
-tGV
+luB
 pCN
 qFY
-qIu
-qIu
+pWl
+pWl
 vmY
 uad
 uad
@@ -58555,9 +58550,9 @@ cIN
 eNs
 eNs
 eNs
-qIu
-qIu
-qIu
+pWl
+pWl
+pWl
 fuC
 uad
 uad
@@ -58767,9 +58762,9 @@ eNs
 eNs
 eNs
 eNs
-qIu
-qIu
-qIu
+pWl
+pWl
+pWl
 lVu
 uad
 uad
@@ -61311,9 +61306,9 @@ vnx
 vnx
 vnx
 eNs
-qIu
-qIu
-qIu
+pWl
+pWl
+pWl
 uNf
 uad
 uad
