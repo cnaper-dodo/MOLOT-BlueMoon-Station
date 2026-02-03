@@ -145,8 +145,8 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "ajg" = (
-/obj/structure/alien/egg/grown,
-/turf/open/floor/plasteel/dark/smooth/large,
+/obj/structure/alien/egg/burst,
+/turf/open/floor/plating/airless,
 /area/awaymission/InteQ/lvl2)
 "akL" = (
 /obj/structure/filingcabinet,
@@ -3280,14 +3280,6 @@
 /obj/item/flashlight/lamp,
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ/lvl2)
-"dFI" = (
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
-/obj/structure/alien/egg/grown,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ/lvl2)
 "dHV" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -5162,12 +5154,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
-"fKk" = (
-/obj/structure/alien/egg/grown,
-/turf/open/floor/plasteel/dark/smooth/half{
-	dir = 1
-	},
-/area/awaymission/InteQ/lvl2)
 "fKp" = (
 /obj/machinery/light/small,
 /turf/open/floor/wood/wood_parquet,
@@ -7811,6 +7797,7 @@
 	puzzle_id = "ключ карта от аварийной лестниы";
 	name = "ключ карта от аварийной лестниы"
 	},
+/obj/structure/alien/egg/burst,
 /turf/open/floor/plating/airless,
 /area/awaymission/InteQ/lvl2)
 "isx" = (
@@ -15117,10 +15104,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
-"pAo" = (
-/obj/structure/alien/egg/grown,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ/lvl2)
 "pAz" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/structure/alien/egg/burst,
@@ -18997,7 +18980,6 @@
 /obj/effect/turf_decal/stripes/yellow/line{
 	dir = 1
 	},
-/obj/structure/alien/egg/grown,
 /mob/living/simple_animal/hostile/alien/drone{
 	del_on_death = 1;
 	loot = list(/obj/effect/gibspawner/xeno);
@@ -24053,11 +24035,10 @@
 /turf/open/floor/catwalk_floor,
 /area/awaymission/InteQ/lvl2)
 "ybh" = (
-/obj/effect/turf_decal/stripes/yellow/line{
+/obj/structure/alien/egg/burst,
+/turf/open/floor/plasteel/dark/smooth/half{
 	dir = 1
 	},
-/obj/structure/alien/egg/grown,
-/turf/open/floor/plasteel/dark/smooth/large,
 /area/awaymission/InteQ/lvl2)
 "ybK" = (
 /obj/effect/decal/cleanable/dirt,
@@ -34928,7 +34909,7 @@ bfQ
 qaS
 qaS
 qaS
-qaS
+ajg
 qaS
 qaS
 gIe
@@ -35147,7 +35128,7 @@ bfQ
 qaS
 qaS
 nmQ
-qaS
+ajg
 qaS
 qaS
 bfQ
@@ -37047,7 +37028,7 @@ bRO
 bfQ
 qaS
 qaS
-qaS
+ajg
 qaS
 qaS
 qaS
@@ -37900,7 +37881,7 @@ qaS
 qaS
 qaS
 qaS
-qaS
+ajg
 qaS
 qaS
 bfQ
@@ -39379,7 +39360,7 @@ bRO
 bfQ
 qaS
 qaS
-qaS
+ajg
 qaS
 hvi
 qaS
@@ -39600,7 +39581,7 @@ nmQ
 qaS
 qaS
 qaS
-qaS
+ajg
 qaS
 bfQ
 bRO
@@ -41294,7 +41275,7 @@ fRL
 qaS
 qaS
 qaS
-qaS
+ajg
 qaS
 qaS
 qaS
@@ -41922,7 +41903,7 @@ nba
 bRO
 bfQ
 bfQ
-qaS
+ajg
 hvi
 qaS
 qaS
@@ -43198,7 +43179,7 @@ qaS
 bfQ
 qaS
 qaS
-qaS
+ajg
 qaS
 qaS
 qaS
@@ -44263,7 +44244,7 @@ qaS
 bfQ
 bfQ
 nmQ
-qaS
+ajg
 qaS
 qaS
 bfQ
@@ -44679,7 +44660,7 @@ bRO
 bfQ
 bfQ
 qaS
-qaS
+ajg
 qaS
 qaS
 qaS
@@ -45320,7 +45301,7 @@ bfQ
 bfQ
 bfQ
 qaS
-qaS
+ajg
 qaS
 qaS
 qaS
@@ -47012,7 +46993,7 @@ bfQ
 bfQ
 qaS
 qaS
-qaS
+ajg
 qaS
 qaS
 bfQ
@@ -47444,7 +47425,7 @@ bfQ
 bfQ
 bfQ
 qaS
-qaS
+ajg
 bfQ
 bfQ
 bRO
@@ -48282,11 +48263,11 @@ nba
 bRO
 bfQ
 bfQ
+ajg
 qaS
 qaS
 qaS
-qaS
-qaS
+ajg
 fRL
 hvi
 qaS
@@ -49343,7 +49324,7 @@ bRO
 bfQ
 qaS
 qaS
-qaS
+ajg
 qaS
 qaS
 qaS
@@ -50826,7 +50807,7 @@ nba
 bRO
 bfQ
 bfQ
-qaS
+ajg
 bfQ
 qaS
 qaS
@@ -51045,7 +51026,7 @@ qaS
 bfQ
 qaS
 hvi
-qaS
+ajg
 qaS
 qaS
 qaS
@@ -52310,7 +52291,7 @@ nba
 bRO
 bfQ
 bfQ
-qaS
+ajg
 bfQ
 bfQ
 bfQ
@@ -52741,7 +52722,7 @@ qaS
 bfQ
 qaS
 qaS
-qaS
+ajg
 xPX
 nmQ
 qaS
@@ -53386,7 +53367,7 @@ bfQ
 bfQ
 qaS
 qaS
-qaS
+ajg
 xPX
 qaS
 qaS
@@ -53652,7 +53633,7 @@ tgO
 azM
 aTM
 rXi
-ajg
+azM
 azM
 acM
 ckU
@@ -54068,7 +54049,7 @@ vPu
 eNs
 ntm
 dIe
-fKk
+jCD
 eNs
 pdX
 qPa
@@ -54081,7 +54062,7 @@ wyR
 tgO
 cOW
 ofK
-ybh
+vyB
 uzp
 dBe
 tgO
@@ -54491,7 +54472,7 @@ qLW
 ejs
 vlE
 ntm
-ajg
+azM
 jCD
 pyr
 wkT
@@ -54645,7 +54626,7 @@ isk
 bfQ
 qaS
 qaS
-qaS
+ajg
 qaS
 qaS
 bfQ
@@ -54915,7 +54896,7 @@ ycZ
 oIb
 vlE
 fwz
-ajg
+azM
 jCD
 eNs
 xYe
@@ -54925,7 +54906,7 @@ dTM
 dTM
 iKC
 uML
-jCD
+ybh
 fKG
 jCD
 jtt
@@ -55988,7 +55969,7 @@ kDz
 jay
 tgO
 wym
-pAo
+ofK
 ofK
 ofK
 cop
@@ -56629,7 +56610,7 @@ ePk
 aKh
 utv
 vPu
-vPu
+pAz
 utv
 vPu
 ibt
@@ -57477,11 +57458,11 @@ rxi
 rxi
 rxi
 ojp
-dFI
+slB
 uVC
 slB
 uVC
-dFI
+slB
 tvG
 iqv
 hPZ
@@ -57902,10 +57883,10 @@ jnL
 jnL
 toJ
 qLO
-dFI
+slB
 gTa
 gTa
-dFI
+slB
 uVC
 eNs
 oxk
