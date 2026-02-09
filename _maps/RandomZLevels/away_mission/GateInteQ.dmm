@@ -427,12 +427,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
-"aAL" = (
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = -32
-	},
-/turf/closed/mineral/random/labormineral/jungle,
-/area/awaymission/InteQ/lvl2)
 "aAS" = (
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 4
@@ -668,9 +662,6 @@
 	shut_up = 1
 	},
 /obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = 32
-	},
 /obj/machinery/light,
 /turf/open/floor/plasteel/white,
 /area/awaymission/InteQ/lvl2)
@@ -1172,9 +1163,6 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/InteQ/lvl2)
 "bqa" = (
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_y = -32
-	},
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /mob/living/simple_animal/bot/medbot{
 	name = "InteQ Hospitality Drone";
@@ -1202,9 +1190,6 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "bqR" = (
-/obj/structure/sign/poster/contraband/inteq/inteq_recruitment{
-	pixel_x = -33
-	},
 /mob/living/simple_animal/hostile/alien/drone{
 	del_on_death = 1;
 	loot = list(/obj/effect/gibspawner/xeno);
@@ -1519,8 +1504,9 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "bLn" = (
-/obj/structure/sign/poster/contraband/inteq/random,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/obj/structure/lattice,
+/obj/structure/sign/poster/contraband/inteq/inteq_no_sex,
+/turf/closed/indestructible/syndicate,
 /area/awaymission/InteQ/lvl2)
 "bLZ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -1830,7 +1816,9 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "cgA" = (
-/obj/item/clothing/suit/space/hardsuit/shielded/syndi/inteq,
+/obj/item/clothing/suit/space/hardsuit/shielded/syndi/inteq{
+	slowdown = 2
+	},
 /turf/open/floor/catwalk_floor,
 /area/awaymission/InteQ/lvl3)
 "chA" = (
@@ -2788,16 +2776,6 @@
 /obj/machinery/light/dim/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
-"dgB" = (
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = 32
-	},
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ/lvl2)
 "dgU" = (
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl3)
@@ -3496,17 +3474,6 @@
 	},
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/InteQ/ForChasmArea)
-"dQV" = (
-/obj/structure/bed,
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = 32
-	},
-/obj/item/bedsheet/inteq,
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/InteQ/lvl2)
 "dRb" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/glass/reinforced,
@@ -3708,11 +3675,6 @@
 /obj/machinery/door/airlock/centcom,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
-"ebd" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/brute/uber,
-/turf/open/floor/plasteel,
-/area/awaymission/InteQ)
 "ebu" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 8
@@ -3805,18 +3767,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/InteQ)
-"eeK" = (
-/obj/structure/table,
-/obj/item/reagent_containers/rag/towel/syndicate,
-/obj/machinery/light/small{
-	brightness = 3;
-	dir = 8
-	},
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = -32
-	},
-/turf/open/floor/plasteel/showroomfloor,
-/area/awaymission/InteQ/lvl2)
 "efc" = (
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 1
@@ -3852,9 +3802,6 @@
 /obj/structure/dresser,
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
-	},
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = -32
 	},
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ/lvl2)
@@ -4200,7 +4147,7 @@
 "eFa" = (
 /obj/item/keycard{
 	puzzle_id = "ключ карта от аварийной лестниы";
-	name = "ключ карта от аварийной лестниы"
+	name = "Ключ от запасного склада"
 	},
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ)
@@ -4242,12 +4189,11 @@
 /turf/open/floor/plasteel/dark/smooth/small,
 /area/awaymission/InteQ/lvl3)
 "eJV" = (
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_y = -32
+/obj/item/keycard{
+	puzzle_id = "ключ карта от аварийной лестниы";
+	name = "ключ карта от аварийной лестниы"
 	},
-/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer3,
-/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/catwalk_floor,
 /area/awaymission/InteQ/lvl2)
 "eKG" = (
 /obj/effect/mob_spawn/human/corpse/inteq_dead,
@@ -4555,13 +4501,6 @@
 	faction = list("syndicate","xenomorph")
 	},
 /turf/open/floor/glass/reinforced,
-/area/awaymission/InteQ/lvl2)
-"eZt" = (
-/obj/machinery/light,
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = -32
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "eZw" = (
 /obj/structure/holohoop{
@@ -5164,14 +5103,6 @@
 	},
 /turf/open/floor/catwalk_floor,
 /area/awaymission/InteQ)
-"fKG" = (
-/obj/structure/sign/poster/contraband/inteq/inteq_sign{
-	pixel_x = 33
-	},
-/turf/open/floor/plasteel/dark/smooth/half{
-	dir = 1
-	},
-/area/awaymission/InteQ/lvl2)
 "fKR" = (
 /obj/machinery/atmospherics/pipe/simple/orange{
 	dir = 6
@@ -5301,14 +5232,6 @@
 /obj/machinery/door/poddoor/preopen,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/InteQ)
-"fTo" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = 32
-	},
-/obj/machinery/computer/security,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ/lvl2)
 "fTD" = (
 /mob/living/simple_animal/hostile/brute,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -5547,7 +5470,10 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "gey" = (
-/obj/item/keycard/mesaend,
+/obj/item/keycard/mesaend{
+	puzzle_id = "weapons";
+	name = "Ключ от аварийного хранилища"
+	},
 /turf/open/floor/mineral/plastitanium/yellow{
 	icon_state = "plastitanium_dam2"
 	},
@@ -5741,7 +5667,6 @@
 /area/awaymission/InteQ)
 "goA" = (
 /obj/structure/girder/reinforced,
-/obj/machinery/porta_turret/inteq/energy,
 /turf/open/floor/engine,
 /area/awaymission/InteQ)
 "gpi" = (
@@ -6595,9 +6520,6 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = 32
-	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "hhM" = (
@@ -6641,16 +6563,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
-"hkt" = (
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ/lvl2)
 "hku" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 6
@@ -7683,9 +7595,6 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "ilU" = (
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_y = 32
-	},
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
 /obj/machinery/vending/inteq_vendomat{
 	shut_up = 1
@@ -7792,14 +7701,6 @@
 /obj/item/ammo_box/a357,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
-"isk" = (
-/obj/item/keycard{
-	puzzle_id = "ключ карта от аварийной лестниы";
-	name = "ключ карта от аварийной лестниы"
-	},
-/obj/structure/alien/egg/burst,
-/turf/open/floor/plating/airless,
-/area/awaymission/InteQ/lvl2)
 "isx" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
@@ -7811,7 +7712,6 @@
 /obj/effect/turf_decal/stripes/yellow/line{
 	dir = 6
 	},
-/obj/machinery/suit_storage_unit/syndicate/inteq,
 /turf/open/floor/plasteel/dark/smooth/small,
 /area/awaymission/InteQ/lvl2)
 "isR" = (
@@ -8098,9 +7998,6 @@
 /obj/item/storage/backpack/duffelbag/syndie/inteq/surgery,
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = 32
-	},
 /obj/item/healthanalyzer/advanced,
 /turf/open/floor/plasteel/white,
 /area/awaymission/InteQ/lvl2)
@@ -8231,7 +8128,7 @@
 /turf/closed/indestructible/rock,
 /area/awaymission/InteQ)
 "iMH" = (
-/turf/closed/mineral/random,
+/turf/closed/mineral,
 /area/awaymission/InteQ)
 "iMM" = (
 /obj/effect/turf_decal/tile/dark_green/half/contrasted{
@@ -8330,18 +8227,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
-"iSe" = (
-/obj/structure/bed{
-	dir = 8
-	},
-/obj/item/bedsheet/inteq{
-	dir = 1
-	},
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = -32
-	},
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/InteQ/lvl2)
 "iTf" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 10
@@ -8389,9 +8274,6 @@
 "iUz" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
-	},
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_y = 32
 	},
 /obj/machinery/chem_master,
 /turf/open/floor/wood/wood_parquet,
@@ -8674,9 +8556,6 @@
 "jga" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
-	},
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = -32
 	},
 /obj/structure/rack/shelf,
 /obj/item/stack/sheet/metal/ten,
@@ -9092,9 +8971,6 @@
 /area/awaymission/InteQ)
 "jEn" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = -32
-	},
 /obj/machinery/computer/monitor,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
@@ -9791,19 +9667,6 @@
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
-"klt" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/brute/leaper,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ)
-"klI" = (
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = 32
-	},
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/structure/alien/resin/wall,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ/lvl2)
 "kmx" = (
 /obj/structure/railing{
 	dir = 10
@@ -9983,9 +9846,6 @@
 	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
-	},
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_y = 32
 	},
 /obj/machinery/vending/boozeomat/all_access{
 	shut_up = 1
@@ -10719,12 +10579,8 @@
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
 "let" = (
-/obj/machinery/computer/telecrystals/uplinker,
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = 32
-	},
-/turf/open/floor/plasteel/dark,
+/obj/structure/sign/poster/contraband/inteq/inteq_no_sex,
+/turf/closed/indestructible/syndicate,
 /area/awaymission/InteQ/lvl2)
 "lfw" = (
 /obj/machinery/door/airlock/maintenance{
@@ -10911,15 +10767,9 @@
 	},
 /area/awaymission/InteQ/lvl2)
 "lqt" = (
-/obj/structure/closet/syndicate/inteq,
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = -32
-	},
-/obj/item/bikehorn/rubberducky,
-/turf/open/floor/wood/wood_parquet,
+/obj/effect/spawner/structure/window/plastitanium,
+/obj/structure/sign/poster/contraband/inteq/inteq_no_sex,
+/turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "lqI" = (
 /obj/structure/cable{
@@ -11060,9 +10910,6 @@
 	dir = 1
 	},
 /obj/structure/reagent_dispensers/water_cooler,
-/obj/structure/sign/poster/contraband/inteq/inteq_sign{
-	pixel_y = 32
-	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 4
 	},
@@ -11146,9 +10993,6 @@
 /turf/open/space/basic,
 /area/space)
 "lDo" = (
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = -32
-	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
@@ -11704,22 +11548,6 @@
 /obj/machinery/shower/directional/west,
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
-"mfr" = (
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = -32
-	},
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/turf_decal/tile/brown,
-/obj/structure/bed/roller,
-/obj/machinery/iv_drip,
-/turf/open/floor/plasteel/white,
-/area/awaymission/InteQ/lvl2)
 "mfA" = (
 /obj/machinery/button/door{
 	pixel_x = -25
@@ -12333,10 +12161,6 @@
 /obj/structure/mecha_wreckage/hermes,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl3)
-"mMn" = (
-/mob/living/simple_animal/hostile/gigachad_inteq/space,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ)
 "mMv" = (
 /turf/closed/mineral/random/labormineral/jungle,
 /area/awaymission/InteQ/lvl2)
@@ -12644,18 +12468,6 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ/lvl2)
-"nbh" = (
-/obj/item/kirbyplants/hedge{
-	anchored = 1
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = -32
-	},
-/turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ/lvl2)
 "nbs" = (
 /obj/structure/alien/resin/membrane,
@@ -13144,13 +12956,10 @@
 /area/awaymission/InteQ/lvl2)
 "nzn" = (
 /obj/item/ammo_box/magazine/e45/e45_drum/empty,
+/obj/item/keycard/mesaend,
 /turf/open/floor/mineral/plastitanium/yellow{
 	icon_state = "plastitanium"
 	},
-/area/awaymission/InteQ)
-"nzP" = (
-/obj/effect/mob_spawn/human/inteqspace/hostage,
-/turf/open/floor/light,
 /area/awaymission/InteQ)
 "nAy" = (
 /obj/effect/turf_decal/tile/brown{
@@ -13871,9 +13680,6 @@
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ)
 "oiZ" = (
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = -32
-	},
 /obj/machinery/light{
 	dir = 8
 	},
@@ -14205,12 +14011,6 @@
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /obj/machinery/door/poddoor/shuttledock,
 /turf/open/floor/plating,
-/area/awaymission/InteQ/lvl2)
-"oEo" = (
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "oEY" = (
 /obj/machinery/light{
@@ -15055,12 +14855,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
-"pxa" = (
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = -32
-	},
-/turf/closed/indestructible/syndicate,
-/area/awaymission/InteQ/lvl2)
 "pyf" = (
 /turf/closed/indestructible/riveted/lfwb/leviathan,
 /area/awaymission/InteQ)
@@ -15759,12 +15553,6 @@
 /obj/item/reagent_containers/hypospray/medipen/stimulants,
 /turf/open/floor/catwalk_floor,
 /area/awaymission/InteQ)
-"qfN" = (
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = 32
-	},
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/InteQ/lvl2)
 "qgi" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 8
@@ -15986,10 +15774,6 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ)
-"qoE" = (
-/mob/living/simple_animal/hostile/brute/leaper,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "qpF" = (
@@ -16660,13 +16444,6 @@
 /obj/effect/turf_decal/stripes/yellow/line,
 /turf/open/floor/plating/airless,
 /area/awaymission/InteQ/lvl2)
-"qTC" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 4
-	},
-/obj/machinery/suit_storage_unit/syndicate/inteq,
-/turf/open/floor/plasteel/dark/smooth/small,
-/area/awaymission/InteQ/lvl2)
 "qTY" = (
 /obj/structure/closet/crate/large,
 /obj/item/gun/ballistic/automatic/ak12/pindicate{
@@ -16902,9 +16679,6 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/structure/sign/poster/contraband/inteq/inteq_sign{
-	pixel_y = 32
-	},
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/InteQ)
 "red" = (
@@ -17122,6 +16896,14 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
+"roq" = (
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/machinery/button/door{
+	id = "teleportcommand";
+	pixel_y = 22
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "rpJ" = (
 /turf/open/floor/engine/vacuum,
 /area/awaymission/InteQ)
@@ -17259,6 +17041,13 @@
 	},
 /turf/closed/indestructible/syndicate,
 /area/awaymission/InteQ/lvl2)
+"rvc" = (
+/obj/machinery/button/door{
+	id = "teleportcommand";
+	pixel_x = 15
+	},
+/turf/open/floor/plating/ashplanet,
+/area/awaymission/InteQ/lvl2)
 "rvo" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 8
@@ -17293,9 +17082,10 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/awaymission/InteQ/lvl2)
 "rxb" = (
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = -32
-	},
+/obj/effect/spawner/structure/window/plastitanium,
+/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
+/obj/structure/sign/poster/contraband/inteq/inteq_no_sex,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "rxi" = (
@@ -18038,22 +17828,6 @@
 /obj/machinery/power/port_gen/pacman/super,
 /turf/open/floor/plasteel,
 /area/awaymission/InteQ)
-"smd" = (
-/obj/structure/sign/poster/contraband/inteq/inteq_sign{
-	pixel_y = 32
-	},
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ)
-"smC" = (
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = -32
-	},
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/InteQ/lvl2)
 "smS" = (
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /obj/structure/barricade/sandbags,
@@ -18355,10 +18129,11 @@
 /turf/open/floor/plating,
 /area/awaymission/InteQ/lvl2)
 "sBn" = (
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_y = -32
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/obj/structure/sign/poster/contraband/inteq/inteq_no_sex,
+/turf/closed/indestructible/syndicate,
 /area/awaymission/InteQ/lvl2)
 "sBp" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
@@ -18427,12 +18202,45 @@
 /obj/item/ammo_box/magazine/e45/lethal,
 /obj/item/ammo_box/magazine/e45/lethal,
 /obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
 /turf/open/floor/mineral/plastitanium/yellow{
 	icon_state = "plastitanium_dam1"
 	},
 /area/awaymission/InteQ)
 "sCC" = (
 /obj/structure/closet/crate/large/urbanismcratelarge,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
+/obj/item/ammo_box/magazine/e45/lethal,
 /obj/item/ammo_box/magazine/e45/lethal,
 /obj/item/ammo_box/magazine/e45/lethal,
 /obj/item/ammo_box/magazine/e45/lethal,
@@ -18758,9 +18566,6 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "sVj" = (
-/obj/structure/sign/poster/contraband/inteq/inteq_recruitment{
-	pixel_y = 32
-	},
 /obj/effect/turf_decal/tile/brown/full,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
 /obj/machinery/light{
@@ -18848,7 +18653,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/effect/turf_decal/tile/brown/fourcorners,
-/mob/living/simple_animal/hostile/brute/leaper,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "taR" = (
@@ -19477,15 +19281,6 @@
 /obj/effect/turf_decal/tile/dark_blue/opposingcorners,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
-"tDQ" = (
-/obj/item/kirbyplants/hedge{
-	anchored = 1
-	},
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = 32
-	},
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/InteQ/lvl2)
 "tDW" = (
 /obj/structure/chair{
 	dir = 4
@@ -19731,9 +19526,6 @@
 /area/awaymission/InteQ)
 "tNL" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = 32
-	},
 /obj/machinery/computer/shuttle/syndicate/recall{
 	icon_keyboard = "inteq_key";
 	icon_screen = "inteqshuttle";
@@ -19750,9 +19542,6 @@
 "tOy" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
-	},
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_y = 32
 	},
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp,
@@ -20152,10 +19941,7 @@
 /obj/item/mining_scanner,
 /obj/item/shovel,
 /obj/item/pickaxe,
-/turf/open/floor/plating/asteroid{
-	heat_capacity = 1e+006;
-	initial_gas_mix = "co2=48.7;n2=13.2;o2=32.4;TEMP=251"
-	},
+/turf/closed/mineral,
 /area/awaymission/InteQ)
 "uit" = (
 /obj/effect/turf_decal/delivery,
@@ -20306,9 +20092,6 @@
 "uqi" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
 /obj/structure/table/wood/fancy/black,
-/obj/structure/sign/poster/contraband/inteq/inteq_sign{
-	pixel_y = 32
-	},
 /turf/open/floor/wood/wood_parquet,
 /area/awaymission/InteQ)
 "uqq" = (
@@ -20379,7 +20162,6 @@
 /obj/effect/turf_decal/stripes/yellow/line{
 	dir = 5
 	},
-/obj/machinery/suit_storage_unit/syndicate/inteq,
 /turf/open/floor/plasteel/dark/smooth/small,
 /area/awaymission/InteQ/lvl2)
 "usC" = (
@@ -20606,6 +20388,7 @@
 "uBe" = (
 /obj/structure/table,
 /obj/machinery/light/dim/directional/west,
+/obj/item/stock_parts/cell/bluespacereactor,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
 "uBr" = (
@@ -20654,10 +20437,6 @@
 "uDA" = (
 /obj/machinery/recharge_station,
 /turf/open/floor/plasteel/showroomfloor,
-/area/awaymission/InteQ)
-"uDS" = (
-/obj/machinery/porta_turret/inteq/energy,
-/turf/open/floor/engine,
 /area/awaymission/InteQ)
 "uDY" = (
 /obj/effect/decal/cleanable/dirt,
@@ -20807,6 +20586,14 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
+"uMb" = (
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/machinery/button/door{
+	id = "teleportcommand";
+	pixel_y = 14
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "uMw" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /turf/open/floor/plasteel/dark,
@@ -21215,9 +21002,6 @@
 /area/awaymission/InteQ/lvl2)
 "vgo" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_x = 32
-	},
 /obj/structure/barricade/sandbags,
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
@@ -21399,18 +21183,6 @@
 /obj/structure/railing,
 /turf/open/floor/engine,
 /area/awaymission/InteQ)
-"vpy" = (
-/obj/item/kirbyplants/hedge{
-	anchored = 1
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_y = 32
-	},
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/InteQ/lvl2)
 "vpH" = (
 /obj/structure/flora/junglebush,
 /turf/open/floor/grass/grass0,
@@ -21548,12 +21320,6 @@
 	},
 /turf/open/floor/plasteel/dark/smooth/large,
 /area/awaymission/InteQ/lvl2)
-"vzn" = (
-/obj/structure/sign/poster/contraband/inteq/inteq_sign{
-	pixel_y = 32
-	},
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/InteQ)
 "vzO" = (
 /obj/structure/closet/secure_closet/personal{
 	icon_state = "cabinet"
@@ -22440,13 +22206,6 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
-"wrA" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ/lvl2)
 "wsQ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
@@ -22503,6 +22262,10 @@
 /area/awaymission/InteQ/lvl3)
 "wuH" = (
 /obj/structure/shipping_container/nthi,
+/obj/structure/shipping_container/nthi{
+	pixel_y = 35;
+	pixel_x = 61
+	},
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/awaymission/InteQ)
 "wuQ" = (
@@ -22788,10 +22551,6 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/InteQ)
-"wIh" = (
-/obj/structure/sign/poster/contraband/inteq/random,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/awaymission/InteQ)
 "wJb" = (
 /turf/open/floor/plasteel/kitchen{
 	dir = 4
@@ -22867,6 +22626,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 10
 	},
+/obj/item/stock_parts/cell/bluespacereactor,
 /turf/open/floor/plasteel/white/smooth/small,
 /area/awaymission/InteQ)
 "wNz" = (
@@ -23356,18 +23116,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/awaymission/InteQ/lvl2)
-"xni" = (
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_y = 32
-	},
-/obj/machinery/door/poddoor/preopen,
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/machinery/door/airlock/centcom{
-	name = "Engineering";
-	req_one_access_txt = "152"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/InteQ/lvl2)
 "xns" = (
 /obj/structure/table/survival_pod,
 /obj/item/storage/box/donkpockets,
@@ -23420,10 +23168,6 @@
 /turf/open/floor/plasteel/dark/textured/large,
 /area/awaymission/InteQ)
 "xoN" = (
-/obj/structure/shipping_container/vitezstvi{
-	pixel_y = 38;
-	pixel_x = 23
-	},
 /obj/structure/sign/flag/inteq,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/awaymission/InteQ)
@@ -24275,9 +24019,6 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/brown,
-/obj/structure/sign/poster/contraband/inteq/random{
-	pixel_y = -32
-	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 
@@ -25631,7 +25372,7 @@ uad
 uad
 uad
 xwv
-eFN
+tdP
 fep
 sQI
 sQI
@@ -26162,7 +25903,7 @@ ePI
 wEN
 qnY
 fbM
-vzn
+pQl
 pQl
 fZs
 fbM
@@ -26577,7 +26318,7 @@ fcj
 dRv
 tQj
 fbM
-smd
+pcm
 pcm
 pcm
 paO
@@ -26641,7 +26382,7 @@ nba
 bRO
 bRO
 uOi
-uOi
+eJV
 uOi
 uOi
 uOi
@@ -26903,7 +26644,7 @@ uad
 uad
 uad
 xwv
-eFN
+tdP
 tLq
 pzx
 dgU
@@ -27413,7 +27154,7 @@ ebu
 gAv
 smZ
 fbM
-eLN
+iMH
 fbM
 fbM
 qAk
@@ -27607,7 +27348,7 @@ fbM
 fbM
 hPO
 ozP
-wIh
+ozP
 ozP
 ozP
 xac
@@ -27625,7 +27366,7 @@ fbM
 fbM
 fbM
 fbM
-eLN
+iMH
 iMH
 fbM
 gaT
@@ -27835,10 +27576,10 @@ jCe
 jCe
 euC
 fbM
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
 fbM
 wUo
 jCe
@@ -28034,11 +27775,11 @@ lzr
 pQl
 fjg
 fbM
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
 fbM
 fbM
 fbM
@@ -28047,10 +27788,10 @@ fbM
 fbM
 fbM
 fbM
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
 fbM
 jMI
 xYZ
@@ -28246,23 +27987,23 @@ wbL
 eFa
 fex
 ozP
-ibQ
-ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 fbM
 laU
 lGi
@@ -28459,22 +28200,22 @@ gCz
 ksP
 ozP
 ibQ
-ibQ
-ibQ
-ibQ
-ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 fbM
 fbM
 fbM
@@ -28673,20 +28414,20 @@ fbM
 ibQ
 ibQ
 ibQ
-ibQ
-ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 eLN
 fbM
 fbM
@@ -28886,19 +28627,19 @@ ibQ
 ibQ
 ibQ
 ibQ
-ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 fbM
 fbM
 sYd
@@ -29099,18 +28840,18 @@ ibQ
 ibQ
 ibQ
 ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 fbM
 fpx
 ida
@@ -29312,17 +29053,17 @@ ibQ
 ibQ
 ibQ
 ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 fbM
 qCK
 ida
@@ -29524,17 +29265,17 @@ ibQ
 ibQ
 ibQ
 ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 fbM
 pUL
 aVO
@@ -29737,16 +29478,16 @@ ibQ
 ibQ
 ibQ
 ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 fbM
 sYi
 ida
@@ -29949,16 +29690,16 @@ ibQ
 ibQ
 ibQ
 ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 fbM
 fbM
 mvu
@@ -30161,17 +29902,17 @@ ibQ
 ibQ
 ibQ
 ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 fbM
 fbM
 mpZ
@@ -30373,18 +30114,18 @@ cIr
 ibQ
 ibQ
 ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 fbM
 cyO
 qmV
@@ -30403,7 +30144,7 @@ gWZ
 jCe
 jCe
 qWd
-mMn
+jCe
 fbM
 pyf
 uFO
@@ -30585,18 +30326,18 @@ fbM
 ibQ
 ibQ
 ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 fbM
 fbM
 qmV
@@ -30798,18 +30539,18 @@ cIr
 ibQ
 ibQ
 ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 fbM
 jdS
 vjY
@@ -31011,17 +30752,17 @@ ibQ
 ibQ
 ibQ
 ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 fbM
 rgx
 vJH
@@ -31224,16 +30965,16 @@ ibQ
 ibQ
 ibQ
 ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 fbM
 owU
 kCr
@@ -31436,13 +31177,13 @@ ibQ
 ibQ
 ibQ
 ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 eLN
 eLN
 fbM
@@ -31648,18 +31389,18 @@ ibQ
 ibQ
 ibQ
 ibQ
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 eLN
 eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
 eLN
 eLN
 eLN
@@ -31860,18 +31601,18 @@ ibQ
 ibQ
 ibQ
 ibQ
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
 eLN
 eLN
 eLN
@@ -32073,17 +31814,17 @@ ibQ
 ibQ
 ibQ
 ibQ
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
 iaL
 iaL
 iaL
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
 eLN
 ibQ
 ibQ
@@ -32285,16 +32026,16 @@ ibQ
 ibQ
 ibQ
 ibQ
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
 iaL
 iaL
 iaL
 iaL
-eLN
-eLN
+iMH
+iMH
 eLN
 eLN
 opl
@@ -32497,16 +32238,16 @@ ibQ
 ibQ
 ibQ
 ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
 iaL
 iaL
 iaL
 iaL
-eLN
+iMH
 eLN
 ibQ
 ibQ
@@ -32709,12 +32450,12 @@ mNN
 mNN
 ibQ
 eLN
-eLN
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
+iMH
 iaL
 iaL
 iaL
@@ -32923,11 +32664,11 @@ ibQ
 eLN
 ibQ
 ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
 uib
 iaL
 iaL
@@ -33136,11 +32877,11 @@ eLN
 ibQ
 ibQ
 ibQ
-eLN
-eLN
-eLN
-eLN
-eLN
+iMH
+iMH
+iMH
+iMH
+iMH
 aCW
 wEU
 ibQ
@@ -35695,7 +35436,7 @@ goA
 vSj
 oMi
 uyh
-uDS
+nPe
 ibQ
 ibQ
 ibQ
@@ -36301,7 +36042,7 @@ fbM
 kOh
 ami
 oZa
-ebd
+oZa
 aSm
 fbM
 fbM
@@ -38865,7 +38606,7 @@ fbM
 hxF
 jCe
 jCe
-qoE
+jCe
 jCe
 jCe
 kWv
@@ -39291,7 +39032,7 @@ hTS
 ukY
 jCe
 jCe
-klt
+uqH
 kLx
 ikK
 fbM
@@ -41830,7 +41571,7 @@ fbM
 fbM
 cuN
 nom
-nzP
+nom
 fbM
 hAz
 rsx
@@ -45993,7 +45734,7 @@ mMv
 mMv
 nxE
 nxE
-nxE
+rvc
 nxE
 nxE
 nxE
@@ -46417,17 +46158,17 @@ bRO
 bRO
 bRO
 bRO
-pxa
-vPu
+eNs
+uMb
 ofK
 ofK
 ofK
 ofK
 ofK
 vPu
-pxa
+eNs
 lnj
-vPu
+roq
 vPu
 vPu
 vPu
@@ -48309,7 +48050,7 @@ uad
 nba
 eNs
 eNs
-gRq
+eNs
 eNs
 eNs
 eNs
@@ -48732,9 +48473,9 @@ uad
 uad
 nba
 eNs
-ofK
+cnA
 mnZ
-ofK
+cnA
 eNs
 qLW
 eNs
@@ -50215,7 +49956,7 @@ mSC
 mSC
 mKr
 mKr
-eNs
+let
 jPF
 ofK
 ofK
@@ -50226,7 +49967,7 @@ hMp
 hMp
 dqG
 pNL
-eNs
+let
 eNs
 nba
 uad
@@ -50413,7 +50154,7 @@ uad
 uad
 uad
 nba
-gRq
+let
 iER
 sol
 sol
@@ -50431,7 +50172,7 @@ eNs
 cnA
 mnZ
 cnA
-eNs
+let
 eNs
 vPu
 ssQ
@@ -51063,7 +50804,7 @@ cbc
 fOh
 xMU
 qGD
-eNs
+let
 pRa
 tLt
 ofK
@@ -51498,7 +51239,7 @@ mKr
 cbc
 cbc
 kHD
-eNs
+let
 eNs
 nba
 uad
@@ -51685,7 +51426,7 @@ uad
 uad
 uad
 nba
-gRq
+let
 cUv
 qyE
 ofK
@@ -52394,7 +52135,7 @@ nyy
 vgh
 buv
 ohA
-yiT
+sBn
 kHD
 jnL
 jnL
@@ -52560,7 +52301,7 @@ vPu
 kHD
 vPu
 dIo
-rxb
+ofK
 ofK
 ofK
 iuJ
@@ -52587,7 +52328,7 @@ ofK
 nak
 ofK
 ofK
-eZt
+wqy
 eNs
 adY
 lFl
@@ -53387,7 +53128,7 @@ ofK
 ofK
 ofK
 vPu
-cnA
+lqt
 bCI
 fOh
 wcn
@@ -53419,7 +53160,7 @@ ofK
 ofK
 tgO
 usj
-qTC
+oGN
 cNf
 oGN
 isB
@@ -54081,17 +53822,17 @@ eNs
 cKE
 cKE
 bhj
-eNs
+let
 eNs
 oXd
 oXd
 oXd
 eNs
-eNs
+let
 reO
 bXl
 reO
-eNs
+let
 eNs
 eNs
 eNs
@@ -54283,14 +54024,14 @@ wNz
 nak
 ofK
 ofK
-sBn
+ofK
 eNs
 pAB
 vVt
 vVt
 fVL
 eNs
-wrA
+vPu
 vPu
 rMQ
 vPu
@@ -54305,7 +54046,7 @@ vPu
 vPu
 eNs
 hPZ
-eeK
+jyL
 eNs
 nba
 uad
@@ -54622,7 +54363,7 @@ uad
 nba
 bRO
 bfQ
-isk
+ajg
 bfQ
 qaS
 qaS
@@ -54907,7 +54648,7 @@ dTM
 iKC
 uML
 ybh
-fKG
+jCD
 jCD
 jtt
 syA
@@ -55083,7 +54824,7 @@ ofK
 guI
 ofK
 vPu
-cnA
+lqt
 puM
 ofK
 ofK
@@ -55131,14 +54872,14 @@ tgO
 nak
 ofK
 nak
-eJV
+fOh
 eNs
 gbf
 jIQ
 jIQ
 fDc
 eNs
-wrA
+vPu
 vPu
 vPu
 vPu
@@ -55302,7 +55043,7 @@ uqt
 ofK
 ofK
 kjs
-eNs
+let
 dCz
 vPu
 uSc
@@ -55353,17 +55094,17 @@ eNs
 idn
 idn
 eNs
-eNs
+let
 eNs
 oXd
 oXd
 oXd
 eNs
-eNs
-xni
+let
+qxV
 jrV
 qxV
-eNs
+let
 jnL
 jnL
 vES
@@ -55509,7 +55250,7 @@ eNs
 eNs
 eNs
 eNs
-eNs
+let
 sPw
 ofK
 frO
@@ -56415,7 +56156,7 @@ vPu
 vVu
 vVt
 eNs
-eNs
+let
 kaY
 eNs
 eNs
@@ -56425,7 +56166,7 @@ rnv
 jnL
 eNs
 psM
-dgB
+jnL
 sUl
 eNs
 uad
@@ -56631,8 +56372,8 @@ uiJ
 vPu
 uiJ
 vPu
-eNs
-hkt
+let
+jnL
 rnv
 vES
 eNs
@@ -56781,11 +56522,11 @@ cVn
 ckG
 eNs
 tDn
-eNs
+let
 vPu
 kHD
 vPu
-klI
+hoA
 vPu
 vPu
 vPu
@@ -56833,8 +56574,8 @@ mtd
 qLW
 qLW
 qLW
-eNs
-hkt
+let
+jnL
 qVO
 jnL
 jnL
@@ -56849,7 +56590,7 @@ rnv
 jnL
 eNs
 jOk
-lqt
+jOk
 jOk
 eNs
 uad
@@ -57246,7 +56987,7 @@ orL
 vVt
 vVt
 toJ
-nbh
+vVt
 jUO
 jUO
 jUO
@@ -57273,7 +57014,7 @@ jnL
 jnL
 eNs
 iFK
-dQV
+iFK
 iFK
 eNs
 uad
@@ -57413,7 +57154,7 @@ bzW
 tDJ
 wLP
 mMv
-aAL
+mMv
 wLP
 flv
 erv
@@ -57479,8 +57220,8 @@ vPu
 vPu
 vPu
 vPu
-eNs
-vpy
+let
+jIQ
 jIQ
 jIQ
 eNs
@@ -58264,7 +58005,7 @@ eNs
 eNs
 eNs
 eNs
-eNs
+let
 ilU
 vPu
 kKd
@@ -58520,7 +58261,7 @@ jnL
 vPu
 oms
 kzb
-smC
+sLY
 sLY
 sLY
 xoW
@@ -58678,7 +58419,7 @@ faz
 vbF
 mMv
 bDp
-fTo
+vFi
 nla
 vQk
 tDJ
@@ -58893,14 +58634,14 @@ pCN
 pCN
 eNs
 eNs
-eNs
+let
 wxy
 eNs
 eNs
 eNs
 jIQ
 fDc
-eNs
+let
 kHD
 kQb
 kHD
@@ -58931,7 +58672,7 @@ vPu
 hhv
 duD
 jnL
-let
+kon
 eNs
 prt
 ofK
@@ -58943,11 +58684,11 @@ jnL
 uYQ
 vPu
 oms
-qfN
+sLY
 tpS
 sLY
 sLY
-tDQ
+xoW
 pCN
 iIs
 uad
@@ -59105,16 +58846,16 @@ wLP
 iIs
 wLP
 cep
-smC
+sLY
 sLY
 eNs
-iSe
+hcn
 eNs
 eNs
 eNs
 eNs
 ioX
-gGC
+rxb
 ioX
 eNs
 cnA
@@ -59123,7 +58864,7 @@ eNs
 eNs
 dhb
 ozn
-bLn
+ozn
 ozn
 eNs
 eNs
@@ -59146,7 +58887,7 @@ eNs
 eNs
 eNs
 eNs
-oEo
+ofK
 ofK
 hrY
 eNs
@@ -59367,7 +59108,7 @@ jxL
 jYy
 eNs
 eNs
-mfr
+nDO
 nDO
 lDo
 wyK
@@ -59528,7 +59269,7 @@ mMv
 wLP
 iIs
 wLP
-qfN
+sLY
 tJp
 qIx
 eNs
@@ -60181,7 +59922,7 @@ djF
 rmu
 wBI
 eNs
-eNs
+let
 eNs
 hbF
 eNs
@@ -61024,7 +60765,7 @@ cnA
 vPu
 kQb
 vPu
-eNs
+let
 upK
 nMN
 aQj
@@ -61244,7 +60985,7 @@ kHD
 pqM
 huo
 huo
-pCN
+bLn
 iQH
 iQH
 pCN
@@ -61502,11 +61243,11 @@ fuC
 vmY
 fuC
 vmY
-lVu
+fuC
 fuC
 vmY
 fuC
-lVu
+fuC
 fuC
 vmY
 vmY
@@ -61664,7 +61405,7 @@ eNs
 kHD
 eNs
 wCC
-eNs
+let
 eNs
 ieB
 ieB
@@ -61872,7 +61613,7 @@ xJL
 vPu
 kHD
 vPu
-eNs
+let
 efD
 eNs
 huo
@@ -62930,7 +62671,7 @@ vMq
 aDe
 fIU
 eNs
-gRq
+eNs
 eNs
 eNs
 xFD
