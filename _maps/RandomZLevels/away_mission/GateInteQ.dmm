@@ -1817,7 +1817,8 @@
 /area/awaymission/InteQ/lvl2)
 "cgA" = (
 /obj/item/clothing/suit/space/hardsuit/shielded/syndi/inteq{
-	slowdown = 2
+	slowdown = 2;
+	armor = list("melee" = 70, "bullet" = 70, "laser" = 60, "energy" = 15, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100, "wound" = 30)
 	},
 /turf/open/floor/catwalk_floor,
 /area/awaymission/InteQ/lvl3)
@@ -2458,6 +2459,9 @@
 	dir = 1
 	},
 /obj/machinery/light/directional/north,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl3)
 "cQM" = (
@@ -2960,6 +2964,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/window/reinforced,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl3)
 "dpH" = (
@@ -2974,6 +2979,10 @@
 /area/awaymission/InteQ/lvl2)
 "dqG" = (
 /obj/structure/closet/crate/large,
+/obj/item/stack/circuit_stack/full,
+/obj/item/stack/circuit_stack/full,
+/obj/item/stack/circuit_stack/full,
+/obj/item/stack/circuit_stack/full,
 /turf/open/floor/glass/reinforced,
 /area/awaymission/InteQ/lvl2)
 "drd" = (
@@ -3977,6 +3986,11 @@
 /mob/living/simple_animal/hostile/evilborg/heavy,
 /turf/open/floor/catwalk_floor,
 /area/awaymission/InteQ/lvl3)
+"etg" = (
+/obj/effect/turf_decal/tile/brown/opposingcorners,
+/obj/vehicle/sealed/mecha/working/ripley/deathripley/real,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "etp" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -4177,6 +4191,15 @@
 /turf/closed/indestructible/fakedoor{
 	name = "Intersection"
 	},
+/area/awaymission/InteQ/lvl3)
+"eGd" = (
+/obj/effect/turf_decal/trimline/yellow/filled/line,
+/obj/machinery/light/directional/south,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl3)
 "eGS" = (
 /obj/machinery/light/small{
@@ -4920,6 +4943,14 @@
 /mob/living/simple_animal/hostile/syndicate/ranged/infiltrator,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ)
+"fwW" = (
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/machinery/rnd/production/circuit_imprinter/hacked,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl2)
 "fxy" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 8
@@ -5030,6 +5061,7 @@
 	amount = 30
 	},
 /obj/item/stack/sheet/mineral/titanium/fifty,
+/obj/structure/window/reinforced,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl3)
 "fEZ" = (
@@ -8067,6 +8099,9 @@
 	},
 /obj/machinery/light/directional/north,
 /obj/machinery/firealarm/directional/north,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl3)
 "iKj" = (
@@ -8811,6 +8846,9 @@
 /obj/effect/turf_decal/trimline/yellow/filled/line,
 /obj/machinery/light/directional/south,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl3)
 "jwC" = (
@@ -11084,7 +11122,6 @@
 /area/awaymission/InteQ/lvl2)
 "lHw" = (
 /obj/structure/table,
-/obj/effect/landmark/event_spawn,
 /obj/effect/turf_decal/delivery,
 /obj/item/stack/sheet/glass{
 	amount = 40;
@@ -13949,6 +13986,7 @@
 /obj/structure/closet/crate/silvercrate,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/item/stack/sheet/plastitaniumglass/fifty,
+/obj/structure/window/reinforced,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl3)
 "oyR" = (
@@ -17906,6 +17944,14 @@
 /obj/item/ammo_box/magazine/ak12,
 /obj/item/ammo_box/magazine/ak12,
 /obj/item/ammo_box/magazine/ak12,
+/obj/item/ammo_box/magazine/ak12,
+/obj/item/ammo_box/magazine/ak12,
+/obj/item/ammo_box/magazine/ak12,
+/obj/item/ammo_box/magazine/ak12,
+/obj/item/ammo_box/magazine/ak12,
+/obj/item/ammo_box/magazine/ak12,
+/obj/item/ammo_box/magazine/ak12,
+/obj/item/ammo_box/magazine/ak12,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl2)
 "spg" = (
@@ -18346,6 +18392,14 @@
 	faction = list("InteQ")
 	},
 /turf/open/floor/mineral/titanium,
+/area/awaymission/InteQ/lvl3)
+"sJy" = (
+/obj/machinery/button/door{
+	id = 1;
+	pixel_x = -33;
+	pixel_y = -10
+	},
+/turf/open/floor/plasteel/dark,
 /area/awaymission/InteQ/lvl3)
 "sKu" = (
 /obj/effect/turf_decal/delivery,
@@ -19228,6 +19282,13 @@
 	},
 /turf/open/floor/circuit/red,
 /area/awaymission/InteQ/lvl2)
+"tAM" = (
+/obj/effect/turf_decal/trimline/yellow/filled/line{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/InteQ/lvl3)
 "tBV" = (
 /obj/effect/turf_decal/stripes/yellow/line{
 	dir = 1
@@ -23705,7 +23766,6 @@
 	},
 /obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/dirt,
-/obj/vehicle/sealed/mecha/working/ripley/deathripley/real,
 /turf/open/floor/plating,
 /area/awaymission/InteQ/lvl3)
 "xVt" = (
@@ -25166,7 +25226,7 @@ tKh
 ahn
 dgU
 dgU
-dgU
+sJy
 dgU
 lBW
 kXj
@@ -28785,7 +28845,7 @@ dgU
 dgU
 dgU
 scx
-jwf
+eGd
 nBv
 bcU
 nBv
@@ -30056,7 +30116,7 @@ btq
 sLL
 mLZ
 btq
-pVj
+tAM
 lUy
 nBv
 bcU
@@ -51278,7 +51338,7 @@ uad
 uad
 nba
 eNs
-kHD
+etg
 kHD
 tPU
 hjl
@@ -57000,7 +57060,7 @@ eNs
 eNs
 eNs
 jnL
-jnL
+fwW
 jnL
 jnL
 jnL
