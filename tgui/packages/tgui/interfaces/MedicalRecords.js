@@ -1,4 +1,5 @@
 import { Fragment } from 'inferno';
+
 import { useBackend } from "../backend";
 import { Box, Button, Collapsible, Icon, Input, LabeledList, Section, Tabs } from "../components";
 import { ComplexModal, modalOpen, modalRegisterBodyOverride } from "../interfaces/common/ComplexModal";
@@ -237,7 +238,7 @@ const MedicalRecordsViewGeneral = (_properties, context) => {
                 style={{
                   width: '96px',
                   'margin-bottom': '0.5rem',
-                  '-ms-interpolation-mode': 'nearest-neighbor',
+                  imageRendering: 'pixelated',
                 }}
               /><br />
               Photo #{i + 1}

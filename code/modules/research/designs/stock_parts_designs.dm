@@ -2,26 +2,6 @@
 /////////////Stock Parts////////////////
 ////////////////////////////////////////
 
-/datum/design/RPED
-	name = "Rapid Part Exchange Device"
-	desc = "Special mechanical module made to store, sort, and apply standard machine parts."
-	id = "rped"
-	build_type = PROTOLATHE
-	materials = list(/datum/material/iron = 10000, /datum/material/glass = 5000) //hardcore
-	build_path = /obj/item/storage/part_replacer
-	category = list("Stock Parts")
-	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
-
-/datum/design/BS_RPED
-	name = "Bluespace RPED"
-	desc = "Powered by bluespace technology, this RPED variant can upgrade buildings from a distance, without needing to remove the panel first."
-	id = "bs_rped"
-	build_type = PROTOLATHE
-	materials = list(/datum/material/iron = 15000, /datum/material/glass = 5000, /datum/material/silver = 2500) //hardcore
-	build_path = /obj/item/storage/part_replacer/bluespace
-	category = list("Stock Parts")
-	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
-
 //Capacitors
 /datum/design/basic_capacitor
 	name = "Basic Capacitor"
@@ -32,7 +12,7 @@
 	build_path = /obj/item/stock_parts/capacitor
 	category = list("Stock Parts","Machinery","initial")
 	lathe_time_factor = 0.2
-	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
+	departmental_flags = DEPARTMENTAL_FLAG_ALL
 
 /datum/design/adv_capacitor
 	name = "Advanced Capacitor"
@@ -77,7 +57,7 @@
 	build_path = /obj/item/stock_parts/scanning_module
 	category = list("Stock Parts","Machinery","initial")
 	lathe_time_factor = 0.2
-	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
+	departmental_flags = DEPARTMENTAL_FLAG_ALL
 
 /datum/design/adv_scanning
 	name = "Advanced Scanning Module"
@@ -122,7 +102,7 @@
 	build_path = /obj/item/stock_parts/manipulator
 	category = list("Stock Parts","Machinery","initial")
 	lathe_time_factor = 0.2
-	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
+	departmental_flags = DEPARTMENTAL_FLAG_ALL
 
 /datum/design/nano_mani
 	name = "Nano Manipulator"
@@ -167,7 +147,7 @@
 	build_path = /obj/item/stock_parts/micro_laser
 	category = list("Stock Parts","Machinery","initial")
 	lathe_time_factor = 0.2
-	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
+	departmental_flags = DEPARTMENTAL_FLAG_ALL
 
 /datum/design/high_micro_laser
 	name = "High-Power Micro-Laser"
@@ -212,7 +192,7 @@
 	build_path = /obj/item/stock_parts/matter_bin
 	category = list("Stock Parts","Machinery","initial")
 	lathe_time_factor = 0.2
-	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
+	departmental_flags = DEPARTMENTAL_FLAG_ALL
 
 /datum/design/adv_matter_bin
 	name = "Advanced Matter Bin"

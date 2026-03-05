@@ -156,6 +156,11 @@
 	restricted_desc = "Brig Physician."
 	restricted_roles = list("Brig Physician")
 
+/datum/gear/uniform/catcrin_underarmor
+	name = "Catcrin underarmor unifrom"
+	path = /obj/item/clothing/under/catcrin_underarmor
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_GENERAL
+
 /datum/gear/uniform/ac_tanktopuni
 	name = "AC Tanktop Uniform"
 	path = /obj/item/clothing/under/rank/security/officer/ac
@@ -202,4 +207,9 @@
 /datum/gear/uniform/draculass
 	name = "Draculass coat"
 	path = /obj/item/clothing/under/costume/draculass
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_DRESSES
+
+/datum/gear/uniform/solfed_dress
+	name = "SolFed Dress"
+	path = /obj/item/clothing/under/sol_dress
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_DRESSES

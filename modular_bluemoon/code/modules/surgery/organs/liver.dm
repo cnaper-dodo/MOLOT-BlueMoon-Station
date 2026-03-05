@@ -43,8 +43,8 @@
 				damage += (thisamount*toxLethality)
 
 	//metabolize reagents
-	owner.adjustToxLoss(-0.4, TRUE) //Doesn't kill slimes. Yes.
-	owner.adjustFireLoss(-0.4, FALSE)
+	owner.adjustToxLoss(-0.25, TRUE) //Doesn't kill slimes. Yes.
+	owner.adjustFireLoss(-0.25, FALSE)
 	owner.reagents.metabolize(owner, seconds, times_fired, can_overdose=TRUE)
 
 	if(damage > 10 && prob(damage/3))//the higher the damage the higher the probability
@@ -91,8 +91,8 @@
 				damage += (thisamount*toxLethality)
 
 	//metabolize reagents
-	owner.adjustToxLoss(-3, TRUE)
-	owner.adjustFireLoss(-0.5, FALSE)
+	owner.adjustToxLoss(-1.5, TRUE)
+	owner.adjustFireLoss(-0.35, FALSE)
 	owner.reagents.metabolize(owner, seconds, times_fired, can_overdose=TRUE)
 
 	if(damage > 10 && prob(damage/3))//the higher the damage the higher the probability
@@ -109,18 +109,25 @@
 	healing_factor = 3.5 * STANDARD_ORGAN_HEALING
 	decay_factor = 0.1 * STANDARD_ORGAN_DECAY
 
-/obj/item/organ/liver/tier3/antag/on_life()
+/obj/item/organ/liver/tier3/antag/on_life(seconds, times_fired)
+	. = ..()
+	if(!. || !owner)//can't process reagents with a failing liver
+		return
+
+	if(filterToxins && !HAS_TRAIT(owner, TRAIT_TOXINLOVER))
+		//handle liver toxin filtration
+		for(var/datum/reagent/toxin/T in owner.reagents.reagent_list)
+			var/thisamount = owner.reagents.get_reagent_amount(T.type)
+			if (thisamount && thisamount <= toxTolerance)
+				owner.reagents.remove_reagent(T.type, 1)
+			else
+				damage += (thisamount*toxLethality)
+
+	//metabolize reagents
 	owner.adjustToxLoss(-5, TRUE) //Heals like hell.
 	owner.adjustFireLoss(-2, FALSE)
 	owner.adjustStaminaLoss(-5, 0)
+	owner.reagents.metabolize(owner, seconds, times_fired, can_overdose=TRUE)
 
-/obj/item/autosurgeon/syndicate/inteq/biomorphedliver
-	uses = 1
-	starting_organ = /obj/item/organ/liver/tier3/antag
-
-/datum/uplink_item/implants/biomorphedliver
-	name = "Biomorphed Liver"
-	desc = "Экспериментальный орган, что используется некоторыми отрядами супер-солдат в различных 'чёрных операциях'. Даёт усиленное восстановление от токсинов и уменьшает изнурение."
-	item = /obj/item/autosurgeon/syndicate/inteq/biomorphedliver
-	cost = 5
-	purchasable_from = (UPLINK_TRAITORS | UPLINK_NUKE_OPS)
+	if(damage > 10 && prob(damage/3))//the higher the damage the higher the probability
+		to_chat(owner, "<span class='warning'>You feel a dull pain in your abdomen.</span>")

@@ -94,9 +94,10 @@
 		AddElement(/datum/element/object_reskinning)
 
 /obj/Destroy(force=FALSE)
-	if(!ismachinery(src))
-		STOP_PROCESSING(SSobj, src) // TODO: Have a processing bitflag to reduce on unnecessary loops through the processing lists
-	SStgui.close_uis(src)
+	if(!ismachinery(src) && (datum_flags & DF_ISPROCESSING))
+		STOP_PROCESSING(SSobj, src)
+	if(datum_flags & DF_HAS_OPEN_UI)
+		SStgui.close_uis(src)
 	. = ..()
 
 /// @depricated DO NOT USE
@@ -355,7 +356,7 @@
 /obj/examine(mob/user)
 	. = ..()
 	if(obj_flags & UNIQUE_RENAME)
-		. += "<span class='notice'>Use a pen on it to rename it or change its description.</span>"
+		. += "<span class='notice'>Ручкой можно сменить название или описание.</span>"
 
 /// Do you want to make overrides, of course you do! Will be called if an object was reskinned successfully
 /obj/proc/reskin_obj(mob/user)

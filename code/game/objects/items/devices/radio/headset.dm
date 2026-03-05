@@ -62,7 +62,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 		. += "<span class='notice'>A small screen on the headset displays the following available frequencies:\n[english_list(avail_chans)]."
 
 		if(command)
-			. += "<span class='info'>Alt-click to toggle the high-volume mode.</span>"
+			. += "<span class='info'>CtrlShift-click to toggle the high-volume mode.</span>"
 	else
 		. += "<span class='notice'>A small screen on the headset flashes, it's too small to read without holding or wearing the headset.</span>"
 
@@ -82,7 +82,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 /obj/item/radio/headset/talk_into(mob/living/M, message, channel, list/spans,datum/language/language)
 	if (!listening)
 		return ITALICS | REDUCE_RANGE
-	if (language != /datum/language/signlanguage)
+	if (!language || !initial(language.visual_language))
 		return ..()
 
 /obj/item/radio/headset/can_receive(freq, level, AIuser)
@@ -360,6 +360,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	name = "\improper CentCom headset"
 	desc = "A headset used by the upper echelons of Nanotrasen."
 	icon_state = "cent_headset"
+	command = TRUE
 	keyslot = new /obj/item/encryptionkey/headset_com
 	keyslot2 = new /obj/item/encryptionkey/headset_cent
 
@@ -376,6 +377,35 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	icon_state = "cent_headset_alt"
 	item_state = "cent_headset_alt"
 	bowman = TRUE
+
+/obj/item/radio/headset/headset_cent/ntr //BLUEMOON add
+	name = "\proper the NanoTrasen Representative headset"
+	desc = "The headset of the lead station's judge."
+	icon_state = "ntr_headset"
+	keyslot = new /obj/item/encryptionkey/headset_ntr
+	command = TRUE
+
+/obj/item/radio/headset/headset_cent/ntr/equipped(mob/user, slot)
+	..()
+	if((slot == ITEM_SLOT_EARS_LEFT) || (slot == ITEM_SLOT_EARS_RIGHT))
+		user.typing_indicator_state = /obj/effect/overlay/typing_indicator/additional/law
+	else
+		user.typing_indicator_state = /obj/effect/overlay/typing_indicator
+
+/obj/item/radio/headset/headset_cent/ntr/alt //BLUEMOON add
+	name = "\improper the NanoTrasen Representative bowman headset"
+	desc = "A headset especially for emergency response personnel. Protects ears from flashbangs."
+	icon_state = "ntr_headset_alt"
+	item_state = "ntr_headset_alt"
+	bowman = TRUE
+	command = TRUE
+
+/obj/item/radio/headset/headset_cent/ntr/alt/equipped(mob/user, slot)
+	..()
+	if((slot == ITEM_SLOT_EARS_LEFT) || (slot == ITEM_SLOT_EARS_RIGHT))
+		user.typing_indicator_state = /obj/effect/overlay/typing_indicator/additional/law
+	else
+		user.typing_indicator_state = /obj/effect/overlay/typing_indicator
 
 /obj/item/radio/headset/silicon/pai
 	name = "\proper mini Integrated Subspace Transceiver "
@@ -457,7 +487,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	for(var/ch_name in channels)
 		secure_radio_connections[ch_name] = add_radio(src, GLOB.radiochannels[ch_name])
 
-/obj/item/radio/headset/AltClick(mob/living/user)
+/obj/item/radio/headset/CtrlShiftClick(mob/living/user)
 	. = ..()
 	if(!istype(user) || !Adjacent(user) || user.incapacitated())
 		return

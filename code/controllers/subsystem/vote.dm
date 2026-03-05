@@ -409,12 +409,12 @@ SUBSYSTEM_DEF(vote)
 					// if(SSpersistence.last_dynamic_gamemode in list(ROUNDTYPE_DYNAMIC_TEAMBASED, ROUNDTYPE_DYNAMIC_HARD))
 					// 	last_dynamic_type = list(ROUNDTYPE_DYNAMIC_TEAMBASED, ROUNDTYPE_DYNAMIC_HARD)
 
-					if(. == ROUNDTYPE_EXTENDED)
-						. == ROUNDTYPE_EXTENDED
-					else
-						. = pick_dynamic_type_by_chaos(GLOB.player_list)
+					. = pick_dynamic_type_by_chaos(GLOB.player_list)
 					SSpersistence.RecordDynamicType(.)
-
+					GLOB.round_type = .
+					GLOB.master_mode = .
+				else
+					SSpersistence.RecordDynamicType(.)
 					GLOB.round_type = .
 					GLOB.master_mode = .
 
@@ -656,8 +656,8 @@ SUBSYSTEM_DEF(vote)
 	var/list/roundtypes = list()
 	var/much_to_check = ROUNDTYPE_MAX_COMBO
 	log_world("SSpersistence.saved_modes contents:")
-	for (var/mode in SSpersistence.saved_modes)
-		log_world("- [mode]: [SSpersistence.saved_modes[mode]]")
+	for(var/i in 1 to SSpersistence.saved_modes.len)
+		log_world("- [i]: [SSpersistence.saved_modes[i]]")
 
 	for (var/mode in SSpersistence.saved_modes)
 		if(!istext(mode))
@@ -936,12 +936,12 @@ SUBSYSTEM_DEF(vote)
 		if(isnum(chaos))
 			total_chaos += chaos
 
-	var/list/available_hard = list(ROUNDTYPE_DYNAMIC_TEAMBASED, ROUNDTYPE_DYNAMIC_HARD)
+	var/list/available_hard = list(ROUNDTYPE_DYNAMIC_HARD)
 	var/list/available_medium = list(ROUNDTYPE_DYNAMIC_MEDIUM)
 	// var/list/available_medium = list(ROUNDTYPE_DYNAMIC_MEDIUM, ROUNDTYPE_DYNAMIC_LIGHT) - last_dynamic_type
 
 	var/dynamic_type
-	if(get_total_player_count() >= 20)
+	if(get_total_player_count() >= 30)
 		if(total_chaos >= CONFIG_GET(number/chaos_for_a_hard_dynamic) && length(available_hard))
 			dynamic_type = pick(available_hard)
 		else

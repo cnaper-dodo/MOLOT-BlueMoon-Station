@@ -719,6 +719,10 @@
 		client.prefs.scars_list["[cur_scar_index]"] = valid_scars
 		client.prefs.save_character()
 
+	// BLUEMOON ADD START - загрузка татуировок
+	client.prefs.apply_tattoos_to_human(H)
+	// BLUEMOON ADD END
+
 	client.prefs.copy_to(H, initial_spawn = TRUE)
 	H.dna.update_dna_identity()
 	if(mind)
@@ -766,7 +770,7 @@
 
 
 /mob/dead/new_player/proc/close_spawn_windows()
-
+	client?.clear_character_previews()
 	src << browse(null, "window=latechoices") //closes late choices window
 	src << browse(null, "window=playersetup") //closes the player setup window
 	src << browse(null, "window=preferences") //closes job selection

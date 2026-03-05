@@ -14,12 +14,17 @@
 		to_chat(user,"<span class='warning'>[O] is already modified!")
 		return
 	if(O.type in fromitem) //makes sure O is the right thing
-		new product(usr.loc) //spawns the product
+		var/result = new product(usr.loc) //spawns the product
 		user.visible_message("<span class='warning'>[user] modifies [O]!","<span class='warning'>You modify the [O]!")
+		on_item_replace(O, result)
 		qdel(O) //Gets rid of the baton
 		qdel(src) //gets rid of the kit
 	else
 		to_chat(user, "<span class='warning'> You can't modify [O] with this kit!</span>")
+
+// may be useful for gun/stunbaton/etc modkits
+/obj/item/modkit/proc/on_item_replace(obj/old_item, obj/modified_item)
+	return
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -262,9 +267,9 @@
 	fromitem = list(/obj/item/gun/ballistic/automatic/pistol/enforcer/nomag, /obj/item/gun/ballistic/automatic/pistol/enforcer, /obj/item/gun/ballistic/automatic/pistol/enforcerred, /obj/item/gun/ballistic/automatic/pistol/enforcergold)
 
 /obj/item/gun/ballistic/automatic/pistol/enforcer/nue
-	name = "\improper Araki Nue"
-	desc = "Semi-automatic, double-action pistol that was engineered to fit any hand. The handle is decorated with orange-colored ergonomic rubber with a Vulpkanin muzzle on it. It's looks familiar."
-	icon = 'modular_bluemoon/fluffs/icons/obj/guns.dmi'
+	name = "\improper Araki Arms Nue"
+	desc = "Elegant, reliable and deadly, the semi-automatic, double-action pistol that fires .45 caliber ammunition and engineered to fit any hand. The handle is decorated with orange-colored ergonomic rubber with a Vulpkanin muzzle on it. It's looks familiar."
+	icon = 'modular_bluemoon/fluffs/icons/obj/32x36.dmi'
 	icon_state = "nue"
 	can_suppress = FALSE
 	fire_sound = 'modular_bluemoon/fluffs/sound/weapon/nue_shoot.ogg'
@@ -284,9 +289,9 @@
 	fromitem = list(/obj/item/ammo_box/magazine/e45, /obj/item/ammo_box/magazine/e45/taser, /obj/item/ammo_box/magazine/e45/lethal, /obj/item/ammo_box/magazine/e45/stun, /obj/item/ammo_box/magazine/e45/hydra)
 
 /obj/item/gun/ballistic/automatic/pistol/enforcer/malorian
-	name = "\improper Araki Arms 3516"
-	desc = "Unique heavy pistol manufactured by Araki Arms. Taking already successful design of previous Araki Nue, this one was designed to the personal specifications of Shiro."
-	icon = 'modular_bluemoon/fluffs/icons/obj/64x64.dmi'
+	name = "\improper Araki Arms 2563"
+	desc = "The only one of it's kind, unique heavy pistol made specially for Vulpboy Shiro Araki. Sleek, sexy, rebellious. Equipped with a smart link, compatible with various ammunition types, highest quality and the collector's value is through the roof. "
+	icon = 'modular_bluemoon/fluffs/icons/obj/48x32.dmi'
 	icon_state = "arakiarms"
 	can_suppress = FALSE
 	fire_sound = 'modular_bluemoon/fluffs/sound/weapon/nue_shoot.ogg'
@@ -649,10 +654,10 @@
 /obj/item/modkit/rs14_kit
 	name = "RS14 Kit"
 	desc = "A modkit for making an Rsha12 into a RS14."
-	product = /obj/item/gun/ballistic/shotgun/rsh12/rs14
-	fromitem = list(/obj/item/gun/ballistic/shotgun/rsh12)
+	product = /obj/item/gun/ballistic/shotgun/automatic/rsh12/rs14
+	fromitem = list(/obj/item/gun/ballistic/shotgun/automatic/rsh12)
 
-/obj/item/gun/ballistic/shotgun/rsh12/rs14
+/obj/item/gun/ballistic/shotgun/automatic/rsh12/rs14
 	name = "RS14"
 	desc = "Shotgun revolver. It was formerly a hunting weapon, but has since been adopted by the Rohai armies because of its ease of use, effectiveness and cheapness. This model uses 12 gauge."
 	item_state = "rs14"
@@ -752,7 +757,9 @@
 /obj/item/modkit/dreadmk3_kit
 	name = "Законодатель MK3 Kit"
 	desc = "A modkit for making a MultiPhase Energy Gun into Законодатель MK3."
-	product = /obj/item/gun/energy/e_gun/hos/dreadmk3
+	icon = 'icons/obj/device.dmi'
+	icon_state = "modkit"
+	product = /obj/item/gun/energy/e_gun/hos/dreadmk3/talking
 	fromitem = list(/obj/item/gun/energy/e_gun/hos)
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -773,6 +780,8 @@
 /obj/item/modkit/institute_kit
 	name = "Карабин Института Kit"
 	desc = "A modkit for making a Energy Gun into Карабин Института."
+	icon = 'icons/obj/device.dmi'
+	icon_state = "modkit"
 	product = /obj/item/gun/energy/e_gun/institute
 	fromitem = list(/obj/item/gun/energy/e_gun)
 
@@ -791,6 +800,8 @@
 /obj/item/modkit/old_laser_kit
 	name = "Лазер AER9 Kit"
 	desc = "A modkit for making a laser carbine into Лазер AER9."
+	icon = 'icons/obj/device.dmi'
+	icon_state = "modkit"
 	product = /obj/item/gun/energy/laser/carbine/old
 	fromitem = list(/obj/item/gun/energy/laser/carbine/nopin, /obj/item/gun/energy/laser/carbine)
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -820,6 +831,51 @@
 	desc = "A modkit for making a Heavy crowbar into Heavy pocket hammer."
 	product = /obj/item/crowbar/large/heavy/hammercrowbar
 	fromitem = list(/obj/item/crowbar/large/heavy)
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+/obj/item/modkit/p320_kit
+	name = "Magnetic Pistol p320 Kit"
+	desc = "A modkit for making an Enforcer into a Magnetic Pistol p320."
+	product = /obj/item/gun/ballistic/automatic/pistol/enforcer/p320
+	fromitem = list(/obj/item/gun/ballistic/automatic/pistol/enforcer/nomag, /obj/item/gun/ballistic/automatic/pistol/enforcer, /obj/item/gun/ballistic/automatic/pistol/enforcerred, /obj/item/gun/ballistic/automatic/pistol/enforcergold)
+
+/obj/item/gun/ballistic/automatic/pistol/enforcer/p320
+	name = "\improper P320"
+	desc = "P320 — модульный полуавтоматический пистолет. Данная версия пистолета была собрана под .45 калибр."
+	icon = 'modular_bluemoon/fluffs/icons/obj/P320.dmi'
+	lefthand_file = 'modular_bluemoon/fluffs/icons/mob/guns_left.dmi'
+	righthand_file = 'modular_bluemoon/fluffs/icons/mob/guns_right.dmi'
+	icon_state = "p320"
+	item_state = "p320"
+	fire_sound = 'modular_bluemoon/fluffs/sound/weapon/archivo.ogg'
+	unique_reskin = list(
+		"Black" = list(
+			"icon_state" = "p320b",
+			"item_state" = "p320b",
+			"name" = "Black P320"
+		),
+		"Millie" = list(
+			"icon_state" = "mil",
+			"item_state" = "mil",
+			"name" = "Millie P320"
+		)
+	)
+
+/obj/item/modkit/M9tempest_kit
+	name = "M-9 Tempest Kit"
+	desc = "A modkit for making a hybrid taser into a M-9 Tempest."
+	product = /obj/item/gun/energy/e_gun/advtaser/M9tempest
+	fromitem = list(/obj/item/gun/energy/e_gun/advtaser)
+
+/obj/item/gun/energy/e_gun/advtaser/M9tempest
+	name = "\improper M-9 Tempest"
+	icon_state = "M9tempest"
+	item_state = "M9tempest"
+	icon = 'modular_bluemoon/fluffs/icons/obj/guns.dmi'
+	lefthand_file = 'modular_bluemoon/fluffs/icons/mob/guns_left.dmi'
+	righthand_file = 'modular_bluemoon/fluffs/icons/mob/guns_right.dmi'
+	ammo_x_offset = 0
 
 ////////////////////////////////////////////////////////////////////////////////////////
 
@@ -888,7 +944,7 @@
 
 /obj/item/gun/ballistic/revolver/detective/rsh_future
 	name = "RSH-Future"
-	desc = " A custom-made revolver .38 caliber, engraved on the cylinder of the drum - 228321. The special body of this revolver, made of an unusual list of materials, allows you to muffle the sound of shots of this caliber, by about 25 percent. But still, there is a minus - a strong recoil, what a without a strong grip - It will be painfully."
+	desc = "An unusual revolver, clearly custom-made, the RuSH to the Future! Lightweight body is made of materials that not only make it easier to handle, but also absorb the sound of the shot, ensuring the further use of 38 caliber"
 	icon = 'modular_bluemoon/fluffs/icons/obj/guns.dmi'
 	icon_state = "rsh_future"
 	item_state = "rsh_future"
@@ -901,3 +957,27 @@
 	desc = "A modkit for making a .38 Mars Special into a RSH-Future."
 	product = /obj/item/gun/ballistic/revolver/detective/rsh_future
 	fromitem = list (/obj/item/gun/ballistic/revolver/detective)
+
+///////////////////////////////////////////////
+
+/obj/item/gun/ballistic/automatic/wt550/stg56
+	name = "\improper StG-56"
+	desc = "Recreated from old blueprints using the latest materials and a pinch of technology. This rifle will still serve well in its lifetime."
+	icon = 'modular_bluemoon/fluffs/icons/obj/48x32.dmi'
+	lefthand_file = 'modular_bluemoon/fluffs/icons/mob/guns_left.dmi'
+	righthand_file = 'modular_bluemoon/fluffs/icons/mob/guns_right.dmi'
+	icon_state = "stg56"
+	item_state = "stg56"
+	fire_sound = 'modular_bluemoon/fluffs/sound/weapon/stg56_shoot.ogg'
+	can_bayonet = FALSE
+
+/obj/item/gun/ballistic/automatic/wt550/stg56/update_icon_state()
+	icon_state = "stg56[magazine ? "" : "-e"]"
+
+/obj/item/modkit/stg56
+	name = "\improper StG-56 Kit"
+	desc = "A modkit for making a WT-550 into a Sturmgewehr-56."
+	product = /obj/item/gun/ballistic/automatic/wt550/stg56
+	fromitem = list(/obj/item/gun/ballistic/automatic/wt550)
+
+///////////////////////////////////////////////

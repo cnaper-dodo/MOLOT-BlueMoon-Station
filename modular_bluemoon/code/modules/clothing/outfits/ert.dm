@@ -43,7 +43,7 @@
 	W.access += get_centcom_access("Death Commando")//Let's add their alloted CentCom access.
 	W.registered_name = H.real_name
 	W.assignment = "Tribunal Ordinator"
-	W.update_label(W.registered_name)
+	W.update_label()
 
 /datum/outfit/lfwb_ordinator/officer
 	name = "Офицер-ординатор трибунала"
@@ -193,7 +193,7 @@
 	//l_hand = /obj/item/melee/powerfist
 	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
 		/obj/item/clothing/mask/gas/sechailer/swat=1,\
-		/obj/item/choice_beacon/ert_mech=1,\
+		/obj/item/choice_beacon/vehicle/misc_mech/ert=1,\
 		/obj/item/storage/box/syndie_kit/revolver=1,\
 		/obj/item/grenade/plastic/x4=1,
 		/obj/item/storage/ifak=1,\
@@ -412,7 +412,7 @@
 	ears = /obj/item/radio/headset/nri/bowman/command
 	r_hand = /obj/item/gun/ballistic/automatic/vss
 	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
-		/obj/item/choice_beacon/nri_mech=1,\
+		/obj/item/choice_beacon/vehicle/misc_mech/nri=1,\
 		/obj/item/storage/box/syndie_kit/revolver=1,\
 		/obj/item/storage/ifak=1,\
 		/obj/item/ammo_box/magazine/vss_mag=4)
@@ -571,7 +571,7 @@
 		/obj/item/storage/ifak=1,\
 		/obj/item/gun/ballistic/automatic/pistol/deagle=1,\
         /obj/item/ammo_box/magazine/m50=2,\
-		/obj/item/choice_beacon/sol_mech=1,\
+		/obj/item/choice_beacon/vehicle/misc_mech/sol=1,\
 		/obj/item/ammo_box/magazine/m12g/slug=4)
 
 // BLUEMOON ADD START - командная коробочка для командира
@@ -613,10 +613,10 @@
 	glasses = /obj/item/clothing/glasses/hud/health/night/syndicate
 	back = /obj/item/storage/backpack/ert_commander/ert_security
 	belt = /obj/item/storage/belt/military/ert_min
-	l_pocket = /obj/item/clothing/accessory/lawyers_badge
 	backpack_contents = list(/obj/item/storage/box/survival/centcom=1,\
 		/obj/item/storage/box/ert_commander=1,
 		/obj/item/storage/firstaid/regular=1,)
+	accessory = list(/obj/item/clothing/accessory/lawyers_badge)
 
 // BLUEMOON ADD START - командная коробочка для командира
 /datum/outfit/ert/ntr_ert_leader/pre_equip(mob/living/carbon/human/H, visualsOnly, client/preference_source)
@@ -646,11 +646,11 @@
 	glasses = /obj/item/clothing/glasses/hud/health/night/syndicate
 	back = /obj/item/storage/backpack/ert_commander/ert_security
 	belt = /obj/item/storage/belt/military/ert_min
-	l_pocket = /obj/item/clothing/accessory/lawyers_badge
 	backpack_contents = list(/obj/item/storage/box/survival/centcom=1,\
 		/obj/item/pda/heads=1,
 		/obj/item/stamp/law=1,
 		/obj/item/storage/firstaid/regular=1,)
+	accessory = list(/obj/item/clothing/accessory/lawyers_badge)
 
 /datum/outfit/ert/ntr_ert_agent/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	..()
@@ -678,7 +678,6 @@
 	belt = /obj/item/storage/belt/janitor/ert_maid
 	mask = /obj/item/clothing/mask/gas/sechailer/syndicate
 	r_hand = /obj/item/mop/advanced
-	//l_pocket = /obj/item/clothing/accessory/lawyers_badge
 	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
 		/obj/item/storage/ifak=1)
 	l_pocket = /obj/item/dualsaber
@@ -717,7 +716,6 @@
 	belt = /obj/item/storage/belt/janitor/ert_maid
 	r_hand = /obj/item/mop/advanced
 	mask = /obj/item/clothing/mask/gas/sechailer/syndicate
-	//l_pocket = /obj/item/clothing/accessory/lawyers_badge
 	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
 		/obj/item/storage/ifak=1)
 

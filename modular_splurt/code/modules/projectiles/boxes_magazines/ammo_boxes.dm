@@ -102,6 +102,7 @@
 	desc = "A stripper clip."
 	icon_state = "762"
 	ammo_type = /obj/item/ammo_casing/a308
+	custom_materials = list(/datum/material/iron = 5600) // 5000 bullets + 600 clip (10%)
 	max_ammo = 5
 	multiple_sprites = 1
 
@@ -207,7 +208,10 @@
 	display_name = ".45 Ammunition"
 	description = "Ammo for 45 Caliber pistols."
 	prereq_ids = list("weaponry")
-	design_ids = list("c45r", "c45leath", "c45t", "c45hydra", "c45trac", "e45_rubber", "e45_lethal", "e45_taser", "e45_trac", "e45_hydra")
+	design_ids = list(
+		"c45r", "c45leath", "c45t", "c45hydra", "c45trac", "e45_rubber", "e45_lethal", "e45_taser", "e45_trac", "e45_hydra",
+		"c45_ext_empty", "c45_ext", "c45_ext_taser", "c45_ext_tracking", "c45_ext_lethal", "c45_ext_hydra"
+	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
 /datum/techweb_node/advc45ammo
@@ -215,7 +219,10 @@
 	display_name = "Advance .45 Ammunition"
 	description = "Make .45 ammo your bitch and make it do crazy shit."
 	prereq_ids = list("weaponry", "c45_ammo", "ballistic_weapons")
-	design_ids = list("e45_ion", "e45_stun", "e45_laser","e45_hot", "c45hot","c45las", "c45ion","c45stun")
+	design_ids = list(
+		"e45_ion", "e45_stun", "e45_laser","e45_hot", "c45hot","c45las", "c45ion","c45stun",
+		"c45_ext_stun", "c45_ext_ion", "c45_ext_hotshot", "c45_ext_laser"
+		)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 4500)
 
 /datum/design/c45
@@ -262,10 +269,10 @@
 	category = list("hacked", "Security")
 
 /datum/design/a308
-	name = "Ammo Box (.308)"
+	name = "Stripper clip (.308)"
 	id = "a308"
 	build_type = AUTOLATHE | NO_PUBLIC_LATHE
-	materials = list(/datum/material/iron = 35000)
+	materials = list(/datum/material/iron = 5600)
 	build_path = /obj/item/ammo_box/a308
 	category = list("hacked", "Security")
 

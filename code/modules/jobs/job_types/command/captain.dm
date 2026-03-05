@@ -26,12 +26,12 @@
 	paycheck = PAYCHECK_COMMAND
 	paycheck_department = ACCOUNT_SEC
 
-	mind_traits = list(TRAIT_CAPTAIN_METABOLISM, TRAIT_DISK_VERIFIER)
-
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN
 	departments = DEPARTMENT_BITFLAG_COMMAND
 
-	blacklisted_quirks = list(/datum/quirk/mute, /datum/quirk/brainproblems, /datum/quirk/insanity, /datum/quirk/blindness)
+	mind_traits = list(TRAIT_FENCER, TRAIT_CAPTAIN_METABOLISM, TRAIT_DISK_VERIFIER)
+
+	blacklisted_quirks = list(/datum/quirk/mute, /datum/quirk/brainproblems, /datum/quirk/insanity, /datum/quirk/blindness, /datum/quirk/illiterate, /datum/quirk/onelife)
 	threat = 5
 
 	family_heirlooms = list(
@@ -69,7 +69,7 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/caphat
 
-	backpack_contents = list( /obj/item/station_charter=1, /obj/item/modular_computer/tablet/preset/advanced=1, /obj/item/stamp/command=1, /obj/item/clothing/accessory/permit/special/captain=1)
+	backpack_contents = list( /obj/item/station_charter=1, /obj/item/modular_computer/tablet/preset/advanced=1, /obj/item/stamp/command=1)
 	box = /obj/item/storage/box/survival/command
 
 	backpack = /obj/item/storage/backpack/captain
@@ -77,7 +77,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/captain
 
 	implants = list(/obj/item/implant/mindshield)
-	accessory = /obj/item/clothing/accessory/medal/gold/captain
+	accessory = list(/obj/item/clothing/accessory/medal/gold/captain, /obj/item/clothing/accessory/permit/special/captain)
 
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/captain)
 
@@ -101,7 +101,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
 	box = /obj/item/storage/box/survival/syndie
 	pda_slot = ITEM_SLOT_BELT
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/station_charter=1, /obj/item/syndicate_uplink_high=1, /obj/item/clothing/accessory/permit/special/captain=1)
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/station_charter=1, /obj/item/syndicate_uplink_high=1)
 
 /datum/outfit/job/captain/hardsuit
 	name = "Captain (Hardsuit)"

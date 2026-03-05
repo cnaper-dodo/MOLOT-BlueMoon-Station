@@ -299,7 +299,15 @@
 
 ///Initial loadout points
 /datum/config_entry/number/initial_gear_points
-	default = 16
+	default = 12
+
+///Subscriber extra loadout points
+/datum/config_entry/number/subscriber_extra_gear_points
+	default = 4
+
+///Sponsor extra loadout points
+/datum/config_entry/number/sponsor_extra_gear_points
+	default = 8
 
 /**
   * Enables the FoV component, which hides objects and mobs behind the parent from their sight, unless they turn around, duh.
@@ -361,3 +369,10 @@
 
 /// Gives the ability to send players a maptext popup.
 /datum/config_entry/flag/popup_admin_pm
+
+/**
+ * Tgui ui_act payloads larger than 2kb are split into chunks a maximum of 1kb in size.
+ * This flag represents the maximum chunk count the server is willing to receive.
+ */
+/datum/config_entry/number/tgui_max_chunk_count
+	default = 64

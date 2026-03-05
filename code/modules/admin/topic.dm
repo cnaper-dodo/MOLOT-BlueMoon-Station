@@ -1010,7 +1010,9 @@
 			dat += "<td width='20%'><a href='?src=[REF(src)];[HrefToken()];jobban3=[ROLE_RESPAWN];jobban4=[REF(M)]'>Respawns</a></td>"
 
 		dat += "</tr></table>"
-		usr << browse(dat, "window=jobban2;size=800x450")
+		var/datum/browser/popup = new(usr, "jobban2", "Job Bans", 800, 450)
+		popup.set_content(dat)
+		popup.open(FALSE)
 		return
 
 	//JOBBAN'S INNARDS
@@ -1969,12 +1971,18 @@
 			else
 				gender_description = "<font color='red'><b>[M.gender]</b></font>"
 
-		to_chat(src.owner, "<b>Info about [M.name]:</b> ")
-		to_chat(src.owner, "Mob type = [M.type]; Gender = [gender_description] Damage = [health_description]")
-		to_chat(src.owner, "Name = <b>[M.name]</b>; Real_name = [M.real_name]; Mind_name = [M.mind?"[M.mind.name]":""]; Key = <b>[M.key]</b>;")
-		to_chat(src.owner, "Location = [location_description];")
-		to_chat(src.owner, "[special_role_description]")
-		to_chat(src.owner, ADMIN_FULLMONTY_NONAME(M))
+		var/admininfo = ""
+		admininfo += "<center><b>Info про [M.name]:</b></center>"
+		admininfo += "<br><b>Mob type</b> = [M.type];<br><b>Gender</b> = [gender_description];<br><b>Damage</b> = [health_description]"
+		admininfo += "<br><b>Имена:</b>"
+		admininfo += "<br><span style='margin-left:12px;'>Name = <b>[M.name]</b>;</span>"
+		admininfo += "<br><span style='margin-left:12px;'>Real_name = [M.real_name];</span>"
+		admininfo += "<br><span style='margin-left:12px;'>Mind_name = [M.mind?"[M.mind.name]":""];</span>"
+		admininfo += "<br><span style='margin-left:12px;'>Key = <b>[M.key]</b>;</span>"
+		admininfo += "<br><b>Location</b> = [location_description];"
+		admininfo += "<br>[special_role_description]"
+		admininfo += "<br><center>[ADMIN_FULLMONTY_NONAME(M)]</center>"
+		to_chat(src.owner, examine_block(admininfo))
 
 	else if(href_list["addjobslot"])
 		if(!check_rights(R_ADMIN))
@@ -2614,6 +2622,11 @@
 		src.admincaster_screen = 12
 		src.access_news_network()
 
+	else if(href_list["gc_queue_refresh"])
+		if(!check_rights(R_DEBUG))
+			return
+		usr.client?.cmd_display_gc_queue()
+
 	else if(href_list["ac_refresh"])
 		if(!check_rights(R_ADMIN))
 			return
@@ -2732,6 +2745,42 @@
 		else
 			error_viewer.show_to(owner, null, href_list["viewruntime_linear"])
 
+	else if(href_list["viewgcfailure_worldscan"])
+		var/datum/gc_failure_viewer/gc_failure_entry/entry = locate(href_list["viewgcfailure_worldscan"])
+		if(!istype(entry))
+			to_chat(usr, span_warning("GC failure entry больше не существует."))
+			return
+		INVOKE_ASYNC(entry, TYPE_PROC_REF(/datum/gc_failure_viewer/gc_failure_entry, trigger_world_scan), owner, null)
+
+	else if(href_list["viewgcfailure_refscan"])
+		var/datum/gc_failure_viewer/gc_failure_entry/entry = locate(href_list["viewgcfailure_refscan"])
+		if(!istype(entry))
+			to_chat(usr, span_warning("GC failure entry больше не существует."))
+			return
+		if(!entry.datum_ref)
+			to_chat(usr, span_warning("Нет ссылки на объект для сканирования."))
+			return
+		var/response = tgui_alert(usr, "Сканирование ссылок пройдёт по всем GLOB-переменным, подсистемам и соседним объектам. Это может вызвать лаг на несколько секунд. Продолжить?", "Сканирование ссылок", list("Да", "Нет"))
+		if(response != "Да")
+			return
+		var/datum/D = locate(entry.datum_ref)
+		if(!D || D.type != text2path(entry.type_path))
+			to_chat(usr, span_warning("Объект больше не существует, сканирование невозможно."))
+			return
+		entry.build_reference_info(D)
+		entry.show_to(owner)
+
+	else if(href_list["viewgcfailure"])
+		var/datum/gc_failure_viewer/viewer = locate(href_list["viewgcfailure"])
+		if(!istype(viewer))
+			to_chat(usr, "<span class='warning'>That GC failure viewer no longer exists.</span>")
+			return
+
+		if(href_list["viewgcfailure_backto"])
+			viewer.show_to(owner, locate(href_list["viewgcfailure_backto"]), href_list["viewgcfailure_linear"])
+		else
+			viewer.show_to(owner, null, href_list["viewgcfailure_linear"])
+
 	else if(href_list["showrelatedacc"])
 		if(!check_rights(R_ADMIN))
 			return
@@ -2747,7 +2796,9 @@
 		var/list/dat = list("Related accounts by [uppertext(href_list["showrelatedacc"])]:")
 		dat += thing_to_check
 
-		usr << browse(dat.Join("<br>"), "window=related_[C];size=420x300")
+		var/datum/browser/popup = new(usr, "related_[C]", "Related Accounts", 420, 300)
+		popup.set_content(dat.Join("<br>"))
+		popup.open(FALSE)
 
 	else if(href_list["centcomlookup"])
 		if(!check_rights(R_ADMIN))
@@ -2780,7 +2831,7 @@
 			if(response.body == "[]")
 				dat += "<center><b>0 bans detected for [ckey]</b></center>"
 			else
-				bans = json_decode(response["body"])
+				bans = json_decode(response.body)
 
 				//Ignore bans from non-whitelisted sources, if a whitelist exists
 				var/list/valid_sources
@@ -2888,7 +2939,9 @@
 	dat += {"<A href='?src=[REF(src)];[HrefToken()];c_mode2=secret'>Secret</A><br>"}
 	dat += {"<A href='?src=[REF(src)];[HrefToken()];c_mode2=random'>Random</A><br>"}
 	dat += {"Now: [GLOB.master_mode]"}
-	usr << browse(dat, "window=c_mode")
+	var/datum/browser/popup = new(usr, "c_mode", "Change Game Mode")
+	popup.set_content(dat)
+	popup.open(FALSE)
 
 /datum/admins/proc/HandleFSecret()
 	if(!check_rights(R_ADMIN))
@@ -2903,7 +2956,9 @@
 		dat += {"<A href='?src=[REF(src)];[HrefToken()];f_secret2=[mode]'>[config.mode_names[mode]]</A><br>"}
 	dat += {"<A href='?src=[REF(src)];[HrefToken()];f_secret2=secret'>Random (default)</A><br>"}
 	dat += {"Now: [GLOB.secret_force_mode]"}
-	usr << browse(dat, "window=f_secret")
+	var/datum/browser/popup = new(usr, "f_secret", "Force Secret Mode")
+	popup.set_content(dat)
+	popup.open(FALSE)
 
 /datum/admins/proc/makeMentor(ckey)
 	if(!usr.client)

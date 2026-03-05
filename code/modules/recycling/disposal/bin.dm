@@ -58,6 +58,7 @@
 
 /obj/machinery/disposal/Destroy()
 	eject()
+	QDEL_NULL(air_contents)
 	if(trunk)
 		trunk.linked = null
 	return ..()
@@ -82,8 +83,8 @@
 	var/atom/L = loc
 	var/datum/gas_mixture/env = new
 	env.copy_from(L.return_air())
-	var/datum/gas_mixture/removed = env.remove(SEND_PRESSURE + 1)
-	air_contents.merge(removed)
+	env.transfer_to(air_contents, SEND_PRESSURE + 1)
+	qdel(env)
 	trunk_check()
 
 /obj/machinery/disposal/attackby(obj/item/I, mob/user, params)
@@ -259,7 +260,7 @@
 			stored.forceMove(T)
 			src.transfer_fingerprints_to(stored)
 			stored.anchored = FALSE
-			stored.density = TRUE
+			stored.density = FALSE
 			stored.update_icon()
 	for(var/atom/movable/AM in src) //out, out, darned crowbar!
 		AM.forceMove(T)
@@ -289,7 +290,7 @@
 
 /obj/machinery/disposal/bin
 	name = "disposal unit"
-	desc = "A pneumatic waste disposal unit."
+	desc = "Пневматическое устройство для утилизации отходов."
 	icon_state = "disposal"
 	var/datum/oracle_ui/themed/nano/ui
 	obj_flags = CAN_BE_HIT | USES_TGUI | SHOVABLE_ONTO
@@ -299,7 +300,7 @@
 	if(istype(I, /obj/item/storage/bag/trash))	//Not doing component overrides because this is a specific type.
 		var/obj/item/storage/bag/trash/T = I
 		var/datum/component/storage/STR = T.GetComponent(/datum/component/storage)
-		to_chat(user, "<span class='warning'>You empty the bag.</span>")
+		to_chat(user, "<span class='warning'>Вы опустошили вашу сумку.</span>")
 		for(var/obj/item/O in T.contents)
 			STR.remove_from_storage(O,src)
 		T.update_icon()
@@ -369,10 +370,10 @@
 	if(isitem(AM) && AM.CanEnterDisposals())
 		if(prob(75))
 			AM.forceMove(src)
-			visible_message(span_notice("[AM] lands in [src]."))
+			visible_message(span_notice("[AM] приземляется в [src]."))
 			update_appearance()
 		else
-			visible_message(span_notice("[AM] bounces off of [src]'s rim!"))
+			visible_message(span_notice("[AM] отскакивает от краёв [src]!"))
 			return ..()
 	else
 		return ..()
@@ -382,8 +383,8 @@
 		return FALSE
 	target.DefaultCombatKnockdown(SHOVE_KNOCKDOWN_SOLID)
 	target.forceMove(src)
-	user.visible_message("<span class='danger'>[user.name] shoves [target.name] into \the [src]!</span>",
-		"<span class='danger'>You shove [target.name] into \the [src]!</span>", null, COMBAT_MESSAGE_RANGE)
+	user.visible_message("<span class='danger'>[user.name] заталкивает [target.name] внутрь \the [src]!</span>",
+		"<span class='danger'>Вы впихиваете [target.name] внутрь \the [src]!</span>", null, COMBAT_MESSAGE_RANGE)
 	log_combat(user, target, "shoved", "into [src] (disposal bin)")
 	return TRUE
 
@@ -461,8 +462,7 @@
 		var/transfer_moles = 0.1 * pressure_delta*air_contents.return_volume()/(env.return_temperature() * R_IDEAL_GAS_EQUATION)
 
 		//Actually transfer the gas
-		var/datum/gas_mixture/removed = env.remove(transfer_moles)
-		air_contents.merge(removed)
+		env.transfer_to(air_contents, transfer_moles)
 		air_update_turf()
 
 
@@ -481,7 +481,7 @@
 
 /obj/machinery/disposal/deliveryChute
 	name = "delivery chute"
-	desc = "A chute for big and small packages alike!"
+	desc = "Промышленный лоток для больших и малых посылок!"
 	density = TRUE
 	icon_state = "intake"
 	pressure_charging = FALSE // the chute doesn't need charging and always works
@@ -520,7 +520,7 @@
 	else if(ismob(AM))
 		var/mob/M = AM
 		if(prob(2)) // to prevent mobs being stuck in infinite loops
-			to_chat(M, "<span class='warning'>You hit the edge of the chute.</span>")
+			to_chat(M, "<span class='warning'>Вы ударились о края промышленного лотка.</span>")
 			return
 		M.forceMove(src)
 	flush()

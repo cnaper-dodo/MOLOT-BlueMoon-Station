@@ -32,8 +32,8 @@
 	)
 
 /obj/item/organ/lungs/tier2/on_life()
-	owner.adjustToxLoss(-0.4, TRUE) //Doesn't kill slimes. Yes.
-	owner.adjustFireLoss(-0.4, FALSE)
+	owner.adjustToxLoss(-0.25, TRUE) //Doesn't kill slimes. Yes.
+	owner.adjustFireLoss(-0.25, FALSE)
 
 /obj/item/organ/lungs/tier2/Insert(mob/living/carbon/organ_mob, special, drop_if_replaced)
 	. = ..()
@@ -43,7 +43,7 @@
 /obj/item/organ/lungs/tier3
 	name = "exalted lungs"
 	icon_state = "exaltedlungs"
-	desc = "You will s e n s e the air - this version of liver is stronger, better, capable to filter and withstand more, even than cybernetic counterpart!"
+	desc = "You will s e n s e the air - this version of lungs is stronger, better, capable to filter and withstand even more than a cybernetic counterpart!"
 	icon = 'modular_bluemoon/icons/obj/surgery.dmi'
 	icon_state = "exaltedlungs"
 	safe_breath_min = 3
@@ -77,9 +77,9 @@
 	mood_change = 1 //Less, but persistent mood buff. Hey, handsome, you deserve it.
 
 /obj/item/organ/lungs/tier3/on_life()
-	owner.adjustOxyLoss(-3, FALSE)
-	owner.adjustFireLoss(-1.5, FALSE)
-	owner.adjustStaminaLoss(-5, 0)
+	owner.adjustOxyLoss(-1.5, FALSE)
+	owner.adjustFireLoss(-0,8, FALSE)
+	owner.adjustStaminaLoss(-2.5, 0)
 
 //ANTAG LUNGS//
 /obj/item/organ/lungs/tier3/antag //antag organ that can be found in some shitty places or in antag uplink since why not?
@@ -93,14 +93,3 @@
 	owner.adjustOxyLoss(-5, FALSE)
 	owner.adjustFireLoss(-1.5, FALSE)
 	owner.adjustStaminaLoss(-7.5, 0)
-
-/obj/item/autosurgeon/syndicate/inteq/biomorphedlungs
-	uses = 1
-	starting_organ = /obj/item/organ/lungs/tier3/antag
-
-/datum/uplink_item/implants/biomorphedlungs
-	name = "Biomorphed Lungs"
-	desc = "Экспериментальный орган, что используется некоторыми отрядами супер-солдат в различных 'чёрных операциях'. Даёт усиленное восстановление от изнурения и частичную защиту от атмосферных угроз для дыхания."
-	item = /obj/item/autosurgeon/syndicate/inteq/biomorphedlungs
-	cost = 5
-	purchasable_from = (UPLINK_TRAITORS | UPLINK_NUKE_OPS)

@@ -82,6 +82,7 @@
 	alerts -= category
 	if(client && hud_used)
 		hud_used.reorganize_alerts()
+		alert.screen_loc = null
 		client.screen -= alert
 	qdel(alert)
 
@@ -852,6 +853,23 @@ so as to remain in compliance with the most up-to-date laws."
 	L.MarkResistTime()
 	return L.resist_buckle()
 
+/atom/movable/screen/alert/belly_riding
+	name = "Belly riding"
+	desc = "Вы переносите кого-то в своих ремнях на животе. Кликните, чтобы открепить."
+	icon_state = "buckled"
+
+/atom/movable/screen/alert/belly_riding/Click(location, control, params)
+	. = ..()
+	if(!.)
+		return
+	var/mob/living/carbon/human/H = usr
+	if(!istype(H) || !H.can_resist())
+		return
+	var/datum/component/riding/human/riding_comp = H.GetComponent(/datum/component/riding/human)
+	if(!istype(riding_comp))
+		return
+	riding_comp.force_dismount_all()
+
 /atom/movable/screen/alert/shoes/untied
 	name = "Untied Shoes"
 	desc = "Your shoes are untied! Click the alert or your shoes to tie them."
@@ -924,6 +942,8 @@ so as to remain in compliance with the most up-to-date laws."
 	return TRUE
 
 /atom/movable/screen/alert/Destroy()
+	animate(src)
+	transform = null
 	. = ..()
 	severity = 0
 	master = null

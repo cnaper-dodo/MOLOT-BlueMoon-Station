@@ -286,6 +286,13 @@
 		else
 			if(src && buckled)
 				to_chat(src, "<span class='warning'>Тебе не удалось выбраться!</span>")
+	else if(ishuman(buckled))
+		var/mob/living/carbon/human/H = buckled
+		var/datum/component/riding/human/riding_comp = H.GetComponent(/datum/component/riding/human)
+		if(riding_comp)
+			riding_comp.force_dismount(src, TRUE)
+		else
+			buckled.user_unbuckle_mob(src,src)
 	else
 		buckled.user_unbuckle_mob(src,src)
 
@@ -556,6 +563,7 @@
 		add_movespeed_modifier(/datum/movespeed_modifier/carbon_softcrit)
 	else
 		remove_movespeed_modifier(/datum/movespeed_modifier/carbon_softcrit)
+	SEND_SIGNAL(src, COMSIG_CARBON_UPDATEHEALTH)
 
 /mob/living/carbon/update_stamina()
 	var/total_health = getStaminaLoss()
@@ -575,7 +583,7 @@
 	UpdateStaminaBuffer()
 	update_health_hud()
 
-/mob/living/carbon/update_sight()
+/mob/living/carbon/update_sight(forced = TRUE)
 	if(!client)
 		return
 	if(stat == DEAD)
@@ -668,7 +676,7 @@
 	if(istype(head, /obj/item/clothing/head))
 		var/obj/item/clothing/head/HT = head
 		. += HT.tint
-	if(wear_mask)
+	if(istype(wear_mask, /obj/item/clothing))
 		. += wear_mask.tint
 
 	var/obj/item/organ/eyes/E = getorganslot(ORGAN_SLOT_EYES)
@@ -931,7 +939,10 @@
 		to_chat(user, "<span class='notice'>You retrieve some of [src]\'s internal organs!</span>")
 
 /mob/living/carbon/ExtinguishMob()
-	for(var/X in get_equipped_items())
+	var/list/items_to_check = get_equipped_items() + held_items
+	for(var/X in items_to_check)
+		if(!X)
+			continue
 		var/obj/item/I = X
 		var/datum/component/acid/acid = I.GetComponent(/datum/component/acid)
 		if(acid)
@@ -1231,3 +1242,12 @@
 
 /mob/living/carbon/proc/functional_blood()
 	return blood_volume + integrating_blood
+
+/mob/living/carbon/has_pain(obj/item/bodypart/limb)
+	. = ..()
+	if(. == PAIN_NO)
+		return .
+	if(limb && limb.is_robotic_limb())
+		return PAIN_NO
+	if(. > PAIN_MEDIUM && drunkenness > 20)
+		return PAIN_MEDIUM
