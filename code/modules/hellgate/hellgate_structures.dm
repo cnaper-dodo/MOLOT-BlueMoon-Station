@@ -10,13 +10,17 @@
 	anchored = TRUE
 	density = TRUE
 
+// dropship.dmi: nos, sad
 /obj/structure/hellgate_dropship
 	name = "дропшип"
 	desc = "Транспортный летательный аппарат."
 	icon = 'icons/obj/hellgate/dropship.dmi'
-	icon_state = "ud"
+	icon_state = "nos"
 	anchored = TRUE
 	density = TRUE
+
+/obj/structure/hellgate_dropship/sad
+	icon_state = "sad"
 
 // campaign_big.dmi: mlrs, mlrs_broken, tank, tank_broken
 /obj/structure/hellgate_campaign
@@ -108,3 +112,99 @@
 
 /obj/structure/hellgate_tram_rails/anchor_bot
 	icon_state = "anchor_bot"
+
+// 64x128.dmi: filtration_0, filtration_1
+/obj/structure/hellgate_large
+	name = "фильтрация"
+	desc = "Оборудование фильтрации."
+	icon = 'icons/obj/hellgate/64x128.dmi'
+	icon_state = "filtration_0"
+	anchored = TRUE
+	density = TRUE
+
+/obj/structure/hellgate_large/filtration_1
+	icon_state = "filtration_1"
+
+// 64x96.dmi: filtration_machine_A_0, filtration_machine_A_1, filtration_machine_B_0, filtration_machine_B_1, sedementation_0, sedementation_1
+/obj/structure/hellgate_large/wide
+	name = "оборудование HellGate"
+	desc = "Крупногабаритное оборудование."
+	icon = 'icons/obj/hellgate/64x96.dmi'
+	icon_state = "filtration_machine_A_0"
+	anchored = TRUE
+	density = TRUE
+
+/obj/structure/hellgate_large/wide/filtration_machine_A_1
+	icon_state = "filtration_machine_A_1"
+
+/obj/structure/hellgate_large/wide/filtration_machine_B_0
+	icon_state = "filtration_machine_B_0"
+
+/obj/structure/hellgate_large/wide/filtration_machine_B_1
+	icon_state = "filtration_machine_B_1"
+
+/obj/structure/hellgate_large/wide/sedementation_0
+	icon_state = "sedementation_0"
+
+/obj/structure/hellgate_large/wide/sedementation_1
+	icon_state = "sedementation_1"
+
+// fabs_64.dmi: orange, orange_trim, pink, pink_trim, blu, blu_trim, white, white_trim, red, red_trim
+/obj/structure/hellgate_fabs
+	name = "фабрикат"
+	desc = "Производственный объект."
+	icon = 'icons/obj/hellgate/fabs_64.dmi'
+	icon_state = "orange"
+	anchored = TRUE
+	density = TRUE
+
+/obj/structure/hellgate_fabs/orange_trim
+	icon_state = "orange_trim"
+
+/obj/structure/hellgate_fabs/pink
+	icon_state = "pink"
+
+/obj/structure/hellgate_fabs/pink_trim
+	icon_state = "pink_trim"
+
+/obj/structure/hellgate_fabs/blu
+	icon_state = "blu"
+
+/obj/structure/hellgate_fabs/blu_trim
+	icon_state = "blu_trim"
+
+/obj/structure/hellgate_fabs/white
+	icon_state = "white"
+
+/obj/structure/hellgate_fabs/white_trim
+	icon_state = "white_trim"
+
+/obj/structure/hellgate_fabs/red
+	icon_state = "red"
+
+/obj/structure/hellgate_fabs/red_trim
+	icon_state = "red_trim"
+
+// factory.dmi: factory_conveyer, factory_roboticarm, factory_
+/obj/structure/hellgate_factory
+	name = "завод"
+	desc = "Промышленное здание."
+	icon = 'icons/obj/hellgate/factory.dmi'
+	icon_state = "factory_conveyer"
+	anchored = TRUE
+	density = TRUE
+
+/obj/structure/hellgate_factory/roboticarm
+	icon_state = "factory_roboticarm"
+
+/obj/structure/hellgate_factory/base
+	icon_state = "factory_"
+
+// power_transformer.dmi: transformer
+/obj/structure/hellgate_power_transformer
+	name = "силовой трансформатор"
+	desc = "Электрооборудование."
+	icon = 'icons/obj/hellgate/power_transformer.dmi'
+	icon_state = "transformer"
+	anchored = TRUE
+	density = TRUE
