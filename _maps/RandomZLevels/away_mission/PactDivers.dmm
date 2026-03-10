@@ -763,10 +763,6 @@
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"nX" = (
-/obj/effect/landmark/stationroom/bluemoon/configurable,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
 "od" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/snacks/donut/jelly,
@@ -6961,7 +6957,7 @@ BF
 BF
 BF
 BF
-nX
+BF
 BF
 BF
 BF
@@ -7276,7 +7272,7 @@ BF
 BF
 BF
 BF
-nX
+BF
 BF
 BF
 BF
@@ -9727,7 +9723,7 @@ BF
 BF
 BF
 BF
-nX
+BF
 BF
 BF
 BF
@@ -9844,7 +9840,7 @@ BF
 BF
 BF
 BF
-nX
+BF
 BF
 vl
 vl
@@ -10362,7 +10358,7 @@ BF
 BF
 BF
 BF
-nX
+BF
 BF
 BF
 BF
@@ -16573,7 +16569,7 @@ BF
 BF
 BF
 BF
-nX
+BF
 BF
 BF
 BF
@@ -20800,7 +20796,7 @@ BF
 BF
 BF
 BF
-nX
+BF
 BF
 BF
 BF
@@ -24681,7 +24677,7 @@ BF
 BF
 BF
 BF
-nX
+BF
 BF
 BF
 BF
@@ -25844,7 +25840,7 @@ BF
 BF
 BF
 BF
-nX
+BF
 BF
 BF
 BF
@@ -29518,7 +29514,7 @@ BF
 BF
 BF
 BF
-nX
+BF
 BF
 BF
 BF
@@ -36162,7 +36158,7 @@ BF
 BF
 BF
 BF
-nX
+BF
 BF
 BF
 BF
