@@ -9,52 +9,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"ab" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 6
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"af" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/mob/living/simple_animal/bot/cleanbot{
-	faction = list("InteQ")
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"ag" = (
-/mob/living/simple_animal/hostile/syndicate/civilian,
-/turf/open/floor/pod{
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
-	},
-/area/awaymission/PactDaivers)
-"ah" = (
-/obj/structure/fans/tiny,
-/obj/machinery/door/airlock/external{
-	name = "InteQ ship airlock";
-	req_one_access_txt = "152"
-	},
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"an" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 8
-	},
-/obj/structure/table/reinforced,
-/obj/item/kitchen/knife{
-	pixel_x = 11
-	},
-/obj/item/reagent_containers/food/condiment/enzyme{
-	pixel_y = 5
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "ap" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /obj/effect/turf_decal/tile/neutral{
@@ -64,14 +18,6 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"ar" = (
-/obj/machinery/button/crematorium{
-	id = "crematoriumChapel";
-	pixel_x = 18;
-	pixel_y = 3
-	},
-/turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
 "az" = (
 /obj/effect/decal/cleanable/blood/gibs/body{
@@ -101,32 +47,10 @@
 /obj/item/mod/control/pre_equipped/inteq,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"aI" = (
-/obj/structure/dresser,
-/turf/open/floor/carpet/royalblack,
-/area/awaymission/PactDaivers)
 "aJ" = (
 /obj/structure/table/wood,
 /obj/machinery/coffeemaker/impressa,
 /turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"aR" = (
-/obj/machinery/door/poddoor{
-	id = "fslockdown";
-	name = "Ship blast door";
-	state_open = 1
-	},
-/obj/effect/spawner/structure/window/plastitanium,
-/obj/structure/cable/yellow{
-	icon_state = "0-8"
-	},
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"aS" = (
-/obj/structure/cable/white{
-	icon_state = "2-4"
-	},
-/turf/closed/indestructible/syndicate,
 /area/awaymission/PactDaivers)
 "aT" = (
 /obj/structure/chair/wood/normal{
@@ -149,26 +73,10 @@
 "aV" = (
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
-"aX" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "aZ" = (
 /obj/structure/table/wood,
 /obj/machinery/microwave,
 /turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"bb" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/visible{
-	dir = 8
-	},
-/obj/machinery/meter,
-/turf/open/floor/engine,
 /area/awaymission/PactDaivers)
 "bd" = (
 /obj/structure/chair/office/light{
@@ -180,18 +88,6 @@
 "bf" = (
 /obj/structure/closet/crate/large,
 /obj/item/inducer/inteq,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"bg" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "bm" = (
@@ -227,32 +123,11 @@
 	icon_state = "platingdmg1"
 	},
 /area/awaymission/PactDaivers)
-"bv" = (
-/obj/machinery/camera/xray{
-	c_tag = "Medbay";
-	dir = 9;
-	network = list("fsci");
-	screen_loc = ""
-	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "bw" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/coffee,
 /obj/item/gun/ballistic/automatic/hellgate_v41,
 /turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"by" = (
-/obj/structure/fans/tiny,
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/hatch,
-/turf/open/floor/plasteel/bluespace,
-/area/awaymission/PactDaivers)
-"bz" = (
-/turf/closed/wall/mineral/plastitanium,
 /area/awaymission/PactDaivers)
 "bA" = (
 /obj/structure/closet/crate/large,
@@ -263,33 +138,9 @@
 /obj/item/grenade/spawnergrenade/syndiesoap/inteq,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"bD" = (
-/obj/machinery/door/airlock/grunge{
-	name = "InteQ Ship Airlock";
-	req_one_access_txt = "152"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"bE" = (
-/turf/open/floor/pod{
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
-	},
-/area/awaymission/PactDaivers)
 "bG" = (
 /obj/structure/hellgate_tram_rails/anchor,
 /turf/open/floor/plating/damturf,
-/area/awaymission/PactDaivers)
-"bJ" = (
-/turf/closed/indestructible/riveted,
 /area/awaymission/PactDaivers)
 "bM" = (
 /obj/effect/turf_decal/tile/blue{
@@ -303,22 +154,6 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/PactDaivers)
-"bR" = (
-/obj/item/gun/ballistic/automatic/hellgate_c77,
-/obj/item/ammo_box/magazine/hellgate_c77,
-/obj/item/ammo_box/magazine/hellgate_c77,
-/obj/structure/closet/crate,
-/turf/open/floor/pod{
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
-	},
-/area/awaymission/PactDaivers)
-"bX" = (
-/obj/machinery/porta_turret/inteq/energy{
-	name = "InteQ Ship Turret";
-	dir = 1
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/awaymission/PactDaivers)
 "ce" = (
 /obj/effect/mob_spawn/human/corpse/russian,
 /obj/item/export/bottle/vodka,
@@ -330,42 +165,10 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/PactDaivers)
-"ci" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/yellow/line,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "cl" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/coffee,
 /turf/open/floor/carpet/green,
-/area/awaymission/PactDaivers)
-"co" = (
-/obj/machinery/door/airlock/engineering{
-	name = "Reactor Core";
-	req_one_access_txt = "10;24"
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/obj/effect/turf_decal/stripes/yellow/line,
-/obj/machinery/door/firedoor/border_only,
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
-/obj/structure/cable/white{
-	icon_state = "1-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
-/obj/structure/cable/white{
-	icon_state = "1-2"
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "cp" = (
 /obj/machinery/light/small{
@@ -388,64 +191,9 @@
 /obj/effect/turf_decal/tile/green,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"ct" = (
-/obj/item/soap/syndie,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/item/mop,
-/obj/item/reagent_containers/glass/bucket,
-/obj/structure/closet/crate/trashcart,
-/obj/machinery/power/apc/inteq{
-	dir = 4;
-	name = "InteQ Forgotten Ship APC";
-	pixel_x = 24;
-	start_charge = 35
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 4
-	},
-/obj/structure/cable/yellow{
-	icon_state = "0-8"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"cw" = (
-/obj/structure/sign/poster/contraband/inteq/inteq_no_sex,
-/turf/closed/indestructible/syndicate,
-/area/awaymission/PactDaivers)
-"cF" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 4
-	},
-/obj/machinery/deepfryer,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "cQ" = (
 /obj/effect/decal/cleanable/blood/xeno,
 /turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"cR" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/rack,
-/obj/item/stack/sheet/mineral/gold,
-/obj/item/stack/ore/titanium,
-/obj/item/stack/ore/titanium,
-/obj/item/stack/ore/iron,
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	},
-/area/awaymission/PactDaivers)
-"cT" = (
-/obj/machinery/airalarm{
-	pixel_y = 22
-	},
-/obj/structure/table,
-/obj/machinery/computer/reactor/fuel_rods,
-/obj/machinery/camera/autoname,
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/purple/visible,
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "cW" = (
 /obj/structure/cable{
@@ -464,13 +212,6 @@
 /obj/effect/turf_decal/weather/sand/plating,
 /turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
-"df" = (
-/obj/structure/closet/crate/large,
-/obj/structure/lattice/catwalk,
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	},
-/area/awaymission/PactDaivers)
 "dg" = (
 /obj/machinery/power/terminal{
 	dir = 1
@@ -485,27 +226,6 @@
 /obj/item/phone,
 /turf/open/floor/carpet/purple,
 /area/awaymission/PactDaivers)
-"ds" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/stripes{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"dx" = (
-/obj/machinery/power/terminal{
-	dir = 1
-	},
-/obj/structure/cable/yellow{
-	icon_state = "0-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
-	dir = 4
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
 "dz" = (
 /obj/structure/chair/wood/normal{
 	dir = 1
@@ -518,46 +238,10 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/PactDaivers)
-"dG" = (
-/mob/living/simple_animal/hostile/syndicate/ranged/infiltrator,
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
 "dH" = (
 /obj/effect/landmark/awaystart,
 /obj/effect/turf_decal/weather/sand/plating,
 /turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"dJ" = (
-/obj/structure/table/reinforced,
-/obj/machinery/light,
-/obj/item/paper_bin,
-/obj/item/pen/fountain/captain,
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/PactDaivers)
-"dM" = (
-/obj/item/radio/intercom{
-	pixel_x = 27
-	},
-/obj/machinery/shower{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 6
-	},
-/turf/open/floor/noslip,
-/area/awaymission/PactDaivers)
-"dQ" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 10
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "dT" = (
 /obj/machinery/camera{
@@ -571,33 +255,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"dU" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 6
-	},
-/obj/machinery/processor,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "dW" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/beer,
 /turf/open/floor/carpet/purple,
-/area/awaymission/PactDaivers)
-"dX" = (
-/obj/structure/railing{
-	dir = 8
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"dZ" = (
-/obj/effect/turf_decal/trimline/red/filled/corner{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump,
-/obj/effect/turf_decal/trimline/red/filled/corner{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "eb" = (
 /turf/closed/indestructible/fakeglass,
@@ -611,160 +272,19 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"ek" = (
-/obj/machinery/porta_turret/inteq/energy/heavy{
-	name = "InteQ Ship Turret";
-	dir = 8
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/awaymission/PactDaivers)
-"es" = (
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 9
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"eA" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "eC" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"eD" = (
-/obj/machinery/computer,
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"eG" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"eI" = (
-/obj/structure/closet/syndicate/inteq,
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/obj/item/bikehorn/rubberducky,
-/obj/item/ammo_box/magazine/ak12,
-/obj/item/ammo_box/magazine/ak12,
-/obj/item/ammo_box/magazine/ak12,
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"eJ" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"eM" = (
-/obj/effect/turf_decal/stripes/yellow/line,
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"eO" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 4
-	},
-/obj/machinery/button/door{
-	dir = 8;
-	id = "colossus_starboard";
-	name = "Starboard Cargo Door Control";
-	pixel_x = 23;
-	pixel_y = -2
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"eP" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/turf/open/floor/carpet/royalblack,
-/area/awaymission/PactDaivers)
-"eQ" = (
-/obj/structure/window/reinforced/spawner/north,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 9
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"eV" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
-/obj/machinery/atmospherics/pipe/simple/brown/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
 "eW" = (
 /obj/machinery/vending/snack,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"eX" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 4
-	},
-/obj/machinery/door/airlock/grunge{
-	name = "Armory";
-	req_one_access_txt = "152"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"fa" = (
-/obj/structure/fence{
-	dir = 4
-	},
-/obj/effect/turf_decal/weather/sand/plating,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"fd" = (
-/obj/structure/table/reinforced,
-/obj/machinery/computer/security/telescreen/interrogation{
-	desc = "A telescreen that connects to the the syndicate camera network.";
-	name = "Cameras monitor";
-	network = list("fsci");
-	req_one_access_txt = "152";
-	screen_loc = ""
-	},
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/PactDaivers)
-"fg" = (
-/obj/structure/sign/flag/inteq,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/awaymission/PactDaivers)
-"fi" = (
-/obj/structure/barricade/sandbags,
-/turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
 "fk" = (
 /obj/structure/chair/comfy/beige{
 	dir = 1
 	},
 /turf/open/floor/carpet/green,
-/area/awaymission/PactDaivers)
-"fl" = (
-/obj/machinery/light,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "fm" = (
 /obj/structure/bed,
@@ -790,43 +310,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"fr" = (
-/obj/effect/mob_spawn/human/inteqspace/PactDaivers,
-/turf/open/floor/pod{
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
-	},
-/area/awaymission/PactDaivers)
-"ft" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "fy" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
 /obj/item/ammo_box/c10mm,
 /turf/open/floor/carpet/green,
-/area/awaymission/PactDaivers)
-"fA" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/computer{
-	dir = 8
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"fC" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"fG" = (
-/obj/effect/mob_spawn/human/inteqspace/captain/PactDaivers,
-/turf/open/floor/carpet/royalblack,
 /area/awaymission/PactDaivers)
 "fH" = (
 /obj/structure/closet/secure_closet{
@@ -841,54 +328,14 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
-"fI" = (
-/obj/structure/shuttle/engine/propulsion{
-	dir = 8
-	},
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"fL" = (
-/obj/structure/window/reinforced/spawner/north,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 5
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "fM" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"fO" = (
-/obj/item/radio/intercom{
-	pixel_x = 26
-	},
-/obj/structure/cable/yellow{
-	icon_state = "2-8"
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "fP" = (
 /obj/machinery/light/broken/directional/north,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"fT" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"fU" = (
-/obj/machinery/atmospherics/components/unary/vent_pump{
-	dir = 1
-	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "fX" = (
@@ -897,33 +344,9 @@
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
-"fY" = (
-/mob/living/simple_animal/hostile/syndicate/ranged,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"ga" = (
-/obj/effect/spawner/structure/window/plasma/reinforced,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
-	dir = 4
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
 "gb" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"gd" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-8"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
-/turf/open/floor/engine,
 /area/awaymission/PactDaivers)
 "gf" = (
 /obj/machinery/vending/cola,
@@ -945,10 +368,6 @@
 /obj/structure/fence,
 /turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
-"go" = (
-/mob/living/simple_animal/hostile/syndicate/mecha_pilot/inteq/light,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
 "gx" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /obj/structure/reagent_dispensers/beerkeg{
@@ -956,26 +375,8 @@
 	},
 /turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
-"gy" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 4
-	},
-/obj/machinery/light,
-/obj/machinery/computer/station_alert{
-	dir = 1
-	},
-/obj/effect/turf_decal/stripes/yellow/line,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "gB" = (
 /turf/closed/wall,
-/area/awaymission/PactDaivers)
-"gC" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/structure/chair/office/light,
-/turf/open/floor/carpet/royalblack,
 /area/awaymission/PactDaivers)
 "gE" = (
 /obj/effect/decal/cleanable/dirt,
@@ -984,53 +385,11 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"gG" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/closet/crate/large,
-/obj/item/stack/ore/iron,
-/obj/item/stack/sheet/mineral/gold,
-/obj/item/stack/ore/titanium,
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	},
-/area/awaymission/PactDaivers)
-"gJ" = (
-/mob/living/simple_animal/hostile/syndicate/ranged,
-/obj/structure/lattice,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"gR" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "gT" = (
 /obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/plating{
 	heat_capacity = 1e+006
 	},
-/area/awaymission/PactDaivers)
-"gV" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
-/turf/open/floor/carpet/royalblack,
-/area/awaymission/PactDaivers)
-"gY" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-8"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "2-8"
-	},
-/mob/living/simple_animal/hostile/syndicate/ranged/infiltrator{
-	name = "Pilot"
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "gZ" = (
 /obj/structure/sign/flag/inteq{
@@ -1069,48 +428,9 @@
 /obj/structure/chair/wood/normal,
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/PactDaivers)
-"hg" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 6
-	},
-/obj/structure/chair{
-	dir = 8
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"hh" = (
-/obj/machinery/computer/crew/syndie{
-	dir = 8
-	},
-/obj/structure/window/reinforced/spawner,
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"hi" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
-	dir = 4
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"hk" = (
-/obj/structure/closet/crate/science,
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
 "hq" = (
 /obj/effect/spawner/lootdrop/hostile/inteq,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"hs" = (
-/obj/machinery/shower{
-	dir = 4
-	},
-/obj/item/soap/inteq,
-/turf/open/floor/plasteel/showroomfloor,
 /area/awaymission/PactDaivers)
 "hu" = (
 /obj/machinery/door/firedoor,
@@ -1119,47 +439,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"hw" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/rack,
-/obj/item/raw_anomaly_core,
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	},
-/area/awaymission/PactDaivers)
 "hx" = (
 /obj/effect/decal/cleanable/blood,
 /obj/machinery/vending/cigarette,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"hy" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 4
-	},
-/obj/machinery/light/small,
-/obj/effect/turf_decal/stripes/yellow/line,
-/turf/open/floor/noslip,
-/area/awaymission/PactDaivers)
-"hz" = (
-/obj/effect/decal/cleanable/blood/footprints{
-	dir = 4
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"hD" = (
-/obj/machinery/vending/cigarette/syndicate,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 1
-	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "hG" = (
@@ -1167,21 +449,6 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"hL" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 5
-	},
-/obj/structure/rack,
-/obj/structure/rack,
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/item/clothing/under/inteq,
-/obj/item/clothing/under/inteq/eng,
-/obj/item/clothing/under/inteq/honorable_vanguard,
-/obj/item/clothing/under/inteq/med,
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "hW" = (
 /obj/item/gun/ballistic/shotgun,
@@ -1204,28 +471,6 @@
 	},
 /obj/machinery/light/broken/directional/west,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"id" = (
-/obj/structure/window/reinforced/spawner/north,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 5
-	},
-/obj/machinery/mech_bay_recharge_port{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"ie" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "2-8"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "2-4"
-	},
-/turf/open/floor/wood,
 /area/awaymission/PactDaivers)
 "ig" = (
 /obj/effect/decal/cleanable/blood/drip,
@@ -1250,26 +495,11 @@
 /obj/structure/chair/wood/normal,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
-"it" = (
-/obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/simple/brown/visible,
-/turf/closed/indestructible/syndicate,
-/area/awaymission/PactDaivers)
 "iy" = (
 /obj/structure/chair/comfy/brown{
 	dir = 1
 	},
 /turf/open/floor/carpet/green,
-/area/awaymission/PactDaivers)
-"iz" = (
-/obj/structure/rack,
-/obj/item/storage/toolbox/syndicate,
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
-/obj/item/gun/ballistic/automatic/ak12/r,
-/obj/item/binoculars,
-/turf/open/floor/wood,
 /area/awaymission/PactDaivers)
 "iA" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -1280,36 +510,6 @@
 "iB" = (
 /mob/living/simple_animal/hostile/syndicate,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"iC" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line,
-/obj/structure/table/reinforced,
-/obj/item/storage/bag/tray,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"iD" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
-	dir = 1
-	},
-/obj/structure/cable/yellow{
-	icon_state = "2-8"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/purple/visible,
-/turf/open/floor/carpet/royalblack,
-/area/awaymission/PactDaivers)
-"iG" = (
-/mob/living/simple_animal/hostile/nanotrasen/ranged/assault,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"iH" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer3{
-	dir = 8;
-	volume_rate = 200
-	},
-/turf/open/floor/plating,
 /area/awaymission/PactDaivers)
 "iM" = (
 /obj/structure/table/wood,
@@ -1330,41 +530,10 @@
 /obj/item/bikehorn/rubberducky,
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/PactDaivers)
-"iS" = (
-/obj/machinery/camera/xray{
-	c_tag = "Conference room";
-	dir = 8;
-	network = list("fsc");
-	screen_loc = ""
-	},
-/obj/structure/closet/crate/secure/gear{
-	req_one_access_txt = "152"
-	},
-/obj/item/storage/box/stockparts/deluxe,
-/obj/item/storage/box/stockparts/deluxe,
-/obj/item/stack/sheet/glass{
-	amount = 10
-	},
-/obj/item/stack/cable_coil,
-/obj/item/storage/box/beakers/bluespace,
-/obj/item/circuitboard/machine/autolathe,
-/obj/item/storage/box/rndboards,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "iU" = (
 /obj/structure/hellgate_tram_rails/anchor,
 /obj/structure/hellgate_train,
 /turf/open/floor/plating/dirt,
-/area/awaymission/PactDaivers)
-"iY" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 4
-	},
-/obj/machinery/door/airlock/engineering{
-	name = "Reactor Control";
-	req_one_access_txt = "10;24"
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "jb" = (
 /obj/machinery/light/small{
@@ -1377,22 +546,9 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
-"jm" = (
-/obj/effect/turf_decal/stripes/yellow/line,
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
 "jn" = (
 /obj/effect/mine/explosive,
 /turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"jq" = (
-/obj/machinery/cryopod{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 5
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "jx" = (
 /obj/structure/chair/comfy/beige{
@@ -1401,46 +557,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/PactDaivers)
-"jA" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 9
-	},
-/obj/structure/lattice/catwalk,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
 "jB" = (
 /obj/structure/hellgate_tram_rails/anchor,
 /turf/open/floor/plating/dirt,
 /area/awaymission/PactDaivers)
-"jC" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Crematorium";
-	req_one_access_txt = "152"
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
 "jE" = (
 /obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"jF" = (
-/obj/machinery/light,
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/window{
-	dir = 8;
-	name = "InteQ interior door";
-	req_one_access_txt = "152"
-	},
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 8;
-	icon_state = "siding_line"
-	},
-/turf/open/floor/wood/wood_parquet,
 /area/awaymission/PactDaivers)
 "jG" = (
 /obj/effect/decal/cleanable/blood/gibs/body{
@@ -1473,104 +596,21 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"jS" = (
-/obj/structure/window/reinforced/spawner,
-/obj/effect/turf_decal/trimline/blue/filled/line,
-/obj/structure/closet/crate/bin,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"jT" = (
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 8
-	},
-/obj/structure/window/reinforced/spawner/west,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "jX" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating{
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
-"kc" = (
-/obj/machinery/atmospherics/pipe/simple/purple/visible,
-/turf/closed/indestructible/syndicate,
-/area/awaymission/PactDaivers)
 "kd" = (
 /obj/effect/turf_decal/big_sign/enclave/top/left,
 /turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"ko" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"kq" = (
-/obj/machinery/door/airlock/engineering{
-	name = "Reactor Control";
-	req_one_access_txt = "10;24"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "kF" = (
 /obj/structure/chair/comfy/beige{
 	dir = 4
 	},
 /turf/open/floor/carpet/green,
-/area/awaymission/PactDaivers)
-"kG" = (
-/obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/manifold/brown/visible{
-	dir = 8
-	},
-/obj/structure/cable/white{
-	icon_state = "4-8"
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"kN" = (
-/obj/structure/lattice/catwalk,
-/obj/effect/turf_decal/weather/sand/plating,
-/mob/living/simple_animal/hostile/syndicate/civilian,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"kQ" = (
-/obj/structure/mopbucket,
-/obj/item/mop,
-/turf/open/floor/plasteel/showroomfloor,
-/area/awaymission/PactDaivers)
-"kY" = (
-/obj/structure/mecha_wreckage/gygax,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"kZ" = (
-/obj/structure/cable,
-/obj/machinery/power/terminal{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/oil,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/turf/open/floor/plating,
 /area/awaymission/PactDaivers)
 "la" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -1581,118 +621,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"ld" = (
-/obj/structure/closet/radiation,
-/obj/effect/turf_decal/delivery,
-/obj/item/clothing/glasses/meson/engine,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/obj/machinery/firealarm{
-	pixel_y = 24
-	},
-/obj/machinery/camera/autoname,
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"lj" = (
-/obj/structure/reagent_dispensers/watertank,
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"lk" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 9
-	},
-/obj/structure/closet/syndicate{
-	anchored = 1;
-	armor = list("melee" = 70, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 60);
-	desc = "A basic closet for all your villainous needs.";
-	locked = 1;
-	name = "Armory Locker";
-	req_one_access_txt = "152";
-	secure = 1
-	},
-/obj/item/ammo_box/magazine/ak12,
-/obj/item/ammo_box/magazine/ak12,
-/obj/item/ammo_box/magazine/ak12,
-/obj/item/ammo_box/magazine/ak12,
-/obj/item/ammo_box/magazine/ak12,
-/obj/item/ammo_box/magazine/ak12,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"ll" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 10
-	},
-/obj/structure/table/reinforced,
-/obj/structure/sink/kitchen{
-	dir = 4;
-	pixel_x = -12
-	},
-/obj/item/storage/box/donkpockets,
-/obj/item/kitchen/rollingpin,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"lq" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/turf/closed/wall/r_wall/syndicate,
-/area/awaymission/PactDaivers)
-"ls" = (
-/obj/effect/turf_decal/trimline/blue/filled/corner{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"lu" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/computer,
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	},
-/area/awaymission/PactDaivers)
-"lv" = (
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/obj/structure/cable/yellow{
-	icon_state = "2-8"
-	},
-/obj/effect/turf_decal/stripes{
-	dir = 1;
-	icon_state = "delivery_red"
-	},
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"lz" = (
-/obj/structure/hellgate_dropship,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"lB" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 8
-	},
-/obj/machinery/light,
-/obj/effect/turf_decal/stripes/yellow/line,
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"lE" = (
-/mob/living/simple_animal/hostile/syndicate/mecha_pilot/inteq,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
 "lK" = (
 /obj/item/export/bottle/vodka,
 /turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"lN" = (
-/obj/machinery/porta_turret/inteq/energy,
-/turf/open/floor/plating{
-	heat_capacity = 1e+006
-	},
 /area/awaymission/PactDaivers)
 "lR" = (
 /obj/effect/landmark/awaystart,
@@ -1700,66 +631,9 @@
 /obj/structure/lattice/catwalk,
 /turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
-"lW" = (
-/obj/machinery/door/airlock/centcom{
-	name = "Raiders Barracks";
-	req_access_txt = "152"
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
 "lY" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/indestructible/syndicate,
-/area/awaymission/PactDaivers)
-"mc" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/machinery/button/door{
-	id = "teleportcommand";
-	pixel_y = 22
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"me" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 8
-	},
-/obj/structure/table/reinforced,
-/obj/machinery/recharger{
-	pixel_y = 4
-	},
-/obj/item/grenade/frag/mega{
-	pixel_x = 12;
-	pixel_y = 12
-	},
-/obj/item/grenade/frag/mega{
-	pixel_x = 12;
-	pixel_y = 6
-	},
-/obj/item/grenade/frag/mega{
-	pixel_x = 12
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"mi" = (
-/obj/machinery/light,
-/obj/structure/closet/syndicate{
-	anchored = 1;
-	armor = list("melee" = 70, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 60);
-	desc = "A basic closet for all your villainous needs.";
-	locked = 1;
-	name = "Closet";
-	req_one_access_txt = "152";
-	secure = 1
-	},
-/obj/item/crowbar/red,
-/obj/item/flashlight/seclite,
-/obj/item/gun/ballistic/automatic/pistol,
-/obj/item/ammo_box/magazine/pistolm9mm,
-/obj/item/ammo_box/magazine/pistolm9mm,
-/turf/open/floor/wood,
 /area/awaymission/PactDaivers)
 "mj" = (
 /obj/structure/table/wood,
@@ -1776,14 +650,6 @@
 /obj/machinery/washing_machine,
 /turf/open/floor/wood,
 /area/awaymission/PactDaivers)
-"mn" = (
-/obj/machinery/door/airlock/centcom,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"mo" = (
-/mob/living/simple_animal/hostile/syndicate/ranged/smg/space,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
 "mr" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -1799,23 +665,6 @@
 "ms" = (
 /obj/effect/turf_decal/big_sign/enclave/bottom/right,
 /turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"my" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Maintence";
-	req_one_access_txt = "152"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"mB" = (
-/obj/effect/spawner/structure/window/plasma/reinforced,
-/obj/machinery/atmospherics/pipe/simple/brown/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
 /area/awaymission/PactDaivers)
 "mE" = (
 /obj/structure/table/wood,
@@ -1847,29 +696,12 @@
 /obj/structure/table/wood,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
-"ng" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"nk" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/railing{
-	dir = 8
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
 "no" = (
 /obj/structure/chair/office/light{
 	dir = 8
 	},
 /mob/living/simple_animal/hostile/syndicate/ranged/smg,
 /turf/open/floor/carpet/purple,
-/area/awaymission/PactDaivers)
-"ns" = (
-/obj/structure/bed,
-/obj/item/bedsheet/inteq,
-/obj/effect/mob_spawn/human/inteqspace/PactDaivers,
-/turf/open/floor/wood,
 /area/awaymission/PactDaivers)
 "nv" = (
 /obj/structure/table/wood,
@@ -1880,21 +712,6 @@
 /obj/structure/table/wood,
 /obj/machinery/door/window/brigdoor/eastright{
 	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"nx" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "2-4"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"nz" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
@@ -1926,10 +743,6 @@
 	icon_state = "damaged4"
 	},
 /area/awaymission/PactDaivers)
-"nE" = (
-/mob/living/simple_animal/hostile/syndicate/mecha_pilot/no_mech/nanotrasen,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
 "nF" = (
 /obj/structure/table/wood,
 /obj/machinery/button/door{
@@ -1940,114 +753,24 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/PactDaivers)
-"nJ" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 9
-	},
-/obj/machinery/computer/camera_advanced/shuttle_docker/inteq_collosus{
-	name = "KK-28 Navigation Computer"
-	},
-/turf/open/floor/plasteel/dark/smooth/large,
-/area/awaymission/PactDaivers)
-"nK" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Syndciate Dorm 1";
-	req_one_access_txt = "152"
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
 "nP" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/glass/coffeepot,
 /turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"nQ" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 9
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "nR" = (
 /obj/structure/desk_bell,
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"nV" = (
-/obj/structure/closet/syndicate/inteq,
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/obj/item/bikehorn/rubberducky,
-/obj/item/gun/ballistic/automatic/ak12,
-/obj/item/gun/ballistic/automatic/ak12,
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
 "nX" = (
-/obj/machinery/door/poddoor{
-	id = "fscaproom";
-	name = "Captain's blast door";
-	state_open = 1
-	},
-/obj/effect/spawner/structure/window/plastitanium,
-/obj/structure/cable/yellow{
-	icon_state = "0-2"
-	},
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"ob" = (
-/obj/effect/decal/cleanable/blood/footprints{
-	dir = 4
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
+/obj/effect/landmark/stationroom/bluemoon/configurable,
+/turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
 "od" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/snacks/donut/jelly,
 /turf/open/floor/carpet/green,
-/area/awaymission/PactDaivers)
-"oe" = (
-/obj/structure/table/reinforced,
-/obj/machinery/fax{
-	fax_name = "Unknown Fax";
-	name = "KK-28 Fax Machine"
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"og" = (
-/obj/machinery/power/smes/engineering,
-/obj/structure/cable/white,
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"oh" = (
-/obj/structure/closet/radiation,
-/obj/effect/turf_decal/delivery,
-/obj/item/clothing/glasses/meson/engine,
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
-	dir = 1
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 9
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"oi" = (
-/obj/structure/chair/comfy/black,
-/turf/open/floor/wood/wood_parquet,
 /area/awaymission/PactDaivers)
 "ok" = (
 /obj/structure/bed,
@@ -2079,28 +802,9 @@
 /obj/item/flashlight/lamp,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"oB" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 4
-	},
-/obj/machinery/cryopod{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "oC" = (
 /obj/structure/hellgate_tram_rails,
 /turf/open/floor/plating/dirt,
-/area/awaymission/PactDaivers)
-"oD" = (
-/obj/effect/turf_decal/trimline/yellow/filled/corner,
-/obj/effect/turf_decal/trimline/yellow/filled/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/corner{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "oG" = (
 /mob/living/simple_animal/hostile/gigachad_inteq/shooter,
@@ -2138,22 +842,6 @@
 /mob/living/simple_animal/hostile/syndicate/ranged/smg,
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/PactDaivers)
-"oT" = (
-/obj/structure/window/reinforced/spawner,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 10
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"oU" = (
-/obj/machinery/button/door{
-	id = "snowdingarage2";
-	name = "garage door";
-	pixel_x = -7;
-	pixel_y = -24
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
 "pb" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/machinery/door/airlock/grunge{
@@ -2162,58 +850,12 @@
 	},
 /turf/open/floor/wood,
 /area/awaymission/PactDaivers)
-"pc" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
-	dir = 9
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"pm" = (
-/obj/machinery/power/terminal{
-	dir = 1
-	},
-/obj/structure/cable/yellow{
-	icon_state = "0-2"
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/visible{
-	dir = 1
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
 "po" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Recreation";
 	req_one_access_txt = "152"
 	},
 /turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"pp" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"pv" = (
-/obj/item/ammo_box/magazine/hellgate_vp78,
-/obj/item/ammo_box/magazine/hellgate_vp78,
-/obj/item/ammo_box/magazine/hellgate_vp78,
-/obj/item/gun/ballistic/automatic/pistol/hellgate_vp78,
-/obj/item/ammo_box/c10mm,
-/obj/item/ammo_box/c10mm,
-/obj/item/ammo_box/c10mm,
-/obj/item/ammo_box/c10mm,
-/obj/item/ammo_box/c10mm,
-/obj/item/ammo_box/c10mm,
-/obj/structure/urbanismbigcrate/alt,
-/obj/effect/turf_decal/weather/sand/plating,
-/obj/structure/lattice/catwalk,
-/obj/item/reagent_containers/hypospray/medipen/stimpack/traitor,
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand2"
-	},
 /area/awaymission/PactDaivers)
 "pw" = (
 /obj/structure/bed,
@@ -2228,45 +870,6 @@
 /turf/open/floor/plasteel/freezer{
 	heat_capacity = 1e+006
 	},
-/area/awaymission/PactDaivers)
-"pE" = (
-/obj/machinery/door/window{
-	dir = 1;
-	name = "InteQ interior door";
-	req_one_access_txt = "152"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"pF" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 5
-	},
-/obj/structure/table/glass,
-/obj/item/storage/box/beakers{
-	pixel_y = 7
-	},
-/obj/item/reagent_containers/syringe,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"pG" = (
-/obj/structure/window/reinforced/spawner,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 6
-	},
-/obj/machinery/cryopod{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "pH" = (
 /obj/machinery/door/airlock{
@@ -2283,32 +886,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"pP" = (
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/red/filled/corner{
-	color = "#9FED58";
-	dir = 4
-	},
-/obj/structure/window/reinforced/spawner/west,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"pS" = (
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 9
-	},
-/obj/structure/sink/kitchen{
-	dir = 4;
-	pixel_x = -12
-	},
-/obj/structure/window/reinforced/spawner/west,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "pU" = (
 /obj/structure/table,
 /obj/item/book/manual/splurt_space_law,
@@ -2322,18 +899,6 @@
 /obj/item/storage/firstaid,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"pV" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 4
-	},
-/obj/structure/chair{
-	dir = 8
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "pY" = (
 /obj/structure/chair/office/dark{
 	dir = 4
@@ -2344,29 +909,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"qd" = (
-/obj/machinery/door/airlock/centcom{
-	name = "Restroom";
-	req_access_txt = "152"
-	},
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "qh" = (
 /obj/item/ammo_casing/c9mm,
 /mob/living/simple_animal/hostile/syndicate/ranged/smg,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"ql" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 1
-	},
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/cable/yellow{
-	icon_state = "2-4"
-	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "qp" = (
@@ -2377,37 +922,11 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/PactDaivers)
-"qs" = (
-/obj/machinery/computer{
-	dir = 8
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
 "qt" = (
 /obj/structure/chair/comfy/brown{
 	dir = 8
 	},
 /turf/open/floor/carpet/green,
-/area/awaymission/PactDaivers)
-"qu" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 8
-	},
-/obj/machinery/light{
-	dir = 8;
-	light_color = "#e8eaff"
-	},
-/obj/machinery/suit_storage_unit/inteq_spacesuit,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"qz" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 4
-	},
-/obj/structure/frame/machine{
-	anchored = 1
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "qA" = (
 /obj/machinery/light/small{
@@ -2431,18 +950,6 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
-"qL" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 9
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "qM" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/head/helmet/swat/inteq,
@@ -2450,45 +957,9 @@
 /obj/item/clothing/head/helmet/swat/inteq,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"qS" = (
-/obj/structure/closet/crate/large,
-/obj/item/stack/ore/iron,
-/obj/item/stack/sheet/mineral/gold,
-/obj/item/stack/ore/titanium,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"qT" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"rc" = (
-/obj/structure/rack,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/gloves/combat,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "rg" = (
 /obj/structure/barricade/sandbags,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"rk" = (
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/obj/machinery/camera/autoname{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 8
-	},
-/turf/open/floor/engine,
 /area/awaymission/PactDaivers)
 "rl" = (
 /obj/machinery/vending/snack,
@@ -2506,15 +977,6 @@
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"rn" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/awaymission/PactDaivers)
-"ro" = (
-/obj/machinery/power/floodlight/lamppost/four,
-/obj/structure/lattice,
-/obj/structure/lattice,
-/turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
 "rq" = (
 /mob/living/simple_animal/hostile/syndicate/mecha_pilot/inteq/light,
@@ -2537,42 +999,11 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/PactDaivers)
-"rA" = (
-/obj/effect/decal/cleanable/cobweb,
-/obj/machinery/computer,
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"rC" = (
-/obj/structure/lattice,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"rF" = (
-/obj/effect/decal/cleanable/blood/gibs/body{
-	icon_state = "gibup1"
-	},
-/obj/structure/closet/crate/large,
-/obj/structure/lattice/catwalk,
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	},
-/area/awaymission/PactDaivers)
 "rG" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/open/floor/grass/grass0{
 	heat_capacity = 1e+006
 	},
-/area/awaymission/PactDaivers)
-"rJ" = (
-/obj/structure/lattice,
-/obj/structure/sign/poster/contraband/inteq/inteq_no_sex,
-/turf/closed/indestructible/syndicate,
-/area/awaymission/PactDaivers)
-"rK" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 1
-	},
-/obj/structure/table/optable,
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "rQ" = (
 /obj/structure/chair/comfy/brown{
@@ -2588,27 +1019,9 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"rX" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
-	dir = 8
-	},
-/obj/structure/table,
-/obj/machinery/button/door{
-	id = "au_nuclear_vent";
-	name = "RBMK Compartment Flush"
-	},
-/obj/effect/turf_decal/stripes/yellow/line,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "sd" = (
 /obj/structure/reagent_dispensers/fueltank/high,
 /turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"se" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
-/turf/open/floor/plating,
 /area/awaymission/PactDaivers)
 "sf" = (
 /obj/structure/table/wood,
@@ -2631,28 +1044,6 @@
 	icon_state = "damaged1"
 	},
 /area/awaymission/PactDaivers)
-"sk" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/bodycontainer/crematorium{
-	id = "crematoriumChapel"
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"sn" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line,
-/obj/structure/table/reinforced,
-/obj/item/toy/cards/deck/syndicate,
-/obj/machinery/light,
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
-/obj/structure/sign/poster/contraband/inteq/inteq_recruitment{
-	pixel_y = -32
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "sp" = (
 /turf/open/floor/plating/ironsand{
 	icon_state = "ironsand7"
@@ -2671,39 +1062,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"su" = (
-/obj/machinery/computer/med_data/syndie{
-	dir = 8;
-	req_one_access = null
-	},
-/obj/item/paper/fluff/ruins/forgottenship/error,
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"sv" = (
-/obj/machinery/door/window{
-	name = "InteQ interior door";
-	req_one_access_txt = "152"
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/line,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"sx" = (
-/obj/machinery/vending/hydroseeds,
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"sz" = (
-/obj/structure/sign/flag/inteq{
-	pixel_y = -32
-	},
-/obj/effect/mob_spawn/human/inteqspace/PactDaivers,
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
 "sA" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/snacks/donut/jelly,
@@ -2717,15 +1075,6 @@
 /obj/item/clothing/head/HoS/inteq_cap,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"sC" = (
-/obj/structure/table,
-/obj/machinery/light/small{
-	brightness = 3;
-	dir = 8
-	},
-/obj/structure/bedsheetbin,
-/turf/open/floor/plasteel/showroomfloor,
-/area/awaymission/PactDaivers)
 "sF" = (
 /turf/open/floor/wood,
 /area/awaymission/PactDaivers)
@@ -2735,63 +1084,11 @@
 /obj/item/reagent_containers/food/snacks/pie/baklava,
 /turf/open/floor/carpet/green,
 /area/awaymission/PactDaivers)
-"sN" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/manifold/cyan/visible{
-	dir = 1
-	},
-/obj/machinery/meter,
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"sO" = (
-/obj/structure/closet/crate/bin,
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "sP" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating{
 	heat_capacity = 1e+006
 	},
-/area/awaymission/PactDaivers)
-"sR" = (
-/obj/structure/shuttle/engine/propulsion{
-	dir = 8
-	},
-/obj/effect/turf_decal/weather/sand/plating,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"sU" = (
-/obj/structure/closet/crate/large,
-/obj/item/stack/ore/titanium,
-/obj/item/stack/ore/glass,
-/obj/item/stack/ore/glass,
-/obj/item/stack/ore/glass,
-/obj/item/stack/ore/titanium,
-/obj/item/stack/ore/titanium,
-/obj/item/stack/ore/titanium,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"tb" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/suit_storage_unit/open,
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	},
-/area/awaymission/PactDaivers)
-"td" = (
-/obj/machinery/door/window{
-	name = "InteQ interior door";
-	req_one_access_txt = "152"
-	},
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 10
-	},
-/obj/structure/window/reinforced/spawner/west,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "te" = (
 /obj/machinery/vending/cigarette,
@@ -2799,31 +1096,6 @@
 /turf/open/floor/plasteel/dark{
 	heat_capacity = 1e+006
 	},
-/area/awaymission/PactDaivers)
-"tn" = (
-/obj/structure/window/reinforced/spawner,
-/obj/machinery/suit_storage_unit/open,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"tq" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Emergency Engine";
-	req_one_access_txt = "152"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"tr" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	name = "Reactor to Cooling Loop"
-	},
-/obj/effect/turf_decal/stripes/yellow/line,
-/turf/open/floor/engine,
 /area/awaymission/PactDaivers)
 "tz" = (
 /turf/open/floor/plating{
@@ -2859,66 +1131,12 @@
 /obj/machinery/light/broken/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"tK" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 10
-	},
-/turf/open/floor/plasteel/dark/smooth/large,
-/area/awaymission/PactDaivers)
-"tM" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"tU" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/rack,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/glass,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/silver,
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	},
-/area/awaymission/PactDaivers)
 "tY" = (
 /obj/machinery/firealarm{
 	dir = 4;
 	pixel_x = 24
 	},
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"ub" = (
-/obj/structure/fence/door,
-/obj/effect/turf_decal/weather/sand/plating,
-/obj/structure/lattice,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"ue" = (
-/obj/machinery/porta_turret/inteq/energy/heavy{
-	name = "InteQ Ship Turret";
-	dir = 5
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/awaymission/PactDaivers)
-"uf" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/cyan/visible,
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"ug" = (
-/obj/structure/cable/white{
-	icon_state = "4-8"
-	},
-/turf/open/floor/engine,
 /area/awaymission/PactDaivers)
 "uj" = (
 /obj/structure/closet/crate/bin,
@@ -2961,31 +1179,11 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"un" = (
-/obj/machinery/vending/inteq_vendomat{
-	shut_up = 1
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
 "ut" = (
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
 /turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"uv" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/closet/crate/large,
-/obj/item/stack/ore/titanium,
-/obj/item/stack/ore/glass,
-/obj/item/stack/ore/glass,
-/obj/item/stack/ore/glass,
-/obj/item/stack/ore/titanium,
-/obj/item/stack/ore/titanium,
-/turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
 "ux" = (
 /obj/effect/mob_spawn/human/corpse/russian,
@@ -2999,53 +1197,10 @@
 /obj/machinery/light/floor,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
-"uF" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 6
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"uI" = (
-/mob/living/simple_animal/hostile/syndicate/ranged/infiltrator,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"uJ" = (
-/obj/structure/closet/crate/secure/gear{
-	req_one_access_txt = "152"
-	},
-/obj/item/stack/ore/plasma{
-	amount = 19
-	},
-/obj/machinery/airalarm/inteq{
-	pixel_y = 24
-	},
-/obj/item/stack/sheet/plastic/five,
-/obj/item/pipe_dispenser,
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
 "uK" = (
 /turf/open/floor/plating{
 	heat_capacity = 1e+006
 	},
-/area/awaymission/PactDaivers)
-"uO" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Vault";
-	req_one_access_txt = "152"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"uU" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 1
-	},
-/obj/machinery/computer/cryopod{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "uZ" = (
 /obj/structure/chair/wood/normal{
@@ -3067,37 +1222,8 @@
 /obj/item/gun/ballistic/shotgun,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"vk" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 10
-	},
-/obj/structure/lattice/catwalk,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
 "vl" = (
 /turf/closed/mineral/ash_rock,
-/area/awaymission/PactDaivers)
-"vo" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
-	dir = 1
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"vu" = (
-/obj/machinery/computer/operating,
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 9
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "vw" = (
 /obj/structure/extinguisher_cabinet{
@@ -3105,12 +1231,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"vz" = (
-/obj/structure/fence/door{
-	dir = 4
-	},
-/turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
 "vA" = (
 /obj/machinery/door/poddoor/shutters,
@@ -3125,22 +1245,8 @@
 /obj/item/weldingtool,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"vL" = (
-/obj/structure/table/reinforced,
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "vM" = (
 /turf/closed/wall/r_wall/syndicate,
-/area/awaymission/PactDaivers)
-"vN" = (
-/obj/effect/spawner/structure/window/plasma/reinforced,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 1
-	},
-/turf/open/floor/plating,
 /area/awaymission/PactDaivers)
 "vO" = (
 /obj/item/stack/medical/suture,
@@ -3180,13 +1286,6 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
-"vZ" = (
-/turf/open/floor/plasteel/showroomfloor,
-/area/awaymission/PactDaivers)
-"wa" = (
-/obj/structure/hellgate_dropship/sad,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
 "we" = (
 /obj/structure/table,
 /obj/machinery/recharger{
@@ -3204,10 +1303,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"wi" = (
-/obj/machinery/door/airlock/hatch,
-/turf/open/floor/carpet/royalblack,
-/area/awaymission/PactDaivers)
 "wj" = (
 /obj/machinery/door/airlock/security{
 	name = "Security Checkpoint";
@@ -3220,19 +1315,6 @@
 "wm" = (
 /obj/structure/hellgate_large,
 /turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"wn" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/yellow/line,
-/obj/structure/cable/white{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/components/binary/pump{
-	name = "Atmospherics to Reactor"
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "wp" = (
 /obj/structure/chair/comfy/brown,
@@ -3259,31 +1341,10 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/PactDaivers)
-"wA" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/rack,
-/obj/item/raw_anomaly_core,
-/obj/structure/lattice,
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	},
-/area/awaymission/PactDaivers)
 "wI" = (
 /obj/structure/closet/crate/large,
 /obj/item/paper/guides/antag/guardian/inteq_drone,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"wJ" = (
-/obj/structure/lattice/catwalk,
-/obj/effect/turf_decal/weather/sand/plating,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"wO" = (
-/obj/machinery/porta_turret/inteq/energy{
-	name = "InteQ Ship Turret";
-	dir = 4
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/awaymission/PactDaivers)
 "wP" = (
 /obj/structure/chair/office/light{
@@ -3302,30 +1363,6 @@
 /obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/PactDaivers)
-"wU" = (
-/obj/structure/table/reinforced,
-/obj/item/reagent_containers/food/condiment/saltshaker{
-	pixel_x = -8;
-	pixel_y = 5
-	},
-/obj/item/reagent_containers/food/condiment/peppermill{
-	pixel_x = -8
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"wZ" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "teleportcommand";
-	name = "Teleport Access"
-	},
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
 "xc" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -3340,11 +1377,6 @@
 /area/awaymission/PactDaivers)
 "xd" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/awaymission/PactDaivers)
-"xe" = (
-/obj/effect/turf_decal/weather/sand/plating,
-/obj/structure/lattice,
-/turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
 "xg" = (
 /obj/effect/turf_decal/tile/red{
@@ -3364,89 +1396,14 @@
 /obj/item/flashlight/lamp/green,
 /turf/open/floor/carpet/purple,
 /area/awaymission/PactDaivers)
-"xk" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 1
-	},
-/obj/structure/chair/office/light{
-	dir = 1
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/carpet/royalblack,
-/area/awaymission/PactDaivers)
 "xm" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/snacks/donut,
 /turf/open/floor/carpet/green,
 /area/awaymission/PactDaivers)
-"xo" = (
-/obj/structure/sign/flag/inteq,
-/turf/closed/indestructible/syndicate,
-/area/awaymission/PactDaivers)
-"xq" = (
-/obj/structure/window/reinforced/spawner/north,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 1
-	},
-/obj/vehicle/sealed/mecha/working/ripley/deathripley/real,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"xs" = (
-/obj/effect/turf_decal/trimline/red/filled/corner,
-/obj/effect/turf_decal/trimline/red/filled/corner{
-	dir = 8
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"xt" = (
-/obj/effect/turf_decal/stripes{
-	dir = 1;
-	icon_state = "delivery_red"
-	},
-/obj/structure/rack{
-	dir = 8
-	},
-/obj/item/storage/belt/military/inteq,
-/obj/item/storage/belt/military/inteq,
-/obj/item/storage/belt/military/inteq,
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"xu" = (
-/obj/machinery/door/airlock/external{
-	name = "InteQ ship airlock";
-	req_one_access_txt = "152"
-	},
-/obj/structure/fans/tiny,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"xw" = (
-/obj/machinery/vending/medical/syndicate_access/cybersun,
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
 "xA" = (
 /mob/living/simple_animal/hostile/syndicate/ranged/sniper,
 /turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"xD" = (
-/obj/machinery/porta_turret/inteq/energy/heavy{
-	name = "InteQ Ship Turret";
-	dir = 10
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/awaymission/PactDaivers)
-"xI" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 5
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/turf/open/floor/engine,
 /area/awaymission/PactDaivers)
 "xK" = (
 /obj/machinery/door/firedoor,
@@ -3462,13 +1419,6 @@
 /obj/item/reagent_containers/food/drinks/coffee,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
-"xO" = (
-/obj/item/fuel_rod,
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 6
-	},
-/turf/open/pool,
-/area/awaymission/PactDaivers)
 "xQ" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -3482,19 +1432,6 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/PactDaivers)
-"xS" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/computer{
-	dir = 1
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"xU" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
-	dir = 4
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
 "xV" = (
 /obj/structure/hellgate_power_transformer,
 /turf/open/indestructible/ironsand,
@@ -3504,21 +1441,6 @@
 	name = "Сенсорная вышка"
 	},
 /turf/open/floor/plating/damturf,
-/area/awaymission/PactDaivers)
-"xY" = (
-/obj/machinery/door/airlock/centcom{
-	name = "Raiders Barracks";
-	req_access_txt = "152"
-	},
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"ya" = (
-/obj/effect/spawner/structure/window/plasma/reinforced,
-/obj/structure/cable/white{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plating,
 /area/awaymission/PactDaivers)
 "yb" = (
 /obj/machinery/light/small,
@@ -3553,38 +1475,9 @@
 /mob/living/simple_animal/hostile/syndicate,
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/PactDaivers)
-"yh" = (
-/obj/structure/window/reinforced/spawner,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 10
-	},
-/obj/machinery/cryopod{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"yi" = (
-/obj/machinery/washing_machine,
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "yj" = (
 /obj/structure/closet/crate/bin,
 /turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"ym" = (
-/obj/structure/table/reinforced,
-/obj/item/healthanalyzer/advanced{
-	pixel_y = 9
-	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 5
-	},
-/obj/item/storage/backpack/duffelbag/syndie/inteq/surgery_adv,
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "yn" = (
 /obj/structure/hellgate_tram_rails/anchor,
@@ -3617,94 +1510,11 @@
 /obj/item/reagent_containers/hypospray/medipen/stimpack/traitor,
 /turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
-"ys" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/obj/machinery/door/airlock/external,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "yv" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/plating{
 	heat_capacity = 1e+006
 	},
-/area/awaymission/PactDaivers)
-"yw" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Syndciate Dorm 4";
-	req_one_access_txt = "152"
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"yy" = (
-/turf/open/floor/wood/wood_large,
-/area/awaymission/PactDaivers)
-"yJ" = (
-/obj/structure/window/reinforced/spawner/east,
-/obj/structure/window/reinforced/spawner/west,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"yL" = (
-/obj/structure/frame/computer{
-	anchored = 1;
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"yM" = (
-/obj/machinery/biogenerator,
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"yO" = (
-/obj/structure/table/reinforced,
-/obj/machinery/button/door{
-	id = "fscaproom";
-	name = "Room shutters control";
-	req_one_access_txt = "152"
-	},
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/PactDaivers)
-"yY" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
-	dir = 4
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"zb" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/closet/crate/large,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/plasma,
-/obj/item/stack/ore/plasma,
-/obj/item/stack/ore/gold,
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	},
-/area/awaymission/PactDaivers)
-"zg" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 10
-	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -25
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "zl" = (
 /obj/structure/chair/wood/normal{
@@ -3724,77 +1534,15 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"zq" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 9
-	},
-/obj/machinery/vending/inteq_vendomat,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"zu" = (
-/obj/structure/oldtrap/razor_wire/industrial,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"zw" = (
-/obj/structure/closet/syndicate{
-	anchored = 1;
-	armor = list("melee" = 70, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 60);
-	desc = "A basic closet for all your villainous needs.";
-	locked = 1;
-	name = "Armory Locker";
-	req_one_access_txt = "152";
-	secure = 1
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/end{
-	dir = 4
-	},
-/obj/item/gun/ballistic/automatic/ak12/pindicate,
-/obj/item/gun/ballistic/automatic/ak12/pindicate{
-	pixel_x = 1;
-	pixel_y = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "zx" = (
 /obj/structure/sign/poster/official/nanotrasen_logo{
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"zz" = (
-/obj/structure/table/reinforced,
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/item/sealant,
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 5
-	},
-/obj/item/sealant{
-	pixel_x = 4
-	},
-/obj/item/reagent_containers/food/snacks/pizzaslice/meat{
-	pixel_x = -1;
-	pixel_y = 12
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
 "zD" = (
 /mob/living/simple_animal/hostile/deathclaw/funclaw/femclaw,
 /turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"zG" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Weapon Systems";
-	req_one_access_txt = "152"
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark/smooth/large,
 /area/awaymission/PactDaivers)
 "zK" = (
 /obj/structure/table,
@@ -3819,98 +1567,12 @@
 /obj/item/reagent_containers/food/drinks/beer,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"zR" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 4
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
 "zS" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "garage_cabin";
 	name = "garage door"
 	},
 /turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"zU" = (
-/obj/structure/table/reinforced,
-/obj/machinery/button/door{
-	id = "fslockdown";
-	name = "Window shutters";
-	req_one_access_txt = "152"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"zV" = (
-/obj/machinery/power/smes{
-	charge = 5000;
-	input_level = 20000
-	},
-/obj/structure/cable/yellow{
-	icon_state = "0-4"
-	},
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"zX" = (
-/obj/machinery/computer/security{
-	desc = "Used to access interrogation room camera.";
-	dir = 8;
-	name = "Ship cameras console";
-	network = list("fsc","fsci");
-	screen_loc = ""
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/end{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark/smooth/large,
-/area/awaymission/PactDaivers)
-"zY" = (
-/obj/effect/turf_decal/stripes/yellow/line,
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"zZ" = (
-/obj/structure/tank_dispenser/oxygen,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Aa" = (
-/mob/living/simple_animal/hostile/syndicate/ranged,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Ae" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 5
-	},
-/obj/structure/table/reinforced,
-/obj/machinery/recharger{
-	pixel_y = 4
-	},
-/obj/item/grenade/frag/mega{
-	pixel_x = 12;
-	pixel_y = 12
-	},
-/obj/item/grenade/frag/mega{
-	pixel_x = 12;
-	pixel_y = 6
-	},
-/obj/item/grenade/frag/mega{
-	pixel_x = 12
-	},
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "Ah" = (
 /turf/open/floor/plasteel/freezer{
@@ -3927,72 +1589,9 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/PactDaivers)
-"Al" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
-/obj/structure/closet/secure_closet/engineering_welding,
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/obj/machinery/airalarm{
-	pixel_y = 22
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"Ao" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 8
-	},
-/obj/machinery/sleeper/syndie/fullupgrade{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Aq" = (
-/obj/structure/closet/crate/secure/gear{
-	req_one_access_txt = "152"
-	},
-/obj/item/stack/ore/diamond{
-	amount = 3
-	},
-/obj/item/storage/belt/utility,
-/obj/item/storage/belt/utility,
-/obj/item/storage/belt/utility,
-/obj/item/storage/belt/utility,
-/obj/item/multitool/tricorder,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 8
-	},
-/obj/item/crowbar/power/inteq,
-/obj/item/screwdriver/power/inteq,
-/obj/item/weldingtool/experimental/inteq,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Ar" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/mob/living/simple_animal/hostile/syndicate/ranged/infiltrator,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "Aw" = (
 /obj/vehicle/sealed/mecha/working/ripley/loaded,
 /turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"Ax" = (
-/obj/item/fuel_rod,
-/obj/effect/turf_decal/stripes/yellow/line,
-/turf/open/pool,
-/area/awaymission/PactDaivers)
-"AG" = (
-/obj/structure/hellgate_beacon/deployed{
-	pixel_y = -1;
-	pixel_x = -9;
-	name = "Сенсорный датчик"
-	},
-/turf/open/floor/pod{
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
-	},
 /area/awaymission/PactDaivers)
 "AP" = (
 /obj/item/ammo_box/magazine/hellgate_vp78,
@@ -4020,15 +1619,6 @@
 /obj/effect/turf_decal/tile/neutral,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"AX" = (
-/obj/structure/cable/white{
-	icon_state = "2-4"
-	},
-/obj/structure/cable/white{
-	icon_state = "4-8"
-	},
-/turf/closed/indestructible/syndicate,
-/area/awaymission/PactDaivers)
 "AZ" = (
 /turf/open/floor/plating/ironsand{
 	icon_state = "ironsand2"
@@ -4049,36 +1639,6 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
-"Bl" = (
-/obj/effect/turf_decal/trimline/blue/filled/corner{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Bm" = (
-/obj/structure/window/reinforced/spawner/north,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 9
-	},
-/obj/structure/table/reinforced,
-/obj/machinery/microwave,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Br" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "2-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "Bt" = (
 /obj/item/kirbyplants{
 	layer = 5
@@ -4091,52 +1651,6 @@
 /obj/structure/hellgate_tram_rails/anchor_bot,
 /obj/effect/mine/explosive,
 /turf/open/floor/plating/dirt,
-/area/awaymission/PactDaivers)
-"Bw" = (
-/obj/structure/closet/syndicate{
-	anchored = 1;
-	armor = list("melee" = 70, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 60);
-	desc = "A basic closet for all your villainous needs.";
-	locked = 1;
-	name = "Closet";
-	req_one_access_txt = "152";
-	secure = 1
-	},
-/obj/item/clothing/gloves/botanic_leather,
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 9
-	},
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 5
-	},
-/obj/item/storage/bag/plants,
-/obj/item/storage/box/disks_plantgene,
-/obj/structure/window/reinforced/spawner/west,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Bx" = (
-/obj/structure/closet/syndicate{
-	anchored = 1;
-	armor = list("melee" = 70, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 60);
-	desc = "A basic closet for all your villainous needs.";
-	locked = 1;
-	name = "Closet";
-	req_one_access_txt = "152";
-	secure = 1
-	},
-/obj/item/crowbar/red,
-/obj/item/ammo_box/c10mm,
-/obj/item/flashlight/seclite,
-/obj/item/gun/ballistic/automatic/pistol,
-/obj/item/ammo_box/magazine/pistolm9mm,
-/obj/item/ammo_box/magazine/pistolm9mm,
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"BD" = (
-/obj/structure/table,
-/obj/machinery/recharger,
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "BE" = (
 /obj/structure/table/wood,
@@ -4159,40 +1673,10 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/PactDaivers)
-"BK" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-8"
-	},
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"BQ" = (
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/PactDaivers)
-"BS" = (
-/obj/machinery/porta_turret/inteq/energy{
-	name = "InteQ Ship Turret";
-	dir = 8
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/awaymission/PactDaivers)
 "BX" = (
 /obj/structure/hellgate_tram_rails/anchor,
 /obj/structure/hellgate_train/maglev,
 /turf/open/floor/plating/dirt,
-/area/awaymission/PactDaivers)
-"Ca" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/purple/visible,
-/turf/open/floor/carpet/royalblack,
-/area/awaymission/PactDaivers)
-"Ce" = (
-/obj/machinery/light,
-/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
-/obj/effect/turf_decal/box,
-/obj/effect/turf_decal/stripes/yellow/line,
-/turf/open/floor/engine,
 /area/awaymission/PactDaivers)
 "Cj" = (
 /obj/effect/turf_decal/big_sign/enclave/middle/right,
@@ -4219,82 +1703,12 @@
 /obj/effect/turf_decal/weather/sand/plating,
 /turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
-"Cx" = (
-/obj/structure/fans/tiny,
-/obj/effect/turf_decal/trimline/yellow/filled/line,
-/obj/effect/turf_decal/stripes,
-/obj/machinery/door/poddoor{
-	id = "colossus_starboard"
-	},
-/obj/structure/fans/tiny,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Cy" = (
-/obj/effect/turf_decal/stripes/yellow/corner{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"CA" = (
-/obj/structure/rack{
-	dir = 8
-	},
-/obj/effect/turf_decal/stripes{
-	dir = 1;
-	icon_state = "delivery_red"
-	},
-/obj/structure/sign/flag/inteq{
-	pixel_x = 32;
-	pixel_y = 27
-	},
-/obj/item/gun/ballistic/automatic/hellgate_c74,
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
 "CF" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"CI" = (
-/turf/open/floor/plating/ironsand,
-/area/awaymission/PactDaivers)
-"CJ" = (
-/obj/structure/hellgate_campaign/tank,
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"CN" = (
-/mob/living/simple_animal/hostile/syndicate/civilian,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"CQ" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 1
-	},
-/obj/machinery/turretid{
-	control_area = "/area/ruin/space/has_grav/bluemoon/inteq_forgotten_ship";
-	icon_state = "control_kill";
-	lethal = 1;
-	name = "Ship turret control panel";
-	pixel_y = 32;
-	req_access = null;
-	req_one_access_txt = "152"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"CT" = (
-/obj/bfl_crack,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"CX" = (
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 4
-	},
-/turf/open/floor/engine,
 /area/awaymission/PactDaivers)
 "Da" = (
 /obj/structure/closet/emcloset,
@@ -4313,27 +1727,6 @@
 /obj/item/reagent_containers/food/snacks/donut/jelly/slimejelly,
 /obj/item/reagent_containers/food/snacks/pie/pumpkinpie,
 /turf/open/floor/carpet/green,
-/area/awaymission/PactDaivers)
-"Df" = (
-/obj/item/fuel_rod,
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/obj/structure/pool/ladder{
-	dir = 2;
-	pixel_y = 17
-	},
-/turf/open/pool,
-/area/awaymission/PactDaivers)
-"Dg" = (
-/obj/structure/table/reinforced,
-/obj/item/clothing/glasses/thermal/eyepatch,
-/obj/item/toy/figure/inteq,
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/PactDaivers)
-"Dh" = (
-/obj/machinery/door/poddoor,
-/turf/open/floor/plating,
 /area/awaymission/PactDaivers)
 "Dj" = (
 /obj/machinery/door/firedoor,
@@ -4355,56 +1748,15 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
-"Do" = (
-/obj/machinery/smartfridge/organ,
-/turf/closed/wall/r_wall/syndicate,
-/area/awaymission/PactDaivers)
 "Ds" = (
 /obj/effect/decal/cleanable/blood/gibs/human/limb,
 /turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"Dv" = (
-/obj/structure/closet/syndicate{
-	anchored = 1;
-	armor = list("melee" = 70, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 60);
-	desc = "A basic closet for all your villainous needs.";
-	locked = 1;
-	name = "Closet";
-	req_one_access_txt = "152";
-	secure = 1
-	},
-/obj/item/coin/antagtoken,
-/obj/item/encryptionkey/inteq,
-/obj/item/encryptionkey/inteq,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/item/ammo_box/magazine/m50,
-/obj/item/ammo_box/magazine/m50,
-/obj/item/encryptionkey/inteq,
-/obj/item/encryptionkey/inteq,
-/obj/item/encryptionkey/inteq,
-/obj/item/encryptionkey/inteq,
-/obj/item/mod/control/pre_equipped/syndicate_empty/elite,
-/obj/item/encryptionkey/inteq,
-/obj/item/encryptionkey/inteq,
-/turf/open/floor/wood/wood_large,
 /area/awaymission/PactDaivers)
 "DC" = (
 /obj/structure/chair/office/light{
 	dir = 8
 	},
 /turf/open/floor/carpet/purple,
-/area/awaymission/PactDaivers)
-"DF" = (
-/obj/structure/bed{
-	dir = 8
-	},
-/obj/item/bedsheet/inteq{
-	dir = 1
-	},
-/obj/effect/mob_spawn/human/inteqspace/PactDaivers,
-/turf/open/floor/wood,
 /area/awaymission/PactDaivers)
 "DG" = (
 /obj/structure/table,
@@ -4420,16 +1772,6 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"DK" = (
-/obj/structure/closet/secure_closet/freezer/kitchen{
-	req_access = list(150)
-	},
-/obj/item/reagent_containers/food/condiment/soymilk,
-/obj/item/reagent_containers/food/condiment/soymilk,
-/obj/item/reagent_containers/food/condiment/milk,
-/obj/item/reagent_containers/food/condiment/milk,
-/turf/open/floor/plating,
 /area/awaymission/PactDaivers)
 "DP" = (
 /obj/machinery/door/firedoor,
@@ -4447,128 +1789,17 @@
 /obj/item/reagent_containers/food/drinks/beer,
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/PactDaivers)
-"DU" = (
-/obj/machinery/door/airlock/centcom{
-	name = "Raiders Barracks";
-	req_access_txt = "152"
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"DV" = (
-/obj/effect/spawner/structure/window/plasma/reinforced,
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
 "Eb" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
 /turf/open/floor/carpet/green,
-/area/awaymission/PactDaivers)
-"Ed" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/closet/crate/large,
-/obj/item/stack/ore/silver,
-/obj/item/stack/ore/silver,
-/obj/item/stack/ore/silver,
-/obj/item/stack/ore/silver,
-/obj/item/stack/ore/gold,
-/obj/item/stack/ore/gold,
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	},
-/area/awaymission/PactDaivers)
-"Ee" = (
-/obj/machinery/vending/clothing,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 10
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Ef" = (
-/obj/structure/rack{
-	dir = 8
-	},
-/obj/effect/turf_decal/stripes{
-	dir = 1;
-	icon_state = "delivery_red"
-	},
-/obj/item/ammo_box/magazine/hellgate_c74,
-/obj/item/ammo_box/magazine/hellgate_c74,
-/obj/item/ammo_box/magazine/hellgate_c74,
-/turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
 "El" = (
 /obj/machinery/vending/boozeomat/pubby_maint,
 /turf/open/floor/wood,
 /area/awaymission/PactDaivers)
-"Em" = (
-/obj/effect/turf_decal/trimline/red/filled/corner{
-	color = "#9FED58";
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Eo" = (
-/obj/machinery/door/poddoor,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Eq" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/rack,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/glass,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/silver,
-/obj/structure/lattice,
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	},
-/area/awaymission/PactDaivers)
-"Ew" = (
-/obj/machinery/light,
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"Ey" = (
-/obj/structure/window/reinforced/spawner/north,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 9
-	},
-/obj/machinery/mech_bay_recharge_port,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"EB" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	name = "Moderators to Reactor"
-	},
-/obj/effect/turf_decal/stripes/yellow/line,
-/obj/structure/cable/yellow{
-	icon_state = "2-8"
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
 "EH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"EM" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 8
-	},
-/obj/machinery/cryopod{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"EO" = (
-/obj/structure/window/reinforced/spawner,
-/obj/machinery/hydroponics/constructable,
-/obj/effect/turf_decal/trimline/green/filled/line,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "EP" = (
@@ -4576,42 +1807,6 @@
 /turf/open/floor/plating{
 	heat_capacity = 1e+006
 	},
-/area/awaymission/PactDaivers)
-"EQ" = (
-/obj/structure/window/reinforced/spawner/west,
-/obj/machinery/door/window{
-	name = "InteQ interior door";
-	req_one_access_txt = "152"
-	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 10
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"ER" = (
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"ES" = (
-/obj/structure/table/reinforced,
-/obj/structure/window/reinforced/spawner/east,
-/obj/machinery/door/window{
-	name = "InteQ interior door";
-	req_one_access_txt = "152"
-	},
-/obj/item/ai_module/core/full/inteq,
-/obj/item/borg/upgrade/transform/syndicatejack,
-/obj/item/robot_module/syndicate_medical/inteq,
-/obj/item/robot_module/syndicate/inteq,
-/obj/item/robot_module/saboteur/inteq,
-/obj/item/disk/tech_disk/illegal,
-/turf/open/floor/wood/wood_large,
-/area/awaymission/PactDaivers)
-"EX" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 8
-	},
-/obj/machinery/suit_storage_unit/inteq_spacesuit,
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "EY" = (
 /obj/structure/closet/emcloset,
@@ -4621,43 +1816,8 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
-"Fa" = (
-/obj/machinery/computer{
-	dir = 1
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"Fb" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/junction,
-/obj/machinery/atmospherics/pipe/heat_exchanging/junction/layer1,
-/obj/structure/lattice,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"Fc" = (
-/obj/structure/window/reinforced/spawner/north,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Fd" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
-	dir = 1
-	},
-/obj/effect/turf_decal/stripes/yellow/corner{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
 "Ff" = (
 /mob/living/simple_animal/hostile/syndicate/ranged/smg,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Fg" = (
-/obj/machinery/computer/atmos_alert{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/brown/fourcorners,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "Fh" = (
@@ -4672,13 +1832,6 @@
 /obj/machinery/photocopier,
 /turf/open/floor/wood,
 /area/awaymission/PactDaivers)
-"Fq" = (
-/obj/machinery/porta_turret/inteq/energy{
-	name = "InteQ Ship Turret";
-	dir = 4
-	},
-/turf/closed/wall/r_wall/syndicate,
-/area/awaymission/PactDaivers)
 "Fr" = (
 /obj/structure/table/wood,
 /obj/item/tcgcard_binder,
@@ -4691,26 +1844,12 @@
 	},
 /turf/open/floor/wood,
 /area/awaymission/PactDaivers)
-"Fy" = (
-/obj/machinery/button/door{
-	id = "snowdingarage2";
-	name = "garage door";
-	pixel_x = -7;
-	pixel_y = -24
-	},
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
 "FB" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Recreation";
 	req_one_access_txt = "152"
 	},
 /turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"FC" = (
-/obj/structure/cable/yellow,
-/obj/machinery/atmospherics/components/trinary/nuclear_reactor/preset,
-/turf/open/floor/engine,
 /area/awaymission/PactDaivers)
 "FD" = (
 /obj/structure/closet/cabinet,
@@ -4722,23 +1861,6 @@
 /turf/open/floor/grass/grass0{
 	heat_capacity = 1e+006
 	},
-/area/awaymission/PactDaivers)
-"FF" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 1;
-	name = "Cooling Loop to Reactor"
-	},
-/obj/effect/turf_decal/stripes/yellow/line,
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"FN" = (
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/visible{
-	dir = 4
-	},
-/obj/structure/cable/white{
-	icon_state = "1-4"
-	},
-/turf/open/floor/engine,
 /area/awaymission/PactDaivers)
 "FP" = (
 /obj/item/ammo_box/magazine/hellgate_vp78,
@@ -4755,12 +1877,6 @@
 /obj/effect/turf_decal/weather/sand/plating,
 /obj/item/reagent_containers/hypospray/medipen/stimpack/traitor,
 /turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"FX" = (
-/obj/machinery/porta_turret/inteq/energy{
-	name = "InteQ Ship Turret"
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/awaymission/PactDaivers)
 "FY" = (
 /obj/machinery/door/airlock/maintenance{
@@ -4782,36 +1898,9 @@
 	},
 /turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
-"Gh" = (
-/obj/structure/filingcabinet,
-/obj/machinery/door/window{
-	dir = 8;
-	name = "InteQ interior door";
-	req_one_access_txt = "152"
-	},
-/turf/open/floor/wood/wood_large,
-/area/awaymission/PactDaivers)
 "Gi" = (
 /obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"Gj" = (
-/obj/structure/cable/yellow{
-	icon_state = "2-8"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer3,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Gt" = (
-/obj/effect/turf_decal/weather/sand/plating,
-/obj/effect/turf_decal/weather/sand/plating,
-/turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
 "Gw" = (
 /obj/structure/toilet{
@@ -4824,42 +1913,12 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
-"Gx" = (
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
-	dir = 1
-	},
-/obj/machinery/firealarm{
-	pixel_y = 24
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/obj/structure/table,
-/obj/item/paper_bin,
-/obj/item/pen,
-/obj/machinery/atmospherics/pipe/simple/purple/visible{
-	layer = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "GA" = (
 /obj/structure/chair/office/light{
 	dir = 4
 	},
 /mob/living/simple_animal/hostile/syndicate/ranged/smg,
 /turf/open/floor/carpet/purple,
-/area/awaymission/PactDaivers)
-"GH" = (
-/obj/structure/fans/tiny,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 10
-	},
-/obj/effect/turf_decal/stripes,
-/obj/machinery/door/poddoor{
-	id = "colossus_starboard"
-	},
-/obj/structure/fans/tiny,
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "GI" = (
 /obj/structure/sink{
@@ -4868,13 +1927,6 @@
 /turf/open/floor/plasteel/freezer{
 	heat_capacity = 1e+006
 	},
-/area/awaymission/PactDaivers)
-"GJ" = (
-/obj/machinery/modular_computer/console/preset/engineering,
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "GK" = (
 /obj/structure/table/wood,
@@ -4891,28 +1943,11 @@
 /obj/structure/hellgate_tram_rails/anchor_bot,
 /turf/open/floor/plating,
 /area/awaymission/PactDaivers)
-"GW" = (
-/obj/machinery/smartfridge/chemistry/preloaded,
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"GZ" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/obj/structure/table/reinforced,
-/obj/item/storage/toolbox/electrical,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "Hc" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/freezer{
 	heat_capacity = 1e+006
 	},
-/area/awaymission/PactDaivers)
-"He" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 4
-	},
-/obj/machinery/suit_storage_unit/inteq_spacesuit,
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "Hf" = (
 /obj/effect/turf_decal/stripes/yellow/line{
@@ -4928,77 +1963,18 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/PactDaivers)
-"Hn" = (
-/mob/living/simple_animal/hostile/syndicate/space/stormtrooper,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
 "Ho" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
 /turf/open/floor/carpet/purple,
-/area/awaymission/PactDaivers)
-"Hp" = (
-/obj/structure/table,
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
-/obj/item/storage/crayons,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Hr" = (
-/obj/effect/turf_decal/stripes/yellow/corner{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 9
-	},
-/turf/open/floor/engine,
 /area/awaymission/PactDaivers)
 "Hs" = (
 /obj/structure/closet/crate/large,
 /obj/item/wirecutters,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"Ht" = (
-/obj/machinery/door/airlock/engineering{
-	name = "Reactor Control";
-	req_one_access_txt = "10;24"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Hu" = (
-/obj/machinery/atmospherics/components/unary/portables_connector,
-/obj/machinery/portable_atmospherics/canister/nitrogen,
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
 "Hw" = (
 /obj/machinery/vending/dinnerware,
 /turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"Hx" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/yellow/line,
-/obj/machinery/atmospherics/components/binary/pump{
-	name = "Atmospherics to Moderator"
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "Hy" = (
 /obj/effect/turf_decal/tile/green{
@@ -5006,35 +1982,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"HD" = (
-/obj/machinery/pool/filter{
-	pixel_y = -18
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-8"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
 "HF" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
 /obj/item/ammo_box/c38/lethal,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"HN" = (
-/obj/effect/spawner/structure/window/plasma/reinforced,
-/obj/machinery/door/poddoor/shuttledock,
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"HQ" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/obj/structure/table/reinforced,
-/obj/item/storage/toolbox/infiltrator/inteq,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "HR" = (
@@ -5060,41 +2010,6 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
-"HV" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 8;
-	name = "Moderator to Reactor"
-	},
-/obj/structure/cable/white{
-	icon_state = "0-2"
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"Ib" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/rack,
-/obj/item/stack/ore/silver{
-	amount = 2
-	},
-/obj/item/stack/ore/titanium,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/silver,
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	},
-/area/awaymission/PactDaivers)
-"Ic" = (
-/obj/structure/fence/door,
-/obj/effect/turf_decal/weather/sand/plating,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
 "Ig" = (
 /obj/machinery/door/airlock{
 	id_tag = "awaydorm2";
@@ -5110,52 +2025,6 @@
 /area/awaymission/PactDaivers)
 "Ip" = (
 /turf/open/floor/plating/dirt,
-/area/awaymission/PactDaivers)
-"Ir" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 10
-	},
-/obj/structure/chair{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Iz" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
-	dir = 4
-	},
-/obj/effect/spawner/structure/window/plasma/reinforced,
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"IE" = (
-/obj/machinery/vending/hydronutrients,
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"II" = (
-/obj/structure/toilet{
-	dir = 8
-	},
-/obj/machinery/door/window{
-	dir = 8;
-	icon_state = "right";
-	name = "Tactical Toilet";
-	opacity = 1
-	},
-/obj/structure/window/reinforced/tinted,
-/obj/structure/sign/poster/contraband/inteq/inteq_no_sex{
-	pixel_y = 34
-	},
-/mob/living/simple_animal/hostile/syndicate/civilian,
-/turf/open/floor/plasteel/showroomfloor,
-/area/awaymission/PactDaivers)
-"IQ" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 5
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "IR" = (
 /turf/open/floor/carpet/purple,
@@ -5183,48 +2052,9 @@
 /obj/item/reagent_containers/food/snacks/pie/cherrypie,
 /turf/open/floor/carpet/green,
 /area/awaymission/PactDaivers)
-"Ja" = (
-/obj/machinery/door/poddoor/preopen,
-/obj/effect/spawner/structure/window/plastitanium,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "Jb" = (
 /obj/effect/turf_decal/big_sign/enclave/middle/left,
 /turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"Je" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 4
-	},
-/obj/machinery/seed_extractor,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Jk" = (
-/obj/structure/window/reinforced/spawner/west,
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 8;
-	icon_state = "siding_line"
-	},
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/PactDaivers)
-"Jl" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 4
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"Jm" = (
-/obj/structure/cable/yellow,
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 6
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "Jn" = (
 /obj/effect/turf_decal/weather/sand/plating,
@@ -5248,11 +2078,6 @@
 	heat_capacity = 1e+006;
 	icon_state = "damaged2"
 	},
-/area/awaymission/PactDaivers)
-"Jz" = (
-/obj/structure/oldtrap/razor_wire/industrial,
-/obj/structure/oldtrap/razor_wire/industrial,
-/turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
 "JB" = (
 /obj/structure/closet/syndicate/inteq,
@@ -5279,46 +2104,16 @@
 /obj/item/ammo_box/a357/dumdum,
 /turf/open/floor/wood,
 /area/awaymission/PactDaivers)
-"JH" = (
-/obj/structure/lattice,
-/turf/closed/indestructible/syndicate,
-/area/awaymission/PactDaivers)
-"JK" = (
-/obj/machinery/atmospherics/components/unary/tank/air{
-	dir = 8;
-	layer = 2
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"JL" = (
-/obj/structure/cable/white,
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 9
-	},
-/obj/machinery/power/smes/engineering,
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
 "JO" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"JU" = (
-/obj/structure/reagent_dispensers/peppertank,
-/turf/closed/wall/r_wall/syndicate,
-/area/awaymission/PactDaivers)
 "JX" = (
 /obj/structure/closet/crate/large,
 /obj/item/target/alien,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Kd" = (
-/obj/structure/mecha_wreckage/durand/neovgre,
-/turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
 "Ke" = (
 /obj/structure/fence/corner,
@@ -5336,65 +2131,15 @@
 /obj/machinery/newscaster,
 /turf/closed/indestructible/syndicate,
 /area/awaymission/PactDaivers)
-"Kr" = (
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 8
-	},
-/obj/structure/window/reinforced/spawner/west,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Kt" = (
-/obj/structure/table/reinforced,
-/obj/machinery/smartfridge/disks{
-	pixel_y = 3
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "Ku" = (
 /obj/structure/table,
 /obj/item/gun/ballistic,
 /turf/open/floor/carpet/green,
 /area/awaymission/PactDaivers)
-"Kx" = (
-/obj/machinery/door/window{
-	name = "InteQ interior door";
-	req_one_access_txt = "152"
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/line,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "2-4"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Kz" = (
-/obj/effect/turf_decal/trimline/blue/filled/line,
-/obj/structure/window/reinforced/spawner,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "KA" = (
 /obj/structure/closet/crate/bin,
 /obj/item/ammo_box/g45l/lethal,
 /turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"KD" = (
-/obj/structure/window/reinforced/spawner,
-/obj/machinery/hydroponics/constructable,
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 6
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"KE" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 8
-	},
-/obj/structure/chair{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "KF" = (
 /mob/living/simple_animal/hostile/gigachad_inteq/shooter/sniper,
@@ -5403,18 +2148,6 @@
 "KG" = (
 /obj/machinery/vending/cigarette,
 /turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"KJ" = (
-/obj/structure/closet/crate/large,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/plasma,
-/obj/item/stack/ore/plasma,
-/obj/item/stack/ore/gold,
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "KK" = (
 /obj/structure/closet/cabinet,
@@ -5427,39 +2160,14 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"KM" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"KQ" = (
-/obj/machinery/atmospherics/components/unary/vent_pump{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "KR" = (
 /obj/item/stack/medical/suture/one,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"KT" = (
-/obj/machinery/pool/drain,
-/obj/item/fuel_rod,
-/turf/open/pool,
 /area/awaymission/PactDaivers)
 "KW" = (
 /obj/structure/hellgate_tram_rails/anchor,
 /obj/structure/hellgate_train/empty,
 /turf/open/floor/plating/dirt,
-/area/awaymission/PactDaivers)
-"KX" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/obj/structure/table/reinforced,
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "KZ" = (
 /obj/item/ammo_casing/c9mm,
@@ -5474,66 +2182,14 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
-"Lc" = (
-/obj/structure/table/glass,
-/obj/item/stack/medical/bruise_pack{
-	amount = 12
-	},
-/obj/item/stack/medical/ointment{
-	amount = 12
-	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 10
-	},
-/obj/structure/window/reinforced/spawner,
-/obj/item/clothing/neck/stethoscope,
-/obj/item/storage/firstaid/tactical{
-	pixel_x = 3;
-	pixel_y = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "Ld" = (
 /obj/structure/sink/kitchen/directional/south,
 /turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"Lk" = (
-/obj/structure/fans/tiny,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 6
-	},
-/obj/effect/turf_decal/stripes,
-/obj/machinery/door/poddoor{
-	id = "colossus_starboard"
-	},
-/obj/structure/fans/tiny,
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "Lm" = (
 /obj/structure/hellgate_tram_rails/anchor,
 /obj/structure/hellgate_train/weapons,
 /turf/open/floor/plating/dirt,
-/area/awaymission/PactDaivers)
-"Ln" = (
-/obj/structure/mecha_wreckage/hermes,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"Lo" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/item/wrench,
-/obj/structure/sign/poster/contraband/inteq/inteq_sign{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Lq" = (
-/obj/effect/turf_decal/siding/wood,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/turf/open/floor/wood,
 /area/awaymission/PactDaivers)
 "Lr" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -5544,54 +2200,14 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"Ls" = (
-/obj/structure/urinal{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel/showroomfloor,
-/area/awaymission/PactDaivers)
 "Lu" = (
 /obj/structure/hellgate_tram_rails/anchor,
 /obj/machinery/door/poddoor/shutters,
 /turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
-"Lv" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/turf/closed/indestructible/syndicate,
-/area/awaymission/PactDaivers)
-"Lx" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/obj/item/mmi/posibrain/inteq,
-/obj/structure/table/reinforced,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "LB" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/closed/indestructible/syndicate,
-/area/awaymission/PactDaivers)
-"LJ" = (
-/obj/structure/sign/poster/contraband/inteq/inteq_vulp,
-/turf/closed/wall/r_wall/syndicate,
-/area/awaymission/PactDaivers)
-"LN" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 10
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"LP" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/closet/crate/large,
-/obj/item/stack/ore/titanium,
-/obj/item/stack/ore/glass,
-/obj/item/stack/ore/titanium,
-/obj/item/stack/ore/titanium,
-/turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
 "LS" = (
 /obj/structure/closet/cabinet,
@@ -5623,46 +2239,10 @@
 /mob/living/simple_animal/hostile/syndicate/ranged/smg,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
-"Mi" = (
-/obj/structure/fence{
-	dir = 1
-	},
-/obj/effect/turf_decal/weather/sand/plating,
-/obj/structure/lattice,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
 "Mj" = (
 /obj/structure/table/wood,
 /obj/item/gun/ballistic/rocketlauncher,
 /turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"Mo" = (
-/obj/structure/closet/crate/secure/gear{
-	req_one_access_txt = "152"
-	},
-/obj/item/stack/ore/plasma{
-	amount = 19
-	},
-/obj/machinery/airalarm/inteq{
-	pixel_x = 30;
-	pixel_y = 1
-	},
-/obj/item/stack/sheet/plastic/five,
-/obj/item/pipe_dispenser,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Mr" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/rack,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "Mt" = (
 /turf/open/floor/carpet/royalblack,
@@ -5673,48 +2253,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"Mz" = (
-/obj/structure/cable/yellow{
-	icon_state = "2-8"
-	},
-/turf/open/floor/wood/wood_parquet,
-/area/awaymission/PactDaivers)
 "MC" = (
 /obj/item/ammo_casing/c9mm,
 /turf/open/floor/carpet/green,
-/area/awaymission/PactDaivers)
-"MF" = (
-/obj/structure/window/reinforced/spawner,
-/obj/effect/turf_decal/trimline/blue/filled/line,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"MM" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Syndciate Dorm 2";
-	req_one_access_txt = "152"
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"MO" = (
-/obj/structure/closet/crate/secure/gear{
-	req_one_access_txt = "152"
-	},
-/obj/item/stack/ore/diamond{
-	amount = 3
-	},
-/obj/item/storage/belt/utility,
-/obj/item/storage/belt/utility,
-/obj/item/storage/belt/utility,
-/obj/item/storage/belt/utility,
-/obj/item/multitool/tricorder,
-/obj/machinery/light/small,
-/obj/item/crowbar/power/inteq,
-/obj/item/screwdriver/power/inteq,
-/obj/item/weldingtool/experimental/inteq,
-/turf/open/floor/plating,
 /area/awaymission/PactDaivers)
 "MT" = (
 /obj/effect/decal/cleanable/blood/xtracks,
@@ -5734,69 +2275,8 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
-"MX" = (
-/obj/structure/sink{
-	dir = 8;
-	pixel_x = -12;
-	pixel_y = 2
-	},
-/obj/structure/mirror{
-	pixel_x = -28
-	},
-/turf/open/floor/plasteel/showroomfloor,
-/area/awaymission/PactDaivers)
-"MY" = (
-/obj/structure/window/reinforced/spawner,
-/obj/machinery/hydroponics/constructable,
-/obj/effect/turf_decal/trimline/green/filled/line,
-/obj/effect/decal/cleanable/blood/splatter,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Nc" = (
-/obj/effect/temp_visual/fire,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"Nd" = (
-/obj/effect/spawner/structure/window/plastitanium,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Ni" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Nk" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 10
-	},
-/obj/structure/table,
-/obj/machinery/computer/reactor/stats,
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "Ns" = (
 /obj/effect/turf_decal/tile/green,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Nv" = (
-/obj/structure/table/reinforced,
-/obj/item/toy/plush/nukeplushie,
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Nx" = (
-/obj/effect/decal/cleanable/robot_debris/limb,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "NF" = (
@@ -5823,88 +2303,20 @@
 /obj/machinery/light/broken/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"NT" = (
-/obj/effect/spawner/lootdrop/costume,
-/obj/structure/rack,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 9
-	},
-/obj/effect/spawner/lootdrop/healing_kits,
-/obj/machinery/turretid{
-	control_area = "/area/ruin/space/has_grav/bluemoon/inteq_forgotten_ship";
-	icon_state = "control_kill";
-	lethal = 1;
-	name = "Ship turret control panel";
-	pixel_y = 32;
-	req_access = null;
-	req_one_access_txt = "152"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"NU" = (
-/obj/machinery/suit_storage_unit/open,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "NZ" = (
 /obj/structure/table/wood,
 /obj/item/pen/edagger,
 /obj/item/folder/inteq,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
-"Oa" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 6
-	},
-/obj/machinery/light{
-	dir = 4;
-	light_color = "#c1caff"
-	},
-/obj/machinery/suit_storage_unit/inteq_spacesuit,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Of" = (
-/obj/structure/closet/syndicate/inteq,
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/obj/item/bikehorn/rubberducky,
-/obj/item/ammo_box/magazine/ak12,
-/obj/item/ammo_box/magazine/ak12,
-/obj/item/ammo_box/magazine/ak12,
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
 "Ok" = (
 /obj/structure/closet/crate/large,
 /obj/item/ammo_box/g45l/lethal,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"Om" = (
-/obj/structure/window/reinforced/spawner,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 6
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "Op" = (
 /obj/effect/turf_decal/big_sign/enclave/bottom/left,
 /turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"Ow" = (
-/obj/structure/table,
-/obj/machinery/computer/reactor/control_rods,
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "Oy" = (
 /obj/machinery/vending/coffee,
@@ -5916,16 +2328,6 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/PactDaivers)
-"OB" = (
-/obj/machinery/door/poddoor{
-	id = "au_nuclear_vent"
-	},
-/turf/open/space/basic,
-/area/awaymission/PactDaivers)
-"OE" = (
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "OH" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -5935,27 +2337,9 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/PactDaivers)
-"OI" = (
-/obj/machinery/door/window{
-	dir = 1;
-	name = "InteQ interior door";
-	req_one_access_txt = "152"
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "OM" = (
 /obj/item/ammo_box/magazine/hellgate_v41,
 /turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"ON" = (
-/obj/item/fuel_rod,
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 4
-	},
-/turf/open/pool,
 /area/awaymission/PactDaivers)
 "OP" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5968,45 +2352,6 @@
 "OR" = (
 /mob/living/simple_animal/hostile/syndicate/ranged/smg,
 /turf/open/floor/carpet/green,
-/area/awaymission/PactDaivers)
-"OS" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"OT" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 5
-	},
-/obj/structure/table,
-/obj/item/toy/figure/ce,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"OY" = (
-/obj/structure/table,
-/obj/item/paper_bin,
-/obj/item/pen/fountain,
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/item/syndicatedetonator{
-	desc = "This gaudy button can be used to instantly detonate syndicate bombs that have been activated on the station. It is also fun to press."
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Pb" = (
-/obj/machinery/light,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 5
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Pc" = (
-/obj/structure/closet/emcloset/anchored,
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"Pf" = (
-/obj/effect/spawner/structure/window/plasma/reinforced,
-/turf/open/floor/engine,
 /area/awaymission/PactDaivers)
 "Pg" = (
 /obj/machinery/vending/coffee,
@@ -6022,57 +2367,14 @@
 /obj/structure/urbanismpower,
 /turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
-"Pn" = (
-/obj/machinery/pool/controller,
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
 "Po" = (
 /obj/structure/bed,
 /obj/item/bedsheet/inteq,
 /turf/open/floor/wood,
 /area/awaymission/PactDaivers)
-"Pr" = (
-/obj/effect/spawner/structure/window/plasma/reinforced,
-/obj/structure/lattice,
-/obj/machinery/door/poddoor/shuttledock,
-/turf/open/space/basic,
-/area/awaymission/PactDaivers)
 "Ps" = (
 /obj/structure/fence,
 /turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"Pt" = (
-/obj/structure/closet/cabinet,
-/obj/item/clothing/neck/cloak/cybersun,
-/obj/item/storage/belt/esabre_belt,
-/obj/item/inteq/uplink/radio,
-/obj/item/paper/fluff/ruins/forgottenship/missionobj,
-/turf/open/floor/carpet/royalblack,
-/area/awaymission/PactDaivers)
-"Pv" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Pw" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "PE" = (
 /obj/item/stack/medical/suture,
@@ -6084,17 +2386,6 @@
 	},
 /obj/structure/chair/wood/normal,
 /turf/open/floor/plasteel/cafeteria,
-/area/awaymission/PactDaivers)
-"PG" = (
-/obj/machinery/door/window{
-	name = "InteQ interior door";
-	req_one_access_txt = "152"
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "PH" = (
 /obj/effect/mob_spawn/human/inteqspace/captain/PactDaivers,
@@ -6124,18 +2415,6 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
-"PO" = (
-/obj/machinery/shower{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 10
-	},
-/turf/open/floor/noslip,
-/area/awaymission/PactDaivers)
 "PP" = (
 /obj/effect/mine/explosive,
 /turf/open/floor/plating/dirt,
@@ -6162,10 +2441,6 @@
 /obj/item/target,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"Qj" = (
-/obj/structure/hellgate_campaign,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
 "Ql" = (
 /obj/machinery/door/airlock/maintenance,
 /turf/open/floor/plating{
@@ -6188,16 +2463,6 @@
 /obj/machinery/photocopier,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"QG" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	icon_state = "siding_line"
-	},
-/obj/machinery/door/airlock/grunge{
-	name = "Dorms";
-	req_one_access_txt = "152"
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
 "QJ" = (
 /obj/structure/fence/cut/large,
 /turf/open/indestructible/ironsand,
@@ -6210,26 +2475,6 @@
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/snacks/pie/blumpkinpie,
 /turf/open/floor/carpet/green,
-/area/awaymission/PactDaivers)
-"QQ" = (
-/obj/machinery/power/terminal{
-	dir = 1
-	},
-/obj/structure/cable/yellow{
-	icon_state = "0-2"
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 8
-	},
-/obj/machinery/atmospherics/components/binary/valve/digital{
-	dir = 4;
-	name = "Emergency Coolant Purge"
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"QR" = (
-/obj/machinery/door/airlock/hatch,
-/turf/open/space/basic,
 /area/awaymission/PactDaivers)
 "QZ" = (
 /obj/effect/decal/cleanable/blood/gibs/body{
@@ -6264,33 +2509,6 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/PactDaivers)
-"Rh" = (
-/obj/machinery/atmospherics/pipe/simple/purple/visible,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"Rl" = (
-/obj/structure/closet/emcloset,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/obj/structure/sign/warning/radiation{
-	pixel_y = 32
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 5
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Rp" = (
-/obj/structure/displaycase{
-	req_one_access_txt = "152";
-	start_showpiece_type = /obj/item/gun/ballistic/automatic/pistol/deagle/camo
-	},
-/turf/open/floor/wood/wood_large,
-/area/awaymission/PactDaivers)
 "Rt" = (
 /obj/structure/chair,
 /obj/structure/reagent_dispensers/peppertank{
@@ -6309,10 +2527,6 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
-"Ry" = (
-/obj/item/storage/firstaid/tactical/nukeop,
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
 "Rz" = (
 /obj/structure/table/wood,
 /obj/structure/window/reinforced{
@@ -6327,25 +2541,6 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
-"RH" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Syndciate Dorm 3";
-	req_one_access_txt = "152"
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"RI" = (
-/obj/machinery/computer/camera_advanced{
-	dir = 8
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-8"
-	},
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
 "RN" = (
 /mob/living/simple_animal/hostile/mimic,
 /turf/open/indestructible/ironsand,
@@ -6354,16 +2549,6 @@
 /turf/open/floor/plating/ironsand{
 	icon_state = "ironsand9"
 	},
-/area/awaymission/PactDaivers)
-"RP" = (
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 1
-	},
-/obj/structure/table/reinforced,
-/obj/machinery/plantgenes{
-	pixel_y = 7
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "RT" = (
 /obj/effect/decal/cleanable/wrapping,
@@ -6382,24 +2567,6 @@
 	icon_state = "platingdmg3"
 	},
 /area/awaymission/PactDaivers)
-"Sc" = (
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
-	dir = 1
-	},
-/turf/closed/wall/r_wall,
-/area/awaymission/PactDaivers)
-"Sh" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 9
-	},
-/obj/machinery/cryopod{
-	dir = 4
-	},
-/obj/structure/sign/poster/contraband/vulp7{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "Sj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/red,
@@ -6408,22 +2575,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"So" = (
-/obj/machinery/atmospherics/pipe/simple/brown/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
 "Ss" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/light/broken/directional/east,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"St" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 9
-	},
-/turf/open/pool,
 /area/awaymission/PactDaivers)
 "Su" = (
 /obj/structure/hellgate_tram_rails/anchor,
@@ -6448,31 +2603,11 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"SE" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 4
-	},
-/obj/structure/lattice/catwalk,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
 "SF" = (
 /obj/structure/chair/office/light{
 	dir = 4
 	},
 /turf/open/floor/carpet/purple,
-/area/awaymission/PactDaivers)
-"SG" = (
-/obj/machinery/light,
-/obj/structure/table/reinforced,
-/obj/effect/turf_decal/trimline/yellow/filled/line,
-/obj/item/paper/fluff/ruins/forgottenship/missionobj,
-/obj/structure/sign/flag/inteq{
-	pixel_y = -32
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "SM" = (
 /obj/structure/chair/office{
@@ -6493,75 +2628,12 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/PactDaivers)
-"SO" = (
-/obj/item/kirbyplants/random,
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"SR" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 10
-	},
-/turf/open/pool,
-/area/awaymission/PactDaivers)
-"ST" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Bridge";
-	req_one_access_txt = "152"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/obj/machinery/turretid{
-	control_area = "/area/ruin/space/has_grav/bluemoon/inteq_forgotten_ship";
-	icon_state = "control_kill";
-	lethal = 1;
-	name = "Ship turret control panel";
-	pixel_y = 32;
-	req_access = null;
-	req_one_access_txt = "152"
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "SW" = (
 /obj/structure/table,
 /turf/open/floor/carpet/green,
 /area/awaymission/PactDaivers)
-"SX" = (
-/obj/structure/table/reinforced,
-/obj/item/paper_bin,
-/obj/item/pen/fountain/captain,
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
 "Tf" = (
 /turf/open/floor/carpet/green,
-/area/awaymission/PactDaivers)
-"Tl" = (
-/obj/item/soap/syndie,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/structure/cable/yellow{
-	icon_state = "0-4"
-	},
-/obj/item/mop,
-/obj/item/reagent_containers/glass/bucket,
-/obj/structure/closet/crate/trashcart,
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"Tn" = (
-/obj/machinery/atmospherics/components/binary/valve/digital{
-	dir = 4;
-	name = "Moderator Purge"
-	},
-/obj/structure/cable/white{
-	icon_state = "1-8"
-	},
-/turf/open/floor/engine,
 /area/awaymission/PactDaivers)
 "Tq" = (
 /obj/structure/sign/poster/contraband/inteq/inteq_sign{
@@ -6570,32 +2642,6 @@
 	pixel_x = 1
 	},
 /turf/closed/indestructible/syndicate,
-/area/awaymission/PactDaivers)
-"Tt" = (
-/obj/structure/fence/door{
-	dir = 4
-	},
-/obj/effect/turf_decal/weather/sand/plating,
-/obj/structure/lattice,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"Tu" = (
-/obj/effect/turf_decal/stripes/yellow/corner,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"Tv" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "Tx" = (
 /obj/structure/table/wood,
@@ -6617,31 +2663,9 @@
 /obj/item/pen,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"TB" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 1
-	},
-/obj/machinery/door/poddoor{
-	id = "fscaproom";
-	name = "Captain's blast door";
-	state_open = 1
-	},
-/obj/machinery/door/airlock/grunge{
-	name = "Captain's room";
-	req_one_access_txt = "152"
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
 "TC" = (
 /obj/structure/urbanismpower,
 /turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"TE" = (
-/obj/effect/turf_decal/trimline/yellow/filled/corner,
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "TF" = (
 /obj/machinery/light{
@@ -6666,35 +2690,9 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
-"TJ" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
-/obj/structure/cable/white{
-	icon_state = "4-8"
-	},
-/turf/closed/indestructible/syndicate,
-/area/awaymission/PactDaivers)
-"TX" = (
-/obj/item/stack/ore/glass,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
 "Ua" = (
 /obj/machinery/vending/cigarette,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Uf" = (
-/obj/structure/shuttle/engine/huge{
-	dir = 8
-	},
-/obj/effect/turf_decal/weather/sand/plating,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"Ul" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/rack/shelf,
-/obj/item/raw_anomaly_core,
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	},
 /area/awaymission/PactDaivers)
 "Um" = (
 /obj/effect/turf_decal/big_sign/enclave/top/right,
@@ -6720,44 +2718,11 @@
 /obj/item/phone,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"UD" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "UL" = (
 /obj/structure/fence{
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"UN" = (
-/obj/machinery/power/port_gen/pacman/super{
-	anchored = 1
-	},
-/obj/structure/cable,
-/obj/effect/turf_decal/stripes{
-	dir = 1;
-	icon_state = "delivery_red"
-	},
-/obj/item/stack/sheet/mineral/uranium{
-	amount = 15
-	},
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"UP" = (
-/obj/structure/table/glass,
-/obj/item/disk/surgery/forgottenship,
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"US" = (
-/obj/effect/turf_decal/siding/wood,
-/turf/open/floor/wood,
 /area/awaymission/PactDaivers)
 "UV" = (
 /obj/machinery/door/airlock/centcom{
@@ -6765,27 +2730,6 @@
 	req_access_txt = "152"
 	},
 /turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"UZ" = (
-/obj/structure/window/reinforced/spawner,
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 6
-	},
-/obj/structure/frame/machine{
-	anchored = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Va" = (
-/obj/machinery/power/floodlight/lamppost/four,
-/obj/structure/lattice,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"Vc" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/carpet/royalblack,
 /area/awaymission/PactDaivers)
 "Vd" = (
 /obj/structure/table/wood,
@@ -6798,14 +2742,6 @@
 	icon_state = "platingdmg3"
 	},
 /area/awaymission/PactDaivers)
-"Vk" = (
-/obj/structure/window/reinforced/spawner/north,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 5
-	},
-/obj/structure/closet/crate/bin,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "Vl" = (
 /obj/structure/chair/wood/normal,
 /obj/effect/turf_decal/tile/blue{
@@ -6816,92 +2752,13 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/PactDaivers)
-"Vq" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"Vu" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 8
-	},
-/obj/structure/table/reinforced,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Vv" = (
-/obj/structure/closet/crate/large,
-/obj/structure/lattice/catwalk,
-/obj/item/stack/ore/titanium,
-/obj/item/stack/ore/glass,
-/obj/item/stack/ore/glass,
-/obj/item/stack/ore/glass,
-/obj/item/stack/ore/titanium,
-/obj/item/stack/ore/titanium,
-/obj/item/stack/ore/titanium,
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	},
-/area/awaymission/PactDaivers)
 "Vw" = (
 /obj/structure/bed,
 /obj/effect/spawner/lootdrop/bedsheet,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"VA" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/carpet/royalblack,
-/area/awaymission/PactDaivers)
-"VD" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/obj/machinery/camera/autoname,
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/manifold/brown/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"VE" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/machinery/suit_storage_unit/syndicate/inteq,
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
-"VF" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/structure/chair/office/dark{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"VH" = (
-/obj/structure/closet/firecloset,
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "VP" = (
 /obj/machinery/vending/coffee,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"VT" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/machinery/computer/security,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "Wa" = (
@@ -6916,64 +2773,9 @@
 /obj/item/clothing/suit/armor/vest/infiltrator/inteq,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"Wd" = (
-/obj/structure/window/reinforced/spawner/north,
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "We" = (
 /obj/effect/spawner/lootdrop/hostile/inteq,
 /turf/open/floor/carpet/green,
-/area/awaymission/PactDaivers)
-"Wf" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/machinery/button/door{
-	pixel_x = 2;
-	id = 1;
-	pixel_y = -14
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Wg" = (
-/obj/structure/table/reinforced,
-/obj/machinery/door/window/westright{
-	dir = 1;
-	name = "Security Checkpoint";
-	req_access_txt = "63"
-	},
-/obj/item/paper_bin{
-	pixel_x = 1;
-	pixel_y = 9
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Wh" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"Wi" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 6
-	},
-/mob/living/simple_animal/hostile/syndicate/ranged,
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "Wj" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -6981,12 +2783,6 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Wl" = (
-/turf/open/floor/plating/ironsand{
-	pixel_x = 0;
-	pixel_y = 0
-	},
 /area/awaymission/PactDaivers)
 "Wm" = (
 /turf/open/floor/plating,
@@ -7017,62 +2813,15 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"Wy" = (
-/obj/structure/lattice,
-/obj/structure/lattice,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"Wz" = (
-/obj/machinery/porta_turret/inteq/energy/heavy,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/awaymission/PactDaivers)
 "WG" = (
 /obj/effect/decal/cleanable/wrapping,
 /turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"WI" = (
-/obj/machinery/door/window{
-	dir = 1;
-	name = "InteQ interior door";
-	req_one_access_txt = "152"
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 1
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
-/turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "WK" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"WO" = (
-/obj/item/paper/fluff/ruins/forgottenship/powerissues,
-/obj/machinery/portable_atmospherics/pump,
-/obj/effect/turf_decal/stripes{
-	dir = 1;
-	icon_state = "delivery_red"
-	},
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 1
-	},
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"WR" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
-	dir = 1
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/engine,
 /area/awaymission/PactDaivers)
 "WT" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7084,17 +2833,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"WU" = (
-/obj/item/fuel_rod,
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 5
-	},
-/turf/open/pool,
-/area/awaymission/PactDaivers)
-"WV" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "Xa" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
@@ -7104,13 +2842,6 @@
 /turf/open/floor/carpet{
 	heat_capacity = 1e+006
 	},
-/area/awaymission/PactDaivers)
-"Xb" = (
-/obj/structure/sign/flag/inteq{
-	pixel_y = 32
-	},
-/obj/effect/mob_spawn/human/inteqspace/PactDaivers,
-/turf/open/floor/wood,
 /area/awaymission/PactDaivers)
 "Xc" = (
 /obj/machinery/vending/cigarette,
@@ -7128,112 +2859,18 @@
 	icon_state = "panelscorched"
 	},
 /area/awaymission/PactDaivers)
-"Xe" = (
-/obj/effect/turf_decal/trimline/green/filled/line{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Xh" = (
-/obj/machinery/door/airlock/external,
-/turf/open/floor/plating,
-/area/awaymission/PactDaivers)
-"Xj" = (
-/obj/machinery/light,
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 6
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Xn" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
 "Xp" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/glasses/inteq_xray,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
-"Xt" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 6
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"XA" = (
-/obj/effect/spawner/structure/window/plasma/reinforced,
-/obj/machinery/atmospherics/pipe/layer_manifold,
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"XB" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 10
-	},
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/obj/machinery/atmospherics/components/unary/portables_connector{
-	dir = 8
-	},
-/obj/machinery/portable_atmospherics/canister/toxins,
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"XG" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/corner,
-/obj/effect/turf_decal/trimline/yellow/filled/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/corner{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark/smooth/large,
-/area/awaymission/PactDaivers)
 "XM" = (
 /mob/living/simple_animal/hostile/syndicate/ranged/smg,
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/PactDaivers)
-"XN" = (
-/obj/effect/turf_decal/stripes/yellow/corner{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
 "XQ" = (
 /obj/structure/mopbucket,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"XR" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	name = "Coolent to Reactor"
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
-"XS" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 5
-	},
-/obj/structure/lattice/catwalk,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"XU" = (
-/obj/structure/table/wood,
-/obj/item/flashlight/lamp/green,
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/open/floor/wood,
 /area/awaymission/PactDaivers)
 "Ya" = (
 /obj/structure/closet/cabinet,
@@ -7244,13 +2881,6 @@
 "Yb" = (
 /obj/effect/turf_decal/tile/neutral,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"Yd" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 10
-	},
-/turf/open/floor/engine,
 /area/awaymission/PactDaivers)
 "Yh" = (
 /turf/closed/indestructible/syndicate,
@@ -7272,73 +2902,20 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
-"Ym" = (
-/obj/structure/fans/tiny,
-/obj/effect/turf_decal/trimline/yellow/filled/line,
-/obj/effect/turf_decal/stripes,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/machinery/door/poddoor{
-	id = "colossus_starboard"
-	},
-/obj/structure/fans/tiny,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "Yo" = (
 /obj/effect/turf_decal/stripes/yellow/line{
 	dir = 1
 	},
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/PactDaivers)
-"Yp" = (
-/obj/structure/chair/office/light{
-	dir = 4
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/awaymission/PactDaivers)
-"Yq" = (
-/obj/structure/fence/corner{
-	dir = 9
-	},
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"Yr" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
-/obj/structure/cable/white{
-	icon_state = "1-2"
-	},
-/turf/open/floor/engine,
-/area/awaymission/PactDaivers)
 "Ys" = (
 /obj/structure/hellgate_tram_rails/anchor_bot,
 /turf/open/floor/plating/damturf,
-/area/awaymission/PactDaivers)
-"Yw" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 6
-	},
-/obj/structure/lattice/catwalk,
-/turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
 "Yy" = (
 /obj/machinery/vending/coffee,
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"YD" = (
-/obj/structure/closet/crate/large,
-/obj/item/ammo_box/c10mm,
-/obj/structure/lattice/catwalk,
-/turf/open/floor/plating/ironsand{
-	icon_state = "ironsand1"
-	},
 /area/awaymission/PactDaivers)
 "YE" = (
 /obj/structure/grille/broken,
@@ -7347,57 +2924,9 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
-"YJ" = (
-/obj/structure/closet/syndicate{
-	anchored = 1;
-	armor = list("melee" = 70, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 60);
-	desc = "A basic closet for all your villainous needs.";
-	locked = 1;
-	name = "Closet";
-	req_one_access_txt = "152";
-	secure = 1
-	},
-/obj/item/storage/box/firingpins/syndicate,
-/obj/structure/window/reinforced/spawner,
-/obj/effect/turf_decal/siding/wood,
-/obj/item/ammo_box/c9mm,
-/obj/item/flashlight/seclite,
-/turf/open/floor/wood,
-/area/awaymission/PactDaivers)
 "YK" = (
 /obj/structure/closet/crate/large,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"YM" = (
-/mob/living/simple_animal/hostile/nanotrasen/ranged,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"YN" = (
-/obj/machinery/portable_atmospherics/scrubber{
-	anchored = 1
-	},
-/obj/machinery/atmospherics/components/unary/portables_connector/layer3,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"YP" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line{
-	dir = 4
-	},
-/obj/structure/rack,
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/item/clothing/under/inteq/eng_skirt,
-/obj/item/clothing/under/inteq/maid,
-/obj/item/clothing/under/inteq/med_skirt,
-/obj/item/clothing/under/inteq/skirt,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
-"YR" = (
-/obj/effect/turf_decal/stripes/yellow/line{
-	dir = 8
-	},
-/turf/open/pool,
 /area/awaymission/PactDaivers)
 "YY" = (
 /obj/structure/closet/crate/large,
@@ -7411,10 +2940,6 @@
 	},
 /turf/open/floor/plating/dirt,
 /area/awaymission/PactDaivers)
-"Zh" = (
-/obj/machinery/light,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/PactDaivers)
 "Zj" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/effect/mob_spawn/human/miner/rig,
@@ -7422,24 +2947,6 @@
 /area/awaymission/PactDaivers)
 "Zu" = (
 /mob/living/simple_animal/hostile/syndicate/ranged/shotgun,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"Zv" = (
-/obj/structure/fence{
-	dir = 4
-	},
-/obj/effect/turf_decal/weather/sand/plating,
-/obj/structure/lattice,
-/turf/open/indestructible/ironsand,
-/area/awaymission/PactDaivers)
-"Zw" = (
-/obj/structure/lattice,
-/turf/closed/indestructible/fakeglass,
-/area/awaymission/PactDaivers)
-"Zy" = (
-/obj/structure/fence/corner{
-	dir = 8
-	},
 /turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
 "ZG" = (
@@ -7459,24 +2966,6 @@
 /turf/open/floor/plating{
 	heat_capacity = 1e+006
 	},
-/area/awaymission/PactDaivers)
-"ZK" = (
-/obj/structure/closet/syndicate{
-	anchored = 1;
-	armor = list("melee" = 70, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 60);
-	desc = "A basic closet for all your villainous needs.";
-	locked = 1;
-	name = "Closet";
-	req_one_access_txt = "152";
-	secure = 1
-	},
-/obj/item/crowbar/red,
-/obj/item/flashlight/seclite,
-/obj/item/paper/fluff/ruins/forgottenship/missionobj,
-/obj/item/gun/ballistic/automatic/pistol,
-/obj/item/ammo_box/magazine/pistolm9mm,
-/obj/item/ammo_box/magazine/pistolm9mm,
-/turf/open/floor/wood,
 /area/awaymission/PactDaivers)
 "ZL" = (
 /mob/living/simple_animal/hostile/syndicate/ranged/smg/space/stormtrooper,
@@ -11411,12 +6900,6 @@ BF
 BF
 BF
 BF
-mo
-BF
-BF
-BF
-BF
-go
 BF
 BF
 BF
@@ -11473,6 +6956,12 @@ BF
 BF
 BF
 BF
+BF
+BF
+BF
+BF
+BF
+nX
 BF
 BF
 BF
@@ -11787,6 +7276,7 @@ BF
 BF
 BF
 BF
+nX
 BF
 BF
 BF
@@ -11824,11 +7314,10 @@ BF
 BF
 BF
 BF
-mo
 BF
 BF
-vl
-vl
+BF
+BF
 BF
 BF
 BF
@@ -12014,23 +7503,23 @@ BF
 BF
 BF
 BF
-mo
 BF
-Yq
-gm
-gm
-gm
-gm
-vz
-gm
-gm
-gm
-gm
-gm
-vl
-vl
-vl
-vl
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -12218,7 +7707,6 @@ BF
 BF
 BF
 BF
-Gg
 BF
 BF
 BF
@@ -12226,13 +7714,14 @@ BF
 BF
 BF
 BF
-bE
-bE
-bE
-vl
-vl
-vl
-vl
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -12420,21 +7909,6 @@ BF
 BF
 BF
 BF
-Gg
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-bE
-AG
-bE
-vl
-vl
-vl
-vl
 BF
 BF
 BF
@@ -12456,22 +7930,37 @@ BF
 BF
 BF
 BF
-ro
-rC
-rC
-rC
-rC
-gJ
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-Va
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -12622,20 +8111,6 @@ BF
 BF
 BF
 BF
-Gg
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-bE
-bE
-bE
-BF
-vl
-vl
 BF
 BF
 BF
@@ -12658,22 +8133,36 @@ BF
 BF
 BF
 BF
-rC
-rC
-rC
 BF
 BF
 BF
 BF
 BF
 BF
-rF
 BF
 BF
 BF
-rC
-rC
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -12824,19 +8313,6 @@ BF
 BF
 BF
 BF
-Gg
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-vl
 BF
 BF
 BF
@@ -12860,22 +8336,35 @@ BF
 BF
 BF
 BF
-rC
-Ul
-wA
-rC
 BF
 BF
 BF
 BF
 BF
-YD
 BF
-fY
-rC
-rC
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -13026,19 +8515,6 @@ BF
 BF
 BF
 BF
-Gg
-BF
-bE
-bE
-bE
-BF
-BF
-BF
-BF
-BF
-BF
-vl
-vl
 BF
 BF
 BF
@@ -13062,22 +8538,35 @@ BF
 BF
 BF
 BF
-rC
-hw
-Ul
-rC
-rC
 BF
 BF
 BF
 BF
 BF
 BF
-rC
-rC
 BF
-Zu
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -13227,20 +8716,6 @@ BF
 BF
 BF
 BF
-mo
-Gg
-BF
-bE
-AG
-bE
-BF
-BF
-BF
-BF
-BF
-BF
-vl
-vl
 BF
 BF
 BF
@@ -13264,22 +8739,36 @@ BF
 BF
 BF
 BF
-rC
 BF
 BF
 BF
-bz
-Mi
-Mi
-Tt
-Mi
-Mi
-bz
-rC
 BF
 BF
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -13426,23 +8915,23 @@ BF
 BF
 BF
 BF
-vl
-vl
-BF
-BF
-Gg
-BF
-bE
-bE
-bE
 BF
 BF
 BF
 BF
 BF
-vl
-vl
-vl
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -13466,19 +8955,19 @@ BF
 BF
 BF
 BF
-rC
 BF
 BF
 BF
-Zv
-wJ
-wJ
-kN
-wJ
-wJ
-fa
-YD
-df
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -13628,22 +9117,6 @@ BF
 BF
 BF
 BF
-vl
-vl
-vl
-vl
-Gg
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-vl
-vl
-vl
 BF
 BF
 BF
@@ -13668,22 +9141,38 @@ BF
 BF
 BF
 BF
-rC
-BF
-BF
-BF
-Zv
-wJ
-BF
-BF
-BF
-kN
-fa
 BF
 BF
 BF
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -13831,20 +9320,6 @@ BF
 BF
 BF
 BF
-vl
-vl
-vl
-vl
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-vl
-vl
 BF
 BF
 BF
@@ -13869,23 +9344,37 @@ BF
 BF
 BF
 BF
-fY
-rC
-BF
-BF
-BF
-ub
-wJ
-BF
-CT
-BF
-wJ
-Ic
 BF
 BF
 BF
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -14033,20 +9522,6 @@ BF
 BF
 BF
 BF
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-BF
-BF
-BF
-BF
-BF
-vl
-vl
 BF
 BF
 BF
@@ -14072,22 +9547,36 @@ BF
 BF
 BF
 BF
-rC
 BF
 BF
 BF
-Zv
-wJ
 BF
 BF
 BF
-wJ
-fa
-lu
 BF
 BF
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -14236,19 +9725,9 @@ BF
 BF
 BF
 BF
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
+BF
+BF
+nX
 BF
 BF
 BF
@@ -14274,22 +9753,32 @@ BF
 BF
 BF
 BF
-rC
 BF
 BF
 BF
-Zv
-kN
-wJ
-wJ
-wJ
-wJ
-fa
-tb
 BF
 BF
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -14355,7 +9844,7 @@ BF
 BF
 BF
 BF
-BF
+nX
 BF
 vl
 vl
@@ -14440,16 +9929,6 @@ BF
 BF
 BF
 BF
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
 BF
 BF
 BF
@@ -14476,22 +9955,32 @@ BF
 BF
 BF
 BF
-rC
 BF
 BF
 BF
-bz
-Mi
-Mi
-Tt
-Mi
-Mi
-bz
-tb
 BF
 BF
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -14645,12 +10134,6 @@ BF
 BF
 BF
 BF
-vl
-vl
-BF
-vl
-vl
-vl
 BF
 BF
 BF
@@ -14678,22 +10161,28 @@ BF
 BF
 BF
 BF
-rC
 BF
 BF
 BF
-Eq
-Ib
-cR
-BF
-tU
-Ib
-cR
-rC
 BF
 BF
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -14873,6 +10362,7 @@ BF
 BF
 BF
 BF
+nX
 BF
 BF
 BF
@@ -14880,10 +10370,6 @@ BF
 BF
 BF
 BF
-rC
-BF
-rC
-rC
 BF
 BF
 BF
@@ -14891,11 +10377,14 @@ BF
 BF
 BF
 BF
-rC
-rC
 BF
-fY
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -15082,9 +10571,6 @@ BF
 BF
 BF
 BF
-rC
-Zu
-rC
 BF
 BF
 BF
@@ -15094,10 +10580,13 @@ BF
 BF
 BF
 BF
-rC
-rC
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -15230,8 +10719,6 @@ BF
 BF
 BF
 BF
-nE
-kY
 BF
 BF
 BF
@@ -15284,8 +10771,6 @@ BF
 BF
 BF
 BF
-rC
-rC
 BF
 BF
 BF
@@ -15297,9 +10782,13 @@ BF
 BF
 BF
 BF
-rC
-rC
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -15425,10 +10914,6 @@ BF
 BF
 BF
 BF
-kY
-BF
-BF
-YM
 BF
 BF
 BF
@@ -15486,22 +10971,26 @@ BF
 BF
 BF
 BF
-Va
-rC
-rC
-rC
-rC
-gJ
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-Va
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -15633,7 +11122,7 @@ BF
 BF
 BF
 BF
-Hn
+BF
 BF
 BF
 BF
@@ -15829,7 +11318,7 @@ BF
 BF
 BF
 BF
-nE
+BF
 BF
 BF
 BF
@@ -16029,7 +11518,7 @@ BF
 BF
 BF
 BF
-iG
+BF
 BF
 BF
 BF
@@ -16163,7 +11652,7 @@ BF
 BF
 BF
 BF
-AZ
+BF
 BF
 BF
 BF
@@ -16301,7 +11790,7 @@ BF
 BF
 BF
 BF
-RO
+BF
 BF
 BF
 BF
@@ -16439,7 +11928,7 @@ BF
 BF
 BF
 BF
-nE
+BF
 BF
 BF
 BF
@@ -16504,7 +11993,7 @@ BF
 BF
 BF
 BF
-RO
+BF
 BF
 BF
 BF
@@ -16567,7 +12056,7 @@ BF
 BF
 BF
 BF
-AZ
+BF
 BF
 BF
 BF
@@ -16638,15 +12127,15 @@ BF
 BF
 BF
 BF
-YM
-BF
-Kd
 BF
 BF
 BF
 BF
 BF
-Ln
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -16757,22 +12246,22 @@ BF
 BF
 BF
 BF
-ro
-rC
-rC
-rC
-rC
-gJ
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-Va
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -16959,22 +12448,22 @@ BF
 BF
 BF
 BF
-rC
-rC
-rC
 BF
 BF
 BF
 BF
 BF
 BF
-rF
 BF
 BF
 BF
-rC
-rC
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -17161,22 +12650,22 @@ BF
 BF
 BF
 BF
-rC
-Ul
-wA
-rC
 BF
 BF
 BF
 BF
 BF
-YD
 BF
-fY
-rC
-rC
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -17255,7 +12744,7 @@ BF
 BF
 BF
 BF
-iG
+BF
 BF
 BF
 BF
@@ -17363,22 +12852,22 @@ BF
 BF
 BF
 BF
-rC
-hw
-Ul
-rC
-rC
 BF
 BF
 BF
 BF
 BF
 BF
-rC
-rC
 BF
-Zu
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -17442,16 +12931,6 @@ BF
 BF
 BF
 BF
-iG
-BF
-go
-BF
-BF
-iG
-BF
-BF
-BF
-iG
 BF
 BF
 BF
@@ -17462,7 +12941,17 @@ BF
 BF
 BF
 BF
-RO
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -17565,22 +13054,22 @@ BF
 BF
 BF
 BF
-rC
 BF
 BF
 BF
-bz
-Mi
-Mi
-Tt
-Mi
-Mi
-bz
-rC
 BF
 BF
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -17665,8 +13154,6 @@ BF
 BF
 BF
 BF
-RO
-RO
 BF
 BF
 BF
@@ -17678,7 +13165,9 @@ BF
 BF
 BF
 BF
-AZ
+BF
+BF
+BF
 BF
 BF
 BF
@@ -17767,19 +13256,19 @@ BF
 BF
 BF
 BF
-rC
 BF
 BF
 BF
-Zv
-wJ
-wJ
-kN
-wJ
-wJ
-fa
-YD
-df
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -17859,7 +13348,7 @@ BF
 BF
 BF
 BF
-Ln
+BF
 BF
 BF
 BF
@@ -17969,22 +13458,22 @@ BF
 BF
 BF
 BF
-rC
-BF
-BF
-BF
-Zv
-wJ
-BF
-BF
-BF
-kN
-fa
 BF
 BF
 BF
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -18084,7 +13573,7 @@ BF
 BF
 BF
 BF
-AZ
+BF
 BF
 BF
 BF
@@ -18170,23 +13659,23 @@ BF
 BF
 BF
 BF
-fY
-rC
-BF
-BF
-BF
-ub
-wJ
-BF
-CT
-BF
-wJ
-Ic
 BF
 BF
 BF
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -18221,22 +13710,22 @@ BF
 BF
 BF
 BF
-ro
-rC
-rC
-rC
-rC
-gJ
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-Va
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -18373,22 +13862,22 @@ BF
 BF
 BF
 BF
-rC
 BF
 BF
 BF
-Zv
-wJ
 BF
 BF
 BF
-wJ
-fa
-lu
 BF
 BF
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -18423,22 +13912,6 @@ BF
 BF
 BF
 BF
-rC
-rC
-rC
-BF
-BF
-BF
-BF
-BF
-BF
-rF
-BF
-BF
-BF
-rC
-rC
-rC
 BF
 BF
 BF
@@ -18455,11 +13928,27 @@ BF
 BF
 BF
 BF
-iG
 BF
 BF
 BF
-lE
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -18575,22 +14064,22 @@ BF
 BF
 BF
 BF
-rC
 BF
 BF
 BF
-Zv
-kN
-wJ
-wJ
-wJ
-wJ
-fa
-tb
 BF
 BF
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -18625,22 +14114,22 @@ BF
 BF
 BF
 BF
-rC
-Ul
-wA
-rC
 BF
 BF
 BF
 BF
 BF
-YD
 BF
-fY
-rC
-rC
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -18777,22 +14266,22 @@ BF
 BF
 BF
 BF
-rC
 BF
 BF
 BF
-bz
-Mi
-Mi
-Tt
-Mi
-Mi
-bz
-tb
 BF
 BF
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -18827,22 +14316,22 @@ BF
 BF
 BF
 BF
-rC
-hw
-Ul
-rC
-rC
 BF
 BF
 BF
 BF
 BF
 BF
-rC
-rC
 BF
-Zu
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -18979,22 +14468,22 @@ BF
 BF
 BF
 BF
-rC
 BF
 BF
 BF
-Eq
-Ib
-cR
-BF
-tU
-Ib
-cR
-rC
 BF
 BF
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -19029,22 +14518,22 @@ BF
 BF
 BF
 BF
-rC
 BF
 BF
 BF
-bz
-Mi
-Mi
-Tt
-Mi
-Mi
-bz
-rC
 BF
 BF
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -19181,10 +14670,6 @@ BF
 BF
 BF
 BF
-rC
-BF
-rC
-rC
 BF
 BF
 BF
@@ -19192,11 +14677,15 @@ BF
 BF
 BF
 BF
-rC
-rC
 BF
-fY
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -19231,19 +14720,6 @@ BF
 BF
 BF
 BF
-rC
-BF
-BF
-BF
-Zv
-wJ
-wJ
-kN
-wJ
-wJ
-fa
-YD
-df
 BF
 BF
 BF
@@ -19288,11 +14764,24 @@ BF
 BF
 BF
 BF
-Yh
-Yh
-Nd
-Nd
-Yh
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -19383,9 +14872,6 @@ BF
 BF
 BF
 BF
-rC
-Zu
-rC
 BF
 BF
 BF
@@ -19395,10 +14881,13 @@ BF
 BF
 BF
 BF
-rC
-rC
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -19433,22 +14922,6 @@ BF
 BF
 BF
 BF
-rC
-BF
-BF
-BF
-Zv
-wJ
-BF
-BF
-BF
-kN
-fa
-BF
-BF
-BF
-BF
-rC
 BF
 BF
 BF
@@ -19476,7 +14949,6 @@ BF
 BF
 BF
 BF
-RO
 BF
 BF
 BF
@@ -19490,26 +14962,43 @@ BF
 BF
 BF
 BF
-Nd
-BD
-mc
-OY
-Yh
-BF
-Pj
 BF
 BF
 BF
 BF
 BF
 BF
-Pj
 BF
 BF
 BF
 BF
 BF
-Pj
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -19585,8 +15074,6 @@ BF
 BF
 BF
 BF
-rC
-rC
 BF
 BF
 BF
@@ -19598,9 +15085,11 @@ BF
 BF
 BF
 BF
-rC
-rC
-rC
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -19634,23 +15123,6 @@ BF
 BF
 BF
 BF
-fY
-rC
-BF
-BF
-BF
-ub
-wJ
-BF
-CT
-BF
-wJ
-Ic
-BF
-BF
-BF
-BF
-rC
 BF
 BF
 BF
@@ -19678,44 +15150,61 @@ BF
 BF
 BF
 BF
-RO
-BF
-BF
-BF
-BF
-rC
-rC
-rC
 BF
 BF
 BF
 BF
 BF
 BF
-Nd
-VF
-ng
-Wf
-Yh
-Zy
-gm
-gm
-gm
-gm
-vz
-gm
-gm
-gm
-Yq
 BF
 BF
 BF
 BF
 BF
 BF
-rC
-rC
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -19787,22 +15276,22 @@ BF
 BF
 BF
 BF
-Va
-rC
-rC
-rC
-rC
-gJ
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-Va
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -19837,22 +15326,6 @@ BF
 BF
 BF
 BF
-rC
-BF
-BF
-BF
-Zv
-wJ
-BF
-BF
-BF
-wJ
-fa
-lu
-BF
-BF
-BF
-rC
 BF
 BF
 BF
@@ -19869,7 +15342,6 @@ BF
 BF
 BF
 BF
-RO
 BF
 BF
 BF
@@ -19884,22 +15356,6 @@ BF
 BF
 BF
 BF
-rC
-lN
-Yh
-lN
-rC
-BF
-BF
-BF
-BF
-BF
-Nd
-VT
-ng
-Fg
-Yh
-Gg
 BF
 BF
 BF
@@ -19908,17 +15364,50 @@ BF
 BF
 BF
 BF
-Gg
 BF
 BF
 BF
 BF
 BF
-rC
-lN
-Yh
-lN
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -20039,22 +15528,6 @@ BF
 BF
 BF
 BF
-rC
-BF
-BF
-BF
-Zv
-kN
-wJ
-wJ
-wJ
-wJ
-fa
-tb
-BF
-BF
-BF
-rC
 BF
 BF
 BF
@@ -20086,41 +15559,57 @@ BF
 BF
 BF
 BF
-rC
-Yh
-Yh
-Yh
-rC
 BF
 BF
 BF
 BF
 BF
-Yh
-Yh
-mn
-Yh
-Yh
-Gg
-BF
-xV
-BF
-BF
-xV
-BF
-BF
-xV
-Gg
 BF
 BF
 BF
 BF
 BF
-rC
-Yh
-Yh
-Yh
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -20241,22 +15730,6 @@ BF
 BF
 BF
 BF
-rC
-BF
-BF
-BF
-bz
-Mi
-Mi
-Tt
-Mi
-Mi
-bz
-tb
-BF
-BF
-BF
-rC
 BF
 BF
 BF
@@ -20288,22 +15761,6 @@ BF
 BF
 BF
 BF
-rC
-lN
-Yh
-lN
-rC
-BF
-BF
-BF
-BF
-BF
-Wg
-si
-si
-Yh
-BF
-Gg
 BF
 BF
 BF
@@ -20312,17 +15769,49 @@ BF
 BF
 BF
 BF
-Gg
 BF
 BF
 BF
 BF
 BF
-rC
-lN
-Yh
-lN
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -20443,22 +15932,6 @@ BF
 BF
 BF
 BF
-rC
-BF
-BF
-BF
-Eq
-Ib
-cR
-BF
-tU
-Ib
-cR
-rC
-BF
-BF
-BF
-rC
 BF
 BF
 BF
@@ -20491,39 +15964,55 @@ BF
 BF
 BF
 BF
-rC
-rC
-rC
 BF
 BF
 BF
 BF
 BF
 BF
-mn
-si
-si
-Yh
-BF
-Gg
-BF
-xV
-BF
-BF
-xV
-BF
-BF
-xV
-Gg
 BF
 BF
 BF
 BF
 BF
 BF
-rC
-rC
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -20645,22 +16134,6 @@ BF
 BF
 BF
 BF
-rC
-BF
-rC
-rC
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-rC
-rC
-BF
-fY
-rC
 BF
 BF
 BF
@@ -20702,12 +16175,6 @@ BF
 BF
 BF
 BF
-Yh
-wZ
-wZ
-Yh
-BF
-Gg
 BF
 BF
 BF
@@ -20716,7 +16183,29 @@ BF
 BF
 BF
 BF
-Gg
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -20847,22 +16336,6 @@ BF
 BF
 BF
 BF
-rC
-Zu
-rC
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-rC
-rC
-BF
-rC
 BF
 BF
 BF
@@ -20903,22 +16376,38 @@ BF
 BF
 BF
 BF
-Yh
-Yh
-Eo
-Eo
-Yh
-Ja
-Ja
-Ja
-Ja
-Ja
-Ja
-Yh
-Yh
-Yh
-Yh
-Yh
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -21049,22 +16538,6 @@ BF
 BF
 BF
 BF
-rC
-rC
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-rC
-rC
-rC
 BF
 BF
 BF
@@ -21100,26 +16573,42 @@ BF
 BF
 BF
 BF
-BF
-BF
-BF
-BF
-BF
-Yh
-hk
-Wm
-Wm
-Yh
+nX
 BF
 BF
 BF
 BF
 BF
 BF
-Yh
 BF
-Yh
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -21251,22 +16740,6 @@ BF
 BF
 BF
 BF
-Va
-rC
-rC
-rC
-rC
-gJ
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-Va
 BF
 BF
 BF
@@ -21307,21 +16780,37 @@ BF
 BF
 BF
 BF
-Yh
-Yh
-Dh
-Dh
-Yh
-HN
-HN
-HN
-HN
-HN
-HN
-Yh
 BF
-Yh
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -21459,7 +16948,6 @@ BF
 BF
 BF
 BF
-sp
 BF
 BF
 BF
@@ -21509,21 +16997,22 @@ BF
 BF
 BF
 BF
-Yh
-Pc
-Wm
-Wm
-Yh
 BF
 BF
 BF
 BF
 BF
 BF
-Yh
 BF
-JH
-Wy
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -21711,21 +17200,21 @@ BF
 BF
 BF
 BF
-Yh
-Yh
-Dh
-Dh
-Yh
-Pr
-Pr
-Pr
-Pr
-Pr
-Pr
-Yh
-Yh
-Yh
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -21863,7 +17352,6 @@ BF
 BF
 BF
 BF
-sp
 BF
 BF
 BF
@@ -21913,21 +17401,22 @@ BF
 BF
 BF
 BF
-Yh
-Lv
-kq
-iY
-Yh
-Yh
-Iz
-Yh
-ga
-Pf
-Yh
-Yh
-Yh
-Yh
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -22065,7 +17554,6 @@ BF
 BF
 BF
 BF
-sp
 BF
 BF
 BF
@@ -22115,23 +17603,24 @@ BF
 BF
 BF
 BF
-Yh
-oh
-vo
-PO
-aS
-JL
-QQ
-pp
-hi
-Xn
-eM
-rk
-Yd
-Yh
-rC
-Yw
-XS
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -22317,27 +17806,27 @@ BF
 BF
 BF
 BF
-Yh
-ld
-aX
-hy
-AX
-og
-pm
-gd
-pc
-ER
-Cy
-Xn
-lB
-Yh
-rC
-SE
-SE
 BF
 BF
 BF
-Pj
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -22519,23 +18008,23 @@ BF
 BF
 BF
 BF
-Yh
-Rl
-tM
-dM
-AX
-og
-dx
-HD
-St
-YR
-SR
-ER
-jm
-Pf
-rC
-SE
-SE
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -22721,23 +18210,23 @@ BF
 BF
 BF
 BF
-Yh
-Lv
-Ht
-Sc
-TJ
-Al
-yY
-WR
-Df
-KT
-Ax
-ER
-jm
-Pf
-Wy
-SE
-SE
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -22923,23 +18412,23 @@ BF
 BF
 BF
 BF
-Yh
-VH
-KM
-zg
-ya
-eJ
-xU
-Pn
-WU
-ON
-xO
-ER
-jm
-Pf
-rC
-SE
-SE
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -23125,23 +18614,23 @@ BF
 BF
 BF
 BF
-kc
-Gx
-iD
-wn
-co
-Yr
-FN
-Tu
-Wh
-bb
-Wh
-XN
-tr
-XA
-Fb
-jA
-SE
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -23327,23 +18816,23 @@ BF
 BF
 BF
 BF
-Yh
-Nk
-xk
-ci
-vN
-xI
-ug
-zY
-ER
-xU
-ER
-ab
-FF
-XA
-Fb
-XS
-SE
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -23529,23 +19018,23 @@ BF
 BF
 BF
 BF
-kc
-cT
-Ca
-Hx
-it
-VD
-kG
-EB
-Rh
-FC
-ER
-Jl
-jm
-Pf
-rC
-SE
-SE
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -23731,23 +19220,23 @@ BF
 BF
 BF
 BF
-Yh
-Ow
-gC
-gy
-Yh
-HV
-Tn
-jm
-ER
-CX
-ER
-Jl
-jm
-Pf
-rC
-SE
-SE
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -23933,23 +19422,23 @@ BF
 BF
 BF
 BF
-Yh
-GJ
-Vc
-rX
-DV
-XB
-eV
-Fd
-Xn
-sN
-uf
-Hr
-Ce
-Yh
-rC
-SE
-SE
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -24135,27 +19624,27 @@ BF
 BF
 BF
 BF
-Yh
-OT
-fO
-Jm
-Yh
-zz
-So
-Hu
-XR
-es
-ER
-ER
-jm
-Yh
-rC
-vk
-jA
 BF
 BF
 BF
-Pj
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -24337,24 +19826,24 @@ BF
 BF
 BF
 BF
-Yh
-Yh
-Yh
-Yh
-Yh
-Yh
-mB
-Yh
-Pf
-Pf
-OB
-OB
-OB
-Yh
 BF
 BF
 BF
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -24553,10 +20042,10 @@ BF
 BF
 BF
 BF
-rC
 BF
 BF
-Wy
+BF
+BF
 BF
 BF
 BF
@@ -25137,9 +20626,9 @@ BF
 BF
 BF
 BF
-rC
-rC
-rC
+BF
+BF
+BF
 BF
 BF
 BF
@@ -25311,6 +20800,7 @@ BF
 BF
 BF
 BF
+nX
 BF
 BF
 BF
@@ -25338,11 +20828,6 @@ BF
 BF
 BF
 BF
-rC
-lN
-Yh
-lN
-rC
 BF
 BF
 BF
@@ -25369,9 +20854,13 @@ BF
 BF
 BF
 BF
-rC
-rC
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -25485,7 +20974,6 @@ BF
 BF
 BF
 BF
-AZ
 BF
 BF
 BF
@@ -25540,11 +21028,6 @@ BF
 BF
 BF
 BF
-rC
-Yh
-Yh
-Yh
-rC
 BF
 BF
 BF
@@ -25570,11 +21053,17 @@ BF
 BF
 BF
 BF
-rC
-lN
-Yh
-lN
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -25687,7 +21176,6 @@ BF
 BF
 BF
 BF
-AZ
 BF
 BF
 BF
@@ -25700,7 +21188,6 @@ BF
 BF
 BF
 BF
-wa
 BF
 BF
 BF
@@ -25742,11 +21229,6 @@ BF
 BF
 BF
 BF
-rC
-lN
-Yh
-lN
-rC
 BF
 BF
 BF
@@ -25772,11 +21254,18 @@ BF
 BF
 BF
 BF
-rC
-Yh
-Yh
-Yh
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -25891,15 +21380,12 @@ BF
 BF
 BF
 BF
-AZ
 BF
 BF
 BF
 BF
-RO
 BF
 BF
-Nc
 BF
 BF
 BF
@@ -25945,9 +21431,6 @@ BF
 BF
 BF
 BF
-rC
-rC
-rC
 BF
 BF
 BF
@@ -25974,11 +21457,17 @@ BF
 BF
 BF
 BF
-rC
-lN
-Yh
-lN
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -26093,7 +21582,6 @@ BF
 BF
 BF
 BF
-Wl
 BF
 BF
 BF
@@ -26102,7 +21590,6 @@ BF
 BF
 BF
 BF
-Nc
 BF
 BF
 BF
@@ -26175,11 +21662,13 @@ BF
 BF
 BF
 BF
-Pj
 BF
-rC
-rC
-rC
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -26295,10 +21784,10 @@ BF
 BF
 BF
 BF
-dH
 BF
 BF
-Wl
+BF
+BF
 BF
 BF
 BF
@@ -26493,11 +21982,11 @@ BF
 BF
 BF
 BF
-RO
 BF
 BF
 BF
-pv
+BF
+BF
 BF
 BF
 BF
@@ -26702,11 +22191,11 @@ BF
 BF
 BF
 BF
-RO
 BF
-Wl
 BF
-AZ
+BF
+BF
+BF
 BF
 BF
 BF
@@ -26909,10 +22398,6 @@ BF
 BF
 BF
 BF
-yq
-BF
-BF
-dH
 BF
 BF
 BF
@@ -26920,7 +22405,11 @@ BF
 BF
 BF
 BF
-sp
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -27107,22 +22596,6 @@ BF
 BF
 BF
 BF
-Wl
-Wl
-Wl
-BF
-BF
-BF
-RO
-RO
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-sp
 BF
 BF
 BF
@@ -27171,7 +22644,23 @@ BF
 BF
 BF
 BF
-AZ
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -27301,14 +22790,10 @@ BF
 BF
 BF
 BF
-AZ
 BF
 BF
 BF
-RO
-Wl
 BF
-RO
 BF
 BF
 BF
@@ -27325,7 +22810,6 @@ BF
 BF
 BF
 BF
-sp
 BF
 BF
 BF
@@ -27392,7 +22876,12 @@ BF
 BF
 BF
 BF
-AZ
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -27510,8 +22999,8 @@ BF
 BF
 BF
 BF
-Wl
-CI
+BF
+BF
 BF
 BF
 BF
@@ -27712,7 +23201,7 @@ BF
 BF
 BF
 BF
-AZ
+BF
 BF
 BF
 BF
@@ -27919,9 +23408,9 @@ BF
 BF
 BF
 BF
-Wl
-Wl
-AZ
+BF
+BF
+BF
 BF
 BF
 BF
@@ -28113,13 +23602,13 @@ BF
 BF
 BF
 BF
-AZ
-lz
 BF
 BF
 BF
 BF
-yq
+BF
+BF
+BF
 BF
 BF
 BF
@@ -28310,23 +23799,6 @@ BF
 BF
 BF
 BF
-Nc
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-RO
-BF
-BF
-BF
-dH
-BF
-BF
-BF
-Wl
 BF
 BF
 BF
@@ -28336,7 +23808,24 @@ BF
 BF
 BF
 BF
-sp
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -28515,7 +24004,6 @@ BF
 BF
 BF
 BF
-Nc
 BF
 BF
 BF
@@ -28524,7 +24012,8 @@ BF
 BF
 BF
 BF
-RO
+BF
+BF
 BF
 BF
 BF
@@ -28726,7 +24215,7 @@ BF
 BF
 BF
 BF
-AZ
+BF
 BF
 BF
 BF
@@ -28922,7 +24411,7 @@ BF
 BF
 BF
 BF
-AZ
+BF
 BF
 BF
 BF
@@ -29192,7 +24681,7 @@ BF
 BF
 BF
 BF
-BF
+nX
 BF
 BF
 BF
@@ -30355,7 +25844,7 @@ BF
 BF
 BF
 BF
-BF
+nX
 BF
 BF
 BF
@@ -30941,9 +26430,6 @@ BF
 BF
 BF
 BF
-zu
-zu
-zu
 BF
 BF
 BF
@@ -30956,10 +26442,13 @@ BF
 BF
 BF
 BF
-zu
-zu
-zu
-zu
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -31142,11 +26631,6 @@ BF
 BF
 BF
 BF
-zu
-zu
-fi
-zu
-zu
 BF
 BF
 BF
@@ -31158,11 +26642,16 @@ BF
 BF
 BF
 BF
-zu
-fi
-fi
-fi
-zu
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -31344,11 +26833,6 @@ BF
 BF
 BF
 BF
-zu
-fi
-fi
-fi
-fi
 BF
 BF
 BF
@@ -31360,16 +26844,21 @@ BF
 BF
 BF
 BF
-fi
-fi
-BF
-fi
-fi
 BF
 BF
 BF
-fi
-zu
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -31546,8 +27035,6 @@ BF
 BF
 BF
 BF
-fi
-fi
 BF
 BF
 BF
@@ -31570,9 +27057,11 @@ BF
 BF
 BF
 BF
-fi
-zu
-zu
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -31756,25 +27245,6 @@ BF
 BF
 BF
 BF
-mo
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-fi
-zu
 BF
 BF
 BF
@@ -31809,11 +27279,30 @@ BF
 BF
 BF
 BF
-de
 BF
 BF
 BF
-de
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -31963,21 +27452,6 @@ BF
 BF
 BF
 BF
-mo
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-fi
-zu
 BF
 BF
 BF
@@ -32011,18 +27485,33 @@ BF
 BF
 BF
 BF
-de
-BF
-de
-BF
-BF
-de
 BF
 BF
 BF
 BF
 BF
-de
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -32178,8 +27667,6 @@ BF
 BF
 BF
 BF
-fi
-zu
 BF
 BF
 BF
@@ -32212,20 +27699,22 @@ BF
 BF
 BF
 BF
-de
-de
 BF
 BF
 BF
 BF
 BF
 BF
-de
 BF
 BF
 BF
 BF
-de
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -32379,9 +27868,6 @@ BF
 BF
 BF
 BF
-fi
-zu
-zu
 BF
 BF
 BF
@@ -32414,21 +27900,6 @@ BF
 BF
 BF
 BF
-de
-BF
-BF
-BF
-Gt
-BF
-de
-BF
-BF
-BF
-de
-de
-BF
-de
-de
 BF
 BF
 BF
@@ -32437,7 +27908,25 @@ BF
 BF
 BF
 BF
-CN
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -32565,9 +28054,6 @@ BF
 BF
 BF
 BF
-bE
-bE
-bR
 BF
 BF
 BF
@@ -32611,29 +28097,32 @@ BF
 BF
 BF
 BF
-CN
 BF
 BF
 BF
 BF
-de
-BF
-de
-BF
-de
 BF
 BF
 BF
 BF
-de
-BF
-Gt
-de
 BF
 BF
 BF
 BF
-CN
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -32763,13 +28252,6 @@ BF
 BF
 BF
 BF
-Qj
-BF
-BF
-BF
-bE
-AG
-bE
 BF
 BF
 BF
@@ -32819,19 +28301,26 @@ BF
 BF
 BF
 BF
-de
-BF
-Uf
-BF
-BF
-de
-BF
-Uf
 BF
 BF
 BF
 BF
-Uf
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -32959,19 +28448,13 @@ BF
 BF
 BF
 BF
-vl
-vl
 BF
 BF
 BF
 BF
 BF
-CN
 BF
 BF
-fr
-ag
-bE
 BF
 BF
 BF
@@ -33027,14 +28510,20 @@ BF
 BF
 BF
 BF
-de
 BF
-de
 BF
 BF
 BF
-de
-de
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -33161,9 +28650,6 @@ BF
 BF
 BF
 BF
-vl
-vl
-vl
 BF
 BF
 BF
@@ -33182,12 +28668,9 @@ BF
 BF
 BF
 BF
-Qj
 BF
 BF
 BF
-vl
-vl
 BF
 BF
 BF
@@ -33222,21 +28705,27 @@ BF
 BF
 BF
 BF
-sR
 BF
 BF
 BF
-sR
-sR
 BF
 BF
 BF
-fI
-sR
 BF
 BF
 BF
-sR
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -33364,33 +28853,6 @@ BF
 BF
 BF
 BF
-vl
-vl
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-CN
-BF
-vl
-vl
-vl
-vl
 BF
 BF
 BF
@@ -33424,21 +28886,6 @@ BF
 BF
 BF
 BF
-vM
-vM
-vM
-vM
-vM
-vM
-vM
-vM
-vM
-vM
-vM
-vM
-vM
-vM
-vM
 BF
 BF
 BF
@@ -33448,7 +28895,49 @@ BF
 BF
 BF
 BF
-CN
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -33567,32 +29056,6 @@ BF
 BF
 BF
 BF
-vl
-vl
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-vl
-vl
-vl
-zu
 BF
 BF
 BF
@@ -33625,23 +29088,49 @@ BF
 BF
 BF
 BF
-xD
-rn
-VE
-YJ
-fG
-aI
-vM
-zV
-kZ
-UN
-vM
-rn
-Xb
-vM
-sz
-rn
-ek
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -33768,33 +29257,6 @@ BF
 BF
 BF
 BF
-vl
-vl
-vl
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-Qj
-BF
-BF
-BF
-BF
-BF
-BF
-vl
-vl
-vl
-BF
-zu
 BF
 BF
 BF
@@ -33827,23 +29289,50 @@ BF
 BF
 BF
 BF
-nX
-iz
-sF
-US
-Mt
-Mt
-vM
-lv
-se
-WO
-vM
-ZK
-Ew
-vM
-fT
-Bx
-vM
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -33971,31 +29460,31 @@ BF
 BF
 BF
 BF
-vl
-vl
 BF
 BF
 BF
 BF
 BF
 BF
-Qj
 BF
 BF
 BF
 BF
 BF
 BF
-CN
 BF
 BF
 BF
 BF
 BF
-vl
-vl
 BF
-zu
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -34030,22 +29519,22 @@ BF
 BF
 BF
 nX
-ie
-zR
-Lq
-eP
-gV
-vM
-vM
-tq
-vM
-vM
-vM
-nK
-vM
-RH
-vM
-vM
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -34174,30 +29663,6 @@ BF
 BF
 BF
 BF
-vl
-vl
-BF
-BF
-BF
-BF
-BF
-BF
-CN
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-vl
-vl
-vl
-vl
-vl
-zu
-zu
 BF
 BF
 BF
@@ -34231,23 +29696,47 @@ BF
 BF
 BF
 BF
-nX
-RI
-su
-hh
-Pt
-Vc
-vM
-si
-aX
-si
-vM
-NT
-ft
-ft
-ft
-Ee
-vM
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -34375,31 +29864,6 @@ BF
 BF
 BF
 BF
-vl
-vl
-vl
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-vl
-vl
-vl
-vl
-vl
-BF
-zu
-zu
 BF
 BF
 BF
@@ -34433,30 +29897,55 @@ BF
 BF
 BF
 BF
-vM
-vM
-vM
-rn
-Jk
-jF
-vM
-Ni
-aX
-fl
-vM
-hD
-si
-si
-si
-SG
-vM
 BF
 BF
 BF
 BF
 BF
 BF
-CN
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -34575,32 +30064,6 @@ BF
 BF
 BF
 BF
-zu
-BF
-vl
-vl
-vl
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-vl
-vl
-vl
-vl
-vl
-BF
-zu
-zu
-zu
 BF
 BF
 BF
@@ -34635,33 +30098,59 @@ BF
 BF
 BF
 BF
-vM
-ES
-yy
-uO
-BQ
-Mz
-TB
-LN
-Wi
-nQ
-QG
-IQ
-nz
-nz
-nz
-uF
-xu
 BF
-Va
-rC
-rC
-rC
-rC
-rC
-rC
-rC
-Va
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -34777,30 +30266,6 @@ BF
 BF
 BF
 BF
-zu
-BF
-BF
-vl
-vl
-vl
-vl
-BF
-BF
-BF
-BF
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-zu
-zu
 BF
 BF
 BF
@@ -34837,35 +30302,59 @@ BF
 BF
 BF
 BF
-vM
-Dv
-yy
-vM
-BQ
-Dg
-vM
-si
-bg
-si
-rn
-vM
-MM
-vM
-yw
-vM
-vM
 BF
-rC
-bz
-Mi
-Mi
-Tt
-Mi
-Mi
-bz
-LP
 BF
-CN
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -34979,29 +30468,6 @@ BF
 BF
 BF
 BF
-zu
-zu
-BF
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-BF
-zu
-zu
 BF
 BF
 BF
@@ -35039,33 +30505,56 @@ BF
 BF
 BF
 BF
-vM
-Rp
-yy
-vM
-oi
-dJ
-vM
-Lo
-eA
-Pb
-vM
-ZK
-Ew
-vM
-fT
-mi
-vM
 BF
-rC
-fa
-wJ
-wJ
-kN
-wJ
-wJ
-fa
-Vv
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -35182,27 +30671,6 @@ BF
 BF
 BF
 BF
-zu
-zu
-BF
-BF
-BF
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-vl
-BF
-BF
-BF
-BF
-BF
-zu
-zu
-zu
 BF
 BF
 BF
@@ -35241,34 +30709,55 @@ BF
 BF
 BF
 BF
-bX
-rn
-Gh
-vM
-yO
-fd
-vM
-YN
-fC
-JK
-vM
-rn
-Xb
-vM
-sz
-rn
-FX
 BF
-rC
-fa
-wJ
-de
-de
-de
-kN
-fa
-uv
-TX
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -35385,24 +30874,6 @@ BF
 BF
 BF
 BF
-zu
-zu
-zu
-zu
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
-zu
-zu
-zu
-zu
-zu
 BF
 BF
 BF
@@ -35444,32 +30915,50 @@ BF
 BF
 BF
 BF
-vM
-vM
-vM
-vM
-vM
-vM
-vM
-bD
-vM
-vM
-vM
-vM
-vM
-vM
-vM
 BF
 BF
-rC
-Ic
-wJ
-de
-de
-de
-wJ
-Ic
-rC
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -35591,16 +31080,6 @@ BF
 BF
 BF
 BF
-zu
-zu
-Jz
-Jz
-Jz
-Jz
-zu
-Jz
-zu
-zu
 BF
 BF
 BF
@@ -35646,32 +31125,42 @@ BF
 BF
 BF
 BF
-vM
-vu
-Ao
-yL
-UP
-Lc
-xw
-bg
-si
-vM
-Tl
-Wm
-Wm
-lj
-vM
 BF
 BF
-rC
-fa
-wJ
-de
-de
-de
-wJ
-fa
-Ed
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -35848,32 +31337,32 @@ BF
 BF
 BF
 BF
-vM
-rK
-si
-si
-si
-Kz
-GW
-bg
-Zh
-vM
-uJ
-Wm
-Wm
-MO
-vM
 BF
 BF
-rC
-fa
-kN
-wJ
-wJ
-wJ
-wJ
-fa
-zb
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -36050,32 +31539,32 @@ BF
 BF
 BF
 BF
-vM
-ym
-bv
-ls
-si
-Bl
-EQ
-Br
-Pw
-my
-BK
-Wm
-Wm
-DK
-vM
 BF
 BF
-rC
-bz
-Mi
-Mi
-Tt
-Mi
-Mi
-bz
-gG
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -36251,33 +31740,33 @@ BF
 BF
 BF
 BF
-bX
-rn
-Do
-rn
-CQ
-Aa
-si
-jS
-bg
-Aa
-fg
-vM
-vM
-vM
-vM
-rn
-Fq
-de
-Va
-zb
-Vv
-zb
-xe
-Ed
-Vv
-zb
-Va
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -36453,25 +31942,25 @@ BF
 BF
 BF
 BF
-vM
-sk
-ar
-jC
-gR
-si
-si
-MF
-bg
-si
-Ey
-Vu
-Aq
-EX
-qu
-zZ
-GH
 BF
-de
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -36655,33 +32144,33 @@ BF
 BF
 BF
 BF
-vM
-vM
-vM
-rn
-pF
-qz
-qz
-UZ
-bg
-si
-Wd
-KJ
-KJ
-sU
-si
-KQ
-Cx
 BF
 BF
 BF
-de
-BF
-de
 BF
 BF
 BF
-de
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -36857,31 +32346,31 @@ BF
 BF
 BF
 BF
-ah
-ds
-Xt
-PG
-pS
-jT
-jT
-td
-Gj
-Tv
-pE
-Pv
-Tv
-Tv
-Tv
-qL
-Ym
 BF
-de
 BF
-de
 BF
-de
 BF
-de
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -37059,23 +32548,23 @@ BF
 BF
 BF
 BF
-vM
-Mr
-NU
-tn
-RP
-Kt
-si
-MY
-ob
-fU
-Fc
-aX
-si
-qS
-si
-OS
-Cx
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -37261,29 +32750,29 @@ BF
 BF
 BF
 BF
-vM
-Bw
-pP
-Kr
-Em
-si
-Nx
-EO
-hz
-si
-xq
-aX
-si
-si
-TE
-eO
-Lk
 BF
-de
 BF
-de
 BF
-de
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -37463,23 +32952,23 @@ BF
 BF
 BF
 BF
-bX
-rn
-sx
-IE
-yM
-Je
-Xe
-KD
-bg
-iS
-id
-ct
-Mo
-He
-Oa
-rn
-BS
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -37666,26 +33155,26 @@ BF
 BF
 BF
 BF
-vM
-lq
-vM
-vM
-vM
-vM
-vM
-ST
-vM
-vM
-vM
-vM
-vM
-vM
-vM
 BF
 BF
 BF
 BF
-CN
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -37869,18 +33358,18 @@ BF
 BF
 BF
 BF
-iH
-vM
-Sh
-EM
-yh
-si
-bg
-si
-Bm
-an
-ll
-vM
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -38069,23 +33558,6 @@ BF
 BF
 BF
 BF
-vM
-vM
-vM
-vM
-uU
-si
-sv
-si
-bg
-si
-OI
-si
-iC
-vM
-vM
-vM
-vM
 BF
 BF
 BF
@@ -38094,7 +33566,24 @@ BF
 BF
 BF
 BF
-CN
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -38271,23 +33760,23 @@ BF
 BF
 BF
 BF
-vM
-nJ
-tK
-vM
-jq
-oB
-pG
-si
-bg
-si
-Vk
-cF
-dU
-JU
-lk
-me
-vM
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -38473,23 +33962,23 @@ BF
 BF
 BF
 BF
-LJ
-Ae
-XG
-zG
-yJ
-yJ
-yJ
-dZ
-dQ
-xs
-yJ
-yJ
-yJ
-eX
-oD
-Xj
-vM
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -38675,23 +34164,23 @@ BF
 BF
 BF
 BF
-ue
-rn
-zX
-vM
-zq
-rc
-oT
-si
-aX
-si
-eQ
-KE
-Ir
-vM
-zw
-rn
-Wz
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -38878,21 +34367,6 @@ BF
 BF
 BF
 BF
-vM
-vM
-vM
-ql
-nx
-Kx
-nx
-gY
-qT
-WI
-wU
-sn
-vM
-vM
-vM
 BF
 BF
 BF
@@ -38901,7 +34375,22 @@ BF
 BF
 BF
 BF
-CN
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -39081,19 +34570,19 @@ BF
 BF
 BF
 BF
-wO
-vM
-hL
-YP
-Om
-Nv
-zU
-vL
-fL
-pV
-hg
-vM
-rn
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -39278,23 +34767,23 @@ BF
 BF
 BF
 BF
-CN
 BF
 BF
 BF
 BF
 BF
-rn
-aR
-aR
-aR
-aR
-aR
-aR
-aR
-aR
-aR
-wO
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -40247,7 +35736,7 @@ BF
 BF
 BF
 BF
-uI
+BF
 BF
 BF
 BF
@@ -40673,7 +36162,7 @@ BF
 BF
 BF
 BF
-BF
+nX
 BF
 BF
 BF
@@ -41439,34 +36928,34 @@ BF
 BF
 BF
 BF
-Yh
-zS
-zS
-zS
-zS
-Yh
-zS
-zS
-zS
-Yh
-zS
-zS
-zS
-Yh
-zS
-zS
-zS
-zS
-Yh
-fi
-fi
-fi
 BF
 BF
-fi
-fi
-fi
-fi
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -41638,37 +37127,37 @@ BF
 BF
 BF
 BF
-Qo
-BF
-Fy
-Yh
-Wm
-Wm
-Wm
-CJ
-Wm
-Wm
-Wm
-CJ
-Wm
-Wm
-Wm
-CJ
-Wm
-Wm
-Wm
-CJ
-Wm
-Yh
-BF
-uI
 BF
 BF
 BF
 BF
 BF
 BF
-fi
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -41841,36 +37330,36 @@ BF
 BF
 BF
 BF
-uI
-BF
-Yh
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Yh
 BF
 BF
 BF
 BF
 BF
 BF
-uI
 BF
-fi
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -42045,34 +37534,34 @@ BF
 BF
 BF
 BF
-Yh
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Yh
-BF
-BF
-BF
-uI
 BF
 BF
 BF
 BF
-fi
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -42247,25 +37736,6 @@ BF
 BF
 BF
 BF
-Yh
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Yh
 BF
 BF
 BF
@@ -42274,7 +37744,26 @@ BF
 BF
 BF
 BF
-fi
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -42449,34 +37938,34 @@ BF
 BF
 BF
 BF
-Yh
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Wm
-Yh
-Yh
-Yh
-Yh
-Yh
-Yh
-Yh
-Yh
-Yh
-Yh
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -42648,37 +38137,37 @@ BF
 BF
 BF
 BF
-eb
-eb
-eb
-Yh
-Yh
-QR
-Yh
-Yh
-Yh
-Yh
-QR
-Yh
-Yh
-Yh
-QR
-Yh
-Yh
-Yh
-Yh
-QR
-Yh
-Yh
-cw
-un
-nV
-eI
-Of
-xo
-DF
-XU
-Yh
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -42850,37 +38339,37 @@ BF
 BF
 BF
 BF
-eb
-Wm
-Wm
-eb
-WV
-WV
-WV
-KX
-Lx
-KX
-WV
-WV
-WV
-WV
-WV
-KX
-HQ
-GZ
-KX
-WV
-WV
-WV
-Yh
-WV
-Ar
-WV
-WV
-lW
-sF
-sF
-rJ
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -43052,37 +38541,37 @@ BF
 BF
 BF
 BF
-Xh
-Wm
-Wm
-ys
-WV
-WV
-Ar
-WV
-WV
-WV
-WV
-WV
-WV
-WV
-WV
-WV
-WV
-WV
-WV
-WV
-WV
-WV
-xY
-af
-WV
-WV
-SO
-Yh
-ns
-ns
-JH
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -43254,37 +38743,37 @@ vl
 BF
 BF
 BF
-eb
-Wm
-Wm
-eb
-WV
-WV
-WV
-WV
-WV
-WV
-WV
-WV
-WV
-WV
-WV
-WV
-Ar
-WV
-WV
-WV
-WV
-WV
-Yh
-WV
-Yh
-DU
-cw
-Yh
-Zw
-Zw
-Yh
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -43456,34 +38945,34 @@ BF
 BF
 BF
 BF
-eb
-eb
-eb
-Yh
-Yh
-Yh
-Yh
-Yh
-Yh
-Yh
-Yh
-Yh
-by
-Yh
-Yh
-Yh
-Yh
-lY
-Yh
-wi
-Yh
-Yh
-cw
-UD
-Yh
-sF
-JB
-Yh
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -43662,30 +39151,30 @@ BF
 BF
 BF
 BF
-Yh
-Yh
-Yh
-Yh
-Yh
-Yh
-Yh
-aV
-aV
-aV
-Yh
-Yh
-Yh
-Yh
-CA
-Mt
-xt
-Yh
-Yh
-WV
-Yh
-Po
-Fu
-Yh
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -43865,30 +39354,30 @@ BF
 BF
 BF
 BF
-Yh
-Yh
-Yh
-Yh
-rA
-Ry
-ko
-dG
-aV
-ko
-Fa
-Yh
-lY
-VA
-Mt
-IX
-lY
-Yh
-qd
-Yh
-Yh
-Yh
-Yh
-Yh
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -44068,29 +39557,29 @@ BF
 BF
 BF
 BF
-Yh
-Yh
-Yh
-eD
-ko
-aV
-Yp
-aV
-ko
-xS
-Yh
-Yh
-Ef
-Mt
-NM
-Yh
-Hp
-OE
-qd
-MX
-sC
-hs
-JH
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -44271,31 +39760,31 @@ BF
 BF
 BF
 BF
-Yh
-Yh
-eD
-oU
-SX
-fA
-oe
-aV
-Fa
-Yh
-Yh
-Yh
-Yh
-Yh
-Yh
-yi
-OE
-Yh
-Ls
-vZ
-vZ
-Yh
 BF
 BF
-Qo
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -44471,30 +39960,30 @@ BF
 BF
 BF
 BF
-Qo
 BF
 BF
-xo
-eD
-eG
-dX
-nk
-dX
-Vq
-Fa
-xo
-Yh
-Yh
-Yh
-Yh
-Yh
-Yh
-sO
-Yh
-bJ
-II
-kQ
-JH
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -44676,27 +40165,27 @@ BF
 BF
 BF
 BF
-Yh
-Yh
-Yh
-aV
-aV
-aV
-Yh
-Yh
-Yh
 BF
 BF
 BF
 BF
-Yh
-Yh
-Yh
-Yh
-Yh
-Yh
-Yh
-Yh
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -44880,11 +40369,11 @@ BF
 BF
 BF
 BF
-eb
-qs
-aV
-qs
-eb
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -45077,21 +40566,21 @@ BF
 BF
 BF
 BF
-uI
 BF
 BF
 BF
 BF
-eb
-eb
-eb
-eb
-eb
 BF
 BF
 BF
 BF
-Qo
+BF
+BF
+BF
+BF
+BF
+BF
+BF
 BF
 BF
 BF
@@ -45499,7 +40988,7 @@ BF
 BF
 BF
 BF
-uI
+BF
 BF
 BF
 BF
