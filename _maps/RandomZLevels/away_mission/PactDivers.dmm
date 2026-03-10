@@ -447,6 +447,12 @@
 /obj/machinery/atmospherics/pipe/simple/purple/visible,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
+"cW" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating,
+/area/awaymission/PactDaivers)
 "db" = (
 /obj/structure/table/wood,
 /obj/structure/spider/cocoon{
@@ -464,6 +470,15 @@
 /turf/open/floor/plating/ironsand{
 	icon_state = "ironsand1"
 	},
+/area/awaymission/PactDaivers)
+"dg" = (
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating,
 /area/awaymission/PactDaivers)
 "do" = (
 /obj/structure/table/wood,
@@ -2510,6 +2525,18 @@
 /obj/item/gun/ballistic/automatic,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
+"rw" = (
+/obj/machinery/power/apc/auto_name{
+	pixel_y = 18
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/awaymission/PactDaivers)
 "rA" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/machinery/computer,
@@ -2897,13 +2924,29 @@
 /obj/structure/closet/crate/bin,
 /obj/item/ammo_casing/a357/lewd,
 /obj/item/ammo_casing/a357/lewd,
-/obj/item/ammo_casing/a357/lewd,
-/obj/item/ammo_casing/a357/lewd,
-/obj/item/ammo_casing/a357/lewd,
-/obj/item/ammo_casing/a357/lewd,
-/obj/item/ammo_casing/a357/lewd,
-/obj/item/ammo_casing/a357/lewd,
-/obj/item/ammo_casing/a357/lewd,
+/obj/item/ammo_casing/a357/lewd{
+	pixel_y = -3;
+	pixel_x = -5
+	},
+/obj/item/ammo_casing/a357/lewd{
+	pixel_y = -5
+	},
+/obj/item/ammo_casing/a357/lewd{
+	pixel_y = -2
+	},
+/obj/item/ammo_casing/a357/lewd{
+	pixel_x = -4;
+	pixel_y = 3
+	},
+/obj/item/ammo_casing/a357/lewd{
+	pixel_y = 2
+	},
+/obj/item/ammo_casing/a357/lewd{
+	pixel_x = -4
+	},
+/obj/item/ammo_casing/a357/lewd{
+	pixel_y = 5
+	},
 /turf/open/floor/wood,
 /area/awaymission/PactDaivers)
 "um" = (
@@ -2926,6 +2969,12 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
+/area/awaymission/PactDaivers)
+"ut" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating,
 /area/awaymission/PactDaivers)
 "uv" = (
 /obj/structure/lattice/catwalk,
@@ -4102,6 +4151,13 @@
 /area/awaymission/PactDaivers)
 "BF" = (
 /turf/open/indestructible/ironsand,
+/area/awaymission/PactDaivers)
+"BG" = (
+/obj/machinery/power/smes/magical,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
 /area/awaymission/PactDaivers)
 "BK" = (
 /obj/structure/cable/yellow{
@@ -5870,6 +5926,15 @@
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
+"OH" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating,
+/area/awaymission/PactDaivers)
 "OI" = (
 /obj/machinery/door/window{
 	dir = 1;
@@ -5946,6 +6011,12 @@
 "Pg" = (
 /obj/machinery/vending/coffee,
 /turf/open/floor/mineral/plastitanium,
+/area/awaymission/PactDaivers)
+"Pi" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating,
 /area/awaymission/PactDaivers)
 "Pj" = (
 /obj/structure/urbanismpower,
@@ -47414,9 +47485,9 @@ vl
 vl
 vl
 vl
-vl
-vl
-vl
+BG
+dg
+ut
 "}
 (199,1,1) = {"
 vl
@@ -47616,9 +47687,9 @@ vl
 vl
 vl
 vl
-vl
-vl
-vl
+BG
+dg
+OH
 "}
 (200,1,1) = {"
 vl
@@ -47817,8 +47888,8 @@ vl
 vl
 vl
 vl
-vl
-vl
-vl
-vl
+Yh
+rw
+Pi
+cW
 "}
