@@ -20,3 +20,11 @@
 	var/list/config_templates = CONFIG_GET(keyed_list/department_spawn_locations)
 	if(config_templates && length(config_templates))
 		template_names = config_templates.Copy()
+
+/// Аванпост 1 — малый объект (руины из папки avpost/1/). unique = FALSE — может загружаться несколько раз.
+/obj/effect/landmark/stationroom/bluemoon/avpost1
+	template_names = list("Аванпост 1" = 1)
+
+/// Аванпост 2 — средний объект (руины из папки avpost/2/). unique = FALSE — может загружаться несколько раз.
+/obj/effect/landmark/stationroom/bluemoon/avpost2
+	template_names = list("Аванпост 2" = 1)
