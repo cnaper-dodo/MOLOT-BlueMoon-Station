@@ -203,9 +203,6 @@
 /area/awaymission/PactDaivers)
 "db" = (
 /obj/structure/table/wood,
-/obj/structure/spider/cocoon{
-	contents = null/obj/item/lighter
-	},
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/PactDaivers)
 "de" = (
