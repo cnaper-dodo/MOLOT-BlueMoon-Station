@@ -546,6 +546,10 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
+"je" = (
+/obj/effect/landmark/stationroom/bluemoon/avpost1,
+/turf/open/indestructible/ironsand,
+/area/awaymission/PactDaivers)
 "jn" = (
 /obj/effect/mine/explosive,
 /turf/open/indestructible/ironsand,
@@ -611,6 +615,10 @@
 	dir = 4
 	},
 /turf/open/floor/carpet/green,
+/area/awaymission/PactDaivers)
+"kX" = (
+/obj/effect/landmark/stationroom/bluemoon/avpost2,
+/turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
 "la" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -7090,7 +7098,7 @@ BF
 BF
 BF
 BF
-BF
+kX
 BF
 BF
 BF
@@ -8607,7 +8615,7 @@ BF
 BF
 BF
 BF
-BF
+je
 BF
 BF
 BF
@@ -8963,7 +8971,7 @@ BF
 BF
 BF
 BF
-BF
+je
 BF
 BF
 BF
@@ -13554,7 +13562,7 @@ BF
 BF
 BF
 BF
-BF
+je
 BF
 BF
 BF
@@ -13711,7 +13719,7 @@ BF
 BF
 BF
 BF
-BF
+je
 BF
 BF
 BF
@@ -14601,7 +14609,7 @@ BF
 BF
 BF
 BF
-BF
+kX
 BF
 BF
 BF
@@ -18509,7 +18517,7 @@ BF
 BF
 BF
 BF
-BF
+je
 BF
 BF
 BF
@@ -20806,7 +20814,7 @@ BF
 BF
 BF
 BF
-BF
+kX
 BF
 BF
 BF
@@ -26903,7 +26911,7 @@ BF
 BF
 BF
 BF
-BF
+je
 BF
 BF
 BF
@@ -27860,7 +27868,7 @@ BF
 BF
 BF
 BF
-BF
+kX
 BF
 BF
 BF
@@ -32751,7 +32759,7 @@ BF
 BF
 BF
 BF
-BF
+kX
 BF
 BF
 BF
@@ -39360,7 +39368,7 @@ BF
 BF
 BF
 BF
-BF
+je
 BF
 BF
 BF
