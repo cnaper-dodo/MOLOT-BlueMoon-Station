@@ -154,6 +154,11 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/PactDaivers)
+"bR" = (
+/obj/machinery/limbgrower,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/PactDaivers)
 "ce" = (
 /obj/effect/mob_spawn/human/corpse/russian,
 /obj/item/export/bottle/vodka,
@@ -222,6 +227,12 @@
 /obj/structure/table/wood,
 /obj/item/phone,
 /turf/open/floor/carpet/purple,
+/area/awaymission/PactDaivers)
+"dy" = (
+/obj/structure/rack,
+/obj/item/defibrillator/loaded,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
 "dz" = (
 /obj/structure/chair/wood/normal{
@@ -603,6 +614,16 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
+"kb" = (
+/mob/living/simple_animal/bot/medbot{
+	name = "InteQ Hospitality Drone";
+	radio_key = /obj/item/encryptionkey/inteq;
+	radio_channel = "InteQ";
+	faction = list("neutral","silicon","turret","InteQ")
+	},
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/PactDaivers)
 "kd" = (
 /obj/effect/turf_decal/big_sign/enclave/top/left,
 /turf/open/floor/mineral/plastitanium,
@@ -768,6 +789,13 @@
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
+"nV" = (
+/obj/machinery/door/airlock/grunge{
+	name = "Recreation";
+	req_one_access_txt = "152"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/PactDaivers)
 "od" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/snacks/donut/jelly,
@@ -791,8 +819,8 @@
 /turf/open/indestructible/ironsand,
 /area/awaymission/PactDaivers)
 "ov" = (
-/obj/structure/table/wood,
-/turf/open/floor/carpet/royalblack,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
 "oA" = (
 /obj/structure/table/wood,
@@ -910,6 +938,17 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
+"qg" = (
+/obj/structure/table/glass,
+/obj/item/hand_labeler,
+/obj/item/clothing/glasses/science,
+/obj/item/stack/sheet/mineral/plasma,
+/obj/item/storage/pill_bottle/epinephrine{
+	pixel_x = 3
+	},
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/PactDaivers)
 "qh" = (
 /obj/item/ammo_casing/c9mm,
 /mob/living/simple_animal/hostile/syndicate/ranged/smg,
@@ -985,7 +1024,7 @@
 /area/awaymission/PactDaivers)
 "ru" = (
 /obj/structure/closet/crate/large,
-/obj/item/gun/ballistic/automatic,
+/obj/item/gun/ballistic/automatic/ak12,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "rw" = (
@@ -999,6 +1038,11 @@
 	icon_state = "0-2"
 	},
 /turf/open/floor/plating,
+/area/awaymission/PactDaivers)
+"rz" = (
+/obj/structure/window/reinforced/spawner/north,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
 "rG" = (
 /obj/structure/flora/ausbushes/ppflowers,
@@ -1028,6 +1072,13 @@
 /obj/structure/table/wood,
 /obj/item/pipe_painter,
 /turf/open/floor/plasteel/dark,
+/area/awaymission/PactDaivers)
+"sg" = (
+/obj/machinery/sleeper/syndie{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
 "sh" = (
 /mob/living/simple_animal/hostile/syndicate/civilian,
@@ -1076,6 +1127,13 @@
 /obj/item/clothing/head/HoS/inteq_cap,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
+"sD" = (
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/structure/chair/office/light{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/PactDaivers)
 "sF" = (
 /turf/open/floor/wood,
 /area/awaymission/PactDaivers)
@@ -1090,6 +1148,14 @@
 /turf/open/floor/plating{
 	heat_capacity = 1e+006
 	},
+/area/awaymission/PactDaivers)
+"sQ" = (
+/obj/structure/table/glass,
+/obj/machinery/reagentgrinder{
+	pixel_y = 10
+	},
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
 "te" = (
 /obj/machinery/vending/cigarette,
@@ -1342,6 +1408,11 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/PactDaivers)
+"wG" = (
+/obj/machinery/bloodbankgen,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/PactDaivers)
 "wI" = (
 /obj/structure/closet/crate/large,
 /obj/item/paper/guides/antag/guardian/inteq_drone,
@@ -1517,6 +1588,11 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/PactDaivers)
+"zb" = (
+/obj/machinery/chem_master,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/PactDaivers)
 "zl" = (
 /obj/structure/chair/wood/normal{
 	dir = 8
@@ -1567,6 +1643,13 @@
 /obj/structure/closet/cabinet,
 /obj/item/reagent_containers/food/drinks/beer,
 /turf/open/floor/plasteel/dark,
+/area/awaymission/PactDaivers)
+"zP" = (
+/obj/machinery/computer/operating{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
 "zS" = (
 /obj/machinery/door/poddoor/shutters{
@@ -1988,6 +2071,13 @@
 /obj/item/ammo_box/c38/lethal,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
+"HO" = (
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/PactDaivers)
 "HR" = (
 /obj/machinery/button/door{
 	desc = "A remote control-switch to call the elevator to your level.";
@@ -2105,6 +2195,16 @@
 /obj/item/ammo_box/a357/dumdum,
 /turf/open/floor/wood,
 /area/awaymission/PactDaivers)
+"JG" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/backpack/duffelbag/syndie/inteq/surgery_adv,
+/obj/item/healthanalyzer/advanced{
+	pixel_y = 9
+	},
+/obj/machinery/light,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/PactDaivers)
 "JO" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -2187,6 +2287,11 @@
 /obj/structure/sink/kitchen/directional/south,
 /turf/open/floor/wood,
 /area/awaymission/PactDaivers)
+"Lg" = (
+/obj/structure/closet/crate/large,
+/obj/item/gun/ballistic/automatic/fal,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/PactDaivers)
 "Lm" = (
 /obj/structure/hellgate_tram_rails/anchor,
 /obj/structure/hellgate_train/weapons,
@@ -2220,8 +2325,11 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "Mb" = (
-/obj/structure/hellgate_large/wide/sedementation_0,
-/turf/open/indestructible/ironsand,
+/obj/machinery/chem_heater{
+	pixel_x = 4
+	},
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
 "Mc" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2328,6 +2436,13 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/cafeteria,
+/area/awaymission/PactDaivers)
+"OE" = (
+/mob/living/simple_animal/bot/cleanbot{
+	faction = list("InteQ")
+	},
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
 "OH" = (
 /obj/structure/cable{
@@ -2527,6 +2642,13 @@
 /turf/open/floor/plasteel/dark{
 	heat_capacity = 1e+006
 	},
+/area/awaymission/PactDaivers)
+"Ry" = (
+/obj/machinery/chem_dispenser{
+	layer = 2.7
+	},
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
 "Rz" = (
 /obj/structure/table/wood,
@@ -2736,6 +2858,16 @@
 /obj/structure/table/wood,
 /obj/item/gun/ballistic/revolver/russian,
 /turf/open/floor/carpet/purple,
+/area/awaymission/PactDaivers)
+"Vh" = (
+/obj/structure/table/optable,
+/obj/effect/turf_decal/bot,
+/obj/machinery/airalarm/inteq{
+	dir = 1;
+	pixel_y = -32
+	},
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/turf/open/floor/mineral/plastitanium,
 /area/awaymission/PactDaivers)
 "Vj" = (
 /turf/open/floor/plating{
@@ -2959,7 +3091,7 @@
 /area/awaymission/PactDaivers)
 "ZH" = (
 /obj/structure/closet/crate/large,
-/obj/item/gun/ballistic,
+/obj/item/gun/ballistic/automatic/flechette/shredder,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/PactDaivers)
 "ZI" = (
@@ -32412,7 +32544,7 @@ BF
 Yi
 Yh
 nF
-ov
+db
 Yh
 Yi
 BF
@@ -36050,7 +36182,7 @@ si
 uz
 Yh
 si
-ov
+db
 Fh
 FZ
 DT
@@ -36847,7 +36979,7 @@ Ip
 Yh
 Yh
 JX
-ZH
+Lg
 si
 si
 bA
@@ -38463,7 +38595,7 @@ Ip
 BF
 jE
 bw
-OM
+aV
 kd
 Jb
 Op
@@ -40894,7 +41026,7 @@ Ip
 Ip
 BF
 BF
-BF
+Ip
 BF
 Yh
 Yh
@@ -41092,11 +41224,11 @@ Ip
 Ip
 Ip
 BF
-Mb
 BF
 BF
-Mb
 BF
+BF
+Ip
 BF
 Yh
 rS
@@ -41298,8 +41430,8 @@ BF
 BF
 BF
 BF
-BF
-BF
+Ip
+Ip
 Yh
 Ld
 sF
@@ -41501,7 +41633,7 @@ BF
 BF
 BF
 BF
-BF
+Ip
 Yh
 Yh
 Yh
@@ -41697,13 +41829,13 @@ Ip
 BF
 BF
 BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
+Yh
+Yh
+Yh
+Yh
+Yh
+Yh
+Ip
 Yh
 Qa
 xj
@@ -41868,7 +42000,7 @@ Yo
 si
 si
 Yh
-ov
+db
 KF
 Mt
 qp
@@ -41899,13 +42031,13 @@ BF
 BF
 BF
 BF
-BF
+Yh
+sQ
+zb
+Ry
 Mb
-RO
-BF
-Mb
-BF
-BF
+Yh
+Ip
 Yh
 IR
 Ho
@@ -42070,7 +42202,7 @@ Hf
 si
 rT
 Yh
-ov
+db
 Mt
 Mt
 db
@@ -42101,13 +42233,13 @@ BF
 BF
 BF
 BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
+jE
+qg
+sD
+ov
+ov
+Yh
+Ip
 Yh
 QN
 IR
@@ -42303,13 +42435,13 @@ BF
 BF
 BF
 BF
-BF
-BF
-BF
-BF
-BF
-BF
-BF
+jE
+HO
+ov
+ov
+ov
+nV
+Ip
 Yh
 Yh
 Yh
@@ -42505,12 +42637,12 @@ BF
 BF
 wm
 BF
-BF
-BF
-BF
-BF
-BF
-BF
+jE
+wG
+ov
+ov
+ov
+Yh
 RO
 Yh
 fm
@@ -42707,12 +42839,12 @@ BF
 BF
 BF
 BF
-BF
-Mb
-BF
-BF
-Mb
-BF
+jE
+bR
+ov
+ov
+zP
+Yh
 BF
 Yh
 Tf
@@ -42909,12 +43041,12 @@ BF
 bo
 BF
 BF
-BF
-BF
-BF
-BF
-BF
-BF
+Yh
+dy
+OE
+ov
+Vh
+Yh
 BF
 Yh
 OR
@@ -43111,12 +43243,12 @@ BF
 BF
 BF
 BF
-BF
-BF
-BF
-BF
-BF
-BF
+Yh
+sg
+rz
+kb
+JG
+Yh
 BF
 Yh
 fm
