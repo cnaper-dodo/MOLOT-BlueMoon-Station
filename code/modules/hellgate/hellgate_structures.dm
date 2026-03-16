@@ -59,6 +59,15 @@
 /obj/structure/hellgate_beacon/deployed_on
 	icon_state = "beacon_deployed_on"
 
+/obj/structure/hellgate_beacon/deployed_on/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/spawner, \
+		list(/mob/living/simple_animal/hostile/syndicate/ranged), \
+		300, \
+		list(ROLE_SYNDICATE), \
+		"warps in from", \
+		5)
+
 // train.dmi: nt, sat, hyperdyne, construction, crates, weapons, mech, empty, maglev
 /obj/structure/hellgate_train
 	name = "поезд"
