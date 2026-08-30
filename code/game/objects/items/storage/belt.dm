@@ -222,7 +222,8 @@
 		/obj/item/implanter,
 		/obj/item/pinpointer/crew,
 		/obj/item/reagent_containers/chem_pack,
-		/obj/item/stack/sticky_tape //surgical tape
+		/obj/item/stack/sticky_tape, //surgical tape
+		/obj/item/reagent_containers/spray
 		))
 
 /obj/item/storage/belt/medical/surgery_belt_adv
@@ -554,7 +555,8 @@
 		/obj/item/stack/rods,
 		/obj/item/stack/tile/plasteel,
 		/obj/item/grenade/chem_grenade/metalfoam,
-		/obj/item/grenade/chem_grenade/smart_metal_foam
+		/obj/item/grenade/chem_grenade/smart_metal_foam,
+		/obj/item/inducer
 		))
 
 /obj/item/storage/belt/grenade
@@ -663,6 +665,7 @@
 		/obj/item/clothing/gloves,
 		/obj/item/melee/flyswatter,
 		/obj/item/broom,
+		/obj/item/wirebrush,
 		/obj/item/mop,
 		/obj/item/paint/paint_remover,
 		/obj/item/assembly/mousetrap,
@@ -683,7 +686,7 @@
 	new /obj/item/grenade/chem_grenade/cleaner(src)
 	new /obj/item/grenade/chem_grenade/cleaner(src)
 	new /obj/item/grenade/chem_grenade/cleaner(src)
-	new /obj/item/soap(src)
+	new /obj/item/soap/syndie(src)
 
 /obj/item/storage/belt/bandolier
 	name = "bandolier"

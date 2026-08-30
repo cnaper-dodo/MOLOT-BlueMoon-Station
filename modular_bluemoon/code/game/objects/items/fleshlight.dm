@@ -236,9 +236,6 @@ GLOBAL_LIST_EMPTY(public_portal_panties)
 	/// Ассоциативный список активных удалённых вибраций от fleshlights
 	/// Формат: list(REF(fleshlight) = list("nickname", "intensity", "pattern"))
 	var/list/remote_vibrations
-	/// Accumulated delta time for throttled processing (performance optimization)
-	var/process_accumulated_time = 0
-
 /// Check if panties are in passive mode (worn or inserted - limited control)
 /// Returns FALSE when held in hand (setup mode - full control)
 /// Control depends on control_mode setting:
@@ -332,6 +329,8 @@ GLOBAL_LIST_EMPTY(public_portal_panties)
 	else if(user.client && user.client.prefs.muted & MUTE_IC)
 		to_chat(user, "Вы не можете отправлять IC сообщения (заглушены).")
 		return FALSE
+	if(!ishuman(user))
+		return FALSE
 	var/mob/living/carbon/human/H_user = user
 
 	var/list/select = list()
@@ -400,7 +399,12 @@ GLOBAL_LIST_EMPTY(public_portal_panties)
 		return FALSE
 
 	else if(!params)
-		var/subtle_emote = stripped_multiline_input_or_reflect(user, "Введите эмоут для отображения.", "[choosen_flesh]" , null, MAX_MESSAGE_LEN)
+		var/subtle_emote = ""
+		if(user.client?.prefs.tgui_input_verbs)
+			subtle_emote = tgui_input_text(user, "Введите эмоут для отображения.", "[choosen_flesh]", null, MAX_MESSAGE_LEN, TRUE, TRUE)
+		else
+			subtle_emote = stripped_multiline_input_or_reflect(user, "Введите эмоут для отображения.", "[choosen_flesh]")
+
 		if(subtle_emote && !check_invalid(user, subtle_emote))
 			message = subtle_emote
 		else
@@ -417,8 +421,7 @@ GLOBAL_LIST_EMPTY(public_portal_panties)
 	var/display_name = get_portal_nickname(H_user)
 	message = "<span class='emote'><b>[display_name]</b> <i>[user.say_emphasis(message)]</i></span>"
 
-	for(var/mob/living/L in range(user, 1))
-		show_to |= L
+	show_to |= user
 
 	for(var/i in show_to)
 		var/mob/M = i
@@ -472,7 +475,7 @@ GLOBAL_LIST_EMPTY(public_portal_panties)
 		// Portal settings setup
 		if(ishuman(user))
 			portal_settings?.owner = user
-			START_PROCESSING(SSobj, src)
+			START_PROCESSING(SSfastprocess, src)
 			RegisterSignal(user, COMSIG_MOVABLE_HEAR, PROC_REF(on_owner_hear), override = TRUE)
 			// Grant control action for worn panties
 			if(!worn_control_action)
@@ -482,26 +485,28 @@ GLOBAL_LIST_EMPTY(public_portal_panties)
 			if(!worn_target_action)
 				worn_target_action = new /datum/action/portal_target_switch(src)
 			worn_target_action.Grant(user)
+			// Notify connected portallights that panties are back on
+			if(LAZYLEN(portallight))
+				for(var/obj/item/portallight/PL in portallight)
+					var/mob/living/carbon/human/holder = get_fleshlight_holder(PL)
+					if(holder)
+						to_chat(holder, span_notice("Портальные трусики надеты снова — соединение восстановлено."))
 
 /obj/item/clothing/underwear/briefs/panties/portalpanties/dropped(mob/user)
 	. = ..()
 	UnregisterSignal(user, COMSIG_MOVABLE_HEAR)
-	// Notify connected flashlights that panties are being removed
+	// Suspend (not destroy) connection on undress - reconnects automatically when re-equipped
 	if(LAZYLEN(portallight))
 		for(var/obj/item/portallight/PL in portallight)
+			unregister_remote_vibration(PL)
+			// Keep PL.portalunderwear and portallight list intact
 			var/mob/living/carbon/human/holder = get_fleshlight_holder(PL)
 			if(holder)
-				to_chat(holder, span_warning("Портальное соединение потеряно - трусики были сняты!"))
-			// Clear the flashlight's connection to us
-			unregister_remote_vibration(PL)
-			PL.portalunderwear = null
-			PL.icon_state = "unpaired"
-			PL.update_appearance()
-		LAZYCLEARLIST(portallight)
+				to_chat(holder, span_warning("Портальные трусики сняты — соединение приостановлено."))
 	// Clear any remaining remote vibrations
 	LAZYCLEARLIST(remote_vibrations)
 	portal_settings?.owner = null
-	STOP_PROCESSING(SSobj, src)
+	STOP_PROCESSING(SSfastprocess, src)
 	// Revoke control action for worn panties
 	if(worn_control_action)
 		worn_control_action.Remove(user)
@@ -522,8 +527,19 @@ GLOBAL_LIST_EMPTY(public_portal_panties)
 	available_panties = GLOB.public_portal_panties.Copy()
 
 /obj/item/portallight/Destroy()
-	..()
+	// Clean up connections before destruction
+	if(portalunderwear)
+		portalunderwear.unregister_remote_vibration(src)
+		portalunderwear.portallight -= src
+		portalunderwear = null
+	if(available_panties.len)
+		for(var/obj/item/clothing/underwear/briefs/panties/portalpanties/temp in available_panties)
+			temp.portallight -= src
+	QDEL_NULL(portal_settings)
+	QDEL_NULL(held_target_action)
+	private_pair = null
 	GLOB.fleshlight_portallight -= src
+	return ..()
 
 /obj/item/clothing/underwear/briefs/panties/portalpanties/New()
 	..()
@@ -534,9 +550,26 @@ GLOBAL_LIST_EMPTY(public_portal_panties)
 	QDEL_NULL(worn_target_action)
 	QDEL_NULL(inserted_control_action)
 	QDEL_NULL(inserted_target_action)
-	..()
+	QDEL_NULL(portal_settings)
+	private_pair = null
+	// Disconnect all connected portallights before deletion
+	if(LAZYLEN(portallight))
+		for(var/obj/item/portallight/PL in portallight)
+			unregister_remote_vibration(PL)
+			PL.portalunderwear = null
+			PL.icon_state = "unpaired"
+			PL.update_appearance()
+		LAZYCLEARLIST(portallight)
+	LAZYCLEARLIST(remote_vibrations)
 	GLOB.portalpanties -= src
 	GLOB.public_portal_panties -= src
+	// Публичные трусики раздаются по available_panties всем фонарикам (_portal_toys.dm), а
+	// снимались оттуда только при штатном отключении публичности. Один удалённый экземпляр
+	// оставался жить в списке каждого фонарика - и это был самый дорогой del() раунда среди
+	// предметов. Проходим по всем владельцам списка сами.
+	for(var/obj/item/portallight/light as anything in GLOB.fleshlight_portallight)
+		light.available_panties -= src
+	return ..()
 
 // Переименование трусиков
 /obj/item/clothing/underwear/briefs/panties/portalpanties/verb/rename()
@@ -605,6 +638,15 @@ GLOBAL_LIST_EMPTY(public_portal_panties)
 		if(fl_eq?.holder_genital?.owner == G.owner)
 			to_chat(user, span_warning("Сопряжённый фонарик уже внутри этого человека! Это создаст портальную петлю."))
 			return FALSE
+	// No silent stealth insertion: announce the attempt and take time, like other insertable toys
+	if(user == G.owner)
+		G.owner.visible_message(span_warning("<b>[user]</b> пытается вставить [src] в себя!"),\
+			span_warning("Вы пытаетесь вставить [src] в себя!"))
+	else
+		G.owner.visible_message(span_warning("<b>[user]</b> пытается вставить [src] в <b>[G.owner]</b>!"),\
+			span_warning("<b>[user]</b> пытается вставить [src] в вас!"))
+	if(!do_mob(user, G.owner, 5 SECONDS))
+		return FALSE
 	return TRUE
 
 /obj/item/clothing/underwear/briefs/panties/portalpanties/proc/genital_inserted(datum/source, obj/item/organ/genital/G, mob/user)
@@ -619,6 +661,8 @@ GLOBAL_LIST_EMPTY(public_portal_panties)
 	// Update connected fleshlights
 	update_portal()
 	playsound(src, 'sound/machines/ping.ogg', 50, FALSE)
+	if(G.owner && G.owner != user)
+		to_chat(G.owner, span_userlove("Вы чувствуете, как [src] оказывается внутри!"))
 	// Grant control action to the genital owner and register signals
 	if(G.owner)
 		inserted_control_action = new /datum/action/portal_device_control(src)
@@ -630,7 +674,7 @@ GLOBAL_LIST_EMPTY(public_portal_panties)
 		// Register for safeword hearing
 		RegisterSignal(G.owner, COMSIG_MOVABLE_HEAR, PROC_REF(on_owner_hear), override = TRUE)
 		portal_settings?.owner = G.owner
-		START_PROCESSING(SSobj, src)
+		START_PROCESSING(SSfastprocess, src)
 	return TRUE
 
 /obj/item/clothing/underwear/briefs/panties/portalpanties/proc/genital_removing(datum/source, obj/item/organ/genital/G, mob/user)
@@ -662,11 +706,16 @@ GLOBAL_LIST_EMPTY(public_portal_panties)
 		unregister_climax_signal(G.owner)
 		UnregisterSignal(G.owner, COMSIG_MOVABLE_HEAR)
 		portal_settings?.owner = null
-		STOP_PROCESSING(SSobj, src)
+		STOP_PROCESSING(SSfastprocess, src)
 	if(inserted_control_action)
 		QDEL_NULL(inserted_control_action)
 	if(inserted_target_action)
 		QDEL_NULL(inserted_target_action)
+	// Eject from organ to floor if still inside it (e.g. forced organ removal)
+	if(loc == G)
+		var/turf/drop_loc = get_turf(G.owner) || get_turf(G)
+		if(drop_loc)
+			forceMove(drop_loc)
 	return TRUE
 
 // BLUEMOON ADD: Genital equipment integration for portal fleshlight
@@ -681,8 +730,6 @@ GLOBAL_LIST_EMPTY(public_portal_panties)
 	var/datum/portal_settings/portal_settings
 	/// Private paired panties
 	var/obj/item/clothing/underwear/briefs/panties/portalpanties/private_pair
-	/// Accumulated delta time for throttled processing (performance optimization)
-	var/process_accumulated_time = 0
 
 /obj/item/portallight/ComponentInitialize()
 	. = ..()
@@ -735,6 +782,15 @@ GLOBAL_LIST_EMPTY(public_portal_panties)
 		if(pp_eq?.holder_genital?.owner == G.owner)
 			to_chat(user, span_warning("Сопряжённые трусики уже внутри этого человека! Это создаст портальную петлю."))
 			return FALSE
+	// No silent stealth insertion: announce the attempt and take time, like other insertable toys
+	if(user == G.owner)
+		G.owner.visible_message(span_warning("<b>[user]</b> пытается вставить [src] в себя!"),\
+			span_warning("Вы пытаетесь вставить [src] в себя!"))
+	else
+		G.owner.visible_message(span_warning("<b>[user]</b> пытается вставить [src] в <b>[G.owner]</b>!"),\
+			span_warning("<b>[user]</b> пытается вставить [src] в вас!"))
+	if(!do_mob(user, G.owner, 5 SECONDS))
+		return FALSE
 	return TRUE
 
 /obj/item/portallight/proc/genital_inserted(datum/source, obj/item/organ/genital/G, mob/user)
@@ -748,6 +804,8 @@ GLOBAL_LIST_EMPTY(public_portal_panties)
 			targetting = CUM_TARGET_PENIS
 	update_appearance()
 	playsound(src, 'sound/machines/ping.ogg', 50, FALSE)
+	if(G.owner && G.owner != user)
+		to_chat(G.owner, span_userlove("Вы чувствуете, как [src] оказывается внутри!"))
 	// Grant control action to the genital owner and register signals
 	if(G.owner)
 		inserted_control_action = new /datum/action/portal_device_control(src)
@@ -759,7 +817,7 @@ GLOBAL_LIST_EMPTY(public_portal_panties)
 		// Register for safeword hearing
 		RegisterSignal(G.owner, COMSIG_MOVABLE_HEAR, PROC_REF(on_owner_hear), override = TRUE)
 		portal_settings?.owner = G.owner
-		START_PROCESSING(SSobj, src)
+		START_PROCESSING(SSfastprocess, src)
 	return TRUE
 
 /obj/item/portallight/proc/genital_removing(datum/source, obj/item/organ/genital/G, mob/user)
@@ -774,11 +832,16 @@ GLOBAL_LIST_EMPTY(public_portal_panties)
 		unregister_climax_signal(G.owner)
 		UnregisterSignal(G.owner, COMSIG_MOVABLE_HEAR)
 		portal_settings?.owner = null
-		STOP_PROCESSING(SSobj, src)
+		STOP_PROCESSING(SSfastprocess, src)
 	if(inserted_control_action)
 		QDEL_NULL(inserted_control_action)
 	if(inserted_target_action)
 		QDEL_NULL(inserted_target_action)
+	// Eject from organ to floor if still inside it (e.g. forced organ removal)
+	if(loc == G)
+		var/turf/drop_loc = get_turf(G.owner) || get_turf(G)
+		if(drop_loc)
+			forceMove(drop_loc)
 	return TRUE
 
 // BLUEMOON ADD: Hook into handle_post_sex to relay sensations through portal devices

@@ -415,6 +415,13 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	. = ..()
 	return EMP_PROTECT_SELF
 
+/obj/item/radio/headset/silicon/pai/inteq
+	name = "\proper mini InteQ Subspace Transceiver"
+
+/obj/item/radio/headset/silicon/pai/inteq/Initialize(mapload)
+	. = ..()
+	make_inteq()
+
 /obj/item/radio/headset/silicon/ai
 	name = "\proper Integrated Subspace Transceiver "
 	keyslot2 = new /obj/item/encryptionkey/ai
@@ -491,9 +498,9 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	. = ..()
 	if(!istype(user) || !Adjacent(user) || user.incapacitated())
 		return
-	if (command)
+	if(command)
 		use_command = !use_command
-		to_chat(user, "<span class='notice'>You toggle high-volume mode [use_command ? "on" : "off"].</span>")
+		user.balloon_alert(user, "Громкоговоритель [use_command ? "включен" : "выключен"]")
 		return TRUE
 
 /obj/item/radio/headset/proc/bowmanize()

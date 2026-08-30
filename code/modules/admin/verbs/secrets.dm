@@ -46,7 +46,7 @@
 	. = ..()
 	if(.)
 		return
-	if((action != "admin_log" || action != "show_admins" || action != "mentor_log") && !check_rights(R_ADMIN))
+	if((action != "admin_log" && action != "show_admins" && action != "mentor_log") && !check_rights(R_ADMIN))
 		return
 	var/datum/round_event/E
 	var/ok = FALSE
@@ -54,9 +54,9 @@
 		//Generic Buttons anyone can use.
 		if("admin_log")
 			var/dat = "<B>Admin Log<HR></B>"
-			for(var/l in GLOB.admin_log)
+			for(var/l in GLOB.admin_log_entries)
 				dat += "<li>[l]</li>"
-			if(!GLOB.admin_log.len)
+			if(!GLOB.admin_log_entries.len)
 				dat += "No-one has done anything this round!"
 			var/datum/browser/popup = new(holder, "admin_log", "Admin Log")
 			popup.set_content(dat)
@@ -199,8 +199,8 @@
 				for(var/mob/living/mob in thunderdome)
 					qdel(mob) //Clear mobs
 			for(var/obj/obj in thunderdome)
-				if(!istype(obj, /obj/machinery/camera) && !istype(obj, /obj/effect/abstract/proximity_checker))
-					qdel(obj) //Clear objects
+				if(!istype(obj, /obj/machinery/camera))
+					qdel(obj) //Clear objects; proximity checkers are recreated when the template is copied
 
 			var/area/template = GLOB.areas_by_type[/area/tdome/arena_source]
 			template.copy_contents_to(thunderdome)
@@ -222,17 +222,11 @@
 			var/val = alert(holder, "What do you want to set night shift to? This will override the automatic system until set to automatic again.", "Night Shift", "On", "Off", "Automatic")
 			switch(val)
 				if("Automatic")
-					if(CONFIG_GET(flag/enable_night_shifts))
-						SSnightshift.can_fire = TRUE
-						SSnightshift.fire()
-					else
-						SSnightshift.update_nightshift(FALSE, TRUE)
+					admin_apply_global_nightshift_mode(holder.mob, "Auto")
 				if("On")
-					SSnightshift.can_fire = FALSE
-					SSnightshift.update_nightshift(TRUE, TRUE)
+					admin_apply_global_nightshift_mode(holder.mob, "On")
 				if("Off")
-					SSnightshift.can_fire = FALSE
-					SSnightshift.update_nightshift(FALSE, TRUE)
+					admin_apply_global_nightshift_mode(holder.mob, "Off")
 		if("moveferry")
 			SSblackbox.record_feedback("nested tally", "admin_secrets_fun_used", 1, list("Send CentCom Ferry"))
 			if(!SSshuttle.toggleShuttle("ferry","ferry_home","ferry_away"))
@@ -267,11 +261,11 @@
 				if("Make Your Own")
 					AdminCreateVirus(holder)
 				if("Random")
-					var/datum/round_event_control/disease_outbreak/DC = locate(/datum/round_event_control/disease_outbreak) in SSevents.control
+					var/datum/round_event_control/disease_outbreak/DC = locate(/datum/round_event_control/disease_outbreak) in SSdirector.event_controls()
 					E = DC.runEvent()
 				if("Choose")
 					var/virus = input("Choose the virus to spread", "BIOHAZARD") as null|anything in sort_list(typesof(/datum/disease), GLOBAL_PROC_REF(cmp_typepaths_asc))
-					var/datum/round_event_control/disease_outbreak/DC = locate(/datum/round_event_control/disease_outbreak) in SSevents.control
+					var/datum/round_event_control/disease_outbreak/DC = locate(/datum/round_event_control/disease_outbreak) in SSdirector.event_controls()
 					var/datum/round_event/disease_outbreak/DO = DC.runEvent()
 					DO.virus_type = virus
 					E = DO
@@ -354,7 +348,7 @@
 		if("events")
 			if(!is_funmin)
 				return
-			if(!SSevents.wizardmode)
+			if(!SSdirector.wizardmode)
 				if(alert("Do you want to toggle summon events on?",,"Да","Нет") == "Да")
 					summonevents()
 					SSblackbox.record_feedback("nested tally", "admin_secrets_fun_used", 1, list("Summon Events", "Activate"))
@@ -365,8 +359,7 @@
 						summonevents()
 						SSblackbox.record_feedback("nested tally", "admin_secrets_fun_used", 1, list("Summon Events", "Intensify"))
 					if("Turn Off Summon Events")
-						SSevents.toggleWizardmode()
-						SSevents.resetFrequency()
+						SSdirector.toggle_wizardmode()
 						SSblackbox.record_feedback("nested tally", "admin_secrets_fun_used", 1, list("Summon Events", "Disable"))
 		if("eagles")
 			if(!is_funmin)
@@ -430,13 +423,13 @@
 					continue
 				GLOB.dna_for_copying.transfer_identity(H, TRUE)
 				H.real_name = H.dna.real_name
-				var/obj/item/pda/worn = H.wear_id
+				var/obj/item/modular_computer/pda/worn = H.wear_id
 				var/obj/item/card/id/W = H.wear_id?.GetID()
 				if(W)
 					W.registered_name = H.real_name
 					W.update_label()
 					if(worn)
-						if(istype(worn, /obj/item/pda))
+						if(istype(worn, /obj/item/modular_computer/pda))
 							worn.owner = W.registered_name
 							worn.update_label()
 				H.updateappearance(mutcolor_update=1)

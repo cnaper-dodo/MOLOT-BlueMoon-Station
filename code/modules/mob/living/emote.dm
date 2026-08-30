@@ -316,20 +316,49 @@
 	message_param = "отправляет воздушный поцелуй для %t."
 
 /datum/emote/sound/human/kiss/run_emote(mob/living/user, params, type_override, intentional)
-	. = ..()
-	if(!.)
+	if(!istype(user))
 		return
 	var/kiss_type = /obj/item/hand_item/kisser
+	var/need_use_kiss = FALSE
 
 	if(HAS_TRAIT(user, TRAIT_KISS_OF_DEATH))
 		kiss_type = /obj/item/hand_item/kisser/death
+	else if(HAS_TRAIT(user, TRAIT_KISS_CROCIN))
+		kiss_type = /obj/item/hand_item/kisser/crocin
+	else if(HAS_TRAIT(user, TRAIT_KISS_SPACE_DRUGS))
+		kiss_type = /obj/item/hand_item/kisser/space_drugs
+		need_use_kiss = TRUE
+	else if(HAS_TRAIT(user, TRAIT_KISS_HONK))
+		kiss_type = /obj/item/hand_item/kisser/honk
+	else if(HAS_TRAIT(user, TRAIT_KISS_BLOODSUCKER))
+		kiss_type = /obj/item/hand_item/kisser/bloodsucker
+		need_use_kiss = TRUE
+	else if(HAS_TRAIT(user, TRAIT_KISS_MIME))
+		kiss_type = /obj/item/hand_item/kisser/mime
+	else if(HAS_TRAIT(user, TRAIT_KISS_DRAGQUEEN))
+		kiss_type = /obj/item/hand_item/kisser/dragqueen
+		need_use_kiss = TRUE
+	else if(HAS_TRAIT(user, TRAIT_KISS_HEARTBOOM))
+		kiss_type = /obj/item/hand_item/kisser/heartboom
 
 	var/obj/item/kiss_blower = new kiss_type(user)
-	if(user.put_in_hands(kiss_blower))
+	if(user.put_in_hands(kiss_blower) && !QDELETED(kiss_blower))
 		to_chat(user, span_notice("You ready your kiss-blowing hand."))
 	else
 		qdel(kiss_blower)
 		to_chat(user, span_warning("You're incapable of blowing a kiss in your current state."))
+		return
+
+	. = ..()
+	if(!.)
+		qdel(kiss_blower)
+		return
+
+	if(need_use_kiss)
+		user.nextsoundemote = world.time + 3 SECONDS
+		if(ishuman(user))
+			var/mob/living/carbon/human/H = user
+			H.use_kiss()
 
 /datum/emote/sound/human/kiss2
 	key = "kiss2"
@@ -709,7 +738,12 @@
 		to_chat(user, "You cannot send IC messages (muted).")
 		return FALSE
 	else if(!params)
-		var/custom_emote = stripped_multiline_input_or_reflect(user, "Choose an emote to display.", "Custom Emote", null, MAX_MESSAGE_LEN)
+		var/custom_emote = ""
+		if(user.client?.prefs.tgui_input_verbs)
+			custom_emote = tgui_input_text(user, "Choose an emote to display.", "Custom Emote", null, MAX_MESSAGE_LEN, TRUE, TRUE)
+		else
+			custom_emote = stripped_multiline_input_or_reflect(user, "Choose an emote to display.", "Custom Emote")
+
 		if(custom_emote && !check_invalid(user, custom_emote))
 			message = custom_emote
 	else
@@ -835,3 +869,60 @@
 	key = "exhale"
 	key_third_person = "exhales"
 	message = "выдыхает."
+
+
+/datum/emote/sound/human/bubble
+	name = "Буббл"
+	key = "bubble"
+	key_third_person = "bubbles"
+	message = "буббл"
+	emote_type = EMOTE_AUDIBLE
+	muzzle_ignore = FALSE
+	restraint_check = FALSE
+
+/datum/emote/sound/human/bubble/run_emote(mob/user, params)
+	sound = pick('sound/voice/bubble1.ogg', 'sound/voice/bubble2.ogg', 'sound/voice/bubble3.ogg')
+	. = ..()
+
+
+/datum/emote/sound/human/blubbr
+
+	name = "Блурбл"
+	key = "blubbr"
+	key_third_person = "blubbrs"
+	message = "блурбл"
+	emote_type = EMOTE_AUDIBLE
+	muzzle_ignore = FALSE
+	restraint_check = FALSE
+
+/datum/emote/sound/human/blubbr/run_emote(mob/user, params)
+	sound = pick('sound/voice/blubbr1.ogg', 'sound/voice/blubbr2.ogg', 'sound/voice/blubbr3.ogg')
+	. = ..()
+
+/datum/emote/sound/human/yummers
+	name = "Краснеть"
+	key = "yummers"
+	key_third_person = "yummers"
+	message = "видит вкусняшку."
+	sound = 'sound/voice/yummers.ogg'
+	stat_allowed = SOFT_CRIT
+
+/datum/emote/sound/human/medic
+	name = "Медик!"
+	key = "medic"
+	key_third_person = "medics"
+	message = "зовёт медика!"
+	emote_type = EMOTE_AUDIBLE
+	muzzle_ignore = FALSE
+	restraint_check = FALSE
+
+/datum/emote/sound/human/medic/run_emote(mob/user, params)
+	sound = pick('sound/magic/tf2/demoman_medic01.ogg', 'sound/magic/tf2/demoman_medic02.ogg', 'sound/magic/tf2/demoman_medic03.ogg', \
+				'sound/magic/tf2/engineer_medic01.ogg', 'sound/magic/tf2/engineer_medic01.ogg', 'sound/magic/tf2/engineer_medic01.ogg', \
+				'sound/magic/tf2/heavy_medic01.ogg', 'sound/magic/tf2/heavy_medic01.ogg', 'sound/magic/tf2/heavy_medic01.ogg', \
+				'sound/magic/tf2/medic1.ogg', 'sound/magic/tf2/medic2.ogg', 'sound/magic/tf2/pyro_medic01.ogg', \
+				'sound/magic/tf2/scout_medic01.ogg', 'sound/magic/tf2/scout_medic02.ogg', 'sound/magic/tf2/scout_medic03.ogg', \
+				'sound/magic/tf2/sniper_medic01.ogg', 'sound/magic/tf2/sniper_medic01.ogg', \
+				'sound/magic/tf2/soldier_medic01.ogg', 'sound/magic/tf2/soldier_medic01.ogg', 'sound/magic/tf2/soldier_medic01.ogg', \
+				'sound/magic/tf2/spy_medic01.ogg', 'sound/magic/tf2/spy_medic01.ogg', 'sound/magic/tf2/spy_medic01.ogg')
+	. = ..()

@@ -1,6 +1,8 @@
 
 /obj
 	var/crit_fail = FALSE
+	/// Whether pathfinding must call CanAStarPass() while this object is non-dense.
+	var/can_astar_pass = CANASTARPASS_DENSITY
 	animate_movement = 2
 	speech_span = SPAN_ROBOT
 	vis_flags = VIS_INHERIT_PLANE //when this be added to vis_contents of something it inherit something.plane, important for visualisation of obj in openspace.
@@ -52,6 +54,11 @@
 	/// Ignored when set to 0 - to avoid shifting directional wall-mounted objects above tables
 	var/anchored_tabletop_offset = 0
 
+	/// Мобы, у которых mob.machine == src (см. set_machine/unset_machine).
+	/// Обратный индекс нужен ровно для Destroy(): без него удалённая машина
+	/// висит хардрефом в mob.machine до тех пор, пока игрок не откроет другую.
+	var/tmp/list/machine_users
+
 /obj/vv_edit_var(vname, vval)
 	switch(vname)
 		if("anchored")
@@ -98,6 +105,9 @@
 		STOP_PROCESSING(SSobj, src)
 	if(datum_flags & DF_HAS_OPEN_UI)
 		SStgui.close_uis(src)
+	if(machine_users)
+		release_machine_users()
+	armor = null
 	. = ..()
 
 /// @depricated DO NOT USE
@@ -147,11 +157,27 @@
 	else
 		return null
 
+/obj/remove_air_into(datum/gas_mixture/into, amount)
+	if(loc)
+		return loc.remove_air_into(into, amount)
+	if(into)
+		into.clear()
+		into.set_temperature(0)
+	return FALSE
+
 /obj/remove_air_ratio(ratio)
 	if(loc)
 		return loc.remove_air_ratio(ratio)
 	else
 		return null
+
+/obj/remove_air_ratio_into(datum/gas_mixture/into, ratio)
+	if(loc)
+		return loc.remove_air_ratio_into(into, ratio)
+	if(into)
+		into.clear()
+		into.set_temperature(0)
+	return FALSE
 
 /obj/return_air()
 	if(loc)
@@ -159,17 +185,47 @@
 	else
 		return null
 
+/obj/proc/fill_internal_lifeform_breath(mob/lifeform_inside_me, datum/gas_mixture/into, breath_request)
+	if(!into || breath_request <= 0)
+		return FALSE
+
+	var/datum/gas_mixture/environment = return_air()
+	if(!environment)
+		into.clear()
+		into.set_temperature(0)
+		return FALSE
+
+	var/environment_volume = environment.return_volume()
+	if(environment_volume <= 0)
+		into.clear()
+		into.set_temperature(0)
+		return FALSE
+
+	// Use remove_air_ratio (returns new mixture) - turfs don't implement remove_air_ratio_into after atmos revert
+	var/datum/gas_mixture/removed = remove_air_ratio(breath_request / environment_volume)
+	if(!removed || removed.total_moles() <= 0)
+		if(removed)
+			qdel(removed)
+		return FALSE
+	into.copy_from(removed)
+	qdel(removed)
+	return TRUE
+
 /obj/proc/handle_internal_lifeform(mob/lifeform_inside_me, breath_request)
 	//Return: (NONSTANDARD)
 	//		null if object handles breathing logic for lifeform
 	//		datum/air_group to tell lifeform to process using that breath return
 	//DEFAULT: Take air from turf to give to have mob process
 
-	if(breath_request>0)
-		var/datum/gas_mixture/environment = return_air()
-		return remove_air_ratio(BREATH_VOLUME / environment.return_volume())
-	else
+	if(breath_request <= 0)
 		return null
+
+	var/datum/gas_mixture/breath = new
+	if(fill_internal_lifeform_breath(lifeform_inside_me, breath, breath_request))
+		return breath
+
+	qdel(breath)
+	return FALSE
 
 /obj/proc/updateUsrDialog()
 	if((obj_flags & IN_USE) && !(obj_flags & USES_TGUI))
@@ -216,7 +272,7 @@
 				obj_flags &= ~IN_USE
 
 
-/obj/attack_ghost(mob/user)
+/obj/attack_ghost(mob/dead/observer/user)
 	. = ..()
 	if(.)
 		return
@@ -227,8 +283,11 @@
 
 /mob/proc/unset_machine()
 	if(machine)
+		var/obj/previous = machine
 		machine.on_unset_machine(src)
 		machine = null
+		if(istype(previous))
+			LAZYREMOVE(previous.machine_users, src)
 
 //called when the user unsets the machine.
 /atom/proc/on_unset_machine(mob/user)
@@ -240,6 +299,19 @@
 	src.machine = O
 	if(istype(O))
 		O.obj_flags |= IN_USE
+		LAZYOR(O.machine_users, src)
+
+///Снимает src со всех mob.machine, которые на него смотрят. Иначе игрок,
+///открывавший машину/сборку, держит её хардрефом до следующего взаимодействия -
+///в проде это был стабильный источник харддела телекомов, консолей, насосов и
+///сигналер-игнитер-сборок (всегда ровно "внешних ссылок: 1").
+/obj/proc/release_machine_users()
+	//Типизированный (не `as anything`) обход: хардделнутый моб оставляет в списке
+	//null, и на нём `as anything` словил бы рантайм прямо в Destroy.
+	for(var/mob/user in machine_users)
+		if(user.machine == src)
+			user.machine = null
+	machine_users = null
 
 /obj/item/proc/updateSelfDialog()
 	var/mob/M = src.loc
@@ -255,7 +327,11 @@
 		step_towards(src,S)
 
 /obj/get_dumping_location(datum/component/storage/source,mob/user)
-	return get_turf(src)
+	//хранилище приезжает не только типом /obj/item/storage, но и компонентом (МОД
+	//с модулем отсеков). storage_contents_dump_act() ниже по стеку уже смотрит на
+	//компонент, а не на тип, так что без этой проверки высыпаемая сумка уезжала
+	//на пол мимо вполне себе годного контейнера.
+	return GetComponent(/datum/component/storage) ? src : get_turf(src)
 
 /**
  * This proc is used for telling whether something can pass by this object in a given direction, for use by the pathfinding system.
@@ -267,6 +343,8 @@
  * * ID- An ID card representing what access we have (and thus if we can open things like airlocks or windows to pass through them). The ID card's physical location does not matter, just the reference
  * * to_dir- What direction we're trying to move in, relevant for things like directional windows that only block movement in certain directions
  * * caller- The movable we're checking pass flags for, if we're making any such checks
+ * Overrides which can return FALSE while density is FALSE must set
+ * can_astar_pass to CANASTARPASS_ALWAYS_PROC.
  **/
 /obj/proc/CanAStarPass(obj/item/card/id/ID, to_dir, atom/movable/caller)
 	if(ismovable(caller))

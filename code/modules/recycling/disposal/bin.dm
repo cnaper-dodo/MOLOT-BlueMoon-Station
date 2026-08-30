@@ -5,6 +5,7 @@
 /obj/machinery/disposal
 	icon = 'icons/obj/atmospherics/pipes/disposal.dmi'
 	density = TRUE
+	shadow_weight = 0.4
 	armor = list(MELEE = 25, BULLET = 10, LASER = 10, ENERGY = 100, BOMB = 0, BIO = 100, RAD = 100, FIRE = 90, ACID = 30)
 	max_integrity = 200
 	resistance_flags = FIRE_PROOF
@@ -45,6 +46,10 @@
 
 	return INITIALIZE_HINT_LATELOAD //we need turfs to have air
 
+/obj/machinery/disposal/Entered(atom/movable/arrived, atom/old_loc)
+	. = ..()
+	machine_wake() // something new to swallow; resume the auto-flush countdown
+
 /obj/machinery/disposal/proc/trunk_check()
 	trunk = locate() in loc
 	if(!trunk)
@@ -79,12 +84,17 @@
 		deconstruct()
 
 /obj/machinery/disposal/LateInitialize()
-	//this will get a copy of the air turf and take a SEND PRESSURE amount of air from it
+	// Transfer air directly from turf when possible to avoid creating temporary gas_mixture (GC)
 	var/atom/L = loc
-	var/datum/gas_mixture/env = new
-	env.copy_from(L.return_air())
-	env.transfer_to(air_contents, SEND_PRESSURE + 1)
-	qdel(env)
+	if(istype(L, /turf/open))
+		var/turf/open/T = L
+		T.transfer_air(air_contents, SEND_PRESSURE + 1)
+	else
+		// Fallback for closed turfs / non-turfs: copy uses temp mixture
+		var/datum/gas_mixture/env = new
+		env.copy_from(L.return_air())
+		env.transfer_to(air_contents, SEND_PRESSURE + 1)
+		qdel(env)
 	trunk_check()
 
 /obj/machinery/disposal/attackby(obj/item/I, mob/user, params)
@@ -215,6 +225,7 @@
 	var/obj/structure/disposalholder/H = new(src)
 	newHolderDestination(H)
 	H.init(src)
+	QDEL_NULL(air_contents)
 	air_contents = new()
 	H.start(src)
 	flushing = FALSE
@@ -358,10 +369,13 @@
 		if("eject")
 			eject()
 			. = TRUE
+	if(.)
+		machine_wake() // flush handle / pump state changed; process() owns the follow-through
 
 /obj/machinery/disposal/bin/alt_attack_hand(mob/user)
 	if(can_interact(usr))
 		flush = !flush
+		machine_wake()
 		update_icon()
 		return TRUE
 	return FALSE
@@ -431,6 +445,11 @@
 /obj/machinery/disposal/bin/process()
 	if(machine_stat & BROKEN) //nothing can happen if broken
 		return
+
+	// pump off/charged, handle idle and nothing waiting for the periodic auto-flush:
+	// nothing left to do per tick; Entered()/ui_act()/alt_attack_hand() wake us back up
+	if(!pressure_charging && !flush && !flushing && !(full_pressure && contents.len))
+		return machine_sleep()
 
 	flush_count++
 	if(flush_count >= flush_every_ticks)

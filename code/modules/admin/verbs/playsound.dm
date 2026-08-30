@@ -32,7 +32,8 @@
 
 	for(var/mob/M in GLOB.player_list)
 		if(M.client.prefs.toggles & SOUND_MIDI)
-			admin_sound.volume = vol * M.client.admin_music_volume
+			var/listener_vol = round(vol * (M.client?.prefs?.get_sound_volume("midi")) / 100)
+			admin_sound.volume = listener_vol
 			SEND_SOUND(M, admin_sound)
 			admin_sound.volume = vol
 
@@ -274,6 +275,15 @@
 		web_sound_input = trim(web_sound_input)
 		if(web_sound_input && (findtext(web_sound_input, ":") && !findtext(web_sound_input, GLOB.is_http_protocol)))
 			to_chat(src, "<span class='boldwarning'>Non-http(s) URIs are not allowed.</span>", confidential = TRUE)
+			return
+
+		// YouTube/SoundCloud/etc. требуют yt-dlp для извлечения прямого стрима — направляем туда
+		var/static/regex/youtube_regex = regex("youtu\\.?be")
+		if(youtube_regex.Find(web_sound_input) || findtext(web_sound_input, "soundcloud.com"))
+			if(!CONFIG_GET(string/invoke_youtubedl))
+				to_chat(src, "<span class='boldwarning'>YouTube/SoundCloud требуют yt-dlp, но INVOKE_YOUTUBEDL не настроен в config.txt.</span>", confidential = TRUE)
+				return
+			web_sound(src.mob, web_sound_input)
 			return
 
 		var/list/explode = splittext(web_sound_input, "/") //if url=="https://fixthisshit.com/pogchamp.ogg"then title="pogchamp.ogg"

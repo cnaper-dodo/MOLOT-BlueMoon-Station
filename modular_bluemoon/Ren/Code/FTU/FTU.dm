@@ -76,9 +76,8 @@
 /datum/round_event_control/ftu_trader
 	name = "Trade ship"
 	typepath = /datum/round_event/ftu_trader
-	weight = 10
-	max_occurrences = 1
-	min_players = 15
+	max_occurrences = 0
+	admin_only = TRUE
 	category = EVENT_CATEGORY_FRIENDLY
 	description = "A trader ship full of goodys."
 	var/ship_template
@@ -90,7 +89,7 @@
 /datum/round_event/ftu_trader/announce(fake)
 	priority_announce("Корабль Свободного торгового объединения получил разрешение на стыковку и пересёк границы сектора. Можете потратить свои честно заработанные деньги на их товары.","Бюрократический отдел ЦК", 'sound/announcer/classic/traider_announce.ogg')
 
-/datum/round_event_control/ftu_trader/preRunEvent()
+/datum/round_event_control/ftu_trader/preRunEvent(admin_window = TRUE)
 	if (!SSmapping.empty_space)
 		return EVENT_CANT_RUN
 
@@ -113,22 +112,9 @@
 	if(!ship.load(T))
 		CRASH("Loading Skipjack ship failed!")
 
-	var/list/spawners_list = list()
 	for(var/turf/A in ship.get_affected_turfs(T))
-		for(var/obj/effect/mob_spawn/human/spawner in A)
-			if(!istype(spawner, /obj/effect/mob_spawn/human/ftu_crew))
-				continue
-			spawners_list += spawner
-
-	var/list/candidates = pollGhostCandidates("Do you wish to be considered for Free trader?", ROLE_GHOSTROLE, minimum_required = spawners_list.len)
-
-	for(var/obj/effect/mob_spawn/human/spawner in spawners_list)
-		if(LAZYLEN(candidates))
-			var/mob/our_candidate = pick_n_take(candidates)
-			spawner.create(our_candidate.ckey)
-			notify_ghosts("Skipjack has an object of interest: [our_candidate]!", source=our_candidate, action=NOTIFY_ORBIT, header="Something's Interesting!")
-		else
-			notify_ghosts("Skipjack ship has an object of interest: [spawner]!", source=spawner, action=NOTIFY_ORBIT, header="Something's Interesting!")
+		for(var/obj/effect/mob_spawn/human/ftu_crew/spawner in A)
+			notify_ghosts("Trade ship has an object of interest: [spawner]!", source=spawner, action=NOTIFY_ORBIT, header="Something's Interesting!")
 
 /area/shuttle/ftu_trade
 	name = "Iron Turtle"

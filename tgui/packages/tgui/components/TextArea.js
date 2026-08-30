@@ -7,7 +7,7 @@
 
 import { KEY_ESCAPE, KEY_TAB } from 'common/keycodes';
 import { classes } from 'common/react';
-import { Component, createRef } from 'inferno';
+import { Component, createRef } from 'react';
 
 import { Box } from './Box';
 import { toInputValue } from './Input';
@@ -31,16 +31,6 @@ export class TextArea extends Component {
       }
       if (onInput) {
         onInput(e, e.target.value);
-      }
-    };
-    this.handleOnChange = e => {
-      const { editing } = this.state;
-      const { onChange } = this.props;
-      if (editing) {
-        this.setEditing(false);
-      }
-      if (onChange) {
-        onChange(e, e.target.value);
       }
     };
     this.handleKeyPress = e => {
@@ -122,6 +112,12 @@ export class TextArea extends Component {
         onInput(e, ta.value);
       }
     };
+    this.handleCompositionEnd = e => {
+      const { onInput } = this.props;
+      if (onInput) {
+        onInput(e, e.target.value);
+      }
+    };
     this.handleBlur = e => {
       const { editing } = this.state;
       const { onChange } = this.props;
@@ -176,6 +172,9 @@ export class TextArea extends Component {
       value,
       maxLength,
       placeholder,
+      scrollbar,
+      singleline,
+      noborder,
       ...boxProps
     } = this.props;
     // Box props
@@ -189,17 +188,22 @@ export class TextArea extends Component {
         className={classes([
           'TextArea',
           fluid && 'TextArea--fluid',
+          noborder && 'TextArea--noborder',
           className,
         ])}
         {...rest}>
         <textarea
           ref={this.textareaRef}
-          className="TextArea__textarea"
+          className={classes([
+            'TextArea__textarea',
+            scrollbar && 'TextArea__textarea--scrollable',
+            singleline && 'TextArea--singleline',
+          ])}
           placeholder={placeholder}
-          onChange={this.handleOnChange}
           onKeyDown={this.handleKeyDown}
           onKeyPress={this.handleKeyPress}
           onInput={this.handleOnInput}
+          onCompositionEnd={this.handleCompositionEnd}
           onPaste={this.handleOnPaste}
           onFocus={this.handleFocus}
           onBlur={this.handleBlur}

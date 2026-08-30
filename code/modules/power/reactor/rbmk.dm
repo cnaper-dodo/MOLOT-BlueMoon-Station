@@ -665,6 +665,7 @@ BLUEMOON REMOVAL END */
 
 /obj/machinery/computer/reactor/stats
 	name = "Reactor Statistics Console"
+	idle_sleeps = FALSE // own periodic work in process(); must not doze off via the parent typing-indicator path
 	desc = "A console for monitoring the statistics of a nuclear reactor."
 	icon_screen = "rbmk_stats"
 	var/next_stat_interval = 0
@@ -834,6 +835,7 @@ BLUEMOON REMOVAL END */
 	ui_header = "smmon_0.gif"
 	program_icon_state = "smmon_0"
 	extended_desc = "This program connects to specially calibrated sensors to provide information on the status of nuclear reactors."
+	category = PROGRAM_CATEGORY_ENGI
 	requires_ntnet = TRUE
 	transfer_access = ACCESS_CONSTRUCTION
 	//network_destination = "rbmk monitoring system" //Apparently we don't use these anymore
@@ -986,7 +988,7 @@ BLUEMOON REMOVAL END */
 	radiation_pulse(get_turf(src), 500, 5) // BLUEMOON CHANGES - более безопасная проверка на src.loc
 
 /obj/effect/decal/nuclear_waste/attackby(obj/item/tool, mob/user)
-	if(tool.tool_behaviour == TOOL_SHOVEL)
+	if(tool.tool_behaviour == TOOL_SHOVEL || istype(tool, /obj/item/broom/liquidator))
 		radiation_pulse(get_turf(src), 1000, 5) // BLUEMOON CHANGES - более безопасная проверка на src.loc
 		to_chat(user, "<span class='notice'>You start to clear [src]...</span>")
 		if(tool.use_tool(src, user, 50, volume=100))

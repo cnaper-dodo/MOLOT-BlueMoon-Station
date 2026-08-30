@@ -1,6 +1,7 @@
 /mob/living/simple_animal/mouse
 	name = "mouse"
 	desc = "It's a nasty, ugly, evil, disease-ridden rodent."
+	uses_custom_environment_handling = TRUE //свой handle_environment()
 	icon_state = "mouse_gray"
 	icon_living = "mouse_gray"
 	icon_dead = "mouse_gray_dead"
@@ -79,7 +80,7 @@
 
 	if(prob(chew_probability))
 		var/turf/open/floor/F = get_turf(src)
-		if(istype(F) && !F.intact)
+		if(istype(F) && !(F.turf_flags & TURF_INTACT))
 			var/obj/structure/cable/C = locate() in F
 			if(C && prob(15))
 				if(C.avail())

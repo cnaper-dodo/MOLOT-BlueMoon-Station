@@ -1,5 +1,5 @@
 /obj/vehicle/sealed/mecha/combat/reticence
-	desc = "A silent, fast, and nigh-invisible miming exosuit. Popular among mimes and mime assassins."
+	desc = "Бесшумный, быстрый и почти невидимый мимский экзокостюм. Популярен среди мимов и мим-убийц."
 	name = "\improper reticence"
 	icon_state = "reticence"
 	movedelay = 2
@@ -21,6 +21,7 @@
 
 /obj/vehicle/sealed/mecha/combat/reticence/loaded/Initialize(mapload)
 	. = ..()
+	install_titanfall_premium_parts()
 	var/obj/item/mecha_parts/mecha_equipment/ME = new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/silenced
 	ME.attach(src)
 	ME = new /obj/item/mecha_parts/mecha_equipment/rcd //HAHA IT MAKES WALLS GET IT

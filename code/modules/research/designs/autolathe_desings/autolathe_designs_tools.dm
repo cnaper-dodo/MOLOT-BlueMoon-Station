@@ -4,15 +4,6 @@
 ///////////
 ///Tools///
 ///////////
-/datum/design/bucket
-	name = "Bucket"
-	id = "bucket"
-	build_type = AUTOLATHE | PROTOLATHE
-	materials = list(/datum/material/iron = 200)
-	build_path = /obj/item/reagent_containers/glass/bucket
-	category = list("initial","Tools","Tool Designs")
-	departmental_flags = DEPARTMENTAL_FLAG_SERVICE
-
 /datum/design/crowbar
 	name = "Pocket Crowbar"
 	id = "crowbar"
@@ -85,7 +76,7 @@
 /datum/design/weldingtool
 	name = "Welding Tool"
 	id = "welding_tool"
-	build_type = AUTOLATHE | NO_PUBLIC_LATHE
+	build_type = AUTOLATHE
 	materials = list(/datum/material/iron = 70, /datum/material/glass = 20)
 	build_path = /obj/item/weldingtool
 	category = list("initial","Tools","Tool Designs")
@@ -145,9 +136,9 @@
 /datum/design/cable_coil
 	name = "Cable Coil"
 	id = "cable_coil"
-	build_type = AUTOLATHE | PROTOLATHE
+	build_type = AUTOLATHE
 	materials = list(/datum/material/iron = 10, /datum/material/glass = 5)
-	build_path = /obj/item/stack/cable_coil/random/five
+	build_path = /obj/item/stack/cable_coil/random/one
 	category = list("initial","Tools","Stock Parts")
 	maxstack = 60
 

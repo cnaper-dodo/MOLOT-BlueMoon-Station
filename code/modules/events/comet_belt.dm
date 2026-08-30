@@ -1,14 +1,17 @@
+#define TRAIT_SOURCE "comet_belt"
 
 /datum/round_event_control/comet_belt
 	name = "Comet Belt"
 	typepath = /datum/round_event/comet_belt
 	max_occurrences = 1
-	weight = 5
+	// Редкое зрелище, а не фоновый флавор: на весе 10 выпадал почти каждый второй раунд
+	// и приелся (жалоба прода). 3 = примерно раз в 8-10 раундов.
+	weight = 3
 	earliest_start = 10 MINUTES
 	category = EVENT_CATEGORY_FRIENDLY
 	description = "A belt of comets passes near the station, creating a spectacular light show."
 
-/datum/round_event_control/comet_belt/canSpawnEvent(players, gamemode)
+/datum/round_event_control/comet_belt/can_fire(datum/director_signals/signals)
 	if(!CONFIG_GET(flag/starlight))
 		return FALSE
 	return ..()
@@ -29,6 +32,7 @@
 	var/list/saved_parallax = list()
 	var/list/saved_ambience_clients = list()
 	var/list/all_overlay_objects = list()
+	var/list/pacif_mobs = list()
 	var/finale_announced = FALSE
 	var/ambient_comets_active = FALSE
 
@@ -90,13 +94,14 @@
 	for(var/V in GLOB.player_list)
 		var/mob/M = V
 		if((M.client?.prefs?.toggles & SOUND_MIDI) && is_station_level(M.z))
-			M.playsound_local(M, 'sound/ambience/star.ogg', 100, FALSE, pressure_affected = FALSE)
+			M.playsound_local(M, 'sound/ambience/star.ogg', 100, FALSE, channel = CHANNEL_EVENT_MUSIC, pressure_affected = FALSE)
 
 /datum/round_event/comet_belt/start()
 	for(var/V in GLOB.player_list)
 		var/mob/M = V
 		if(is_station_level(M.z))
-			ADD_TRAIT(M, TRAIT_PACIFISM, "comet_belt")
+			ADD_TRAIT(M, TRAIT_PACIFISM, TRAIT_SOURCE)
+			pacif_mobs += M
 	for(var/client/C in GLOB.clients)
 		if(!C.mob || !is_station_level(C.mob.z))
 			continue
@@ -174,9 +179,10 @@
 	last_music_sec = music_sec
 
 /datum/round_event/comet_belt/end()
-	for(var/V in GLOB.player_list)
-		var/mob/M = V
-		REMOVE_TRAIT(M, TRAIT_PACIFISM, "comet_belt")
+	for(var/mob/M in pacif_mobs)
+		REMOVE_TRAIT(M, TRAIT_PACIFISM, TRAIT_SOURCE)
+	pacif_mobs.Cut()
+
 	for(var/client/C in saved_ambience_clients)
 		if(!C?.mob)
 			continue
@@ -243,7 +249,8 @@
 			C.parallax_holder.Remove()
 			C.parallax_holder.Apply()
 	add_comet_overlays(C)
-	ADD_TRAIT(C.mob, TRAIT_PACIFISM, "comet_belt")
+	pacif_mobs |= C.mob
+	ADD_TRAIT(C.mob, TRAIT_PACIFISM, TRAIT_SOURCE)
 	apply_current_state_to_client(C)
 
 /datum/round_event/comet_belt/proc/apply_current_state_to_client(client/C)
@@ -592,3 +599,5 @@
 	belt_stream_overlays.Cut()
 	glow_overlays.Cut()
 	flash_overlays.Cut()
+
+#undef TRAIT_SOURCE

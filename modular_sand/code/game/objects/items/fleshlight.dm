@@ -69,11 +69,10 @@
 		user.visible_message(span_lewd("<b>[user]</b> [message]."))
 		M.handle_post_sex(lust_amt, null, user, ORGAN_SLOT_PENIS) //SPLURT edit
 		user.client?.plug13.send_emote(PLUG13_EMOTE_GROIN, min(lust_amt * 3, 100), PLUG13_DURATION_NORMAL)
-		playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/bang4.ogg',
+		playlewdinteractionsound(get_turf(src), pick('modular_sand/sound/interactions/bang4.ogg',
 							'modular_sand/sound/interactions/bang5.ogg',
 							'modular_sand/sound/interactions/bang6.ogg'), 70, 1, -1)
-		if(!HAS_TRAIT(user, TRAIT_LEWD_JOB))
-			new /obj/effect/temp_visual/heart(user.loc)
+		user.try_play_interaction_effect()
 
 
 	else if(user.a_intent == INTENT_HARM)
@@ -181,11 +180,15 @@
 	if(plush_icon != NONE)
 		playsound(user, 'sound/items/squeaktoy.ogg', 30, 1)
 
+	if(!portal_target)
+		to_chat(user, span_warning("[src] is not linked to anyone wearing the paired underwear."))
+		return
+
 	// BLUEMOON EDIT START
 	var/genital_data = list(
-		"M_has_penis" = M.has_penis(),
+		"M_has_penis" = M.has_penis(TRUE),
 		"M_penis_desc" = "какой-то",
-		"target_has_penis" = portal_target.has_penis(),
+		"target_has_penis" = portal_target.has_penis(TRUE),
 		"target_penis_desc" = "какой-то"
 	)
 
@@ -569,11 +572,11 @@
 					// if(CUM_TARGET_FEET)
 			switch(user.zone_selected)
 				if(BODY_ZONE_PRECISE_GROIN)
-					playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/bang4.ogg',
+					playlewdinteractionsound(get_turf(src), pick('modular_sand/sound/interactions/bang4.ogg',
 														'modular_sand/sound/interactions/bang5.ogg',
 														'modular_sand/sound/interactions/bang6.ogg'), 70, 1, -1)
 				if(BODY_ZONE_PRECISE_MOUTH, BODY_ZONE_R_ARM, BODY_ZONE_L_ARM, BODY_ZONE_R_LEG, BODY_ZONE_L_LEG)
-					playlewdinteractionsound(loc, 'modular_sand/sound/interactions/champ_fingering.ogg', 50, 1, -1)
+					playlewdinteractionsound(get_turf(src), 'modular_sand/sound/interactions/champ_fingering.ogg', 50, 1, -1)
 
 			to_chat(portal_target, "<span class='lewd'>Кто-то использует сопряжённый <b>'[name]'</b>, этот кто-то [target_message].</span>")
 
@@ -823,18 +826,6 @@
 	plushe.layer = 33
 	add_overlay(plushe)
 
-/obj/item/portallight/Destroy()
-	if(available_panties.len)
-		for(var/obj/item/clothing/underwear/briefs/panties/portalpanties/temp in available_panties)
-			temp.portallight -= src
-	if(portalunderwear)
-		portalunderwear.portallight -= src
-		if(isliving(portalunderwear.loc))
-			portalunderwear.audible_message("[icon2html(portalunderwear, hearers(portalunderwear))] *beep* *beep* *beep*")
-			playsound(portalunderwear, 'sound/machines/triple_beep.ogg', ASSEMBLY_BEEP_VOLUME, TRUE)
-			to_chat(portalunderwear.loc, "<span class='notice'>Трусики издают сигнал - связь с <b>'[src]'</b> потеряна.</span>")
-	. = ..()
-
 /**
  * # Hyperstation 13 portal underwear
  * Wear it, cannot be worn if not pointing to the bits you have.
@@ -958,7 +949,7 @@
 			if(ishuman(user))
 				portal_settings?.owner = user
 				START_PROCESSING(SSobj, src)
-				RegisterSignal(user, COMSIG_MOVABLE_HEAR, PROC_REF(on_owner_hear))
+				RegisterSignal(user, COMSIG_MOVABLE_HEAR, PROC_REF(on_owner_hear), override = TRUE)
 			if(!portallight.len)
 				audible_message("[icon2html(src, hearers(src))] *beep* *beep* *beep*")
 				playsound(src, 'sound/machines/triple_beep.ogg', ASSEMBLY_BEEP_VOLUME, TRUE)
@@ -983,16 +974,6 @@
 		UnregisterSignal(user, COMSIG_MOVABLE_HEAR)
 		portal_settings?.owner = null
 		STOP_PROCESSING(SSobj, src)
-
-/obj/item/clothing/underwear/briefs/panties/portalpanties/Destroy()
-	if(portallight.len)
-		moveToNullspace() // loc cannot be human so let's destroy ourselves out of anything
-		for(var/obj/item/portallight/temp in portallight)
-			temp.portalunderwear = null
-			temp.available_panties -= src
-			temp.updatesleeve()
-			temp.icon_state = "unpaired"
-	. = ..()
 
 /obj/item/clothing/underwear/briefs/panties/portalpanties/proc/drop_out()
 	var/mob/living/carbon/human/deleted

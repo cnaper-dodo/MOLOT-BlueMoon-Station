@@ -4,6 +4,7 @@
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "water"
 	density = TRUE
+	shadow_weight = 0.35
 	anchored = FALSE
 	pressure_resistance = 2*ONE_ATMOSPHERE
 	max_integrity = 300
@@ -192,6 +193,7 @@
 	desc = "A tank full of industrial welding fuel. Do not consume."
 	icon_state = "fuel"
 	reagent_id = /datum/reagent/fuel
+	var/mob/living/last_attacker
 
 /obj/structure/reagent_dispensers/fueltank/high
 	name = "high-capacity fuel tank"
@@ -206,15 +208,15 @@
 	tank_volume = 100000
 
 /obj/structure/reagent_dispensers/fueltank/limitka/explode()
-	explosion(src, heavy_impact_range = 7, light_impact_range = 14, flame_range = 21, flash_range = 34)
+	explosion(src, heavy_impact_range = 7, light_impact_range = 14, flame_range = 21, flash_range = 34, attacker = last_attacker)
 	qdel(src)
 
 /obj/structure/reagent_dispensers/fueltank/proc/explode()
-	explosion(get_turf(src), 0, 1, 5, flame_range = 5)
+	explosion(get_turf(src), 0, 1, 5, flame_range = 5, attacker = last_attacker)
 	qdel(src)
 
 /obj/structure/reagent_dispensers/fueltank/high/explode()
-	explosion(get_turf(src), 0, 2, 5, flame_range = 12)
+	explosion(get_turf(src), 0, 2, 5, flame_range = 12, attacker = last_attacker)
 	qdel(src)
 
 
@@ -235,9 +237,11 @@
 /obj/structure/reagent_dispensers/fueltank/bullet_act(obj/item/projectile/hitting_projectile)
 	if(hitting_projectile.damage > 0 && ((hitting_projectile.damage_type == BURN) || (hitting_projectile.damage_type == BRUTE)))
 		var/boom_message = "[ADMIN_LOOKUPFLW(hitting_projectile.firer)] triggered a fueltank explosion via projectile."
-		GLOB.bombers += boom_message
+		add_bomber_message(boom_message)
 		message_admins(boom_message)
 		hitting_projectile.firer.log_message("triggered a fueltank explosion via projectile.", LOG_ATTACK)
+		if(isliving(hitting_projectile.firer))
+			last_attacker = hitting_projectile.firer
 		explode() //Bluemoon change
 
 /obj/structure/reagent_dispensers/fueltank/attackby(obj/item/I, mob/living/user, params)
@@ -262,10 +266,11 @@
 			user.visible_message("<span class='warning'>[user] catastrophically fails at refilling [user.ru_ego()] [W.name]!</span>", "<span class='userdanger'>That was stupid of you.</span>")
 
 			var/message_admins = "[ADMIN_LOOKUPFLW(user)] triggered a fueltank explosion via welding tool at [ADMIN_VERBOSEJMP(T)]."
-			GLOB.bombers += message_admins
+			add_bomber_message(message_admins)
 			message_admins(message_admins)
 
 			user.log_message("triggered a fueltank explosion via welding tool.", LOG_ATTACK)
+			last_attacker = user
 			explode() //Bluemoon change
 		return
 	return ..()

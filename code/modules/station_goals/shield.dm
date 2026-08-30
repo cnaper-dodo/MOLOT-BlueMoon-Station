@@ -1,4 +1,6 @@
 GLOBAL_LIST_EMPTY(meteor_satellites) // BLUEMOON ADD - список всех противометеоритных спутников
+/// Только для вызова get_coverage() в UI, когда цель станции не выбрана (не в station_goals).
+GLOBAL_DATUM_INIT(shield_goal_coverage_dummy, /datum/station_goal/station_shield, new)
 
 //Station Shield
 // A chain of satellites encircles the station
@@ -83,12 +85,12 @@ GLOBAL_LIST_EMPTY(meteor_satellites) // BLUEMOON ADD - список всех п�
 		))
 	data["notice"] = notice
 
-
-	var/datum/station_goal/station_shield/G = locate() in SSticker.mode.station_goals
-	if(G)
+	if(locate(/obj/machinery/satellite/meteor_shield) in GLOB.machines)
 		data["meteor_shield"] = 1
-		data["meteor_shield_coverage"] = G.get_coverage()
-		data["meteor_shield_coverage_max"] = G.coverage_goal
+		var/datum/station_goal/station_shield/G = SSticker.mode && locate() in SSticker.mode.station_goals
+		var/datum/station_goal/station_shield/coverage_src = G || GLOB.shield_goal_coverage_dummy
+		data["meteor_shield_coverage"] = coverage_src.get_coverage()
+		data["meteor_shield_coverage_max"] = coverage_src.coverage_goal
 	return data
 
 
@@ -151,7 +153,7 @@ GLOBAL_LIST_EMPTY(meteor_satellites) // BLUEMOON ADD - список всех п�
 
 // BLUEMOON ADD START
 /obj/machinery/satellite/Destroy() // сообщение в рацию о нарушении целостности, а также удаление камеры
-	if(active)
+	if(active && radio && !QDELETED(src))
 		radio.talk_into(src, scramble_message_replace_chars("[pick(destruction_quotes)] Координаты: [x], [y]", 5), engineering_channel)
 	QDEL_NULL(camera)
 	QDEL_NULL(radio)
@@ -322,7 +324,7 @@ GLOBAL_LIST_EMPTY(meteor_satellites) // BLUEMOON ADD - список всех п�
 			change_meteor_chance(0.5)
 
 /obj/machinery/satellite/meteor_shield/proc/change_meteor_chance(mod)
-	var/datum/round_event_control/E = locate(/datum/round_event_control/meteor_wave) in SSevents.control
+	var/datum/round_event_control/E = locate(/datum/round_event_control/meteor_wave) in SSdirector.event_controls()
 	if(E)
 		E.weight *= mod
 

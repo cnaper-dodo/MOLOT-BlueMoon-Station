@@ -8,7 +8,7 @@
 /datum/design/kitchen_knife
 	name = "Kitchen Knife"
 	id = "kitchen_knife"
-	build_type = AUTOLATHE | NO_PUBLIC_LATHE
+	build_type = AUTOLATHE
 	materials = list(/datum/material/iron = 12000)
 	build_path = /obj/item/kitchen/knife
 	category = list("initial","Dinnerware")
@@ -16,7 +16,7 @@
 /datum/design/efink
 	name = "E-Fink"
 	id = "efink"
-	build_type = AUTOLATHE | NO_PUBLIC_LATHE
+	build_type = AUTOLATHE
 	materials = list(/datum/material/iron = 12000)
 	build_path = /obj/item/kitchen/efink
 	category = list("initial","Dinnerware")
@@ -239,5 +239,5 @@
 	build_type = AUTOLATHE | PROTOLATHE
 	materials = list(/datum/material/iron = 200, /datum/material/glass = 1000)
 	build_path = /obj/item/reagent_containers/spray
-	category = list("initial","Medical","Medical Designs")
-	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
+	category = list("initial", "Medical", "Medical Designs")
+	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SERVICE
