@@ -124,6 +124,12 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plating,
 /area/shuttle/exploration)
+"p" = (
+/obj/structure/ship_hold{
+	pixel_x = -7
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/exploration)
 "q" = (
 /obj/structure/fans/tiny,
 /obj/machinery/door/poddoor/shutters{
@@ -317,10 +323,6 @@
 /area/shuttle/exploration)
 "T" = (
 /obj/machinery/light/directional/east,
-/obj/structure/ship_hold{
-	pixel_y = -1;
-	pixel_x = 26
-	},
 /turf/open/floor/mineral/titanium,
 /area/shuttle/exploration)
 "U" = (
@@ -458,7 +460,7 @@ I
 l
 R
 R
-z
+p
 z
 z
 z
